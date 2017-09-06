@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Destructable : Holdable {
+public class Destructable : MonoBehaviour, Holdable {
 	public float holdTime;
 	public float minimumSpeed;
 	public float maximumSpeed;
@@ -22,7 +22,7 @@ public class Destructable : Holdable {
 		
 	}
 
-	override public void Interact(RaycastHit hit, float time){
+	public void Interact(RaycastHit hit, float time){
 		if((Time.time - time) > holdTime){
 			if(Vector3.Distance(hugo.position, transform.position) < activateDistance){
 				int amount = Random.Range(3, 10);

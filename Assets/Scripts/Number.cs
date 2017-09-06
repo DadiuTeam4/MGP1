@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Number : Touchable {
+public class Number : MonoBehaviour, Touchable {
 	public int value;
 	private Vector3 burstDirection;
 	private float burstSpeed;
@@ -21,7 +21,7 @@ public class Number : Touchable {
 		rig.AddForce(burstDirection * burstSpeed);
 	}
 
-	override public void Interact(RaycastHit hit){
+	public void Interact(RaycastHit hit){
 		constructionHandler.SendResource(value);
 		
 		gameObject.SetActive(false);
