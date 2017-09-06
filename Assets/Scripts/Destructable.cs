@@ -39,7 +39,7 @@ public class Destructable : Holdable {
 					g.SetConstructionHandler(constructionHandler);
 
 					rndVec = new Vector3(Random.Range(-1,1),Random.Range(0,1),Random.Range(-1,1));
-					g.SetBurstDiretion(rndVec.normalized);
+					g.SetBurstDirection(rndVec.normalized);
 					g.SetBurstSpeed(Random.Range(minimumSpeed, maximumSpeed));
 					g.Burst();
 				}

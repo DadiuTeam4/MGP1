@@ -9,7 +9,7 @@ public class Number : Touchable {
 	public Rigidbody rig;
 	private ConstructionHandler constructionHandler;
 
-	public void SetBurstDiretion(Vector3 dir){
+	public void SetBurstDirection(Vector3 dir){
 		burstDirection = dir;
 	}
 
