@@ -19,13 +19,13 @@ public class TouchHandler : MonoBehaviour {
 			for (int i = 0; i < touchCount; i++)
 			{
 				Touch touch = Input.GetTouch(i);
-				touchTimes.Add(Time.time);
 				Vector2 position = touch.position;
 				Ray ray;
 				RaycastHit hit;
 
 				switch(touch.phase){
 					case TouchPhase.Began:
+						touchTimes.Add(Time.time);
 						ray = Camera.main.ScreenPointToRay(new Vector3(touch.position.x, touch.position.y, 0));
 						if (Physics.Raycast(ray, out hit)) 
 						{
