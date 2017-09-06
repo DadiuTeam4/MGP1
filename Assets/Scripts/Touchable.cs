@@ -3,5 +3,5 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Touchable : MonoBehaviour {
-	public virtual void Interact() {} 
+	public virtual void Interact(RaycastHit hit) {} 
 }
