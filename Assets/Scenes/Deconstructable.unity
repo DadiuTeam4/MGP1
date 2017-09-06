@@ -867,6 +867,11 @@ Prefab:
       propertyPath: hugo
       value: 
       objectReference: {fileID: 1522597849}
+    - target: {fileID: 23613865059769614, guid: cc3b57d5b5b7b6344a060ad84aa33a8d,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 59102873c036f8942803c50f8fd87a28, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc3b57d5b5b7b6344a060ad84aa33a8d, type: 2}
   m_IsPrefabParent: 0
