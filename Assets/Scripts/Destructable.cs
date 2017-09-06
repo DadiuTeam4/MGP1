@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Destructable : Touchable {
-	// Array of spawnable number prefabs
-
+public class Destructable : Holdable {
+	public float holdTime;
 	public float minimumSpeed;
 	public float maximumSpeed;
+	// Array of spawnable number prefabs
 	public GameObject[] numbers;
 	public Transform hugo;
 	private float activateDistance = 3.0f;
@@ -22,28 +22,30 @@ public class Destructable : Touchable {
 		
 	}
 
-	override public void Interact(RaycastHit hit){
-		if(Vector3.Distance(hugo.position, transform.position) < activateDistance){
-			int amount = Random.Range(3, 10);
-			int rnd;
-			
-			Vector3 rndVec;
+	override public void Interact(RaycastHit hit, float time){
+		if((Time.time - time) > holdTime){
+			if(Vector3.Distance(hugo.position, transform.position) < activateDistance){
+				int amount = Random.Range(3, 10);
+				int rnd;
+				
+				Vector3 rndVec;
 
-			Number g;
+				Number g;
 
-			for(int i = 0; i < amount; i++){
-				rnd = Random.Range(0, numbers.Length);
-				g = Instantiate(numbers[rnd], hit.point, Quaternion.identity).GetComponent<Number>();
+				for(int i = 0; i < amount; i++){
+					rnd = Random.Range(0, numbers.Length);
+					g = Instantiate(numbers[rnd], hit.point, Quaternion.identity).GetComponent<Number>();
 
-				g.SetConstructionHandler(constructionHandler);
+					g.SetConstructionHandler(constructionHandler);
 
-				rndVec = new Vector3(Random.Range(-1,1),Random.Range(0,1),Random.Range(-1,1));
-				g.SetBurstDiretion(rndVec.normalized);
-				g.SetBurstSpeed(Random.Range(minimumSpeed, maximumSpeed));
-				g.Burst();
+					rndVec = new Vector3(Random.Range(-1,1),Random.Range(0,1),Random.Range(-1,1));
+					g.SetBurstDiretion(rndVec.normalized);
+					g.SetBurstSpeed(Random.Range(minimumSpeed, maximumSpeed));
+					g.Burst();
+				}
+
+				transform.gameObject.SetActive(false);
 			}
-
-			//transform.gameObject.SetActive(false);
 		}
 	}
 }

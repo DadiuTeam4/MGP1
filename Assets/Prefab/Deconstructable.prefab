@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 208392528671050092}
   m_Layer: 10
   m_Name: Deconstructable
-  m_TagString: Touchable
+  m_TagString: Holdable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106,6 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b129bd932f6647e4bb87d512e3cc488a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  holdTime: 0.5
   minimumSpeed: 80
   maximumSpeed: 280
   numbers:
@@ -115,6 +116,7 @@ MonoBehaviour:
   - {fileID: 1868675250962926, guid: a3e28fa7e3b8deb43a2dfad257912956, type: 2}
   - {fileID: 1417154901802668, guid: af7ed20caa141a042a5464c3528a3953, type: 2}
   hugo: {fileID: 0}
+  constructionHandler: {fileID: 0}
 --- !u!208 &208392528671050092
 NavMeshObstacle:
   m_ObjectHideFlags: 1

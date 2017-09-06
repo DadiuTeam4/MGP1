@@ -382,6 +382,11 @@ Prefab:
       propertyPath: constructionHandler
       value: 
       objectReference: {fileID: 1369430177}
+    - target: {fileID: 114892390910484976, guid: c467d72d695deef43ab87a88ff820fd9,
+        type: 2}
+      propertyPath: holdTime
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c467d72d695deef43ab87a88ff820fd9, type: 2}
   m_IsPrefabParent: 0
@@ -822,7 +827,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e05e83b83711e804aa6449c60b735861, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debug: 1
 --- !u!1001 &1803603200
 Prefab:
   m_ObjectHideFlags: 0
