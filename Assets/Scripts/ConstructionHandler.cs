@@ -34,7 +34,7 @@ public class ConstructionHandler : MonoBehaviour {
 			break;
 			
 			default:
-				Debug.Log("THIS VALUE IS NOT A VALID CONSTRUCTION VALUE");
+				Debug.Log("THIS VALUE IS NOT A VALID CONSTRUCTION VALUE: " + value);
 			break;
 		}
 	}

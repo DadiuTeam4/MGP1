@@ -24,9 +24,9 @@ GameObject:
   - component: {fileID: 23628089627078422}
   - component: {fileID: 114557414859966258}
   - component: {fileID: 54617685619840832}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Five
-  m_TagString: Untagged
+  m_TagString: Touchable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,6 +109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92504557c0032bf48947a1de7bd4894e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  value: 5
   rig: {fileID: 54617685619840832}
 --- !u!136 &136913006522519488
 CapsuleCollider:

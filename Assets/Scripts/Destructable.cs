@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class Destructable : Touchable {
 	// Array of spawnable number prefabs
+
+	public float minimumSpeed;
+	public float maximumSpeed;
 	public GameObject[] numbers;
 	public Transform hugo;
 	private float activateDistance = 3.0f;
+	public ConstructionHandler constructionHandler;
 
 	// Use this for initialization
 	void Start () {
@@ -31,13 +35,15 @@ public class Destructable : Touchable {
 				rnd = Random.Range(0, numbers.Length);
 				g = Instantiate(numbers[rnd], hit.point, Quaternion.identity).GetComponent<Number>();
 
+				g.SetConstructionHandler(constructionHandler);
+
 				rndVec = new Vector3(Random.Range(-1,1),Random.Range(0,1),Random.Range(-1,1));
 				g.SetBurstDiretion(rndVec.normalized);
-				g.SetBurstSpeed(Random.Range(80, 280));
+				g.SetBurstSpeed(Random.Range(minimumSpeed, maximumSpeed));
 				g.Burst();
 			}
 
-			transform.gameObject.SetActive(false);
+			//transform.gameObject.SetActive(false);
 		}
 	}
 }
