@@ -94,8 +94,11 @@ public class TouchHandler : MonoBehaviour
                                         obj.Interact(hit, touchTimes[i]);
                                     }
                                 }
+                                if (touchTimes.Count > i)
+                                {
+                                    touchTimes.RemoveAt(i);
+                                }
 
-                                touchTimes.RemoveAt(i);
                                 break;
                         }
                     }

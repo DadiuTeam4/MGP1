@@ -35,7 +35,7 @@ public class BridgeController : MonoBehaviour, Constructable
     {
         totalScore++;
         Debug.Log("Score is " + totalScore);
-        if (totalScore == 3)
+        if (totalScore == 2)
         {
             barrier.SetActive(false);
             bridge.SetActive(true);
