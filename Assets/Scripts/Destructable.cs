@@ -33,7 +33,6 @@ public class Destructable : MonoBehaviour, Holdable {
 				int rnd;
 
 
-
 				for(int i = 0; i < amount; i++){
 					if(i >= numbers.Length){
 						rnd = Random.Range(0, numbers.Length);
