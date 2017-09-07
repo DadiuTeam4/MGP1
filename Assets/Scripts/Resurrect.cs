@@ -5,7 +5,7 @@ using UnityEngine;
 public class Resurrect : MonoBehaviour {
 
 	public float resurrectTime;
-
+	
 	private float timestamp;
 	private Collider col;
 	private Renderer ren;
@@ -16,7 +16,7 @@ public class Resurrect : MonoBehaviour {
 		col = gameObject.GetComponent<Collider>();
 		ren = gameObject.GetComponent<Renderer>();
 	}
-
+	
 	// Update is called once per frame
 	void Update () {
 		if(!col.enabled && !resurrecting){
