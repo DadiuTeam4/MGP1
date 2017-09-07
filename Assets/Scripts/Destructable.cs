@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Destructable : MonoBehaviour, Holdable {
 	public float holdTime;
@@ -51,6 +52,7 @@ public class Destructable : MonoBehaviour, Holdable {
 			}
 			transform.gameObject.GetComponent<Collider>().enabled = false;
 			transform.gameObject.GetComponent<Renderer>().enabled = false;
+			transform.gameObject.GetComponent<NavMeshObstacle>().enabled = false;
 			return true;
 		}
 		return false;

@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 195160363661151738}
   m_Layer: 9
   m_Name: Hugo
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37,8 +37,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1010139087567022}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.361, z: -2.87}
+  m_LocalRotation: {x: 0, y: 0.60538846, z: 0, w: 0.7959302}
+  m_LocalPosition: {x: -1.6080086, y: 1.0833334, z: 0.75327635}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
