@@ -6,5 +6,11 @@ public class DebugObject : Rhythmic {
 	protected override void Interact() 
 	{
 		print("Called");
-	}
+        if (active)
+        {
+            gameObject.GetComponent<Renderer>().material.color = Color.green;
+
+        }
+
+    }
 }
