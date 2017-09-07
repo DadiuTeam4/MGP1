@@ -7,7 +7,6 @@ public class TimedEvent : MonoBehaviour {
 	public float timeSeconds;
 
 
-	public Constructable test;
 	private float timeTillEvent;
 	private float timeStamp;
 

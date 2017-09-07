@@ -70,7 +70,7 @@ public class TouchHandler : MonoBehaviour {
 							}
 						break;
 
-						case TouchPhase.Ended:
+						case TouchPhase.Ended:/*
 							ray = Camera.main.ScreenPointToRay(new Vector3(touch.position.x, touch.position.y, 0));
 							if (Physics.Raycast(ray, out hit)) 
 							{
@@ -81,7 +81,10 @@ public class TouchHandler : MonoBehaviour {
 								}
 							}
 
-							touchTimes.RemoveAt(i);
+							touchTimes.RemoveAt(i);*/
+						break;
+
+						case TouchPhase.Stationary:
 						break;
 					}
 				}
