@@ -37,3 +37,5 @@ sysinfo.txt
 .DS_Store
 
 ProjectSettings/ProjectVersion\.txt
+ProjectSettings/TagManager.asset
+Assets/Scenes/Deconstructable.unity
