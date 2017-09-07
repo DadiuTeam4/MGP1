@@ -2,6 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Touchable : MonoBehaviour {
-	public virtual void Interact(RaycastHit hit) {} 
+public interface Touchable {
+	void Interact(RaycastHit hit);
 }
