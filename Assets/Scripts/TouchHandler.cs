@@ -28,7 +28,7 @@ public class TouchHandler : MonoBehaviour {
 				}
 			}
 
-			if(Input.GetMouseButtonUp(0)){
+			if(Input.GetMouseButton(0)){
 				ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 				
 				if(Physics.Raycast(ray, out hit)){
@@ -77,12 +77,28 @@ public class TouchHandler : MonoBehaviour {
 								if (hit.collider.gameObject.tag == "Holdable") 
 								{
 									Holdable obj = hit.collider.gameObject.GetComponent<Holdable>();
-									obj.Interact(hit, touchTimes[i]);
+									obj.TouchEnded();
 								}
 							}
 
 							touchTimes.RemoveAt(i);
 						break;
+					}
+
+					if(touch.phase != TouchPhase.Ended){
+						bool done = false;
+						ray = Camera.main.ScreenPointToRay(new Vector3(touch.position.x, touch.position.y, 0));
+						if (Physics.Raycast(ray, out hit)) 
+						{
+							if (hit.collider.gameObject.tag == "Holdable") 
+							{
+								Holdable obj = hit.collider.gameObject.GetComponent<Holdable>();
+								done = obj.Interact(hit, touchTimes[i]);
+							}
+						}
+						if(done){
+							touchTimes.RemoveAt(i);
+						}
 					}
 				}
 			}
