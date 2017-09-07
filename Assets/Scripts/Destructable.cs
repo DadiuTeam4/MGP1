@@ -12,8 +12,8 @@ public class Destructable : MonoBehaviour, Holdable {
 	public float activateDistance = 3.0f;
 	public ConstructionHandler constructionHandler;
 
-	public int numberMaxAmount = 3;
-	public int numberMinAmount = 8;
+	public int numberMaxAmount;
+	public int numberMinAmount;
 
 	// Use this for initialization
 	void Start () {
@@ -30,26 +30,33 @@ public class Destructable : MonoBehaviour, Holdable {
 			if(Vector3.Distance(hugo.position, transform.position) < activateDistance){
 				int amount = Random.Range(numberMinAmount, numberMaxAmount);
 				int rnd;
-				
-				Vector3 rndVec;
 
-				Number g;
 
 				for(int i = 0; i < amount; i++){
-					rnd = Random.Range(0, numbers.Length);
-					g = Instantiate(numbers[rnd], hit.point, Quaternion.identity).GetComponent<Number>();
-
-					g.SetConstructionHandler(constructionHandler);
-
-					rndVec = new Vector3(Random.Range(-1,1),Random.Range(0,1),Random.Range(-1,1));
-					g.SetBurstDirection(rndVec.normalized);
-					g.SetBurstSpeed(Random.Range(minimumSpeed, maximumSpeed));
-					g.Burst();
+					if(i >= numbers.Length){
+						rnd = Random.Range(0, numbers.Length);
+						InstantiateNumber(rnd, hit.point);
+					} else {
+						InstantiateNumber(i, hit.point);
+					}
 				}
 
 				transform.gameObject.GetComponent<Collider>().enabled = false;
 				transform.gameObject.GetComponent<Renderer>().enabled = false;
 			}
 		}
+	}
+
+	public void InstantiateNumber(int numberID, Vector3 position){
+		Number g;
+		Vector3 rndVec;
+		g = Instantiate(numbers[numberID], position, Quaternion.identity).GetComponent<Number>();
+
+		g.SetConstructionHandler(constructionHandler);
+
+		rndVec = new Vector3(Random.Range(-1,1),Random.Range(0,1),Random.Range(-1,1));
+		g.SetBurstDirection(rndVec.normalized);
+		g.SetBurstSpeed(Random.Range(minimumSpeed, maximumSpeed));
+		g.Burst();
 	}
 }
