@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Number : MonoBehaviour, Touchable {
+public class Number : MonoBehaviour {
 	public int value;
 	private Vector3 burstDirection;
 	private float burstSpeed;
@@ -21,13 +21,15 @@ public class Number : MonoBehaviour, Touchable {
 		rig.AddForce(burstDirection * burstSpeed);
 	}
 
-	public void Interact(RaycastHit hit){
-		constructionHandler.SendResource(value);
-		
-		gameObject.SetActive(false);
-	}
-
 	public void SetConstructionHandler(ConstructionHandler ch){
 		constructionHandler = ch;
+	}
+	void OnTriggerEnter(Collider other)
+	{
+		if(other.transform.tag == "Player"){
+			constructionHandler.SendResource(value);
+			
+			gameObject.SetActive(false);
+		}	
 	}
 }

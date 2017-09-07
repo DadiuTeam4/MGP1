@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Resurrect : MonoBehaviour {
 
@@ -9,12 +10,17 @@ public class Resurrect : MonoBehaviour {
 	private float timestamp;
 	private Collider col;
 	private Renderer ren;
+	private NavMeshObstacle navMeshObs;
 	private bool resurrecting = false;
+
+	private Destructable des;
 
 	// Use this for initialization
 	void Start () {
+		des = gameObject.GetComponent<Destructable>();
 		col = gameObject.GetComponent<Collider>();
 		ren = gameObject.GetComponent<Renderer>();
+		navMeshObs = gameObject.GetComponent<NavMeshObstacle>();
 	}
 	
 	// Update is called once per frame
@@ -27,6 +33,8 @@ public class Resurrect : MonoBehaviour {
 		if(Time.time > timestamp){
 			col.enabled = true;
 			ren.enabled = true;
+			navMeshObs.enabled = true;
+			des.SetHasBeenDestroyed(false);
 			resurrecting = false;
 		}
 	}
