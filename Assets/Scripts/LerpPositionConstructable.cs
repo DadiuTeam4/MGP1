@@ -12,7 +12,7 @@ public class LerpPositionConstructable : MonoBehaviour, Constructable {
     private float t = 0.0f;
     private Vector3 startPosition;
 
-    void start(){
+    void Start(){
         startPosition = transform.position;
     }
 
