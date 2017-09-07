@@ -23,6 +23,7 @@ public class Destructable : MonoBehaviour, Holdable {
 	}
 
 	public void Interact(RaycastHit hit, float time){
+		Debug.Log(time);
 		if((Time.time - time) > holdTime){
 			if (Vector3.Distance (hugo.position, transform.position) < activateDistance) {
 				int amount = Random.Range (3, 10);

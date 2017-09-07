@@ -6,8 +6,8 @@ public class TimedEvent : MonoBehaviour {
 	public float timeMinutes;
 	public float timeSeconds;
 
-	public Component action;
 
+	public Constructable test;
 	private float timeTillEvent;
 	private float timeStamp;
 
@@ -21,7 +21,7 @@ public class TimedEvent : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(Time.time > timeStamp){
-			action.Construct();
+			gameObject.GetComponent<Constructable>().Construct();
 		}
 	}
 }
