@@ -9,7 +9,7 @@ public class Destructable : MonoBehaviour, Holdable {
 	// Array of spawnable number prefabs
 	public GameObject[] numbers;
 	public Transform hugo;
-	private float activateDistance = 3.0f;
+	public float activateDistance = 3.0f;
 	public ConstructionHandler constructionHandler;
 
 	// Use this for initialization
@@ -23,7 +23,6 @@ public class Destructable : MonoBehaviour, Holdable {
 	}
 
 	public void Interact(RaycastHit hit, float time){
-		Debug.Log(time);
 		if((Time.time - time) > holdTime){
 			if (Vector3.Distance (hugo.position, transform.position) < activateDistance) {
 				int amount = Random.Range (3, 10);
