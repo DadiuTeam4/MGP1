@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3157003241	Test			\Default Work Unit\Test	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	331740890	3 sek_ udkast row2	Y:\Desktop\DADIU\MGP1\MGP1\Wwise tester\Wwise android tester\Wwise android tester\.cache\Android\SFX\3 sek. udkast row2_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test\3 sek_ udkast row2		2304064
+
