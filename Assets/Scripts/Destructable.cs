@@ -25,7 +25,7 @@ public class Destructable : MonoBehaviour, Holdable {
 	public void Interact(RaycastHit hit, float time){
 		if((Time.time - time) > holdTime){
 			if(Vector3.Distance(hugo.position, transform.position) < activateDistance){
-				int amount = Random.Range(3, 10);
+				int amount = Random.Range(3, 100);
 				int rnd;
 				
 				Vector3 rndVec;

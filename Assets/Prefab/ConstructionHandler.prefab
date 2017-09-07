@@ -51,8 +51,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de51d74f11ed2f7499e7291f18718290, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ones: []
-  twos: []
-  threes: []
-  fours: []
-  fives: []
