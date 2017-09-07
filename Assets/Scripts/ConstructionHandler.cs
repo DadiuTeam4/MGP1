@@ -38,6 +38,5 @@ public class ConstructionHandler : MonoBehaviour {
 			break;
 		}
 
-		bridgeController.onCollect();	
 	}
 }
