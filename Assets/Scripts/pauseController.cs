@@ -8,7 +8,7 @@ public class pauseController : MonoBehaviour
 
     public Button pauseBtn;
     public Text text;
-    private bool isPaused;
+    private bool isPaused = false;
     // Use this for initializati<on
     void Start()
     {
@@ -17,6 +17,7 @@ public class pauseController : MonoBehaviour
 
     void tasksOnClick()
     {
+        Debug.Log("Tapped");
         if (!isPaused)
         {
             Time.timeScale = 0;

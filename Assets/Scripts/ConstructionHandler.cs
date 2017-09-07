@@ -1,9 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ConstructionHandler : MonoBehaviour {
 	public GameObject[] ones, twos, threes, fours, fives;
+	private int totalScore = 0;
+	public GameObject barrier;
+	public GameObject bridge;
+
+	public Text scoreText;
 
 	public void SendResource(int value){
 		int rnd;
@@ -36,6 +42,14 @@ public class ConstructionHandler : MonoBehaviour {
 			default:
 				Debug.Log("THIS VALUE IS NOT A VALID CONSTRUCTION VALUE: " + value);
 			break;
+		}
+		totalScore++;
+		scoreText.text = "Score: " + totalScore;
+		Debug.Log("Score is " + totalScore);
+		if(totalScore == 3)
+		{
+			barrier.SetActive(false);
+			bridge.SetActive(true);
 		}
 	}
 }
