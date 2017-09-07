@@ -117,7 +117,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4024852558880306, guid: c467d72d695deef43ab87a88ff820fd9, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 7.57
+      value: 2.59
       objectReference: {fileID: 0}
     - target: {fileID: 4024852558880306, guid: c467d72d695deef43ab87a88ff820fd9, type: 2}
       propertyPath: m_LocalPosition.y
@@ -164,7 +164,7 @@ Prefab:
     - target: {fileID: 114892390910484976, guid: c467d72d695deef43ab87a88ff820fd9,
         type: 2}
       propertyPath: holdTime
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114892390910484976, guid: c467d72d695deef43ab87a88ff820fd9,
         type: 2}
@@ -680,24 +680,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1243834236}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb4e6093b402edc4eaf6642f4f35e769, type: 3}
+  m_Script: {fileID: 11500000, guid: 02a3973a35a8a7544a84e17fc57e8d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  to: {fileID: 1226289141}
-  speed: 1
---- !u!114 &1243834238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1243834236}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29bda8f8f0b773b4f95453daf0a4ad87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeMinutes: 0
-  timeSeconds: 3
+  step: 0
+  endPosition: {fileID: 0}
 --- !u!1001 &1274067664
 Prefab:
   m_ObjectHideFlags: 0
@@ -986,7 +973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e05e83b83711e804aa6449c60b735861, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testingOnComputer: 0
+  testingOnComputer: 1
   timeStamp: 0
 --- !u!1001 &1803603200
 Prefab:
@@ -1107,7 +1094,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 2048065895}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4c65012d45ba6d4d878c53efd31f8ad, type: 3}
+  m_Script: {fileID: 11500000, guid: 02a3973a35a8a7544a84e17fc57e8d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  addedColour: {r: 0.5441177, g: 0.19204153, b: 0.19204153, a: 0}
+  step: 0.079
+  endPosition: {fileID: 1226289141}
