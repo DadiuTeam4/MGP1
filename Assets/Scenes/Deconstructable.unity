@@ -179,10 +179,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 381404410}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ff4b406f6db6bc41bf4f39530123d6e, type: 3}
+  m_Script: {fileID: 11500000, guid: fe63ed74a1cfe1440b416bf61319da24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 5
+  scaleAmount: {x: 0, y: 0, z: 0.5}
 --- !u!1001 &585266706
 Prefab:
   m_ObjectHideFlags: 0
@@ -254,10 +254,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 585266707}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ff4b406f6db6bc41bf4f39530123d6e, type: 3}
+  m_Script: {fileID: 11500000, guid: fe63ed74a1cfe1440b416bf61319da24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 4
+  scaleAmount: {x: 0.6, y: 0, z: 0}
 --- !u!1001 &851941323
 Prefab:
   m_ObjectHideFlags: 0
@@ -329,10 +329,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 851941324}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ff4b406f6db6bc41bf4f39530123d6e, type: 3}
+  m_Script: {fileID: 11500000, guid: c4c65012d45ba6d4d878c53efd31f8ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 2
+  addedColour: {r: 1, g: 0.4044118, b: 0.4044118, a: 0}
 --- !u!1001 &1001535352
 Prefab:
   m_ObjectHideFlags: 0
@@ -382,6 +382,20 @@ Prefab:
       propertyPath: constructionHandler
       value: 
       objectReference: {fileID: 1369430177}
+    - target: {fileID: 208392528671050092, guid: c467d72d695deef43ab87a88ff820fd9,
+        type: 2}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 208392528671050092, guid: c467d72d695deef43ab87a88ff820fd9,
+        type: 2}
+      propertyPath: m_CarveOnlyStationary
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1739965277135054, guid: c467d72d695deef43ab87a88ff820fd9, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c467d72d695deef43ab87a88ff820fd9, type: 2}
   m_IsPrefabParent: 0
@@ -607,27 +621,32 @@ Prefab:
         type: 2}
       propertyPath: ones.Array.data[0]
       value: 
-      objectReference: {fileID: 2048065896}
+      objectReference: {fileID: 2048065895}
     - target: {fileID: 114240885568163926, guid: dcf565075a4acc64298389643f8c925b,
         type: 2}
       propertyPath: twos.Array.data[0]
       value: 
-      objectReference: {fileID: 851941325}
+      objectReference: {fileID: 851941324}
+    - target: {fileID: 114240885568163926, guid: dcf565075a4acc64298389643f8c925b,
+        type: 2}
+      propertyPath: twos.Array.data[1]
+      value: 
+      objectReference: {fileID: 851941324}
     - target: {fileID: 114240885568163926, guid: dcf565075a4acc64298389643f8c925b,
         type: 2}
       propertyPath: threes.Array.data[0]
       value: 
-      objectReference: {fileID: 1395777915}
+      objectReference: {fileID: 1395777914}
     - target: {fileID: 114240885568163926, guid: dcf565075a4acc64298389643f8c925b,
         type: 2}
       propertyPath: fours.Array.data[0]
       value: 
-      objectReference: {fileID: 585266708}
+      objectReference: {fileID: 585266707}
     - target: {fileID: 114240885568163926, guid: dcf565075a4acc64298389643f8c925b,
         type: 2}
       propertyPath: fives.Array.data[0]
       value: 
-      objectReference: {fileID: 381404411}
+      objectReference: {fileID: 381404410}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dcf565075a4acc64298389643f8c925b, type: 2}
   m_IsPrefabParent: 0
@@ -708,10 +727,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1395777914}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ff4b406f6db6bc41bf4f39530123d6e, type: 3}
+  m_Script: {fileID: 11500000, guid: fe63ed74a1cfe1440b416bf61319da24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 3
+  scaleAmount: {x: 0.5, y: 0.3, z: 0}
 --- !u!195 &1522597849 stripped
 NavMeshAgent:
   m_PrefabParentObject: {fileID: 195160363661151738, guid: a58724734a0508342ac7c028e03f9b9b,
@@ -943,7 +962,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2048065895}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ff4b406f6db6bc41bf4f39530123d6e, type: 3}
+  m_Script: {fileID: 11500000, guid: c4c65012d45ba6d4d878c53efd31f8ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 1
+  addedColour: {r: 0.5441177, g: 0.19204153, b: 0.19204153, a: 0}
