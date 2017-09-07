@@ -12,6 +12,9 @@ public class Destructable : MonoBehaviour, Holdable {
 	public float activateDistance = 3.0f;
 	public ConstructionHandler constructionHandler;
 
+	public int numberMaxAmount = 3;
+	public int numberMinAmount = 8;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -25,7 +28,7 @@ public class Destructable : MonoBehaviour, Holdable {
 	public void Interact(RaycastHit hit, float time){
 		if((Time.time - time) > holdTime){
 			if(Vector3.Distance(hugo.position, transform.position) < activateDistance){
-				int amount = Random.Range(3, 100);
+				int amount = Random.Range(numberMinAmount, numberMaxAmount);
 				int rnd;
 				
 				Vector3 rndVec;
@@ -44,7 +47,8 @@ public class Destructable : MonoBehaviour, Holdable {
 					g.Burst();
 				}
 
-				transform.gameObject.SetActive(false);
+				transform.gameObject.GetComponent<Collider>().enabled = false;
+				transform.gameObject.GetComponent<Renderer>().enabled = false;
 			}
 		}
 	}
