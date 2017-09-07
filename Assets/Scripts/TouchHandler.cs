@@ -3,16 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TouchHandler : MonoBehaviour {
-	private List<float> touchTimes = new List<float>();
+public class TouchHandler : MonoBehaviour
+{
+    private List<float> touchTimes = new List<float>();
 
-	// Computer debugging Variables:
-	public bool testingOnComputer;
-	public float timeStamp;
+    // Computer debugging Variables:
+    public bool testingOnComputer;
+    public float timeStamp;
 
-	void Update () 
-	{
-		if(testingOnComputer){
+    public bool isInputEnabled = true;
+
+    void Update()
+    {
+        if (!isInputEnabled)
+        {
+            return;
+        }
+        if(testingOnComputer){
 			Ray ray;
 			RaycastHit hit;
 
@@ -103,5 +110,5 @@ public class TouchHandler : MonoBehaviour {
 				}
 			}
 		}
-	}
+    }
 }

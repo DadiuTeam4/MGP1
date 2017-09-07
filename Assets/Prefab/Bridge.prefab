@@ -9,47 +9,47 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1417154901802668}
+  m_RootGameObject: {fileID: 1318998011638160}
   m_IsPrefabParent: 1
---- !u!1 &1417154901802668
+--- !u!1 &1318998011638160
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4854519200631618}
-  - component: {fileID: 33076801348780960}
-  - component: {fileID: 136161758791776142}
-  - component: {fileID: 23857302432826066}
-  - component: {fileID: 114292410454525652}
-  - component: {fileID: 54764487495352928}
-  m_Layer: 8
-  m_Name: Two
-  m_TagString: Untagged
+  - component: {fileID: 4476337616281302}
+  - component: {fileID: 33891320345824258}
+  - component: {fileID: 64820756679135486}
+  - component: {fileID: 23708491680717170}
+  - component: {fileID: 114942334304718304}
+  - component: {fileID: 114134308148498378}
+  m_Layer: 0
+  m_Name: Bridge
+  m_TagString: Touchable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4854519200631618
+  m_StaticEditorFlags: 8
+  m_IsActive: 0
+--- !u!4 &4476337616281302
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1417154901802668}
+  m_GameObject: {fileID: 1318998011638160}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1.14}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: 6.66, y: 0, z: -0.15}
+  m_LocalScale: {x: 0.34605414, y: 1, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23857302432826066
+--- !u!23 &23708491680717170
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1417154901802668}
+  m_GameObject: {fileID: 1318998011638160}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -57,7 +57,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: c5a6648ed724f4644a701859f2e61b0e, type: 2}
+  - {fileID: 2100000, guid: 215614f3149ce5147b47e29a9f585613, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -76,51 +76,53 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33076801348780960
+--- !u!33 &33891320345824258
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1417154901802668}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &54764487495352928
-Rigidbody:
+  m_GameObject: {fileID: 1318998011638160}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!64 &64820756679135486
+MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1417154901802668}
+  m_GameObject: {fileID: 1318998011638160}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!114 &114292410454525652
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &114134308148498378
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1417154901802668}
+  m_GameObject: {fileID: 1318998011638160}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92504557c0032bf48947a1de7bd4894e, type: 3}
+  m_Script: {fileID: 11500000, guid: 2eafb38781fecb240becd9e2917b5a47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 2
-  rig: {fileID: 54764487495352928}
---- !u!136 &136161758791776142
-CapsuleCollider:
+  barrier: {fileID: 0}
+  bridge: {fileID: 1318998011638160}
+  scoreText: {fileID: 0}
+  touchHandler: {fileID: 0}
+  player: {fileID: 0}
+  target: {x: 13, y: 0, z: -0.9}
+--- !u!114 &114942334304718304
+MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1417154901802668}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_GameObject: {fileID: 1318998011638160}
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89e92aa7fe01d64f98f2041c8549970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hugo: {fileID: 0}
