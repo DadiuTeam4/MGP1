@@ -15,6 +15,7 @@ public class Destructable : MonoBehaviour, Holdable {
 	public int numberMaxAmount;
 	public int numberMinAmount;
 
+	private float timeAtFirstTrigger;
 	private bool hasBeenDestroyed;
 
 	// Use this for initialization
@@ -27,13 +28,13 @@ public class Destructable : MonoBehaviour, Holdable {
 		
 	}
 
-	public void Interact(RaycastHit hit, float time){
+	public bool Interact(RaycastHit hit, float time){
 		if(!hasBeenDestroyed){
+			timeAtFirstTrigger = time;
 			hasBeenDestroyed = true;
 		}
 
-
-		if((Time.time - time) > holdTime){
+		if((Time.time - timeAtFirstTrigger) > holdTime){
 			if(Vector3.Distance(hugo.position, transform.position) < activateDistance){
 				int amount = Random.Range(numberMinAmount, numberMaxAmount);
 				int rnd;
@@ -47,10 +48,12 @@ public class Destructable : MonoBehaviour, Holdable {
 						InstantiateNumber(i, hit.point);
 					}
 				}
-
-				transform.gameObject.SetActive(false);
 			}
+			transform.gameObject.GetComponent<Collider>().enabled = false;
+			transform.gameObject.GetComponent<Renderer>().enabled = false;
+			return true;
 		}
+		return false;
 	}
 
 	public void InstantiateNumber(int numberID, Vector3 position){
@@ -68,5 +71,9 @@ public class Destructable : MonoBehaviour, Holdable {
 
 	public void SetHasBeenDestroyed(bool b){
 		hasBeenDestroyed = b;
+	}
+
+	public void TouchEnded(){
+		hasBeenDestroyed = false;
 	}
 }
