@@ -37,7 +37,8 @@ public class Destructable : Touchable {
 				g.Burst();
 			}
 
-			transform.gameObject.SetActive(false);
+			transform.gameObject.GetComponent<Collider>().enabled = false;
+			transform.gameObject.GetComponent<Renderer>().enabled = false;
 		}
 	}
 }
