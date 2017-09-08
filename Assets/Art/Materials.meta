@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Art/Materials.meta
 guid: 7a9c67ea3242c431b8d1ba6b94bb5f23
 folderAsset: yes
 timeCreated: 1504856658
+=======
+guid: 354b39276c0f74c65b5b8adc27825300
+folderAsset: yes
+timeCreated: 1504862836
+>>>>>>> rhythmMechanic:Assets/StreamingAssets/Audio/GeneratedSoundBanks/Mac.meta
 licenseType: Free
 DefaultImporter:
   userData: 
