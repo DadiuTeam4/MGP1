@@ -60,7 +60,7 @@
 				<Property Name="ProjectExplorer\FirstVisible_8_1" Type="string" Value="{41093F77-829F-4D88-8601-E8B25F3D4781}"/>
 				<Property Name="ProjectExplorer\x64_Expanded_10_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_11_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_12_1" Type="string" Value="ZtP+STC1qEKZO5JIc6q3BzmbutH8JvJDvwE7iW432HV4S/Bm0YscRJPoQVA2m+WS404syVMrZ0Wr3o+SaDj3Gq2vpEzKfTNKucKxO8c1MqKEWY+86st1S57vfQTisgOE/kSMz8YZ8k2SGPoqiU8XSw=="/>
+				<Property Name="ProjectExplorer\x64_Expanded_12_1" Type="string" Value="OZu60fwm8kO/ATuJbjfYdXhL8GbRixxEk+hBUDab5ZLjTizJUytnRavej5JoOPcara+kTMp9M0q5wrE7xzUyooRZj7zqy3VLnu99BOKyA4T+RIzPxhnyTZIY+iqJTxdL"/>
 				<Property Name="ProjectExplorer\x64_Expanded_13_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_14_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_15_1" Type="string" Value=""/>
@@ -94,8 +94,8 @@
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
 						<Value Platform="Windows">GeneratedSoundBanks\Windows\</Value>
-						<Value Platform="Android">\GeneratedSoundBanks\Android\</Value>
-						<Value Platform="Mac">\GeneratedSoundBanks\Mac\</Value>
+						<Value Platform="Android">..\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Android\</Value>
+						<Value Platform="Mac">..\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Mac\</Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPostGenerateCustomCmdDescription" Type="string">

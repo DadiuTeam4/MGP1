@@ -22,6 +22,7 @@ public class RhytmScript : MonoBehaviour, Touchable {
 	
 	// Update is called once per frame
 	void Update () {
+
 		if (0.0f < (t3.currentTime) - (interval) && (t3.currentTime) - (interval) < 0.11f) {
 			interval += t3.GetTargetTime();
 			activate = true;

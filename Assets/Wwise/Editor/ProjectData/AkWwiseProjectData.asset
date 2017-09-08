@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{ECCF3AF7-9E18-4C08-92BA-578EF8D59B79}'
-    m_lastTimePsrt1: 1893488256
-    m_lastTimePart2: -1999309159
+    m_lastTimePsrt1: -21348224
+    m_lastTimePart2: -1999309155
     List:
     - Name: Mechanic_rhytmic
       Path: Default Work Unit/Mechanic_rhytmic
@@ -33,15 +33,15 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}'
-    m_lastTimePsrt1: 1893488256
-    m_lastTimePart2: -1999309159
+    m_lastTimePsrt1: -21348224
+    m_lastTimePart2: -1999309155
     List: []
   StateWwu:
   - PhysicalPath: States/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{84293648-188C-4843-BE28-B2EA53028374}'
-    m_lastTimePsrt1: 1893488256
-    m_lastTimePart2: -1999309159
+    m_lastTimePsrt1: -21348224
+    m_lastTimePart2: -1999309155
     List:
     - Name: Mechanics_Rhytm
       Path: Default Work Unit/Mechanics_Rhytm
@@ -80,8 +80,8 @@ MonoBehaviour:
   - PhysicalPath: Switches/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{B6F95636-171C-45AE-939B-0D051C33F56A}'
-    m_lastTimePsrt1: 1893488256
-    m_lastTimePart2: -1999309159
+    m_lastTimePsrt1: -21348224
+    m_lastTimePart2: -1999309155
     List:
     - Name: Mechanic_rhythmic
       Path: Default Work Unit/Mechanic_rhythmic
@@ -116,8 +116,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{9F0EC4C7-388C-4D89-BABB-4A28EAA8851B}'
-    m_lastTimePsrt1: 1893488256
-    m_lastTimePart2: -1999309159
+    m_lastTimePsrt1: -21348224
+    m_lastTimePart2: -1999309155
     List:
     - Name: SoundbankA
       Path: Default Work Unit/SoundbankA
@@ -132,14 +132,14 @@ MonoBehaviour:
   - PhysicalPath: Game Parameters/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{C936BBA5-A306-4CDF-BA74-B9FA5226D67E}'
-    m_lastTimePsrt1: 1893488256
-    m_lastTimePart2: -1999309159
+    m_lastTimePsrt1: -21348224
+    m_lastTimePart2: -1999309155
     List: []
   - PhysicalPath: Game Parameters/Factory SoundSeed Air Game Syncs.wwu
     ParentPhysicalPath: 
     Guid: '{3B167755-FB42-458B-98BF-96F557AFB3B9}'
-    m_lastTimePsrt1: 1893488256
-    m_lastTimePart2: -1999309159
+    m_lastTimePsrt1: -21348224
+    m_lastTimePart2: -1999309155
     List:
     - Name: SS_Air_Fear
       Path: Factory SoundSeed Air Game Syncs/SS_Air_Fear
@@ -235,10 +235,13 @@ MonoBehaviour:
   - PhysicalPath: Triggers/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{727FA6D7-4248-4B11-820B-3439382F793E}'
-    m_lastTimePsrt1: 1893488256
-    m_lastTimePart2: -1999309159
+    m_lastTimePsrt1: -21348224
+    m_lastTimePart2: -1999309155
     List: []
-  ExpandedItems: []
+  ExpandedItems:
+  - /MGP1
+  - /MGP1/Banks
+  - /MGP1/Banks/Default Work Unit
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
