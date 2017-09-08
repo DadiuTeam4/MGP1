@@ -24,7 +24,7 @@ public class RhytmScript : MonoBehaviour {
 
 
 
-		if (Input.GetMouseButtonDown(0) && activate)
+		if (Input.GetTouch(0) && activate)
 		{
 			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 			RaycastHit hit;
