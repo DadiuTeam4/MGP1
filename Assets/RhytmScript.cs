@@ -23,7 +23,7 @@ public class RhytmScript : MonoBehaviour {
 	void Update () {
 
 
-		if (Input.touchCount > 0) {
+		//if (Input.touchCount > 0) {
 			if (Input.GetTouch (0).phase == TouchPhase.Began && activate) {
 				Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 				RaycastHit hit;
@@ -38,7 +38,7 @@ public class RhytmScript : MonoBehaviour {
 
 				}
 			}
-		}
+		//}	
 
 		if (0.0f < (t3.currentTime) - (interval) && (t3.currentTime) - (interval) < 0.11f) {
 			interval += t3.GetTargetTime();
