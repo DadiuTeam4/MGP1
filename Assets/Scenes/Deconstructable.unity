@@ -255,7 +255,7 @@ Prefab:
         type: 2}
       propertyPath: hugo
       value: 
-      objectReference: {fileID: 1522597849}
+      objectReference: {fileID: 1362254114}
     - target: {fileID: 1559668525575476, guid: cc3b57d5b5b7b6344a060ad84aa33a8d, type: 2}
       propertyPath: m_IsActive
       value: 1
@@ -311,7 +311,7 @@ Prefab:
         type: 2}
       propertyPath: hugo
       value: 
-      objectReference: {fileID: 1522597849}
+      objectReference: {fileID: 1362254114}
     - target: {fileID: 1372577824015286, guid: fc5456ba6baebe7488be81f9b908bdc6, type: 2}
       propertyPath: m_Name
       value: Bridge
@@ -413,7 +413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe63ed74a1cfe1440b416bf61319da24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scaleAmount: {x: 0, y: 0, z: 0}
+  scaleAmount: {x: 10, y: 0, z: 0}
 --- !u!1 &455095562
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,7 +684,70 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe63ed74a1cfe1440b416bf61319da24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scaleAmount: {x: 0, y: 0, z: 0}
+  scaleAmount: {x: 0, y: 10, z: 0}
+--- !u!1 &637893594
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 637893597}
+  - component: {fileID: 637893596}
+  - component: {fileID: 637893595}
+  m_Layer: 0
+  m_Name: WwiseGlobal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &637893595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 637893594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fa01f8c3f46545ceab5f57d10f29988, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  basePath: Audio/GeneratedSoundBanks
+  language: English(US)
+  defaultPoolSize: 4096
+  lowerPoolSize: 2048
+  streamingPoolSize: 1024
+  preparePoolSize: 0
+  memoryCutoffThreshold: 0.95
+  monitorPoolSize: 128
+  monitorQueuePoolSize: 64
+  callbackManagerBufferSize: 4
+  engineLogging: 1
+--- !u!114 &637893596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 637893594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b12201b4627c54a069146f58a6c78912, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &637893597
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 637893594}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &851941323
 Prefab:
   m_ObjectHideFlags: 0
@@ -759,7 +822,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe63ed74a1cfe1440b416bf61319da24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scaleAmount: {x: 0, y: 0, z: 0}
+  scaleAmount: {x: 0, y: 2, z: 0}
 --- !u!224 &970727507 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224251624092112076, guid: b117f813f27221c429a83f5bed20620a,
@@ -814,6 +877,21 @@ Prefab:
       propertyPath: constructionHandler
       value: 
       objectReference: {fileID: 1369430177}
+    - target: {fileID: 114892390910484976, guid: c467d72d695deef43ab87a88ff820fd9,
+        type: 2}
+      propertyPath: numberMinAmount
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114892390910484976, guid: c467d72d695deef43ab87a88ff820fd9,
+        type: 2}
+      propertyPath: numberMaxAmount
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 65833419923634456, guid: c467d72d695deef43ab87a88ff820fd9,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c467d72d695deef43ab87a88ff820fd9, type: 2}
   m_IsPrefabParent: 0
@@ -828,8 +906,9 @@ GameObject:
   - component: {fileID: 1047518269}
   - component: {fileID: 1047518268}
   - component: {fileID: 1047518267}
-  - component: {fileID: 1047518266}
   - component: {fileID: 1047518271}
+  - component: {fileID: 1047518272}
+  - component: {fileID: 1047518266}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -837,13 +916,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1047518266
-AudioListener:
+--- !u!114 &1047518266
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1047518265}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d75950eb49a243fab22775d08d8cc4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDefaultListener: 1
+  listenerId: 0
 --- !u!124 &1047518267
 Behaviour:
   m_ObjectHideFlags: 0
@@ -919,6 +1004,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1362254109}
+--- !u!114 &1047518272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1047518265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 950449726191c46a1a623d3261e1771a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_positionOffsetData:
+    positionOffset: {x: 0, y: 0, z: 0}
+    KeepMe: 0
+  isEnvironmentAware: 0
+  isStaticObject: 0
+  m_listeners:
+    initialListenerList: []
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &1073308917
 GameObject:
   m_ObjectHideFlags: 0
@@ -1192,6 +1297,18 @@ GameObject:
   m_PrefabParentObject: {fileID: 1294970609184330, guid: 1c227d5558f8c8942be321360d82be69,
     type: 2}
   m_PrefabInternal: {fileID: 1564785574}
+--- !u!114 &1362254114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1362254109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f34c9b5d8356195449a336adc961e181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAI: {fileID: 1522597849}
 --- !u!1001 &1368479977
 Prefab:
   m_ObjectHideFlags: 0
@@ -1231,7 +1348,8 @@ Prefab:
       propertyPath: m_RootOrder
       value: 16
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 54121293272124150, guid: b73f23f8f7347104c90f0db7ab9b9c66, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: b73f23f8f7347104c90f0db7ab9b9c66, type: 2}
   m_IsPrefabParent: 0
 --- !u!114 &1369430177 stripped
@@ -1314,7 +1432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe63ed74a1cfe1440b416bf61319da24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scaleAmount: {x: 0, y: 0, z: 0}
+  scaleAmount: {x: 5, y: 0, z: 0}
 --- !u!1001 &1422227657
 Prefab:
   m_ObjectHideFlags: 0
@@ -1468,6 +1586,15 @@ Prefab:
       propertyPath: m_Name
       value: Hugo
       objectReference: {fileID: 0}
+    - target: {fileID: 136838849649976880, guid: 1c227d5558f8c8942be321360d82be69,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1294970609184330, guid: 1c227d5558f8c8942be321360d82be69, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1c227d5558f8c8942be321360d82be69, type: 2}
   m_IsPrefabParent: 0
@@ -1575,7 +1702,7 @@ Prefab:
         type: 2}
       propertyPath: hugo
       value: 
-      objectReference: {fileID: 1522597849}
+      objectReference: {fileID: 1362254114}
     - target: {fileID: 23613865059769614, guid: cc3b57d5b5b7b6344a060ad84aa33a8d,
         type: 2}
       propertyPath: m_Materials.Array.data[0]
@@ -1629,7 +1756,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89e92aa7fe01d64f98f2041c8549970, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hugo: {fileID: 1522597849}
+  hugo: {fileID: 1362254114}
 --- !u!23 &1954832681
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1787,4 +1914,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe63ed74a1cfe1440b416bf61319da24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scaleAmount: {x: 0, y: 0, z: 0}
+  scaleAmount: {x: 0, y: 0, z: 10}
