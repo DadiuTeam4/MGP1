@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RhytmScript : MonoBehaviour {
+public class RhytmScript : MonoBehaviour, Touchable {
 	public Timing3 t3; 
 	private bool activate = false;
 	public float interval = 2.0f;
 	private MeshRenderer mR; 
+	private Collider collider;
 	private bool destroyed = false; 
 	public int lvl = 0; 
 	public int maxLvl; 
@@ -14,34 +15,13 @@ public class RhytmScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
+		collider = gameObject.GetComponent<Collider>();
 		mR = gameObject.GetComponent<MeshRenderer> (); 
 		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
-
-
-		if (Input.GetMouseButtonDown(0) && activate)
-		{
-			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-			RaycastHit hit;
-			if (Physics.Raycast(ray, out hit, 100f))
-			{
-				Debug.DrawRay(Camera.main.transform.position, hit.point);
-
-				mR.enabled = false;
-				destroyed = true;
-				lvl++; 
-
-				AkSoundEngine.SetState ("Mechanics_Rhytm", levels [lvl]);
-
-			}
-		}
-
-
 		if (0.0f < (t3.currentTime) - (interval) && (t3.currentTime) - (interval) < 0.11f) {
 			interval += t3.GetTargetTime();
 			activate = true;
@@ -60,10 +40,22 @@ public class RhytmScript : MonoBehaviour {
 			
 	}
 
+	public void Interact(RaycastHit hit){
+		if(activate){
+			mR.enabled = false;
+			collider.enabled = false;
+			destroyed = true;
+			lvl++; 
+
+			AkSoundEngine.SetState ("Mechanics_Rhytm", levels [lvl]);
+		}
+	}
+
 	public void Reset(){
 
 		destroyed = false;
 		mR.enabled = true;
+		collider.enabled = true;
 		activate = false;
 		gameObject.GetComponent<Renderer>().material.color = Color.white;
 		lvl = 0;
