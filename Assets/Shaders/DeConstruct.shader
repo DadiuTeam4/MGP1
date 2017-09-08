@@ -5,9 +5,9 @@ Shader "Unlit/DeConstruct"
 	Properties
 	{
 		_MainTex ("Texture", 2D) = "white" {}
-		_NumberTex ("Numbers", 2D) = "White" {}
-		_Intensity ("Intensity", Range(0, 1000)) = 1
-		_Scale ("Scale", Range(0, 1)) = 1
+		_NumberTex ("Numbers", 2D) = "black" {}
+		_Intensity ("Intensity", Range(0, 1000)) = 0
+		_Scale ("Scale", Range(0, 1)) = 0.25
 		_Gradiant ("Gradiant", Range(0, 1)) = 0
 	}
 	SubShader
@@ -52,7 +52,7 @@ Shader "Unlit/DeConstruct"
 				float4 worldPos = mul(unity_ObjectToWorld, v.vertex);
 				o.vertex = UnityObjectToClipPos(v.vertex);
 				o.vertex.x += sin(_Intensity*_Time)*_Scale * (v.vertex.y+0.5);
-				o.vertex.z += sin(_Intensity*_Time)*_Scale * (v.vertex.y + 0.5);
+				//o.vertex.z += sin(_Intensity*_Time)*_Scale * (v.vertex.y + 0.5);
 				o.uv = TRANSFORM_TEX(v.uv, _MainTex);
 				UNITY_TRANSFER_FOG(o,o.vertex);
 				
