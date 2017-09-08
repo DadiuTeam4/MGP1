@@ -37,5 +37,8 @@ sysinfo.txt
 .DS_Store
 
 ProjectSettings/ProjectVersion\.txt
+Assets/Scenes/Deconstructable.unity
 
 \.vscode/
+
+*.swp
