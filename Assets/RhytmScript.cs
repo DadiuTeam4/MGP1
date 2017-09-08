@@ -12,7 +12,7 @@ public class RhytmScript : MonoBehaviour, Touchable {
 	public int lvl = 0; 
 	public int maxLvl; 
 	private string[] levels = { "State1", "State2", "State3", "State4" };
-
+    //this has t
 	// Use this for initialization
 	void Start () {
 		collider = gameObject.GetComponent<Collider>();
