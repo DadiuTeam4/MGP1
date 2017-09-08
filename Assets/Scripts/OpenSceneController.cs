@@ -21,7 +21,6 @@ public class OpenSceneController : MonoBehaviour
     {
         if (Input.touchCount == 1)
         {
-			 Input.ResetInputAxes();
             SceneManager.LoadScene("Deconstructable", LoadSceneMode.Single);
         }
 
@@ -31,7 +30,6 @@ public class OpenSceneController : MonoBehaviour
     {
         while (isBlink)
         {
-			Debug.Log("Blink");
             text.text = "";
             yield return new WaitForSeconds(0.5f);
             text.text = "Touch to Start ";
