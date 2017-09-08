@@ -84,4 +84,9 @@ public class Destructable : MonoBehaviour, Holdable {
 	public void TouchEnded(){
 		hasBeenSetToDestroy = false;
 	}
+
+    public float getTimeAtFirstTrigger()
+    {
+        return timeAtFirstTrigger;
+    }
 }
