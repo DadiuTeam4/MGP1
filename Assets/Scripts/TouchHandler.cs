@@ -81,6 +81,9 @@ public class TouchHandler : MonoBehaviour
 					RaycastHit hit;
 
 					switch(touch.phase){
+						case TouchPhase.Stationary:
+							break;
+
 						case TouchPhase.Began:
 							touchTimes.Add(Time.time);
 							ray = Camera.main.ScreenPointToRay(new Vector3(touch.position.x, touch.position.y, 0));
@@ -93,6 +96,18 @@ public class TouchHandler : MonoBehaviour
 								}
 							}
 						break;
+
+						case TouchPhase.Moved:
+							ray = Camera.main.ScreenPointToRay(new Vector3(touch.position.x, touch.position.y, 0));
+							if (Physics.Raycast(ray, out hit)) 
+							{
+								if (hit.collider.gameObject.tag == "Touchable") 
+								{
+									Touchable obj = hit.collider.gameObject.GetComponent<Touchable>();
+									obj.Interact(hit);
+								}
+							}
+							break;
 
 						case TouchPhase.Ended:
 							ray = Camera.main.ScreenPointToRay(new Vector3(touch.position.x, touch.position.y, 0));
