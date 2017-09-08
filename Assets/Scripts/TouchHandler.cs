@@ -13,6 +13,8 @@ public class TouchHandler : MonoBehaviour
 
     public bool isInputEnabled = true;
 
+	private Holdable lastHoldable;
+
     void Update()
     {
         if (!isInputEnabled)
@@ -76,14 +78,10 @@ public class TouchHandler : MonoBehaviour
 				for (int i = 0; i < touchCount; i++)
 				{
 					Touch touch = Input.GetTouch(i);
-					Vector2 position = touch.position;
 					Ray ray;
 					RaycastHit hit;
 
 					switch(touch.phase){
-						case TouchPhase.Stationary:
-							break;
-
 						case TouchPhase.Began:
 							touchTimes.Add(Time.time);
 							ray = Camera.main.ScreenPointToRay(new Vector3(touch.position.x, touch.position.y, 0));
@@ -97,14 +95,25 @@ public class TouchHandler : MonoBehaviour
 							}
 						break;
 
+						case TouchPhase.Stationary:
+							break;
+
 						case TouchPhase.Moved:
+							touchTimes[i] = Time.time;
 							ray = Camera.main.ScreenPointToRay(new Vector3(touch.position.x, touch.position.y, 0));
 							if (Physics.Raycast(ray, out hit)) 
 							{
-								if (hit.collider.gameObject.tag == "Touchable") 
+								if (hit.collider.gameObject.tag == "Holdable") 
 								{
-									Touchable obj = hit.collider.gameObject.GetComponent<Touchable>();
-									obj.Interact(hit);
+									Holdable obj = hit.collider.gameObject.GetComponent<Holdable>();
+									if (obj != lastHoldable && lastHoldable != null)
+									{
+										lastHoldable.TouchEnded();
+									}
+								}
+								else if (lastHoldable != null) 
+								{
+									lastHoldable.TouchEnded();
 								}
 							}
 							break;
@@ -121,10 +130,11 @@ public class TouchHandler : MonoBehaviour
 							}
 
 							touchTimes.RemoveAt(i);
-						break;
+							break;
 					}
 
-					if(touch.phase != TouchPhase.Ended){
+					if(touch.phase != TouchPhase.Ended)
+					{
 						bool done = false;
 						ray = Camera.main.ScreenPointToRay(new Vector3(touch.position.x, touch.position.y, 0));
 						if (Physics.Raycast(ray, out hit)) 
@@ -133,15 +143,11 @@ public class TouchHandler : MonoBehaviour
 							{
 								Holdable obj = hit.collider.gameObject.GetComponent<Holdable>();
 								done = obj.Interact(hit, touchTimes[i]);
-							}
-
-							if (hit.collider.gameObject.tag == "Touchable") 
-							{
-								Touchable obj = hit.collider.gameObject.GetComponent<Touchable>();
-								obj.Interact(hit);
+								lastHoldable = obj;
 							}
 						}
-						if(done){
+						if (done)
+						{
 							touchTimes.RemoveAt(i);
 						}
 					}

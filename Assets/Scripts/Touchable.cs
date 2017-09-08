@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface Touchable {
+public interface Touchable 
+{
 	void Interact(RaycastHit hit);
 }
