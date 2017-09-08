@@ -6,10 +6,8 @@ public class DeConstrucShaderController : MonoBehaviour {
 
     Material material;
     Renderer rend;
-    public float num = 0;
-    public bool active;
-
-    [SerializeField]
+    float num = 0;
+    bool active;
     Destructable GO;
 
 	// Use this for initialization

@@ -30,7 +30,7 @@ public class Resurrect : MonoBehaviour {
 			resurrecting = true;
 		}
 
-		if(Time.time > timestamp){
+		if(Time.time > timestamp && resurrecting){
 			col.enabled = true;
 			ren.enabled = true;
 			navMeshObs.enabled = true;
