@@ -45,6 +45,17 @@ public class TouchHandler : MonoBehaviour
 					}
 				}
 			}
+
+			if(Input.GetMouseButtonUp(0)){
+				ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+				
+				if(Physics.Raycast(ray, out hit)){
+					if(hit.collider.gameObject.tag == "Holdable"){
+						Holdable obj = hit.collider.gameObject.GetComponent<Holdable>();
+						obj.TouchEnded();
+					}
+				}
+			}
 		}
 		else
 		{
