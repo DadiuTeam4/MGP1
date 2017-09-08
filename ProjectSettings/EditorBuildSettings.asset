@@ -6,8 +6,5 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/OpenScene.unity
-    guid: 7366b983a14f128418ad281569d1e95c
-  - enabled: 1
-    path: Assets/Scenes/Deconstructable.unity
-    guid: 576abf700fd39a44592786ce890e0582
+    path: Assets/Scenes/ProtoScene1.unity
+    guid: bda2a6560af2c4a2f8efca29f057b8c3
