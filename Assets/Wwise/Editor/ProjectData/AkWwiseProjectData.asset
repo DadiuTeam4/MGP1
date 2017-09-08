@@ -238,7 +238,10 @@ MonoBehaviour:
     m_lastTimePsrt1: -21348224
     m_lastTimePart2: -1999309155
     List: []
-  ExpandedItems: []
+  ExpandedItems:
+  - /MGP1
+  - /MGP1/Banks
+  - /MGP1/Banks/Default Work Unit
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
