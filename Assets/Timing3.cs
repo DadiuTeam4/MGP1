@@ -30,14 +30,11 @@ public class Timing3: MonoBehaviour {
 		return targetTime;
 	}
 	public void SetFail(bool someoneFail){
-		print ("someone failed");
 		fail = someoneFail;
 		foreach (RhytmScript obj in rhythmicObjects) {
 			obj.Reset ();
 		
 		}
-
-
 
 	}
 	public bool GetFail()
