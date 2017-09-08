@@ -1,26 +1,16 @@
 fileFormatVersion: 2
-guid: 5a073567913ba41e2bae6b774e252716
-timeCreated: 1504787138
+guid: 9c1919742d4a34a9da6a8e6ca3e857a6
+timeCreated: 1504876472
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
     100000: //RootNode
-    100002: geo_fishingNet
-    100004: geo_fishingNetBalls
-    100006: grp_geometry
     400000: //RootNode
-    400002: geo_fishingNet
-    400004: geo_fishingNetBalls
-    400006: grp_geometry
-    2300000: geo_fishingNet
-    2300002: geo_fishingNetBalls
-    3300000: geo_fishingNet
-    3300002: geo_fishingNetBalls
-    4300000: geo_fishingNet
-    4300002: geo_fishingNetBalls
-    6400000: geo_fishingNet
-    6400002: geo_fishingNetBalls
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: windmill_v001_PVH:geo_windmillStick
+    7400000: Take 001
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -51,7 +41,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
