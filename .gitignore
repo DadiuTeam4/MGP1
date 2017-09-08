@@ -39,3 +39,7 @@ sysinfo.txt
 ProjectSettings/ProjectVersion\.txt
 ProjectSettings/TagManager.asset
 Assets/Scenes/Deconstructable.unity
+
+\.vscode/
+
+*.swp

@@ -8,45 +8,57 @@ public class BridgeController : MonoBehaviour, Constructable
 {
     private int totalScore = 0;
     public GameObject barrier;
-    public GameObject bridge;
-	public TouchHandler touchHandler;
+    public TouchHandler touchHandler;
+    public GameObject BridgeLogicTextObject;
+    public NavMeshAgent player;
 
-	public NavMeshAgent player;
+    public Vector3 target = new Vector3(13f, 0.0f, -0.6f);
 
-	public Vector3 target = new Vector3(13f, 0.0f, -0.6f);
-
-    // Use this for initialization
-    void Start()
-    {
-
-    }
-
+    private bool isBridgeLogicFinished = false;
+    private bool isBridgeLogicActive = false;
     // Update is called once per frame
     void Update()
     {
-		if(player.remainingDistance < 0.1)
-		{
-			touchHandler.isInputEnabled = true;
-			barrier.SetActive(true);
-		}
+        if (player.remainingDistance < 0.1 && !isBridgeLogicFinished && isBridgeLogicActive)
+        {
+            touchHandler.isInputEnabled = true;
+            barrier.SetActive(true);
+            isBridgeLogicFinished = true;
+            isBridgeLogicActive = false;
+            BridgeLogicTextObject.GetComponent<Text>().text =  "Finish Bridge Logic";
+            StartCoroutine(DestroyText());
+        }
     }
 
     public void Construct()
     {
         totalScore++;
         Debug.Log("Score is " + totalScore);
-        if (totalScore == 3)
+        if (totalScore == 2)
         {
-            barrier.SetActive(false);
-            bridge.SetActive(true);
-			movePlayerWalkOverBridge();
+            player.isStopped = true;
+            touchHandler.isInputEnabled = false;
+            BridgeLogicTextObject.SetActive(true);
+            BridgeLogicTextObject.GetComponent<Text>().text =  "Now Start Bridge Logic";
+            gameObject.SetActive(true);
+            StartCoroutine(movePlayerWalkOverBridge());
         }
 
     }
 
-    private void movePlayerWalkOverBridge()
+    IEnumerator movePlayerWalkOverBridge()
     {
-		touchHandler.isInputEnabled = false;
-		player.SetDestination(target);
-	}
+        yield return new WaitForSeconds(3f);
+        barrier.SetActive(false);
+        player.SetDestination(target);
+        player.isStopped = false;
+        isBridgeLogicActive = true;
+    }
+
+    IEnumerator DestroyText()
+    {
+        yield return new WaitForSeconds(3f);
+        Destroy(BridgeLogicTextObject);
+    }
+
 }
