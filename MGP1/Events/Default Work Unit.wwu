@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{ECCF3AF7-9E18-4C08-92BA-578EF8D59B79}" SchemaVersion="80">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{ECCF3AF7-9E18-4C08-92BA-578EF8D59B79}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Mechanic_rhytmic" ID="{CDA8D59B-2BE1-4BF3-B1B7-0DE30E440372}">
+					<ChildrenList>
+						<Action Name="" ID="{C442B275-A8C1-4FC0-A874-4960137887C6}" ShortID="307108348">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mecahnic_rhytmic" ID="{CF8C44FE-19C6-4DF2-9218-FA2A894F174B}" WorkUnitID="{BC8F5984-CBEA-4B75-9EEF-7D04E2B20384}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
