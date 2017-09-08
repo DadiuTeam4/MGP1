@@ -8,9 +8,7 @@ public class BridgeController : MonoBehaviour, Constructable
 {
     private int totalScore = 0;
     public GameObject barrier;
-    public GameObject bridge;
     public TouchHandler touchHandler;
-
     public GameObject BridgeLogicTextObject;
     public NavMeshAgent player;
 
@@ -38,10 +36,11 @@ public class BridgeController : MonoBehaviour, Constructable
         Debug.Log("Score is " + totalScore);
         if (totalScore == 2)
         {
+            player.isStopped = true;
             touchHandler.isInputEnabled = false;
             BridgeLogicTextObject.SetActive(true);
             BridgeLogicTextObject.GetComponent<Text>().text =  "Now Start Bridge Logic";
-            bridge.SetActive(true);
+            gameObject.SetActive(true);
             StartCoroutine(movePlayerWalkOverBridge());
         }
 
@@ -52,6 +51,7 @@ public class BridgeController : MonoBehaviour, Constructable
         yield return new WaitForSeconds(3f);
         barrier.SetActive(false);
         player.SetDestination(target);
+        player.isStopped = false;
         isBridgeLogicActive = true;
     }
 
