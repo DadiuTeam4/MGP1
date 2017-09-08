@@ -333,7 +333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   t3: {fileID: 1815810944}
-  interval: 2
+  interval: 6
   lvl: 0
   maxLvl: 0
 --- !u!1 &430421188
@@ -431,7 +431,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   t3: {fileID: 1815810944}
-  interval: 7
+  interval: 8
   lvl: 0
   maxLvl: 0
 --- !u!1 &561471906
@@ -958,7 +958,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   t3: {fileID: 1815810944}
-  interval: 4
+  interval: 2
   lvl: 0
   maxLvl: 0
 --- !u!1 &1508490077
@@ -1572,6 +1572,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   t3: {fileID: 1815810944}
-  interval: 6
+  interval: 4
   lvl: 0
   maxLvl: 0
