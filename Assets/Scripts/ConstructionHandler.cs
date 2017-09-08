@@ -4,7 +4,7 @@ using UnityEngine;
 public class ConstructionHandler : MonoBehaviour {
 	public GameObject[] ones, twos, threes, fours, fives;
 
-	public BridgeController bridgeController;
+	
 	public void SendResource(int value){
 		int rnd;
 		switch(value){

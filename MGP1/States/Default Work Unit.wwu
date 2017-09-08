@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{84293648-188C-4843-BE28-B2EA53028374}" SchemaVersion="80">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{84293648-188C-4843-BE28-B2EA53028374}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Mechanics_Rhytm" ID="{E9E67A2E-1D27-46B4-8275-EABDCDFFD29E}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{8BE5625C-25AD-4A49-8418-B9E74307B73F}"/>
+						<State Name="State1" ID="{AF234126-EBAF-4936-81C2-F0A51E63918A}"/>
+						<State Name="State2" ID="{D0EB1181-C25A-4C5E-A722-9D71D9871160}"/>
+						<State Name="State3" ID="{5EDA5A5B-4101-40D2-AD61-4EA96F7ABEAE}"/>
+						<State Name="State4" ID="{9506DD0E-01B6-4B7F-8EDB-12AFA1AA5E24}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>
