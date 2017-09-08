@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 54964642547461062}
   m_Layer: 8
   m_Name: Four
-  m_TagString: Untagged
+  m_TagString: Touchable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,6 +111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   value: 4
   rig: {fileID: 54964642547461062}
+  WalkToDistance: 1
 --- !u!136 &136962338106997630
 CapsuleCollider:
   m_ObjectHideFlags: 1
