@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.AI;
 
 public class MoveTo : MonoBehaviour, Touchable {
-	public NavMeshAgent hugo;
+	public PlayerAI hugo;
 
 	public void Interact(RaycastHit hit){
-		hugo.SetDestination(hit.point);
+		hugo.playerAI.SetDestination(hit.point);
 	}
 }

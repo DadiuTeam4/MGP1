@@ -44,6 +44,12 @@ public class TouchHandler : MonoBehaviour
 						obj.Interact(hit, timeStamp);
 					}
 				}
+
+				if (hit.collider.gameObject.tag == "Touchable") 
+				{
+					Touchable obj = hit.collider.gameObject.GetComponent<Touchable>();
+					obj.Interact(hit);
+				}
 			}
 
 			if(Input.GetMouseButtonUp(0)){
@@ -112,6 +118,12 @@ public class TouchHandler : MonoBehaviour
 							{
 								Holdable obj = hit.collider.gameObject.GetComponent<Holdable>();
 								done = obj.Interact(hit, touchTimes[i]);
+							}
+
+							if (hit.collider.gameObject.tag == "Touchable") 
+							{
+								Touchable obj = hit.collider.gameObject.GetComponent<Touchable>();
+								obj.Interact(hit);
 							}
 						}
 						if(done){

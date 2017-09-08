@@ -34,7 +34,7 @@ public class Resurrect : MonoBehaviour {
 			col.enabled = true;
 			ren.enabled = true;
 			navMeshObs.enabled = true;
-			des.SetHasBeenDestroyed(false);
+			des.SetHasBeenSetToDestroy(false);
 			resurrecting = false;
 		}
 	}
