@@ -17,7 +17,7 @@ public class BridgeController : MonoBehaviour, Constructable
     // Update is called once per frame
     void Update()
     {
-        if (totalScore >= 2 && !isBridgeLogicFinished && isPlayerEnterTrigger())
+        if (totalScore >= 2 && !isBridgeLogicFinished && isPlayerCloseToBridge())
         {
             startBridgeLogic();
         }
@@ -25,7 +25,7 @@ public class BridgeController : MonoBehaviour, Constructable
         if (player.remainingDistance < 0.1 && !isBridgeLogicFinished && isBridgeLogicActive)
         {
             touchHandler.isInputEnabled = true;
-            barrier.SetActive(true);
+            //barrier.SetActive(true);
             isBridgeLogicFinished = true;
             isBridgeLogicActive = false;
             BridgeLogicTextObject.GetComponent<Text>().text = "Finish Bridge Logic";
@@ -33,7 +33,7 @@ public class BridgeController : MonoBehaviour, Constructable
         }
     }
 
-    private bool isPlayerEnterTrigger()
+    private bool isPlayerCloseToBridge()
     {
         if (Vector3.Distance(player.transform.position, new Vector3(3f, 0f, -0.5f)) < 2)
         {
