@@ -43,12 +43,12 @@ public class TouchHandler : MonoBehaviour
 						Holdable obj = hit.collider.gameObject.GetComponent<Holdable>();
 						obj.Interact(hit, timeStamp);
 					}
-				}
-
-				if (hit.collider.gameObject.tag == "Touchable") 
-				{
-					Touchable obj = hit.collider.gameObject.GetComponent<Touchable>();
-					obj.Interact(hit);
+					
+					if (hit.collider.gameObject.tag == "Touchable") 
+					{
+						Touchable obj = hit.collider.gameObject.GetComponent<Touchable>();
+						obj.Interact(hit);
+					}
 				}
 			}
 
