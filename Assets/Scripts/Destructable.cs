@@ -16,7 +16,7 @@ public class Destructable : MonoBehaviour, Holdable {
 	public int numberMaxAmount;
 	public int numberMinAmount;
 
-	private float timeAtFirstTrigger;
+	private float timeAtFirstTrigger = 0.0f;
 	private bool hasBeenSetToDestroy;
 
 	// Use this for initialization
@@ -81,11 +81,16 @@ public class Destructable : MonoBehaviour, Holdable {
 		hasBeenSetToDestroy = b;
 	}
 
-	public void TouchEnded(){
+    public bool GetHasBeenSetToDestroy()
+    {
+        return hasBeenSetToDestroy;
+    }
+
+    public void TouchEnded(){
 		hasBeenSetToDestroy = false;
 	}
 
-    public float getTimeAtFirstTrigger()
+    public float GetTimeAtFirstTrigger()
     {
         return timeAtFirstTrigger;
     }
