@@ -23,24 +23,22 @@ public class RhytmScript : MonoBehaviour {
 	void Update () {
 
 
+		if (Input.touchCount > 0) {
+			if (Input.GetTouch (0).phase == TouchPhase.Began && activate) {
+				Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+				RaycastHit hit;
+				if (Physics.Raycast (ray, out hit, 100f)) {
+					Debug.DrawRay (Camera.main.transform.position, hit.point);
 
-		if (Input.GetTouch(0) && activate)
-		{
-			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-			RaycastHit hit;
-			if (Physics.Raycast(ray, out hit, 100f))
-			{
-				Debug.DrawRay(Camera.main.transform.position, hit.point);
+					mR.enabled = false;
+					destroyed = true;
+					lvl++; 
 
-				mR.enabled = false;
-				destroyed = true;
-				lvl++; 
+					AkSoundEngine.SetState ("Mechanics_Rhytm", levels [lvl]);
 
-				AkSoundEngine.SetState ("Mechanics_Rhytm", levels [lvl]);
-
+				}
 			}
 		}
-
 
 		if (0.0f < (t3.currentTime) - (interval) && (t3.currentTime) - (interval) < 0.11f) {
 			interval += t3.GetTargetTime();
