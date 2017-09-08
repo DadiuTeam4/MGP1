@@ -84,7 +84,6 @@ public class TouchHandler : MonoBehaviour
 					switch(touch.phase){
 						case TouchPhase.Began:
 							touchTimes.Add(Time.time);
-							print("Began at " + Time.time);
 							ray = Camera.main.ScreenPointToRay(new Vector3(touch.position.x, touch.position.y, 0));
 							if (Physics.Raycast(ray, out hit)) 
 							{
@@ -97,12 +96,10 @@ public class TouchHandler : MonoBehaviour
 						break;
 
 						case TouchPhase.Stationary:
-							print("Stationary at " + Time.time);
 							break;
 
 						case TouchPhase.Moved:
 							touchTimes[i] = Time.time;
-							print("Moved at " + Time.time);
 							ray = Camera.main.ScreenPointToRay(new Vector3(touch.position.x, touch.position.y, 0));
 							if (Physics.Raycast(ray, out hit)) 
 							{
@@ -122,7 +119,6 @@ public class TouchHandler : MonoBehaviour
 							break;
 
 						case TouchPhase.Ended:
-							print("Ended at " + Time.time);	
 							ray = Camera.main.ScreenPointToRay(new Vector3(touch.position.x, touch.position.y, 0));
 							if (Physics.Raycast(ray, out hit)) 
 							{
