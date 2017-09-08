@@ -3,16 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TouchHandler : MonoBehaviour {
-	private List<float> touchTimes = new List<float>();
+public class TouchHandler : MonoBehaviour
+{
+    private List<float> touchTimes = new List<float>();
 
-	// Computer debugging Variables:
-	public bool testingOnComputer;
-	public float timeStamp;
+    // Computer debugging Variables:
+    public bool testingOnComputer;
+    public float timeStamp;
 
-	void Update () 
-	{
-		if(testingOnComputer){
+    public bool isInputEnabled = true;
+
+    void Update()
+    {
+        if (!isInputEnabled)
+        {
+            return;
+        }
+        if(testingOnComputer){
 			Ray ray;
 			RaycastHit hit;
 
@@ -35,6 +42,23 @@ public class TouchHandler : MonoBehaviour {
 					if(hit.collider.gameObject.tag == "Holdable"){
 						Holdable obj = hit.collider.gameObject.GetComponent<Holdable>();
 						obj.Interact(hit, timeStamp);
+					}
+				}
+
+				if (hit.collider.gameObject.tag == "Touchable") 
+				{
+					Touchable obj = hit.collider.gameObject.GetComponent<Touchable>();
+					obj.Interact(hit);
+				}
+			}
+
+			if(Input.GetMouseButtonUp(0)){
+				ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+				
+				if(Physics.Raycast(ray, out hit)){
+					if(hit.collider.gameObject.tag == "Holdable"){
+						Holdable obj = hit.collider.gameObject.GetComponent<Holdable>();
+						obj.TouchEnded();
 					}
 				}
 			}
@@ -95,6 +119,12 @@ public class TouchHandler : MonoBehaviour {
 								Holdable obj = hit.collider.gameObject.GetComponent<Holdable>();
 								done = obj.Interact(hit, touchTimes[i]);
 							}
+
+							if (hit.collider.gameObject.tag == "Touchable") 
+							{
+								Touchable obj = hit.collider.gameObject.GetComponent<Touchable>();
+								obj.Interact(hit);
+							}
 						}
 						if(done){
 							touchTimes.RemoveAt(i);
@@ -103,5 +133,5 @@ public class TouchHandler : MonoBehaviour {
 				}
 			}
 		}
-	}
+    }
 }

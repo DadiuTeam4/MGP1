@@ -10,14 +10,14 @@ public class Destructable : MonoBehaviour, Holdable {
 	// Array of spawnable number prefabs
 	public GameObject[] numbers;
 	public Transform hugo;
-	public float activateDistance = 3.0f;
+	public float WalkToDistance = 1.0f;
 	public ConstructionHandler constructionHandler;
 
 	public int numberMaxAmount;
 	public int numberMinAmount;
 
 	private float timeAtFirstTrigger;
-	private bool hasBeenDestroyed;
+	private bool hasBeenSetToDestroy;
 
 	// Use this for initialization
 	void Start () {
@@ -31,32 +31,36 @@ public class Destructable : MonoBehaviour, Holdable {
 
 
 	public bool Interact(RaycastHit hit, float time){
-		if(!hasBeenDestroyed){
+		if(!hasBeenSetToDestroy){
 			timeAtFirstTrigger = time;
-			hasBeenDestroyed = true;
+			hasBeenSetToDestroy = true;
+		}
+
+		if(Vector3.Distance(hugo.position, transform.position) > WalkToDistance){
+			hugo.gameObject.GetComponent<PlayerAI>().MoveInDirection((hit.point - hugo.position).normalized);
 		}
 
 		if((Time.time - timeAtFirstTrigger) > holdTime){
-			if(Vector3.Distance(hugo.position, transform.position) < activateDistance){
-				int amount = Random.Range(numberMinAmount, numberMaxAmount);
-				int rnd;
+			int amount = Random.Range(numberMinAmount, numberMaxAmount);
+			int rnd;
 
-
-				for(int i = 0; i < amount; i++){
-					if(i >= numbers.Length){
-						rnd = Random.Range(0, numbers.Length);
-						InstantiateNumber(rnd, hit.point);
-					} else {
-						InstantiateNumber(i, hit.point);
-					}
+			for(int i = 0; i < amount; i++){
+				if(i >= numbers.Length){
+					rnd = Random.Range(0, numbers.Length);
+					InstantiateNumber(rnd, hit.point);
+				} else {
+					InstantiateNumber(i, hit.point);
 				}
-
 			}
+
 			transform.gameObject.GetComponent<Collider>().enabled = false;
 			transform.gameObject.GetComponent<Renderer>().enabled = false;
 			transform.gameObject.GetComponent<NavMeshObstacle>().enabled = false;
+
+			Debug.Log(Time.time - timeAtFirstTrigger);
 			return true;
 		}
+
 		return false;
 	}
 
@@ -73,11 +77,11 @@ public class Destructable : MonoBehaviour, Holdable {
 		g.Burst();
 	}
 
-	public void SetHasBeenDestroyed(bool b){
-		hasBeenDestroyed = b;
+	public void SetHasBeenSetToDestroy(bool b){
+		hasBeenSetToDestroy = b;
 	}
 
 	public void TouchEnded(){
-		hasBeenDestroyed = false;
+		hasBeenSetToDestroy = false;
 	}
 }
