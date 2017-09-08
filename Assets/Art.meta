@@ -1,7 +1,19 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: e865a7e27476e462d8af0d0f2ef00754
+folderAsset: yes
+timeCreated: 1504862841
+=======
+<<<<<<< HEAD:Assets/Art.meta
 guid: 92e7271fd432b455daa82a0b0fa31899
 folderAsset: yes
 timeCreated: 1504776579
+=======
+guid: e865a7e27476e462d8af0d0f2ef00754
+folderAsset: yes
+timeCreated: 1504862841
+>>>>>>> rhythmMechanic:Assets/StreamingAssets/Audio/GeneratedSoundBanks/Android.meta
+>>>>>>> TouchHandling
 licenseType: Free
 DefaultImporter:
   userData: 

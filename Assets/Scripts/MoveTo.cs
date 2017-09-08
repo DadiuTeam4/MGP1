@@ -3,10 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class MoveTo : MonoBehaviour, Touchable {
-	public NavMeshAgent hugo;
+public class MoveTo : MonoBehaviour, Touchable 
+{
+	private PlayerAI hugo;
 
-	public void Interact(RaycastHit hit){
-		hugo.SetDestination(hit.point);
+	void Start() 
+	{
+		hugo = FindObjectOfType<PlayerAI>();
+	}
+	public void Interact(RaycastHit hit)
+	{
+		hugo.playerAI.SetDestination(hit.point);
 	}
 }

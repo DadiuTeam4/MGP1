@@ -2,7 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface Holdable {
+public interface Holdable 
+{
     // time is the when the touch began!
-	void Interact(RaycastHit hit, float time);
+	bool Interact(RaycastHit hit, float time);
+
+    void TouchEnded();
 }
