@@ -1,8 +1,12 @@
-﻿using System.Collections;
+﻿// Author: Itai Yavin
+// Contributor:
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class MoveToConstructable : MonoBehaviour, Constructable {
+	[Tooltip("End position")]
 	public Transform to;
 	public float speed;
 
@@ -14,17 +18,22 @@ public class MoveToConstructable : MonoBehaviour, Constructable {
 	private bool startMoving;
 
 	void Update () {
-		if(startMoving){
+		if(startMoving)
+		{
 			float step = speed * Time.deltaTime;
-			if(!moveTarget){
+			if(!moveTarget)
+			{
 				transform.position = Vector3.MoveTowards(transform.position, to.position, step);		
-			} else {
+			} 
+			else 
+			{
 				target.transform.position = Vector3.MoveTowards(target.transform.position, to.position, step);
 			}
 		}
 	}
 
-	public void Construct(){
+	public void Construct()
+	{
 		startMoving = true;
 	}
 }

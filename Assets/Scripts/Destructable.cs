@@ -1,24 +1,36 @@
-﻿using System.Collections;
+﻿// Author: Itai Yavin
+// Contributor:
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class Destructable : MonoBehaviour, Holdable 
 {
+	[Tooltip("The length of time, of a touch for deconstruction. In seconds")]
 	public float holdTime;
+
+	[Header("Random Ranges")]
+	[Tooltip("The minimum random speed for which numbers are given")]
 	public float minimumSpeed;
+	[Tooltip("The maximum random speed for which numbers are given")]
 	public float maximumSpeed;
-	// Array of spawnable number prefabs
+	[Tooltip("The minimum random amount of numbers spawned")]
+	public int numberMaxAmount;
+	[Tooltip("The maximum random amount of numbers spawned")]
+	public int numberMinAmount;
+
+	[Header("Prefab and object references")]
 	public GameObject[] numbers;
 	public Transform hugo;
 	public ConstructionHandler constructionHandler;
 
-	public int numberMaxAmount;
-	public int numberMinAmount;
-
-	private float timeAtFirstTrigger = 0.0f;
+	private float timeAtFirstTrigger = 0.0f; // Time at first touch
 	private bool hasBeenSetToDestroy;
 
+	// Keeps track on whether the object is set for destruction, and how long it has been since first touch.
+	// Upon deconstruction it spawns a random amount of numbers.
 	public bool Interact(RaycastHit hit, float time)
 	{
 		if (!hasBeenSetToDestroy)
@@ -56,6 +68,8 @@ public class Destructable : MonoBehaviour, Holdable
 		return false;
 	}
 
+	// Instantiates a number and set its direction and speed to random values.
+	// Lastly it also calls the number burst function - See number class for description.
 	public void InstantiateNumber(int numberID, Vector3 position)
 	{
 		Number g;
@@ -70,19 +84,21 @@ public class Destructable : MonoBehaviour, Holdable
 		g.Burst();
 	}
 
+    public void TouchEnded(){
+		hasBeenSetToDestroy = false;
+	}
+
+	// Set functions
 	public void SetHasBeenSetToDestroy(bool b)
 	{
 		hasBeenSetToDestroy = b;
 	}
 
+	// Get Functions
     public bool GetHasBeenSetToDestroy()
     {
         return hasBeenSetToDestroy;
     }
-
-    public void TouchEnded(){
-		hasBeenSetToDestroy = false;
-	}
 
     public float GetTimeAtFirstTrigger()
     {

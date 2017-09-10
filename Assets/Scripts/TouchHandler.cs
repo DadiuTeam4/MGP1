@@ -1,16 +1,20 @@
-﻿using System.Collections;
+﻿// Author: Mathias Hedelund
+// Contributor: Itai Yavin
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class TouchHandler : MonoBehaviour
 {
+	// This list should contain as many floats as there are touches
+	// The list is meant to record the time that each touch started.
     private List<float> touchTimes = new List<float>();
 
     // Computer debugging Variables:
-    public bool testingOnComputer;
-    public float timeStamp;
-
+    public bool testingOnComputer; // ENABLES MOUSE INPUT - DISABLES TOUCH INPUT
+    public float timeStamp; // Time at mouse click, used for mouse input.
     public bool isInputEnabled = true;
 
 	private Holdable lastHoldable;
@@ -21,27 +25,34 @@ public class TouchHandler : MonoBehaviour
         {
             return;
         }
-        if(testingOnComputer){
+        if(testingOnComputer)
+		{
 			Ray ray;
 			RaycastHit hit;
 
-			if(Input.GetMouseButtonDown(0)){
+			if(Input.GetMouseButtonDown(0))
+			{
 				ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 				timeStamp = Time.time;
 
-				if(Physics.Raycast(ray, out hit)){
-					if(hit.collider.gameObject.tag == "Touchable"){
+				if(Physics.Raycast(ray, out hit))
+				{
+					if(hit.collider.gameObject.tag == "Touchable")
+					{
 						Touchable obj = hit.collider.gameObject.GetComponent<Touchable>();
 						obj.Interact(hit);
 					}
 				}
 			}
 
-			if(Input.GetMouseButton(0)){
+			if(Input.GetMouseButton(0))
+			{
 				ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 				
-				if(Physics.Raycast(ray, out hit)){
-					if(hit.collider.gameObject.tag == "Holdable"){
+				if(Physics.Raycast(ray, out hit))
+				{
+					if(hit.collider.gameObject.tag == "Holdable")
+					{
 						Holdable obj = hit.collider.gameObject.GetComponent<Holdable>();
 						obj.Interact(hit, timeStamp);
 					}
@@ -54,11 +65,14 @@ public class TouchHandler : MonoBehaviour
 				}
 			}
 
-			if(Input.GetMouseButtonUp(0)){
+			if(Input.GetMouseButtonUp(0))
+			{
 				ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 				
-				if(Physics.Raycast(ray, out hit)){
-					if(hit.collider.gameObject.tag == "Holdable"){
+				if(Physics.Raycast(ray, out hit))
+				{
+					if(hit.collider.gameObject.tag == "Holdable")
+					{
 						Holdable obj = hit.collider.gameObject.GetComponent<Holdable>();
 						obj.TouchEnded();
 					}
@@ -81,6 +95,11 @@ public class TouchHandler : MonoBehaviour
 					Ray ray;
 					RaycastHit hit;
 
+					// A Unity Touch goes through several phases through its lifetime
+					// TouchPhase.Began 		- On touch beginning
+					// TouchPhase.Stationaty 	- Finger has not moved since last check
+					// TouchPhase.Moved 		- Finger moved since last check
+					// TouchPhase.Ended			- On touch end
 					switch(touch.phase){
 						case TouchPhase.Began:
 							touchTimes.Add(Time.time);
@@ -93,7 +112,7 @@ public class TouchHandler : MonoBehaviour
 									obj.Interact(hit);
 								}
 							}
-						break;
+							break;
 
 						case TouchPhase.Stationary:
 							break;
@@ -133,6 +152,8 @@ public class TouchHandler : MonoBehaviour
 							break;
 					}
 
+					// This was added to check raycast between touch phases, whether the touch is moving or not.
+					// This could possibly be removed and implemented into the Switch Case.
 					if(touch.phase != TouchPhase.Ended)
 					{
 						bool done = false;
@@ -146,10 +167,10 @@ public class TouchHandler : MonoBehaviour
 								lastHoldable = obj;
 							}
 						}
-						if (done)
+						/*if (done) - This line created errors since an entry could end up triggering two removes, thus triggering an "Array Index is Out of Bounds" error.
 						{
-							touchTimes.RemoveAt(i);
-						}
+							touchTimes.RemoveAt(i); 
+						}*/
 					}
 				}
 			}
