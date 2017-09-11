@@ -38,11 +38,11 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 11
+  serializedVersion: 9
   m_GIWorkflowMode: 0
   m_GISettings:
     serializedVersion: 2
@@ -54,7 +54,7 @@ LightmapSettings:
     m_EnableBakedLightmaps: 1
     m_EnableRealtimeLightmaps: 1
   m_LightmapEditorSettings:
-    serializedVersion: 9
+    serializedVersion: 8
     m_Resolution: 2
     m_BakeResolution: 40
     m_TextureWidth: 1024
@@ -87,7 +87,7 @@ LightmapSettings:
     m_PVRFilteringAtrousNormalSigma: 1
     m_PVRFilteringAtrousPositionSigma: 1
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_ShadowMaskMode: 2
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -175,10 +175,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 45294153}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ceab1777267343f5a4c21499f2516e8, type: 3}
+  m_Script: {fileID: 11500000, guid: 02a3973a35a8a7544a84e17fc57e8d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  step: 0.25
+  step: 0
   endPosition: {fileID: 779760585}
 --- !u!1001 &56836856
 Prefab:
@@ -1226,6 +1226,8 @@ MonoBehaviour:
   holdTime: 1
   minimumSpeed: 4
   maximumSpeed: 6
+  numberMaxAmount: 4
+  numberMinAmount: 6
   numbers:
   - {fileID: 1219394862030484, guid: 81113dfc317179944823a0b2082344a4, type: 2}
   - {fileID: 1886765362547854, guid: c5bb78e31abb02b4e9d550b8800d5967, type: 2}
@@ -1233,10 +1235,7 @@ MonoBehaviour:
   - {fileID: 1868675250962926, guid: a3e28fa7e3b8deb43a2dfad257912956, type: 2}
   - {fileID: 1417154901802668, guid: af7ed20caa141a042a5464c3528a3953, type: 2}
   hugo: {fileID: 1522597855}
-  WalkToDistance: 1
   constructionHandler: {fileID: 1369430177}
-  numberMaxAmount: 4
-  numberMinAmount: 6
 --- !u!1 &690884273 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100004, guid: 5a073567913ba41e2bae6b774e252716, type: 3}
@@ -1886,6 +1885,8 @@ MonoBehaviour:
   holdTime: 1
   minimumSpeed: 4
   maximumSpeed: 6
+  numberMaxAmount: 4
+  numberMinAmount: 6
   numbers:
   - {fileID: 1219394862030484, guid: 81113dfc317179944823a0b2082344a4, type: 2}
   - {fileID: 1886765362547854, guid: c5bb78e31abb02b4e9d550b8800d5967, type: 2}
@@ -1893,10 +1894,7 @@ MonoBehaviour:
   - {fileID: 1868675250962926, guid: a3e28fa7e3b8deb43a2dfad257912956, type: 2}
   - {fileID: 1417154901802668, guid: af7ed20caa141a042a5464c3528a3953, type: 2}
   hugo: {fileID: 1522597855}
-  WalkToDistance: 1
   constructionHandler: {fileID: 1369430177}
-  numberMaxAmount: 4
-  numberMinAmount: 6
 --- !u!114 &1013125175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2153,20 +2151,6 @@ Light:
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_FalloffTable:
-    m_Table[0]: 0
-    m_Table[1]: 0
-    m_Table[2]: 0
-    m_Table[3]: 0
-    m_Table[4]: 0
-    m_Table[5]: 0
-    m_Table[6]: 0
-    m_Table[7]: 0
-    m_Table[8]: 0
-    m_Table[9]: 0
-    m_Table[10]: 0
-    m_Table[11]: 0
-    m_Table[12]: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
@@ -2400,6 +2384,8 @@ MonoBehaviour:
   holdTime: 1
   minimumSpeed: 4
   maximumSpeed: 6
+  numberMaxAmount: 4
+  numberMinAmount: 6
   numbers:
   - {fileID: 1219394862030484, guid: 81113dfc317179944823a0b2082344a4, type: 2}
   - {fileID: 1886765362547854, guid: c5bb78e31abb02b4e9d550b8800d5967, type: 2}
@@ -2407,10 +2393,7 @@ MonoBehaviour:
   - {fileID: 1868675250962926, guid: a3e28fa7e3b8deb43a2dfad257912956, type: 2}
   - {fileID: 1417154901802668, guid: af7ed20caa141a042a5464c3528a3953, type: 2}
   hugo: {fileID: 1522597855}
-  WalkToDistance: 1
   constructionHandler: {fileID: 1369430177}
-  numberMaxAmount: 4
-  numberMinAmount: 6
 --- !u!114 &1235259331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3384,7 +3367,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89e92aa7fe01d64f98f2041c8549970, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hugo: {fileID: 0}
 --- !u!23 &1601078474
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3782,6 +3764,8 @@ MonoBehaviour:
   holdTime: 1
   minimumSpeed: 4
   maximumSpeed: 6
+  numberMaxAmount: 4
+  numberMinAmount: 6
   numbers:
   - {fileID: 1219394862030484, guid: 81113dfc317179944823a0b2082344a4, type: 2}
   - {fileID: 1886765362547854, guid: c5bb78e31abb02b4e9d550b8800d5967, type: 2}
@@ -3789,10 +3773,7 @@ MonoBehaviour:
   - {fileID: 1868675250962926, guid: a3e28fa7e3b8deb43a2dfad257912956, type: 2}
   - {fileID: 1417154901802668, guid: af7ed20caa141a042a5464c3528a3953, type: 2}
   hugo: {fileID: 1522597855}
-  WalkToDistance: 1
   constructionHandler: {fileID: 1369430177}
-  numberMaxAmount: 4
-  numberMinAmount: 6
 --- !u!136 &1680046525
 CapsuleCollider:
   m_ObjectHideFlags: 0

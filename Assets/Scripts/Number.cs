@@ -18,9 +18,9 @@ public class Number : MonoBehaviour, Touchable
 	private Vector3 burstDirection; 					// The direction which the object will move upon burst - See function Burst()
 	private float burstSpeed; 							// The speed which the object will move upon burst - See function Burst()
 	private ConstructionHandler constructionHandler;
-	private PlayerAI hugo;
+	public PlayerAI hugo;
 
-	void Start() 
+	void Awake() 
 	{
 		rig = gameObject.GetComponent<Rigidbody>();
 		hugo = FindObjectOfType<PlayerAI>();	
@@ -29,6 +29,7 @@ public class Number : MonoBehaviour, Touchable
 	// Will push the object in a single burst of force.
 	public void Burst()
 	{
+		Debug.Assert(rig != null, "RIGIDBODY MISSING ON: " + gameObject.name);
 		rig.AddForce(burstDirection * burstSpeed);
 	}
 
