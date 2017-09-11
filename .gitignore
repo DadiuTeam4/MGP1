@@ -35,3 +35,6 @@ sysinfo.txt
 
 # macOS custom folder attributes file
 .DS_Store
+
+ProjectSettings/ProjectVersion\.txt
+ProjectSettings/TagManager.asset
