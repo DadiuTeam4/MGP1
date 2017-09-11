@@ -17,6 +17,7 @@ public class TouchHandler : MonoBehaviour
     public float timeStamp; // Time at mouse click, used for mouse input.
     public bool isInputEnabled = true;
 
+	private int layerMask = ~(1 << 9); // Ignored raycast layers
 	private Holdable lastHoldable;
 
     void Update()
@@ -35,7 +36,7 @@ public class TouchHandler : MonoBehaviour
 				ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 				timeStamp = Time.time;
 
-				if(Physics.Raycast(ray, out hit))
+				if(Physics.Raycast(ray, out hit, 100, layerMask))
 				{
 					if(hit.collider.gameObject.tag == "Touchable")
 					{
@@ -49,7 +50,7 @@ public class TouchHandler : MonoBehaviour
 			{
 				ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 				
-				if(Physics.Raycast(ray, out hit))
+				if(Physics.Raycast(ray, out hit, 100, layerMask))
 				{
 					if(hit.collider.gameObject.tag == "Holdable")
 					{
@@ -69,7 +70,7 @@ public class TouchHandler : MonoBehaviour
 			{
 				ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 				
-				if(Physics.Raycast(ray, out hit))
+				if(Physics.Raycast(ray, out hit, 100, layerMask))
 				{
 					if(hit.collider.gameObject.tag == "Holdable")
 					{
@@ -104,7 +105,7 @@ public class TouchHandler : MonoBehaviour
 						case TouchPhase.Began:
 							touchTimes.Add(Time.time);
 							ray = Camera.main.ScreenPointToRay(new Vector3(touch.position.x, touch.position.y, 0));
-							if (Physics.Raycast(ray, out hit)) 
+							if (Physics.Raycast(ray, out hit, 100, layerMask)) 
 							{
 								if (hit.collider.gameObject.tag == "Touchable") 
 								{
@@ -120,7 +121,7 @@ public class TouchHandler : MonoBehaviour
 						case TouchPhase.Moved:
 							touchTimes[i] = Time.time;
 							ray = Camera.main.ScreenPointToRay(new Vector3(touch.position.x, touch.position.y, 0));
-							if (Physics.Raycast(ray, out hit)) 
+							if (Physics.Raycast(ray, out hit, 100, layerMask)) 
 							{
 								if (hit.collider.gameObject.tag == "Holdable") 
 								{
@@ -139,7 +140,7 @@ public class TouchHandler : MonoBehaviour
 
 						case TouchPhase.Ended:
 							ray = Camera.main.ScreenPointToRay(new Vector3(touch.position.x, touch.position.y, 0));
-							if (Physics.Raycast(ray, out hit)) 
+							if (Physics.Raycast(ray, out hit, 100, layerMask)) 
 							{
 								if (hit.collider.gameObject.tag == "Holdable") 
 								{
@@ -158,7 +159,7 @@ public class TouchHandler : MonoBehaviour
 					{
 						bool done = false;
 						ray = Camera.main.ScreenPointToRay(new Vector3(touch.position.x, touch.position.y, 0));
-						if (Physics.Raycast(ray, out hit)) 
+						if (Physics.Raycast(ray, out hit, 100, layerMask)) 
 						{
 							if (hit.collider.gameObject.tag == "Holdable") 
 							{
