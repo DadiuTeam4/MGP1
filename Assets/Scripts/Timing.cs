@@ -11,6 +11,7 @@ public class Timing: MonoBehaviour {
 
 	[Tooltip("Counter of time")]
 	public float currentTime = 0.0f;//how much time has passed since last time
+	public float sinOfTime;
 	[Tooltip("All the rythmic objects need to be here")]
 	public Rhythm[] rhythmicObjects;//array of all the objects that follow the beat
 	[Tooltip("maximum number of objects, used to reset the turn")]
@@ -20,6 +21,8 @@ public class Timing: MonoBehaviour {
 	private string[] levels = { "State1", "State2", "State3", "State4" };//what the songs are
 	[SerializeField]
 	private int turn;
+	private bool incremented = true;
+	private int oscillationIndex = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -28,12 +31,42 @@ public class Timing: MonoBehaviour {
 			obj.SetMyTurn(counter);//set their turn, they need to be destroyed in the correct order
 			counter++;
 		}
+		Oscillation osc = rhythmicObjects[oscillationIndex].GetComponentInParent<Oscillation>();
+		osc.Activate();
 		
 	}
 	
 	void Update(){
 		//keep track of time
 		currentTime += Time.deltaTime;
+		sinOfTime = Mathf.Sin((currentTime)  * Mathf.PI);
+	
+		if(currentTime > 2)//waiting for two secs in order to get into sync
+		{
+			if (!incremented && sinOfTime < -0.8) 
+			{
+				print("Time: " + currentTime);
+				print("Sin: " + sinOfTime);
+				Oscillation obj = rhythmicObjects[oscillationIndex].GetComponentInParent<Oscillation>();
+				obj.Deactivate();
+				if (oscillationIndex < maxObjects - 1) 
+				{
+					oscillationIndex++;
+				}
+				else 
+				{
+					oscillationIndex = 0;
+				}
+				obj = rhythmicObjects[oscillationIndex].GetComponentInParent<Oscillation>();
+				obj.Activate();
+				print("Activated " + oscillationIndex);
+				incremented = true;
+			}
+			else if(incremented && sinOfTime > -0.8) 
+			{
+				incremented = false;
+			}
+		}
 	}
 
 	//Getter for how much time the loop takes
@@ -55,8 +88,10 @@ public class Timing: MonoBehaviour {
 	public void ChangeSong(){
 		
 		whichSongToPlay++;//move the index
-	
-		AkSoundEngine.SetState ("Mechanics_Rhytm", levels [whichSongToPlay]);//which song to play
+		if (whichSongToPlay < levels.Length) 
+		{
+			AkSoundEngine.SetState ("Mechanics_Rhytm", levels [whichSongToPlay]);//which song to play
+		}
 
 	}
 	//If the right rhytmic object is destroyed this is called

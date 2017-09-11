@@ -11,7 +11,7 @@ public class Rhythm : MonoBehaviour, Touchable {
 	public Timing t3; //reference to the timer
 	[Tooltip("At which beat in a loop I am activated")]
 	public float interval = 2.0f;// Where my beat is
-	private bool activate = false;// am I clickable or not
+	public bool activate = false;// am I clickable or not
 	private MeshRenderer mR; //in order to turn off the mesh
 	private Collider collider;//in order to turn off the collider
 	private bool destroyed = false; // am I destroyed
@@ -28,14 +28,14 @@ public class Rhythm : MonoBehaviour, Touchable {
 	void Update () {
 
 		//if I am on beat
-		if (0.0f < (t3.currentTime) - (interval) && (t3.currentTime) - (interval) < 0.11f) {
+		if (0.0f < (t3.currentTime) - (interval) && (t3.currentTime) - (interval) < 0.3f) {
 			interval += t3.GetTargetTime();//move my interval to the next loop 
 			activate = true;//Activate me
 			gameObject.GetComponent<Renderer>().material.color = Color.green;//make it visible that I am active, turn me green
 
 		} 
 
-		if(t3.currentTime - interval + t3.GetTargetTime() > 0.3f )//if more than 0.3 sec has passed
+		if(t3.currentTime - interval + t3.GetTargetTime() > 0.6f )//if more than 0.3 sec has passed
 		{
 			if (!destroyed && activate) {//and I am not destroyed but I was active
 				t3.SetFail (true);//I failed
