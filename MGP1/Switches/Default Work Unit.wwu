@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B6F95636-171C-45AE-939B-0D051C33F56A}" SchemaVersion="80">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{B6F95636-171C-45AE-939B-0D051C33F56A}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Mechanic_rhythmic" ID="{86F9B4A7-61F6-4D19-BA10-95CD333F5F5D}">
+					<ChildrenList>
+						<Switch Name="Stage1" ID="{C2187778-E34C-4AAD-82C1-CB682F16787E}"/>
+						<Switch Name="Stage2" ID="{D6EAE85F-E6B7-48E3-88C7-6EB81669ABDD}"/>
+						<Switch Name="Stage3" ID="{76545128-E2B9-450F-98B1-28B3FDBF650A}"/>
+						<Switch Name="Stage4" ID="{B1E8C946-33EA-465D-93DB-DF6F74E417FC}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

@@ -35,3 +35,10 @@ sysinfo.txt
 
 # macOS custom folder attributes file
 .DS_Store
+
+ProjectSettings/ProjectVersion\.txt
+Assets/Scenes/Deconstructable.unity
+
+\.vscode/
+
+*.swp
