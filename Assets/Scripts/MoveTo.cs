@@ -10,7 +10,11 @@ public class MoveTo : MonoBehaviour, Touchable
 {
 	private PlayerAI hugo;
 
-	void Start() 
+    [SerializeField]
+    private ParticleSystem particle;
+
+
+    void Start() 
 	{
 		hugo = FindObjectOfType<PlayerAI>();
 	}
@@ -18,4 +22,10 @@ public class MoveTo : MonoBehaviour, Touchable
 	{
 		hugo.playerAI.SetDestination(hit.point);
 	}
+
+    public void ParticleEffect (RaycastHit hit)
+    {
+        Instantiate(particle, hit.point, Quaternion.identity);
+    }
+
 }
