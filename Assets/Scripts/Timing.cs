@@ -33,21 +33,20 @@ public class Timing: MonoBehaviour {
 			counter++;
 		}
 		Oscillation osc = rhythmicObjects[oscillationIndex].GetComponentInParent<Oscillation>();
-		osc.Activate();//move
-		
+		osc.Activate(); // move
 	}
 	
 	void Update()
 	{
 		//keep track of time
 		currentTime += Time.deltaTime;
-		sinOfTime = Mathf.Sin((currentTime)  * Mathf.PI);
+		sinOfTime = Mathf.Sin((currentTime) * Mathf.PI);
 
 		//waiting for two secs in order to get into sync
 		if(currentTime > 2)
 		{
 			//change whose turn it is
-			if (!incremented && sinOfTime < -0.8) 
+			if (!incremented && sinOfTime < -0.8)
 			{
 				Oscillation obj = rhythmicObjects[oscillationIndex].GetComponentInParent<Oscillation>();
 				obj.Deactivate();
