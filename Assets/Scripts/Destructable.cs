@@ -61,7 +61,6 @@ public class Destructable : MonoBehaviour, Holdable
 			transform.gameObject.GetComponent<Renderer>().enabled = false;
 			transform.gameObject.GetComponent<NavMeshObstacle>().enabled = false;
 
-			Debug.Log(Time.time - timeAtFirstTrigger);
 			return true;
 		}
 
