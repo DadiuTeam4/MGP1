@@ -1,19 +1,21 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
+﻿
+//Author: Tilemachos
 //Manages the behaviour of all rythm objects
 //when you click on something on time it vanishes but it is not destroyed
 
-public class RhytmScript : MonoBehaviour, Touchable {
-	public Timing3 t3; //reference to the timer
-	private bool activate = false;// am I clickable or not
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Rhythm : MonoBehaviour, Touchable {
+	public Timing t3; //reference to the timer
+	[Tooltip("At which beat in a loop I am activated")]
 	public float interval = 2.0f;// Where my beat is
+	private bool activate = false;// am I clickable or not
 	private MeshRenderer mR; //in order to turn off the mesh
 	private Collider collider;//in order to turn off the collider
 	private bool destroyed = false; // am I destroyed
-	public int lvl = 0; //need fixing, needs to be on timing3
-	private string[] levels = { "State1", "State2", "State3", "State4" };//what the songs are
+	private int myTurn = 0;//is it my turn to be destroyed?
 
 	// Use this for initialization
 	void Start () {
@@ -43,12 +45,13 @@ public class RhytmScript : MonoBehaviour, Touchable {
 
 //Manages interaction with the objects 
 	public void Interact(RaycastHit hit){
-		if(activate){//if I am active and got hit
-			//turn everything off and declare that I am now destroyed, also change song
+		if(activate && myTurn == t3.GetTurn()){//if I am active and got hit
+			//turn everything off and declare that I am now destroyed, also change song and whose turn it is
 			mR.enabled = false;
 			collider.enabled = false;
 			destroyed = true;
 			t3.ChangeSong();
+			t3.ChangeTurn();
 		}
 	}
 
@@ -61,6 +64,10 @@ public class RhytmScript : MonoBehaviour, Touchable {
 		activate = false;
 		gameObject.GetComponent<Renderer>().material.color = Color.white;
 
+	}
+
+	public void SetMyTurn(int whatIsMyTurn){
+		myTurn = whatIsMyTurn;
 	}
 
 
