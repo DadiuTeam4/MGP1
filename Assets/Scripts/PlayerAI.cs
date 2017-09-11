@@ -1,3 +1,6 @@
+// Author: Itai Yavin
+// Contributor:
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,7 +14,8 @@ public class PlayerAI : MonoBehaviour {
         playerAI = gameObject.GetComponent<NavMeshAgent>();
     }
 
-	public void MoveInDirection(Vector3 direction){
+	public void MoveInDirection(Vector3 direction)
+    {
 		playerAI.Move(direction * 0.05f);
         playerAI.ResetPath();
 	}
