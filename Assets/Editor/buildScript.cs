@@ -3,20 +3,18 @@ using System.Collections;
 using UnityEditor;
 using System;
 using System.Collections.Generic;
- 
-public class BuildScript : MonoBehaviour {
- 
-static void PerformBuild ()
+
+public class BuildScript : MonoBehaviour
 {
-
-BuildPlayerOptions buildPlayerOptions = new BuildPlayerOptions();
-buildPlayerOptions.scenes = new[] {"Assets/Scenes/ProtoScene1.unity", "Assets/Scenes/ProtoScene2.unity"};
-buildPlayerOptions.locationPathName = "Android";
-buildPlayerOptions.target = BuildTarget.Android;
-buildPlayerOptions.APP_NAME = "Drengen der talte alting";
-buildPlayerOptions.TARGET_DIR = "Builds/";
-buildPlayerOptions.options = BuildOptions.None;
-
-BuildPipeline.BuildPlayer(buildPlayerOptions);
-
+    [MenuItem("MyTools/Jenkins build test")]
+    public static void PerformBuild()
+    {
+        Debug.Log("run the menu item");
+        BuildPlayerOptions buildPlayerOptions = new BuildPlayerOptions();
+        buildPlayerOptions.scenes = new[] { "Assets/Scenes/ProtoScene1.unity" };
+        buildPlayerOptions.locationPathName = "Builds/gameTest.apk";
+        buildPlayerOptions.target = BuildTarget.Android;
+        buildPlayerOptions.options = BuildOptions.None;
+        BuildPipeline.BuildPlayer(buildPlayerOptions);
+    }
 }
