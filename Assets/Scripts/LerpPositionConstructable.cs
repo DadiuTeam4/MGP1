@@ -1,3 +1,6 @@
+// Author: Itai Yavin
+// Contributor:
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,7 +12,11 @@ public class LerpPositionConstructable : MonoBehaviour, Constructable {
 
 	[Tooltip("The position that the object will have at T = 1. The object will start at the position you place it at, which will be T = 0")]
 	public Transform endPosition;
-	private float t = 0.0f;
+
+	// Variable position within lerp, is always between 0, and 1.
+	// 0 = star position
+	// 1 = end position
+	private float t = 0.0f; 
 	private Vector3 startPosition;
 
 	void Start(){
