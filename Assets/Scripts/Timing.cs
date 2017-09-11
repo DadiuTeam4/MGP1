@@ -20,9 +20,9 @@ public class Timing: MonoBehaviour {
 	private float targetTime = 8f;//end of a beat-loop
 	private string[] levels = { "State1", "State2", "State3", "State4" };//what the songs are
 	[SerializeField]
-	private int turn;
-	private bool incremented = true;
-	private int oscillationIndex = 0;
+	private int turn;//whose turn is it
+	private bool incremented = true;//bool that describes if I need to change who jumps
+	private int oscillationIndex = 0;//who jumps
 
 	// Use this for initialization
 	void Start () {
@@ -32,7 +32,7 @@ public class Timing: MonoBehaviour {
 			counter++;
 		}
 		Oscillation osc = rhythmicObjects[oscillationIndex].GetComponentInParent<Oscillation>();
-		osc.Activate();
+		osc.Activate();//move
 		
 	}
 	
@@ -40,13 +40,13 @@ public class Timing: MonoBehaviour {
 		//keep track of time
 		currentTime += Time.deltaTime;
 		sinOfTime = Mathf.Sin((currentTime)  * Mathf.PI);
-	
-		if(currentTime > 2)//waiting for two secs in order to get into sync
+
+		//waiting for two secs in order to get into sync
+		if(currentTime > 2)
 		{
+			//change whose turn it is
 			if (!incremented && sinOfTime < -0.8) 
 			{
-				print("Time: " + currentTime);
-				print("Sin: " + sinOfTime);
 				Oscillation obj = rhythmicObjects[oscillationIndex].GetComponentInParent<Oscillation>();
 				obj.Deactivate();
 				if (oscillationIndex < maxObjects - 1) 
@@ -59,7 +59,6 @@ public class Timing: MonoBehaviour {
 				}
 				obj = rhythmicObjects[oscillationIndex].GetComponentInParent<Oscillation>();
 				obj.Activate();
-				print("Activated " + oscillationIndex);
 				incremented = true;
 			}
 			else if(incremented && sinOfTime > -0.8) 
@@ -78,6 +77,7 @@ public class Timing: MonoBehaviour {
 		
 		AkSoundEngine.SetState ("Mechanics_Rhytm", levels [0]);
 		whichSongToPlay = 0;
+		turn = 0;
 		foreach (Rhythm obj in rhythmicObjects) {//for all the rythmic objects
 			obj.Reset ();	//reset
 		}
