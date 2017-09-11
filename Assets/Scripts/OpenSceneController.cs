@@ -8,14 +8,16 @@ public class OpenSceneController : MonoBehaviour
 {
 
     // Use this for initialization
-    public string nextScence = "Deconstructable";
+    public string nextScence = "ProtoScene1";
+
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.touchCount == 1)
+		if (Input.anyKeyDown || Input.touchCount > 0)
         {
-            SceneManager.LoadScene(nextScence, LoadSceneMode.Single);
+			SceneManager.LoadScene(nextScence, LoadSceneMode.Single);
+
         }
 
     }
