@@ -13,7 +13,7 @@ public class TouchHandler : MonoBehaviour
     private List<float> touchTimes = new List<float>();
 
     // Computer debugging Variables:
-    public bool testingOnComputer; // ENABLES MOUSE INPUT - DISABLES TOUCH INPUT
+    public bool testingOnComputer = false; // ENABLES MOUSE INPUT - DISABLES TOUCH INPUT
     public float timeStamp; // Time at mouse click, used for mouse input.
     public bool isInputEnabled = true;
 
@@ -25,6 +25,10 @@ public class TouchHandler : MonoBehaviour
         {
             return;
         }
+
+		#region PC Debugging
+		// Only for debugging on pc
+		// Should be disabled by default as it will deny touch input
         if(testingOnComputer)
 		{
 			Ray ray;
@@ -79,6 +83,8 @@ public class TouchHandler : MonoBehaviour
 				}
 			}
 		}
+		#endregion
+		// Touch input
 		else
 		{
 			int touchCount = Input.touchCount;
@@ -88,7 +94,7 @@ public class TouchHandler : MonoBehaviour
 			}
 			else 
 			{
-				// Touch Part
+				// Loops through all touch inputs (1 per finger)
 				for (int i = 0; i < touchCount; i++)
 				{
 					Touch touch = Input.GetTouch(i);
@@ -101,6 +107,7 @@ public class TouchHandler : MonoBehaviour
 					// TouchPhase.Moved 		- Finger moved since last check
 					// TouchPhase.Ended			- On touch end
 					switch(touch.phase){
+						// If the touch input started this frame
 						case TouchPhase.Began:
 							touchTimes.Add(Time.time);
 							ray = Camera.main.ScreenPointToRay(new Vector3(touch.position.x, touch.position.y, 0));
@@ -114,9 +121,11 @@ public class TouchHandler : MonoBehaviour
 							}
 							break;
 
+						// If the touch input did not move since last frame
 						case TouchPhase.Stationary:
 							break;
 
+						// If the touch input did move since last frame
 						case TouchPhase.Moved:
 							touchTimes[i] = Time.time;
 							ray = Camera.main.ScreenPointToRay(new Vector3(touch.position.x, touch.position.y, 0));
@@ -124,6 +133,7 @@ public class TouchHandler : MonoBehaviour
 							{
 								if (hit.collider.gameObject.tag == "Holdable") 
 								{
+									// Check that the touch input is still hitting the same holdable object
 									Holdable obj = hit.collider.gameObject.GetComponent<Holdable>();
 									if (obj != lastHoldable && lastHoldable != null)
 									{
@@ -137,6 +147,7 @@ public class TouchHandler : MonoBehaviour
 							}
 							break;
 
+						// If the touch input ended this frame
 						case TouchPhase.Ended:
 							ray = Camera.main.ScreenPointToRay(new Vector3(touch.position.x, touch.position.y, 0));
 							if (Physics.Raycast(ray, out hit)) 
