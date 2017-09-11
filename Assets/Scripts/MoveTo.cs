@@ -21,6 +21,7 @@ public class MoveTo : MonoBehaviour, Touchable
 	public void Interact(RaycastHit hit)
 	{
 		hugo.playerAI.SetDestination(hit.point);
+        ParticleEffect(hit);
 	}
 
     public void ParticleEffect (RaycastHit hit)
