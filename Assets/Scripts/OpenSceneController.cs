@@ -7,33 +7,18 @@ using UnityEngine.UI;
 public class OpenSceneController : MonoBehaviour
 {
 
-    Text text;
-    private bool isBlink = true;
     // Use this for initialization
-    void Start()
-    {
-        text = GetComponent<Text>();
-        StartCoroutine(blink());
-    }
+    public string nextScene;
+
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.touchCount == 1)
+		//Touchcount for tablet, anykeydown for mouse/unity test interface
+		if (Input.touchCount > 0 ||Input.anyKeyDown)
         {
-            SceneManager.LoadScene("Deconstructable", LoadSceneMode.Single);
-        }
+			SceneManager.LoadScene(nextScene, LoadSceneMode.Single);
 
-    }
-
-    IEnumerator blink()
-    {
-        while (isBlink)
-        {
-            text.text = "";
-            yield return new WaitForSeconds(0.5f);
-            text.text = "Touch to Start ";
-            yield return new WaitForSeconds(0.5f);
         }
 
     }

@@ -17,13 +17,13 @@ MonoBehaviour:
     ParentPhysicalPath: 
     Guid: '{ECCF3AF7-9E18-4C08-92BA-578EF8D59B79}'
     m_lastTimePsrt1: -645842816
-    m_lastTimePart2: -1999308528
     List: []
+    m_lastTimePart2: -1999308528
   - PhysicalPath: Events/Environment.wwu
     ParentPhysicalPath: Events/Default Work Unit.wwu
     Guid: '{D550EFA8-B4F1-43D8-8ED8-9658C01400C6}'
-    m_lastTimePsrt1: 654026368
     m_lastTimePart2: -1999308531
+    m_lastTimePsrt1: 654026368
     List:
     - Name: Env_build
       Path: Default Work Unit/Environment/Env_build

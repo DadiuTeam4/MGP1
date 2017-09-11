@@ -17,7 +17,6 @@ public class pauseController : MonoBehaviour
 
     void tasksOnClick()
     {
-        Debug.Log("Tapped");
         if (!isPaused)
         {
             Time.timeScale = 0;
