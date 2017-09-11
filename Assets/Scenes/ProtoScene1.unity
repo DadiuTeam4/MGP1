@@ -215,7 +215,7 @@ Transform:
   - {fileID: 1420219371}
   - {fileID: 1989660429}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 22.391, z: 0}
 --- !u!114 &45294155
 MonoBehaviour:
@@ -338,7 +338,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9c1919742d4a34a9da6a8e6ca3e857a6, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9c1919742d4a34a9da6a8e6ca3e857a6, type: 3}
       propertyPath: m_LocalScale.y
@@ -431,13 +431,16 @@ MonoBehaviour:
   - {fileID: 1417154901802668, guid: af7ed20caa141a042a5464c3528a3953, type: 2}
   hugo: {fileID: 1522597855}
   constructionHandler: {fileID: 1369430177}
+  changeSceneOnDestroyed: 1
+  sceneName: ProtoScene3
+  delay: 3
 --- !u!114 &159047614
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 159047611}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f34dcf7baebc449609f5639a55f29a99, type: 3}
   m_Name: 
@@ -491,7 +494,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5a073567913ba41e2bae6b774e252716, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 5a073567913ba41e2bae6b774e252716, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -818,7 +821,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: e59e912d49ac94a7ead67f44b249eb22, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -775
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: e59e912d49ac94a7ead67f44b249eb22, type: 3}
       propertyPath: m_LocalRotation.x
@@ -879,6 +882,18 @@ Prefab:
     - target: {fileID: 400006, guid: e59e912d49ac94a7ead67f44b249eb22, type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: e59e912d49ac94a7ead67f44b249eb22, type: 3}
+      propertyPath: m_TagString
+      value: Holdable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e59e912d49ac94a7ead67f44b249eb22, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: e59e912d49ac94a7ead67f44b249eb22, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e59e912d49ac94a7ead67f44b249eb22, type: 3}
@@ -985,6 +1000,9 @@ MonoBehaviour:
   - {fileID: 1417154901802668, guid: af7ed20caa141a042a5464c3528a3953, type: 2}
   hugo: {fileID: 1522597855}
   constructionHandler: {fileID: 1369430177}
+  changeSceneOnDestroyed: 0
+  sceneName: 
+  delay: 0
 --- !u!114 &297398587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1426,7 +1444,7 @@ Transform:
   - {fileID: 1459663394}
   - {fileID: 424980145}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &585025385
 GameObject:
@@ -1532,6 +1550,9 @@ MonoBehaviour:
   - {fileID: 1417154901802668, guid: af7ed20caa141a042a5464c3528a3953, type: 2}
   hugo: {fileID: 1522597855}
   constructionHandler: {fileID: 1369430177}
+  changeSceneOnDestroyed: 0
+  sceneName: 
+  delay: 0
 --- !u!114 &645183219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1638,6 +1659,9 @@ MonoBehaviour:
   - {fileID: 1417154901802668, guid: af7ed20caa141a042a5464c3528a3953, type: 2}
   hugo: {fileID: 1522597855}
   constructionHandler: {fileID: 1369430177}
+  changeSceneOnDestroyed: 0
+  sceneName: 
+  delay: 0
 --- !u!1 &690884273 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100004, guid: 5a073567913ba41e2bae6b774e252716, type: 3}
@@ -1803,14 +1827,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 22.391, z: 0}
 --- !u!1001 &782196685
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 990494257}
     m_Modifications:
     - target: {fileID: 400000, guid: 1e166028f25944a8a87a7c912b976dd0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1842,19 +1866,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1e166028f25944a8a87a7c912b976dd0, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1e166028f25944a8a87a7c912b976dd0, type: 3}
       propertyPath: m_LocalScale.x
-      value: 130
+      value: 130.00006
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1e166028f25944a8a87a7c912b976dd0, type: 3}
       propertyPath: m_LocalScale.y
-      value: 130
+      value: 130.00003
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1e166028f25944a8a87a7c912b976dd0, type: 3}
       propertyPath: m_LocalScale.z
-      value: 130
+      value: 130.00009
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1e166028f25944a8a87a7c912b976dd0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -1920,13 +1944,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 918371124}
-  m_LocalRotation: {x: 0.24034591, y: -0.7411101, z: 0.3369662, w: 0.52862424}
-  m_LocalPosition: {x: 1.58, y: 9.6, z: 18.51}
+  m_LocalRotation: {x: 0.21970382, y: -0.763805, z: 0.2225209, w: 0.56463856}
+  m_LocalPosition: {x: 16.02, y: 14.05, z: 15.88}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 36.017002, y: -109.00001, z: -5.985}
 --- !u!1 &990494256
 GameObject:
   m_ObjectHideFlags: 0
@@ -1956,8 +1980,9 @@ Transform:
   - {fileID: 391658670}
   - {fileID: 1599220094}
   - {fileID: 114518913}
+  - {fileID: 1838165532}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &994200952
 GameObject:
@@ -1985,7 +2010,7 @@ Transform:
   m_LocalScale: {x: 1, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1010952683 stripped
 GameObject:
@@ -2063,6 +2088,9 @@ MonoBehaviour:
   - {fileID: 1417154901802668, guid: af7ed20caa141a042a5464c3528a3953, type: 2}
   hugo: {fileID: 1522597855}
   constructionHandler: {fileID: 1369430177}
+  changeSceneOnDestroyed: 0
+  sceneName: 
+  delay: 0
 --- !u!114 &1013125175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2387,7 +2415,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 38d9d04cc107b4a1fae958ff6e05e883, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 38d9d04cc107b4a1fae958ff6e05e883, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -2453,7 +2481,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 13d69e18245fb4d388e356bea7cc1697, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 13d69e18245fb4d388e356bea7cc1697, type: 3}
@@ -2645,6 +2673,9 @@ MonoBehaviour:
   - {fileID: 1417154901802668, guid: af7ed20caa141a042a5464c3528a3953, type: 2}
   hugo: {fileID: 1522597855}
   constructionHandler: {fileID: 1369430177}
+  changeSceneOnDestroyed: 0
+  sceneName: 
+  delay: 0
 --- !u!114 &1235259331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2901,7 +2932,7 @@ Prefab:
         type: 2}
       propertyPath: fives.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1970673171}
     - target: {fileID: 114240885568163926, guid: dcf565075a4acc64298389643f8c925b,
         type: 2}
       propertyPath: fives.Array.data[1]
@@ -2998,7 +3029,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: a6cdb63144af543b8a1daedd188efbba, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: a6cdb63144af543b8a1daedd188efbba, type: 3}
       propertyPath: m_LocalScale.y
@@ -3017,24 +3048,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1274067664}
   m_Script: {fileID: 11500000, guid: de51d74f11ed2f7499e7291f18718290, type: 3}
---- !u!1 &1412757793 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1565428683069934, guid: 1194e768c6d257846987145e880d00d6,
-    type: 2}
-  m_PrefabInternal: {fileID: 1843389634}
---- !u!114 &1412757794
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1412757793}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb374e1518bd44ace84a7896d79ed3b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: ProtoScene3
-  delay: 8.5
 --- !u!4 &1412757800 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4803541758788196, guid: 1194e768c6d257846987145e880d00d6,
@@ -3197,7 +3210,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1436843888
 MonoBehaviour:
@@ -3366,6 +3379,9 @@ MonoBehaviour:
   - {fileID: 1417154901802668, guid: af7ed20caa141a042a5464c3528a3953, type: 2}
   hugo: {fileID: 1522597855}
   constructionHandler: {fileID: 1369430177}
+  changeSceneOnDestroyed: 0
+  sceneName: 
+  delay: 0
 --- !u!114 &1540899993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3604,8 +3620,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1624195835}
   m_LocalRotation: {x: -0, y: -0.6425062, z: -0, w: 0.76628053}
-  m_LocalPosition: {x: -32.5, y: 8.7, z: 22.1}
-  m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
+  m_LocalPosition: {x: -21.98, y: 1.7, z: 18.75}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
   m_Children:
   - {fileID: 81290099}
   - {fileID: 824643513}
@@ -3696,7 +3712,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: 60d7006ef176a46f988c5dc7a6b88775, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: 60d7006ef176a46f988c5dc7a6b88775, type: 3}
       propertyPath: m_LocalScale.y
@@ -3847,6 +3863,9 @@ MonoBehaviour:
   - {fileID: 1417154901802668, guid: af7ed20caa141a042a5464c3528a3953, type: 2}
   hugo: {fileID: 1522597855}
   constructionHandler: {fileID: 1369430177}
+  changeSceneOnDestroyed: 0
+  sceneName: 
+  delay: 0
 --- !u!136 &1680046525
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3897,7 +3916,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 2bbee0aa3f26d4a71a906646cb575006, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 2bbee0aa3f26d4a71a906646cb575006, type: 3}
       propertyPath: m_LocalScale.y
@@ -4002,7 +4021,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 22.391, z: 0}
 --- !u!1 &1759807418
 GameObject:
@@ -4084,7 +4103,7 @@ Transform:
   m_LocalScale: {x: 50, y: 20, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1784323864 stripped
 Transform:
@@ -4155,6 +4174,12 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 114336983004970110, guid: cc3b57d5b5b7b6344a060ad84aa33a8d,
+        type: 2}
+      propertyPath: particle
+      value: 
+      objectReference: {fileID: 198273976164181202, guid: 5a5201c1688964555b41533f52c28585,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc3b57d5b5b7b6344a060ad84aa33a8d, type: 2}
   m_IsPrefabParent: 0
@@ -4187,6 +4212,10 @@ Transform:
   m_Father: {fileID: 1883339084}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1838165532 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: 1e166028f25944a8a87a7c912b976dd0, type: 3}
+  m_PrefabInternal: {fileID: 782196685}
 --- !u!1001 &1843389634
 Prefab:
   m_ObjectHideFlags: 0
@@ -4341,7 +4370,7 @@ Transform:
   - {fileID: 1729619377}
   - {fileID: 212469812}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1883339083
 GameObject:
@@ -4426,8 +4455,24 @@ Transform:
   - {fileID: 297398584}
   - {fileID: 1192246697}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1970673171 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100002, guid: 1e166028f25944a8a87a7c912b976dd0, type: 3}
+  m_PrefabInternal: {fileID: 782196685}
+--- !u!114 &1970673175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1970673171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4c65012d45ba6d4d878c53efd31f8ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  addedColour: {r: 0, g: 0.061634805, b: 0.83823526, a: 0}
 --- !u!1 &1989660425
 GameObject:
   m_ObjectHideFlags: 0
@@ -4587,6 +4632,9 @@ MonoBehaviour:
   - {fileID: 1417154901802668, guid: af7ed20caa141a042a5464c3528a3953, type: 2}
   hugo: {fileID: 1522597855}
   constructionHandler: {fileID: 1369430177}
+  changeSceneOnDestroyed: 0
+  sceneName: 
+  delay: 0
 --- !u!114 &2123126706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4739,6 +4787,9 @@ MonoBehaviour:
   - {fileID: 1417154901802668, guid: af7ed20caa141a042a5464c3528a3953, type: 2}
   hugo: {fileID: 1522597855}
   constructionHandler: {fileID: 1369430177}
+  changeSceneOnDestroyed: 0
+  sceneName: 
+  delay: 0
 --- !u!65 &2138046692
 BoxCollider:
   m_ObjectHideFlags: 0
