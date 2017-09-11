@@ -5,7 +5,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-
+using UnityEngine.SceneManagement;
 
 public class Timing: MonoBehaviour {
 
@@ -25,7 +25,8 @@ public class Timing: MonoBehaviour {
 	private int oscillationIndex = 0;//who jumps
 
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
 		int counter = 0;
 		foreach (Rhythm obj in rhythmicObjects) {//for all the rythmic objects
 			obj.SetMyTurn(counter);//set their turn, they need to be destroyed in the correct order
@@ -36,7 +37,8 @@ public class Timing: MonoBehaviour {
 		
 	}
 	
-	void Update(){
+	void Update()
+	{
 		//keep track of time
 		currentTime += Time.deltaTime;
 		sinOfTime = Mathf.Sin((currentTime)  * Mathf.PI);
@@ -69,7 +71,8 @@ public class Timing: MonoBehaviour {
 	}
 
 	//Getter for how much time the loop takes
-	public float GetTargetTime(){
+	public float GetTargetTime()
+	{
 		return targetTime;
 	}
 	//Someone has failed. Alert all rythmic objects to reset
@@ -85,7 +88,8 @@ public class Timing: MonoBehaviour {
 	}
 
 //Change the song
-	public void ChangeSong(){
+	public void ChangeSong()
+	{
 		
 		whichSongToPlay++;//move the index
 		if (whichSongToPlay < levels.Length) 
@@ -95,14 +99,16 @@ public class Timing: MonoBehaviour {
 
 	}
 	//If the right rhytmic object is destroyed this is called
-	public void ChangeTurn(){
+	public void ChangeTurn()
+	{
 		turn++;
 		if(turn == maxObjects){//for four objects, reset
-			turn = 0;
+			SceneManager.LoadScene(0);
 		}
 	}
 	//returns whose turn it is
-	public int GetTurn(){
+	public int GetTurn()
+	{
 		return turn;
 	}
 
