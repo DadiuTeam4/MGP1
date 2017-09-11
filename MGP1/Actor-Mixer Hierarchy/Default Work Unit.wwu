@@ -4,6 +4,8 @@
 		<WorkUnit Name="Default Work Unit" ID="{407731F5-C7CC-4D94-93DE-0DEA9D9B3F0B}" PersistMode="Standalone">
 			<ChildrenList>
 				<WorkUnit Name="Rhytmic_Mechanic" ID="{463EF416-80FF-4C53-A4D2-6C667E2134E4}" PersistMode="Reference"/>
+				<WorkUnit Name="Destructable" ID="{2DA40240-84E5-4A58-BD61-EEB8F9DD8005}" PersistMode="Reference"/>
+				<WorkUnit Name="Environment" ID="{8D470C72-F923-4DAF-999D-81F6BEF6ED26}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

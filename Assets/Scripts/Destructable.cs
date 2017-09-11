@@ -34,6 +34,9 @@ public class Destructable : MonoBehaviour, Holdable {
 		if(!hasBeenSetToDestroy){
 			timeAtFirstTrigger = time;
 			hasBeenSetToDestroy = true;
+
+
+
 		}
 
 		if(Vector3.Distance(hugo.position, transform.position) > WalkToDistance){
@@ -48,8 +51,13 @@ public class Destructable : MonoBehaviour, Holdable {
 				if(i >= numbers.Length){
 					rnd = Random.Range(0, numbers.Length);
 					InstantiateNumber(rnd, hit.point);
+					//Lyd
+					AkSoundEngine.PostEvent ("Mechanic_destroy", gameObject); 
+
+
 				} else {
 					InstantiateNumber(i, hit.point);
+
 				}
 			}
 
@@ -79,19 +87,32 @@ public class Destructable : MonoBehaviour, Holdable {
 
 	public void SetHasBeenSetToDestroy(bool b){
 		hasBeenSetToDestroy = b;
+
+
 	}
 
     public bool GetHasBeenSetToDestroy()
     {
         return hasBeenSetToDestroy;
+
+
     }
 
     public void TouchEnded(){
 		hasBeenSetToDestroy = false;
+		//Lyd
+		AkSoundEngine.PostEvent ("Mechanic_rise_stop", gameObject); 
+
+
 	}
 
     public float GetTimeAtFirstTrigger()
     {
         return timeAtFirstTrigger;
+		//Lyd
+		AkSoundEngine.PostEvent ("Mechanic_rise", gameObject); 
+
     }
+
+
 }

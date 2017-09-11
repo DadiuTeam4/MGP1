@@ -1,5 +1,10 @@
 Event	ID	Name			Wwise Object Path	Notes
-	2396932956	Mechanic_rhytmic			\Default Work Unit\Mechanic_rhytmic	
+	63796330	Main_music			\Default Work Unit\Music\Main_music	
+	559039776	Mechanic_destroy			\Default Work Unit\Mechanics\Mechanic_destroy	
+	2136516444	Mechanic_rise_stop			\Default Work Unit\Mechanics\Mechanic_rise_stop	
+	2396932956	Mechanic_rhytmic			\Default Work Unit\Mechanics\Mechanic_rhytmic	
+	2840974953	Mechanic_rise			\Default Work Unit\Mechanics\Mechanic_rise	
+	3436946623	Env_build			\Default Work Unit\Environment\Env_build	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	1204048829	Mechanics_Rhytm			\Default Work Unit\Mechanics_Rhytm	
@@ -12,8 +17,19 @@ State	ID	Name	State Group			Notes
 	1208172676	State4	Mechanics_Rhytm			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	953639	Mechanism_Deconstruct_Rise_03	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Mac\SFX\Mechanism_Deconstruct_Rise_47F8848F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Destructable\Mech_Deconstruct_rise\Mechanism_Deconstruct_Rise_03		380804
+	21240014	Mechanism_Deconstruct_Destroy	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Mac\SFX\Mechanism_Deconstruct_Destroy_FA2F47BB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Destructable\Mech_deconstruct_destroy\Mechanism_Deconstruct_Destroy		709916
+	46639991	Env_Building	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Mac\SFX\Env_Building_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Env_Building		2949184
+	52878315	Mechanism_Deconstruct_Rise	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Mac\SFX\Mechanism_Deconstruct_Rise_786CA0BB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Destructable\Mech_Deconstruct_rise\Mechanism_Deconstruct_Rise		419524
+	64246336	Mechanism_Deconstruct_Rise_01	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Mac\SFX\Mechanism_Deconstruct_Rise_05FA2A6A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Destructable\Mech_Deconstruct_rise\Mechanism_Deconstruct_Rise_01		432432
+	227407549	Mechanism_Deconstruct_Rise_02	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Mac\SFX\Mechanism_Deconstruct_Rise_0AA0CE58.wem		\Actor-Mixer Hierarchy\Default Work Unit\Destructable\Mech_Deconstruct_rise\Mechanism_Deconstruct_Rise_02		413072
+	259896849	Mechanism_Deconstruct_Destroy_02	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Mac\SFX\Mechanism_Deconstruct_Destroy_6C1A2738.wem		\Actor-Mixer Hierarchy\Default Work Unit\Destructable\Mech_deconstruct_destroy\Mechanism_Deconstruct_Destroy_02		735732
+	291183620	Mechanism_Deconstruct_Destroy_03	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Mac\SFX\Mechanism_Deconstruct_Destroy_A78249A5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Destructable\Mech_deconstruct_destroy\Mechanism_Deconstruct_Destroy_03		729276
+	385335095	MGP1_Music_udkast_a_mainpiece	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Mac\SFX\MGP1_Music_udkast_a_mainpiece_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Main_music\A_1\MGP1_Music_udkast_a_mainpiece		12288064
 	537739780	Tirsdag_row3	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Mac\SFX\Tirsdag_row3_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Mecahnic_rhytmic\Track3\Tirsdag_row3\Tirsdag_row3		1536064
 	542575809	Tirsdag_row4	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Mac\SFX\Tirsdag_row4_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Mecahnic_rhytmic\Track4\Tirsdag_row4\Tirsdag_row4		1536064
+	708252861	Mechanism_Deconstruct_Destroy_01	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Mac\SFX\Mechanism_Deconstruct_Destroy_1316701C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Destructable\Mech_deconstruct_destroy\Mechanism_Deconstruct_Destroy_01		709916
 	808043082	Tirsdag_row2	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Mac\SFX\Tirsdag_row2_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Mecahnic_rhytmic\Track2\Tirsdag_row2\Tirsdag_row2		1536064
+	1068156190	MGP1_Music_udkast_a_intro	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Mac\SFX\MGP1_Music_udkast_a_intro_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Main_music\A\MGP1_Music_udkast_a_intro		9216064
 	1072590724	Tirsdag_row1	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Mac\SFX\Tirsdag_row1_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Mecahnic_rhytmic\Track1\Tirsdag_row1\Tirsdag_row1		1536064
 

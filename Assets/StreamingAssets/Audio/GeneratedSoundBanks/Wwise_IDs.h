@@ -13,7 +13,12 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID ENV_BUILD = 3436946623U;
+        static const AkUniqueID MAIN_MUSIC = 63796330U;
+        static const AkUniqueID MECHANIC_DESTROY = 559039776U;
         static const AkUniqueID MECHANIC_RHYTMIC = 2396932956U;
+        static const AkUniqueID MECHANIC_RISE = 2840974953U;
+        static const AkUniqueID MECHANIC_RISE_STOP = 2136516444U;
     } // namespace EVENTS
 
     namespace STATES

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A757C22F-EFD4-4F91-89E2-5CF1E3BB99E6}" SchemaVersion="80" RootDocumentID="{ECCF3AF7-9E18-4C08-92BA-578EF8D59B79}">
+	<Events>
+		<WorkUnit Name="Mechanics" ID="{A757C22F-EFD4-4F91-89E2-5CF1E3BB99E6}" OwnerID="{ECCF3AF7-9E18-4C08-92BA-578EF8D59B79}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Mechanic_destroy" ID="{88A7B5D6-29C4-45B3-AE81-FDB8A0C06FB3}">
+					<ChildrenList>
+						<Action Name="" ID="{AF7A87F2-56EF-423F-9408-96F2174C63AA}" ShortID="412334729">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mech_deconstruct_destroy" ID="{1CFF616E-A8F6-4A1F-847E-956BFB32F4FE}" WorkUnitID="{2DA40240-84E5-4A58-BD61-EEB8F9DD8005}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Mechanic_rhytmic" ID="{CDA8D59B-2BE1-4BF3-B1B7-0DE30E440372}">
+					<ChildrenList>
+						<Action Name="" ID="{C442B275-A8C1-4FC0-A874-4960137887C6}" ShortID="307108348">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mecahnic_rhytmic" ID="{CF8C44FE-19C6-4DF2-9218-FA2A894F174B}" WorkUnitID="{BC8F5984-CBEA-4B75-9EEF-7D04E2B20384}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Mechanic_rise" ID="{F02081E0-CE63-4D59-96D4-0EF4FEFD3E2E}">
+					<ChildrenList>
+						<Action Name="" ID="{AEE31B07-2CE6-41D5-B092-A51083F18EB6}" ShortID="77260398">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mech_Deconstruct_rise" ID="{398E6AEE-EAB4-4771-AAAC-1DB21469CC1D}" WorkUnitID="{2DA40240-84E5-4A58-BD61-EEB8F9DD8005}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Mechanic_rise_stop" ID="{AF54FA18-8000-4845-8915-B83A0BD0AE6F}">
+					<ChildrenList>
+						<Action Name="" ID="{FE68AA7C-C15B-4C94-A621-56F2EA4CAC8B}" ShortID="1015216390">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mech_Deconstruct_rise" ID="{398E6AEE-EAB4-4771-AAAC-1DB21469CC1D}" WorkUnitID="{2DA40240-84E5-4A58-BD61-EEB8F9DD8005}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

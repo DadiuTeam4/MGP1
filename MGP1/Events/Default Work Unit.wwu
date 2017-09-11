@@ -3,20 +3,9 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{ECCF3AF7-9E18-4C08-92BA-578EF8D59B79}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Mechanic_rhytmic" ID="{CDA8D59B-2BE1-4BF3-B1B7-0DE30E440372}">
-					<ChildrenList>
-						<Action Name="" ID="{C442B275-A8C1-4FC0-A874-4960137887C6}" ShortID="307108348">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Mecahnic_rhytmic" ID="{CF8C44FE-19C6-4DF2-9218-FA2A894F174B}" WorkUnitID="{BC8F5984-CBEA-4B75-9EEF-7D04E2B20384}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
+				<WorkUnit Name="Mechanics" ID="{A757C22F-EFD4-4F91-89E2-5CF1E3BB99E6}" PersistMode="Reference"/>
+				<WorkUnit Name="Environment" ID="{D550EFA8-B4F1-43D8-8ED8-9658C01400C6}" PersistMode="Reference"/>
+				<WorkUnit Name="Music" ID="{236EC451-CED1-4E6F-8F8E-62DC6C855911}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
