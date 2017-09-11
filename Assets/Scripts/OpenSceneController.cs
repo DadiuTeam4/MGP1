@@ -14,7 +14,8 @@ public class OpenSceneController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		if (Input.anyKeyDown || Input.touchCount > 0)
+		//Touchcount for tablet, anykeydown for mouse/unity test interface
+		if (Input.touchCount > 0 ||Input.anyKeyDown)
         {
 			SceneManager.LoadScene(nextScence, LoadSceneMode.Single);
 
