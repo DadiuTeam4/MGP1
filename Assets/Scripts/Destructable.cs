@@ -5,6 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class Destructable : MonoBehaviour, Holdable 
 {
@@ -29,6 +30,17 @@ public class Destructable : MonoBehaviour, Holdable
 	private float timeAtFirstTrigger = 0.0f; // Time at first touch
 	private bool hasBeenSetToDestroy;
 
+
+	//Hack to get scenechange on whale destruction
+	public bool changeSceneOnDestroyed;
+	public string sceneName;
+	public float delay;
+
+	IEnumerator ChangeTheScene() {
+		yield return new WaitForSeconds (delay);
+		SceneManager.LoadScene (sceneName);
+	}
+
 	// Keeps track on whether the object is set for destruction, and how long it has been since first touch.
 	// Upon deconstruction it spawns a random amount of numbers.
 	public bool Interact(RaycastHit hit, float time)
@@ -38,6 +50,8 @@ public class Destructable : MonoBehaviour, Holdable
 			timeAtFirstTrigger = time;
 			hasBeenSetToDestroy = true;
 		}
+
+
 
 		if ((Time.time - timeAtFirstTrigger) > holdTime)
 		{
@@ -75,6 +89,9 @@ public class Destructable : MonoBehaviour, Holdable
 			}
 			transform.gameObject.GetComponent<NavMeshObstacle>().enabled = false;
 
+			if (changeSceneOnDestroyed) {
+				StartCoroutine ("ChangeTheScene");
+			}
 			return true;
 		}
 
