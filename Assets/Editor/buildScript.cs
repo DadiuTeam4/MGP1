@@ -1,4 +1,4 @@
-﻿// C# example
+﻿/*// C# example
 using UnityEditor;
 class MyEditorScript
 {
@@ -7,6 +7,6 @@ class MyEditorScript
          string[] scenes = { "Assets/Scenes/ProtoScene1.unity" };
          BuildPipeline.BuildPlayer(scenes, ...);
      }
-}
+}*/
 
 

@@ -58,7 +58,21 @@ public class Destructable : MonoBehaviour, Holdable
 			}
 
 			transform.gameObject.GetComponent<Collider>().enabled = false;
-			transform.gameObject.GetComponent<Renderer>().enabled = false;
+			if (transform.childCount > 0) 
+			{
+				Renderer r;
+				for (int i = 0; i < transform.childCount; i++) 
+				{
+					r = transform.GetChild (i).GetComponent<Renderer> ();
+					if (r != null) 
+					{
+						r.enabled = false;
+					}
+				}
+			} else 
+			{
+				transform.gameObject.GetComponent<Renderer>().enabled = false;
+			}
 			transform.gameObject.GetComponent<NavMeshObstacle>().enabled = false;
 
 			return true;
