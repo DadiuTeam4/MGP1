@@ -1,47 +1,31 @@
-<<<<<<< HEAD
-﻿using System.Collections;
-=======
+// Author: Itai Yavin
+// Contributor:
+
 using System.Collections;
->>>>>>> Constructable
 using System.Collections.Generic;
 using UnityEngine;
 
 public class LerpPositionConstructable : MonoBehaviour, Constructable {
-<<<<<<< HEAD
 	[Tooltip("Step is the amount that the object moves from A to B in the lerp")]
 	[Range(0.0f, 1.0f)]
 	public float step;
 
-	[Tooltip("The position that the object will have at T = 1. The object will start at the position you place it at, which will be T = 0")]
+	[Tooltip("The position that the object will have at T = 1")]
 	public Transform endPosition;
-	private float t = 0.0f;
-	private Vector3 startPosition;
+	[Tooltip("The position that the object will have at T = 0")]
+	public Transform startPosition;
+
+	// Variable position within lerp, is always between 0, and 1.
+	// 0 = star position
+	// 1 = end position
+	private float t = 0.0f; 
 
 	void Start(){
-		startPosition = transform.position;
+		transform.position = Vector3.Lerp(startPosition.position, endPosition.position, t);
 	}
 
 	public void Construct(){
 		t += step;
-		transform.position = Vector3.Lerp(startPosition, endPosition.position, t);
+		transform.position = Vector3.Lerp(startPosition.position, endPosition.position, t);
 	}
-=======
-    [Tooltip("Step is the amount that the object moves from A to B in the lerp")]
-    [Range(0.0f, 1.0f)]
-    public float step;
-
-    [Tooltip("The position that the object will have at T = 1. The object will start at the position you place it at, which will be T = 0")]
-    public Transform endPosition;
-    private float t = 0.0f;
-    private Vector3 startPosition;
-
-    void Start(){
-        startPosition = transform.position;
-    }
-
-    public void Construct(){
-        t += step;
-        transform.position = Vector3.Lerp(startPosition, endPosition.position, t);
-    }
->>>>>>> Constructable
 }

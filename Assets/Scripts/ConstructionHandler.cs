@@ -1,10 +1,15 @@
-﻿using System.Collections;
+﻿// Author: Itai Yavin
+// Contributor:
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class ConstructionHandler : MonoBehaviour {
 	public GameObject[] ones, twos, threes, fours, fives;
 
+	
+	// Calls the construct function of the necessary constructable, depending on the value given through the function.
+	// The object chosen from the array is random.
 	public void SendResource(int value){
 		int rnd;
 		switch(value){
@@ -37,5 +42,6 @@ public class ConstructionHandler : MonoBehaviour {
 				Debug.Log("THIS VALUE IS NOT A VALID CONSTRUCTION VALUE: " + value);
 			break;
 		}
+
 	}
 }

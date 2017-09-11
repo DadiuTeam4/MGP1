@@ -1,0 +1,19 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2396932956	Mechanic_rhytmic			\Default Work Unit\Mechanic_rhytmic	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1204048829	Mechanics_Rhytm			\Default Work Unit\Mechanics_Rhytm	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Mechanics_Rhytm			
+	1208172673	State1	Mechanics_Rhytm			
+	1208172674	State2	Mechanics_Rhytm			
+	1208172675	State3	Mechanics_Rhytm			
+	1208172676	State4	Mechanics_Rhytm			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	537739780	Tirsdag_row3	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Mac\SFX\Tirsdag_row3_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Mecahnic_rhytmic\Track3\Tirsdag_row3\Tirsdag_row3		1536064
+	542575809	Tirsdag_row4	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Mac\SFX\Tirsdag_row4_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Mecahnic_rhytmic\Track4\Tirsdag_row4\Tirsdag_row4		1536064
+	808043082	Tirsdag_row2	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Mac\SFX\Tirsdag_row2_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Mecahnic_rhytmic\Track2\Tirsdag_row2\Tirsdag_row2		1536064
+	1072590724	Tirsdag_row1	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Mac\SFX\Tirsdag_row1_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Mecahnic_rhytmic\Track1\Tirsdag_row1\Tirsdag_row1		1536064
+
