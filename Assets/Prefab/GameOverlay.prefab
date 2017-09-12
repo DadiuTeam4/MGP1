@@ -92,6 +92,9 @@ GameObject:
   - component: {fileID: 222808940692552936}
   - component: {fileID: 114783208471820966}
   - component: {fileID: 114369872673459306}
+  - component: {fileID: 223197190449570676}
+  - component: {fileID: 114247864167480830}
+  - component: {fileID: 225623152598029126}
   m_Layer: 5
   m_Name: Template
   m_TagString: Untagged
@@ -178,6 +181,7 @@ GameObject:
   m_Component:
   - component: {fileID: 224688244144928394}
   - component: {fileID: 114621192934497254}
+  - component: {fileID: 114874162839048188}
   m_Layer: 5
   m_Name: Item
   m_TagString: Untagged
@@ -315,6 +319,7 @@ GameObject:
   - component: {fileID: 4153188184761642}
   - component: {fileID: 114304424321469910}
   - component: {fileID: 114445628121477676}
+  - component: {fileID: 114937371564133822}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -441,6 +446,22 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114247864167480830
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1420429955727566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!114 &114260685781137928
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1038,7 +1059,22 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Choose Language
+  m_Text: Choose language
+--- !u!114 &114874162839048188
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1658379696626444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Text: {fileID: 114836495490069446}
+  m_Image: {fileID: 0}
+  m_RectTransform: {fileID: 224688244144928394}
+  m_Toggle: {fileID: 114621192934497254}
 --- !u!114 &114875693645606452
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1091,7 +1127,7 @@ MonoBehaviour:
   m_CaptionImage: {fileID: 0}
   m_ItemText: {fileID: 114836495490069446}
   m_ItemImage: {fileID: 0}
-  m_Value: 0
+  m_Value: 1
   m_Options:
     m_Options:
     - m_Text: English
@@ -1114,6 +1150,17 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Dropdown+DropdownEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114937371564133822
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1938789124194744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1327945023, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114963753390646452
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1256,6 +1303,26 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!223 &223197190449570676
+Canvas:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1420429955727566}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 1
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 30000
   m_TargetDisplay: 0
 --- !u!224 &224062148915811126
 RectTransform:
@@ -1599,3 +1666,14 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &225623152598029126
+CanvasGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1420429955727566}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
