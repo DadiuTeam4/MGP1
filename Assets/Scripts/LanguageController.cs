@@ -33,11 +33,12 @@ public class LanguageController : MonoBehaviour
 
     private void setDanish()
     {
-
+		AkSoundEngine.SetState ("Speak_language", "DK"); 
     }
 
     private void setEnglish()
     {
+		AkSoundEngine.SetState ("Speak_language", "UK"); 
 
     }
 
