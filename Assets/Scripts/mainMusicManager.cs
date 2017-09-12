@@ -17,6 +17,7 @@ public class mainMusicManager : MonoBehaviour {
 	void Start () {
 		AkSoundEngine.PostEvent ("Main_music", gameObject); 
 		AkSoundEngine.SetState ("Scene_change", "OpenScene"); 
+		AkSoundEngine.PostEvent ("Ambient", gameObject); 
 
 
 

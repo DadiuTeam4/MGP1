@@ -22,9 +22,21 @@ MonoBehaviour:
   - PhysicalPath: Events/Environment.wwu
     ParentPhysicalPath: Events/Default Work Unit.wwu
     Guid: '{D550EFA8-B4F1-43D8-8ED8-9658C01400C6}'
-    m_lastTimePsrt1: -2124138496
-    m_lastTimePart2: -1999308323
+    m_lastTimePsrt1: -448517120
+    m_lastTimePart2: -1999308304
     List:
+    - Name: Ambient
+      Path: Default Work Unit/Environment/Ambient
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Environment
+        ObjectType: 12
+      - ElementName: Ambient
+        ObjectType: 3
+      ID: 77978275
+      Guid: 28095ce1c25fd14ca2315d30f03e71a4
+      maxAttenuation: 0
     - Name: Env_build
       Path: Default Work Unit/Environment/Env_build
       PathAndIcons:
@@ -106,8 +118,8 @@ MonoBehaviour:
   - PhysicalPath: Events/Music.wwu
     ParentPhysicalPath: Events/Default Work Unit.wwu
     Guid: '{236EC451-CED1-4E6F-8F8E-62DC6C855911}'
-    m_lastTimePsrt1: 1586384768
-    m_lastTimePart2: -1999308306
+    m_lastTimePsrt1: 1046450176
+    m_lastTimePart2: -1999308304
     List:
     - Name: Main_music
       Path: Default Work Unit/Music/Main_music
@@ -136,8 +148,8 @@ MonoBehaviour:
   - PhysicalPath: Events/Speak.wwu
     ParentPhysicalPath: Events/Default Work Unit.wwu
     Guid: '{EF808080-4145-491A-97D0-09A780B7673C}'
-    m_lastTimePsrt1: -1033615232
-    m_lastTimePart2: -1999308307
+    m_lastTimePsrt1: 1046450176
+    m_lastTimePart2: -1999308304
     List:
     - Name: Speak_count
       Path: Default Work Unit/Speak/Speak_count

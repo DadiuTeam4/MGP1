@@ -10,7 +10,6 @@ public class OpenSceneController : MonoBehaviour
     // Use this for initialization
 
 
-
     public string nextScene;
     bool danish;
     public Transform danishTransform;
@@ -72,8 +71,9 @@ public class OpenSceneController : MonoBehaviour
         danish = true;
         danishTransform.gameObject.SetActive(false);
         englishTransform.gameObject.SetActive(false);
+		AkSoundEngine.SetState ("Speak_language", "DK"); 
+
        // StartBTN.gameObject.SetActive(true);
-        
 
     }
 
@@ -83,6 +83,8 @@ public class OpenSceneController : MonoBehaviour
         danishTransform.gameObject.SetActive(false);
         englishTransform.gameObject.SetActive(false);
        // StartBTN.gameObject.SetActive(true);
+		AkSoundEngine.SetState ("Speak_language", "UK"); 
+
     }
 
     void MoveHugo()
