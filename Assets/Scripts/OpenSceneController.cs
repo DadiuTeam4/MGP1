@@ -10,7 +10,6 @@ public class OpenSceneController : MonoBehaviour
     // Use this for initialization
 
 
-
     public string nextScene;
     bool danish;
     public Transform danishTransform;
@@ -73,7 +72,6 @@ public class OpenSceneController : MonoBehaviour
         danishTransform.gameObject.SetActive(false);
         englishTransform.gameObject.SetActive(false);
        // StartBTN.gameObject.SetActive(true);
-        
 
     }
 
