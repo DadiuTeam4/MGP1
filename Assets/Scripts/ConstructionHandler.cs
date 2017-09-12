@@ -13,9 +13,10 @@ public class ConstructionHandler : MonoBehaviour {
 	public void SendResource(int value){
 		int rnd;
 		switch(value){
-			case 1:
-				rnd = Random.Range(0, ones.Length);
-				ones[rnd].GetComponent<Constructable>().Construct();
+		case 1:
+			rnd = Random.Range (0, ones.Length);
+			ones [rnd].GetComponent<Constructable> ().Construct ();
+			AkSoundEngine.PostEvent ("Env_build", gameObject); 
 			break;
 
 			case 2:
