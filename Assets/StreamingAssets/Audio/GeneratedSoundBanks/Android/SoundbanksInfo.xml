@@ -21,9 +21,43 @@
 			<ShortName>SoundbankA</ShortName>
 			<Path>SoundbankA.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2396932956" Name="Mechanic_rhytmic" ObjectPath="\Events\Default Work Unit\Mechanic_rhytmic"/>
+				<Event Id="3436946623" Name="Env_build" ObjectPath="\Events\Default Work Unit\Environment\Env_build"/>
+				<Event Id="63796330" Name="Main_music" ObjectPath="\Events\Default Work Unit\Music\Main_music"/>
+				<Event Id="559039776" Name="Mechanic_destroy" ObjectPath="\Events\Default Work Unit\Mechanics\Mechanic_destroy"/>
+				<Event Id="2396932956" Name="Mechanic_rhytmic" ObjectPath="\Events\Default Work Unit\Mechanics\Mechanic_rhytmic"/>
+				<Event Id="2840974953" Name="Mechanic_rise" ObjectPath="\Events\Default Work Unit\Mechanics\Mechanic_rise"/>
+				<Event Id="2136516444" Name="Mechanic_rise_stop" ObjectPath="\Events\Default Work Unit\Mechanics\Mechanic_rise_stop" MaxAttenuation="0.000000"/>
+				<Event Id="1459553318" Name="Touch_anywhere" ObjectPath="\Events\Default Work Unit\Mechanics\Touch_anywhere"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="21240014" Language="SFX">
+					<ShortName>Mechanism_Deconstruct_Destroy.wav</ShortName>
+					<Path>SFX/Mechanism_Deconstruct_Destroy_FA2F47BB.wem</Path>
+				</File>
+				<File Id="46639991" Language="SFX">
+					<ShortName>Env_Building.wav</ShortName>
+					<Path>SFX/Env_Building_1C9C67B2.wem</Path>
+				</File>
+				<File Id="87495225" Language="SFX">
+					<ShortName>Touch_display.wav</ShortName>
+					<Path>SFX/Touch_display_1C9C67B2.wem</Path>
+				</File>
+				<File Id="169523579" Language="SFX">
+					<ShortName>Mechanism_Deconstruct_Rise_1.wav</ShortName>
+					<Path>SFX/Mechanism_Deconstruct_Rise_1_D7330CC5.wem</Path>
+				</File>
+				<File Id="259896849" Language="SFX">
+					<ShortName>Mechanism_Deconstruct_Destroy.wav</ShortName>
+					<Path>SFX/Mechanism_Deconstruct_Destroy_6C1A2738.wem</Path>
+				</File>
+				<File Id="291183620" Language="SFX">
+					<ShortName>Mechanism_Deconstruct_Destroy.wav</ShortName>
+					<Path>SFX/Mechanism_Deconstruct_Destroy_A78249A5.wem</Path>
+				</File>
+				<File Id="385335095" Language="SFX">
+					<ShortName>MGP1_Music_udkast_a_mainpiece.wav</ShortName>
+					<Path>SFX/MGP1_Music_udkast_a_mainpiece_F17FB28C.wem</Path>
+				</File>
 				<File Id="537739780" Language="SFX">
 					<ShortName>Tirsdag_row3.wav</ShortName>
 					<Path>SFX/Tirsdag_row3_F17FB28C.wem</Path>
@@ -32,9 +66,21 @@
 					<ShortName>Tirsdag_row4.wav</ShortName>
 					<Path>SFX/Tirsdag_row4_F17FB28C.wem</Path>
 				</File>
+				<File Id="684181433" Language="SFX">
+					<ShortName>Mechanism_Deconstruct_Rise_1.wav</ShortName>
+					<Path>SFX/Mechanism_Deconstruct_Rise_1_5A40CBA7.wem</Path>
+				</File>
+				<File Id="708252861" Language="SFX">
+					<ShortName>Mechanism_Deconstruct_Destroy.wav</ShortName>
+					<Path>SFX/Mechanism_Deconstruct_Destroy_1316701C.wem</Path>
+				</File>
 				<File Id="808043082" Language="SFX">
 					<ShortName>Tirsdag_row2.wav</ShortName>
 					<Path>SFX/Tirsdag_row2_F17FB28C.wem</Path>
+				</File>
+				<File Id="1068156190" Language="SFX">
+					<ShortName>MGP1_Music_udkast_a_intro.wav</ShortName>
+					<Path>SFX/MGP1_Music_udkast_a_intro_F17FB28C.wem</Path>
 				</File>
 				<File Id="1072590724" Language="SFX">
 					<ShortName>Tirsdag_row1.wav</ShortName>

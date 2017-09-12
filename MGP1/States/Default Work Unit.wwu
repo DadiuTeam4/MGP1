@@ -15,6 +15,14 @@
 						<State Name="State4" ID="{9506DD0E-01B6-4B7F-8EDB-12AFA1AA5E24}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="Scene_change" ID="{C4498FAD-5D7B-4F1B-89FE-35A608290B5D}">
+					<ChildrenList>
+						<State Name="None" ID="{DC8EA806-5963-4E84-9F6D-48A4ED0E5812}"/>
+						<State Name="OpenScene" ID="{4FCCB697-E484-4249-9A0C-CE6BF18A89B5}"/>
+						<State Name="ProtoScene1" ID="{49026672-12DD-494E-BADE-225F3EA65E05}"/>
+						<State Name="ProtoScene3" ID="{EA3D6FD1-A476-4996-8EB9-4A96F885D198}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

@@ -27,5 +27,7 @@ public class LerpPositionConstructable : MonoBehaviour, Constructable {
 	public void Construct(){
 		t += step;
 		transform.position = Vector3.Lerp(startPosition.position, endPosition.position, t);
+		AkSoundEngine.PostEvent ("Env_build", gameObject); 
+
 	}
 }

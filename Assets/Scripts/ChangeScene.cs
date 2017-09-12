@@ -17,5 +17,6 @@ public class ChangeScene : MonoBehaviour {
 	IEnumerator ChangeTheScene() {
 		yield return new WaitForSeconds (delay);
 		SceneManager.LoadScene (sceneName);
+		//AkSoundEngine.PostEvent ("transition"); 
 	}
 }

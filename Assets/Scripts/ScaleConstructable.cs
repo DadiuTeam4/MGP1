@@ -10,5 +10,6 @@ public class ScaleConstructable : MonoBehaviour, Constructable {
 	public Vector3 scaleAmount = new Vector3();
     public void Construct(){
         gameObject.transform.localScale += scaleAmount;
+		//AKSOUNDENGINE.POSTEVENT
     }
 }
