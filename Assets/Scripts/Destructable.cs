@@ -27,14 +27,19 @@ public class Destructable : MonoBehaviour, Holdable
 	public Transform hugo;
 	public ConstructionHandler constructionHandler;
 
+	[Header("Particle System Variables")]
+	public bool hasParticles = false;
+	public ParticleSystem particleSystem;
+
 	private float timeAtFirstTrigger = 0.0f; // Time at first touch
 	private bool hasBeenSetToDestroy;
 
-
+	[Header("Scene Change Hack")]
 	//Hack to get scenechange on whale destruction
 	public bool changeSceneOnDestroyed;
 	public string sceneName;
 	public float delay;
+
 
 	IEnumerator ChangeTheScene() {
 		yield return new WaitForSeconds (delay);
@@ -87,13 +92,19 @@ public class Destructable : MonoBehaviour, Holdable
 			{
 				transform.gameObject.GetComponent<Renderer>().enabled = false;
 			}
-			if (transform.gameObject.GetComponent<NavMeshObstacle> () != null) {
+			if (transform.gameObject.GetComponent<NavMeshObstacle>() != null) 
+			{
 				transform.gameObject.GetComponent<NavMeshObstacle>().enabled = false;
 			}
 
-			if (changeSceneOnDestroyed) {
-				Debug.Log ("CHANGE SCENE!!!!");
-				StartCoroutine ("ChangeTheScene");
+			if(hasParticles)
+			{
+				particleSystem.Stop();
+			}
+
+			if (changeSceneOnDestroyed) 
+			{
+				GetComponent<LevelTransition>().StartTransition(sceneName);
 			}
 			return true;
 		}
