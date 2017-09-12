@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{02FF5C0C-06A9-40B6-822F-191609F391B1}" SchemaVersion="80" RootDocumentID="{407731F5-C7CC-4D94-93DE-0DEA9D9B3F0B}">
+	<AudioObjects>
+		<WorkUnit Name="Speak" ID="{02FF5C0C-06A9-40B6-822F-191609F391B1}" OwnerID="{407731F5-C7CC-4D94-93DE-0DEA9D9B3F0B}" PersistMode="Nested">
+			<ChildrenList>
+				<SwitchContainer Name="Speak" ID="{53B8E294-7B3B-478B-B32D-EA87452C3DF5}" ShortID="995337806">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Speak_count_DK" ID="{B34652C3-B8D6-48F6-897F-799C307C256A}" ShortID="353270341">
+							<PropertyList>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="6"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="MGP1_Speak_DK_Four" ID="{6429CCCB-81BA-46EA-A2DC-EA120CFBB27E}" ShortID="982157857">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MGP1_Speak_DK_Four" ID="{1C1DCA49-3D40-411C-8287-DEC7A78E2F87}" ShortID="613143140">
+											<Language>SFX</Language>
+											<AudioFile>MGP1_Speak_DK_Four.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MGP1_Speak_DK_Four" ID="{1C1DCA49-3D40-411C-8287-DEC7A78E2F87}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MGP1_Speak_DK_One" ID="{D288775E-8B3C-4A31-B318-2713E2B8A72C}" ShortID="341870449">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MGP1_Speak_DK_One" ID="{A58BAB94-807A-4A68-86D2-C603AB1ED2B6}" ShortID="1052955638">
+											<Language>SFX</Language>
+											<AudioFile>MGP1_Speak_DK_One.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MGP1_Speak_DK_One" ID="{A58BAB94-807A-4A68-86D2-C603AB1ED2B6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MGP1_Speak_DK_Three" ID="{B5426806-33AE-4E21-A923-7724148AA9EF}" ShortID="158289183">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MGP1_Speak_DK_Three" ID="{A71086B7-46BB-498E-B836-F2DD1623A63C}" ShortID="914572333">
+											<Language>SFX</Language>
+											<AudioFile>MGP1_Speak_DK_Three.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MGP1_Speak_DK_Three" ID="{A71086B7-46BB-498E-B836-F2DD1623A63C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MGP1_Speak_DK_Two" ID="{83C6CA5B-3B24-48E1-B72F-29AB86DDC299}" ShortID="522867142">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MGP1_Speak_DK_Two" ID="{89C16D9C-D5C8-4F6B-9378-287459215EFA}" ShortID="952900142">
+											<Language>SFX</Language>
+											<AudioFile>MGP1_Speak_DK_Two.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MGP1_Speak_DK_Two" ID="{89C16D9C-D5C8-4F6B-9378-287459215EFA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MGP1_Speak_DK_Blank" ID="{F0AD60C2-EEB8-48FB-8813-302A96F78C0C}" ShortID="358338295">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MGP1_Speak_DK_Blank" ID="{DC59AA1A-D5DB-4F97-BA0A-4A93341E5748}" ShortID="220227290">
+											<Language>SFX</Language>
+											<AudioFile>MGP1_Speak_DK_Blank.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MGP1_Speak_DK_Blank" ID="{DC59AA1A-D5DB-4F97-BA0A-4A93341E5748}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MGP1_Speak_DK_Blank_01" ID="{9FBD46AA-13F3-4E5D-9787-84FB0944CACD}" ShortID="522604611">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MGP1_Speak_DK_Blank" ID="{ABE2836E-399A-48D0-8A62-0C4CBFDB11F9}" ShortID="119953473">
+											<Language>SFX</Language>
+											<AudioFile>MGP1_Speak_DK_Blank.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="220227290"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MGP1_Speak_DK_Blank" ID="{ABE2836E-399A-48D0-8A62-0C4CBFDB11F9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MGP1_Speak_DK_Blank_02" ID="{7D316A3D-9884-49C4-AE88-5B485D407AD3}" ShortID="797508162">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MGP1_Speak_DK_Blank" ID="{9ADD7018-EFB7-4101-81E5-D8C25D0928EA}" ShortID="84594505">
+											<Language>SFX</Language>
+											<AudioFile>MGP1_Speak_DK_Blank.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="220227290"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MGP1_Speak_DK_Blank" ID="{9ADD7018-EFB7-4101-81E5-D8C25D0928EA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MGP1_Speak_DK_Blank_03" ID="{6F55E2F7-587C-4D6E-AAF7-E1431FA6BB58}" ShortID="776064612">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MGP1_Speak_DK_Blank" ID="{804EB238-07CE-49C9-BAEC-28A18B1B33A2}" ShortID="445333006">
+											<Language>SFX</Language>
+											<AudioFile>MGP1_Speak_DK_Blank.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="220227290"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MGP1_Speak_DK_Blank" ID="{804EB238-07CE-49C9-BAEC-28A18B1B33A2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MGP1_Speak_DK_Blank_04" ID="{0B8B6036-9F92-4840-BEB4-C720D351B96C}" ShortID="852783790">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MGP1_Speak_DK_Blank" ID="{C0A7594E-E8ED-4581-8B9F-78B35E646F78}" ShortID="217612836">
+											<Language>SFX</Language>
+											<AudioFile>MGP1_Speak_DK_Blank.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="220227290"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MGP1_Speak_DK_Blank" ID="{C0A7594E-E8ED-4581-8B9F-78B35E646F78}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MGP1_Speak_DK_Blank_05" ID="{722FD78F-7B40-4433-B61C-59BF5063E30F}" ShortID="1058810605">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MGP1_Speak_DK_Blank" ID="{62FDCF85-F489-433B-AB0C-4627952ED7E9}" ShortID="991776624">
+											<Language>SFX</Language>
+											<AudioFile>MGP1_Speak_DK_Blank.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="220227290"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MGP1_Speak_DK_Blank" ID="{62FDCF85-F489-433B-AB0C-4627952ED7E9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MGP1_Speak_DK_Blank_06" ID="{36B64495-58B1-470C-8095-380EBA2F328E}" ShortID="402150510">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MGP1_Speak_DK_Blank" ID="{E1C1017D-E21F-4EA9-B49C-7D05C1DC43D1}" ShortID="777485485">
+											<Language>SFX</Language>
+											<AudioFile>MGP1_Speak_DK_Blank.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="220227290"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MGP1_Speak_DK_Blank" ID="{E1C1017D-E21F-4EA9-B49C-7D05C1DC43D1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MGP1_Speak_DK_3632" ID="{4EEC1F17-D846-45A9-B8BA-8BE25AEBF068}" ShortID="571033108">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MGP1_Speak_DK_3632" ID="{89A98796-A5F5-48CC-B6F2-EF911BC180DF}" ShortID="226213263">
+											<Language>SFX</Language>
+											<AudioFile>MGP1_Speak_DK_3632.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MGP1_Speak_DK_3632" ID="{89A98796-A5F5-48CC-B6F2-EF911BC180DF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MGP1_Speak_DK_7540" ID="{720BE516-4911-43C5-851E-31919ECBD0FB}" ShortID="986452399">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MGP1_Speak_DK_7540" ID="{E0D2BA0D-750D-46A7-9868-747B7951B471}" ShortID="708720621">
+											<Language>SFX</Language>
+											<AudioFile>MGP1_Speak_DK_7540.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MGP1_Speak_DK_7540" ID="{E0D2BA0D-750D-46A7-9868-747B7951B471}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Speak_language" ID="{8F328D2D-C41E-49C6-9154-B4B31F46DA53}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList/>
+							</StateInfo>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Speak_count_UK" ID="{ACC79F5E-45B7-4F0A-9FDA-A138D21B4ACD}" ShortID="736724989">
+							<PropertyList>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="6"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="MGP1_Speak_DK_Four" ID="{507D4050-716E-4EA9-9B3C-84A7BB2D5664}" ShortID="501110887">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MGP1_Speak_DK_Four" ID="{4EA486B4-482C-4AD1-B966-C901C63923E0}" ShortID="482425304">
+											<Language>SFX</Language>
+											<AudioFile>MGP1_Speak_DK_Four.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="613143140"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MGP1_Speak_DK_Four" ID="{4EA486B4-482C-4AD1-B966-C901C63923E0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MGP1_Speak_DK_One" ID="{6BDDD908-0174-4CE2-A947-F5D772A4522A}" ShortID="585449561">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MGP1_Speak_DK_One" ID="{30AB6287-42A5-451F-A41F-81B96834A99C}" ShortID="730939649">
+											<Language>SFX</Language>
+											<AudioFile>MGP1_Speak_DK_One.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="1052955638"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MGP1_Speak_DK_One" ID="{30AB6287-42A5-451F-A41F-81B96834A99C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MGP1_Speak_DK_Three" ID="{992D4800-007D-4C6A-9724-40B5520726F6}" ShortID="702918888">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MGP1_Speak_DK_Three" ID="{5470E621-BB6C-4629-A53D-6C90B92A8E20}" ShortID="347828758">
+											<Language>SFX</Language>
+											<AudioFile>MGP1_Speak_DK_Three.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="914572333"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MGP1_Speak_DK_Three" ID="{5470E621-BB6C-4629-A53D-6C90B92A8E20}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MGP1_Speak_DK_Two" ID="{B3D60CF0-D6F8-4C56-955D-1584A95295AA}" ShortID="743156754">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MGP1_Speak_DK_Two" ID="{FBAAA202-4952-4C7E-8130-C092CA436B03}" ShortID="866990144">
+											<Language>SFX</Language>
+											<AudioFile>MGP1_Speak_DK_Two.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="952900142"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MGP1_Speak_DK_Two" ID="{FBAAA202-4952-4C7E-8130-C092CA436B03}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MGP1_Speak_DK_Blank" ID="{10B66B3A-3062-4FFE-9510-A2E34323C703}" ShortID="611731714">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MGP1_Speak_DK_Blank" ID="{28D421CC-6469-4D06-AADA-09D2B306522C}" ShortID="301687065">
+											<Language>SFX</Language>
+											<AudioFile>MGP1_Speak_DK_Blank.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="220227290"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MGP1_Speak_DK_Blank" ID="{28D421CC-6469-4D06-AADA-09D2B306522C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MGP1_Speak_DK_Blank_01" ID="{8F33A2CF-BD89-4AEA-9206-18EB0FF5797B}" ShortID="888799743">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MGP1_Speak_DK_Blank" ID="{E3497F8C-445D-42EA-965D-588E7EFC5353}" ShortID="1071008107">
+											<Language>SFX</Language>
+											<AudioFile>MGP1_Speak_DK_Blank.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="220227290"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MGP1_Speak_DK_Blank" ID="{E3497F8C-445D-42EA-965D-588E7EFC5353}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MGP1_Speak_DK_Blank_02" ID="{B6E98656-623B-44CC-8303-4C50AFEE81AF}" ShortID="540452902">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MGP1_Speak_DK_Blank" ID="{BC379555-6074-4F0C-A928-E77CAEBA351B}" ShortID="29018715">
+											<Language>SFX</Language>
+											<AudioFile>MGP1_Speak_DK_Blank.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="220227290"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MGP1_Speak_DK_Blank" ID="{BC379555-6074-4F0C-A928-E77CAEBA351B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MGP1_Speak_DK_Blank_03" ID="{96E8A46C-07F5-4F71-AAAA-C9E141D5F870}" ShortID="34225942">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MGP1_Speak_DK_Blank" ID="{6A81EB8E-BD42-49E1-BCCC-BE355464123D}" ShortID="646457457">
+											<Language>SFX</Language>
+											<AudioFile>MGP1_Speak_DK_Blank.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="220227290"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MGP1_Speak_DK_Blank" ID="{6A81EB8E-BD42-49E1-BCCC-BE355464123D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MGP1_Speak_DK_Blank_04" ID="{1788D8C3-D862-472D-A21C-D56F55C06B96}" ShortID="61571760">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MGP1_Speak_DK_Blank" ID="{D2526115-45A6-4332-9EA5-24E08FD8E60A}" ShortID="579077810">
+											<Language>SFX</Language>
+											<AudioFile>MGP1_Speak_DK_Blank.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="220227290"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MGP1_Speak_DK_Blank" ID="{D2526115-45A6-4332-9EA5-24E08FD8E60A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MGP1_Speak_DK_Blank_05" ID="{23B8B751-DDD1-49BB-A810-DFAD5BC6773F}" ShortID="256016333">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MGP1_Speak_DK_Blank" ID="{725D6C3A-54DE-4ACA-AED8-8DFFA2C8A5FD}" ShortID="238572470">
+											<Language>SFX</Language>
+											<AudioFile>MGP1_Speak_DK_Blank.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="220227290"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MGP1_Speak_DK_Blank" ID="{725D6C3A-54DE-4ACA-AED8-8DFFA2C8A5FD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MGP1_Speak_DK_Blank_06" ID="{2B3E4AAB-F11D-4B30-A0E3-6E08E57A41E1}" ShortID="935844373">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MGP1_Speak_DK_Blank" ID="{6F75F914-ABCF-4A0A-9040-A9980EE15272}" ShortID="445622054">
+											<Language>SFX</Language>
+											<AudioFile>MGP1_Speak_DK_Blank.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="220227290"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MGP1_Speak_DK_Blank" ID="{6F75F914-ABCF-4A0A-9040-A9980EE15272}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MGP1_Speak_DK_3632" ID="{C904EC03-8346-4565-8C45-59B6FEE2E044}" ShortID="453000643">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MGP1_Speak_DK_3632" ID="{57CE8C37-C935-41C2-915B-3A9C82CAB9CE}" ShortID="549786956">
+											<Language>SFX</Language>
+											<AudioFile>MGP1_Speak_DK_3632.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="226213263"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MGP1_Speak_DK_3632" ID="{57CE8C37-C935-41C2-915B-3A9C82CAB9CE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MGP1_Speak_DK_7540" ID="{236C5657-9227-4E2B-ADEB-1E26C4D0D5C3}" ShortID="432728081">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MGP1_Speak_DK_7540" ID="{3288F231-8D2E-44ED-B4A5-3C8B92107F35}" ShortID="382870">
+											<Language>SFX</Language>
+											<AudioFile>MGP1_Speak_DK_7540.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="708720621"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MGP1_Speak_DK_7540" ID="{3288F231-8D2E-44ED-B4A5-3C8B92107F35}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Speak_language" ID="{8F328D2D-C41E-49C6-9154-B4B31F46DA53}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList/>
+							</StateInfo>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Speak_language" ID="{8F328D2D-C41E-49C6-9154-B4B31F46DA53}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList/>
+					</StateInfo>
+					<GroupingInfo>
+						<GroupRef Name="Speak_language" ID="{8F328D2D-C41E-49C6-9154-B4B31F46DA53}"/>
+						<DefaultSwitchRef Name="DK" ID="{C68DAE7A-66DF-488C-A631-6AC788F7F88C}"/>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="Speak_count_UK" ID="{ACC79F5E-45B7-4F0A-9FDA-A138D21B4ACD}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Speak_count_DK" ID="{B34652C3-B8D6-48F6-897F-799C307C256A}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="UK" ID="{19B2D55D-6296-4A37-A0D6-ADC3359D7BF1}"/>
+								<ItemList>
+									<ItemRef Name="Speak_count_UK" ID="{ACC79F5E-45B7-4F0A-9FDA-A138D21B4ACD}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="DK" ID="{C68DAE7A-66DF-488C-A631-6AC788F7F88C}"/>
+								<ItemList>
+									<ItemRef Name="Speak_count_DK" ID="{B34652C3-B8D6-48F6-897F-799C307C256A}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
