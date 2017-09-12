@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(ParticleSystem))]
 public class Constructor : MonoBehaviour, Constructable
 {
     public Transform[] elements;
-    public float animationTime;
+    public float animationTime = 0.1f;
+    public float boomScale = 1.2f;
 
     private int elementIndex = 0;
     private int amountOfNumbers;
@@ -16,6 +16,14 @@ public class Constructor : MonoBehaviour, Constructable
         foreach (Transform element in elements)
         {
             element.localScale = new Vector3(0, 0, 0);
+        }
+    }
+
+    void Update()
+    {
+        if (Input.anyKeyDown)
+        {
+            Construct();
         }
     }
 
@@ -32,11 +40,21 @@ public class Constructor : MonoBehaviour, Constructable
     IEnumerator Grow(Transform element)
     {
         float currentTime = 0;
+        Vector3 scaleZero = new Vector3();
+        Vector3 blownScale = new Vector3(1, 1, 1) * boomScale;
+        Vector3 fullScale = new Vector3(1, 1, 1);
         while (currentTime < animationTime)
         {
             currentTime += Time.deltaTime;
-            print((currentTime / animationTime));
-            element.localScale = Vector3.Lerp(new Vector3(), new Vector3(1, 1, 1), (currentTime / animationTime));
+            float progress = currentTime / animationTime;
+            if (progress < 0.75f)
+            {
+                element.localScale = Vector3.Lerp(scaleZero, blownScale, (progress / 0.75f));
+            }
+            else
+            {
+                element.localScale = Vector3.Lerp(blownScale, fullScale, progress);
+            }
             yield return null;
         }
     }

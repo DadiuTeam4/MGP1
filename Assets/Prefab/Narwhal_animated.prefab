@@ -37,7 +37,7 @@ GameObject:
   - component: {fileID: 4369886836781084}
   - component: {fileID: 95715894973951116}
   m_Layer: 0
-  m_Name: Narwhal 1
+  m_Name: Narwhal_animated
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
