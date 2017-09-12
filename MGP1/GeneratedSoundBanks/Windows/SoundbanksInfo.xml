@@ -21,6 +21,7 @@
 			<ShortName>SoundbankA</ShortName>
 			<Path>SoundbankA.bnk</Path>
 			<IncludedEvents>
+				<Event Id="77978275" Name="Ambient" ObjectPath="\Events\Default Work Unit\Environment\Ambient" MaxAttenuation="0.000000"/>
 				<Event Id="3436946623" Name="Env_build" ObjectPath="\Events\Default Work Unit\Environment\Env_build"/>
 				<Event Id="63796330" Name="Main_music" ObjectPath="\Events\Default Work Unit\Music\Main_music"/>
 				<Event Id="559039776" Name="Mechanic_destroy" ObjectPath="\Events\Default Work Unit\Mechanics\Mechanic_destroy"/>
@@ -28,6 +29,8 @@
 				<Event Id="2840974953" Name="Mechanic_rise" ObjectPath="\Events\Default Work Unit\Mechanics\Mechanic_rise"/>
 				<Event Id="2136516444" Name="Mechanic_rise_stop" ObjectPath="\Events\Default Work Unit\Mechanics\Mechanic_rise_stop" MaxAttenuation="0.000000"/>
 				<Event Id="3793827733" Name="Speak_count" ObjectPath="\Events\Default Work Unit\Speak\Speak_count"/>
+				<Event Id="3681750326" Name="Speak_intro" ObjectPath="\Events\Default Work Unit\Speak\Speak_intro"/>
+				<Event Id="2907867019" Name="StopAllMusic" ObjectPath="\Events\Default Work Unit\Music\StopAllMusic" MaxAttenuation="0.000000"/>
 				<Event Id="1459553318" Name="Touch_anywhere" ObjectPath="\Events\Default Work Unit\Mechanics\Touch_anywhere"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -43,9 +46,21 @@
 					<ShortName>Touch_display.wav</ShortName>
 					<Path>SFX/Touch_display_1C9C67B2.wem</Path>
 				</File>
+				<File Id="94712589" Language="SFX">
+					<ShortName>MGP1_Speak_UK_8024.wav</ShortName>
+					<Path>SFX/MGP1_Speak_UK_8024_1C9C67B2.wem</Path>
+				</File>
+				<File Id="164388342" Language="SFX">
+					<ShortName>MGP1_Speak_UK_One.wav</ShortName>
+					<Path>SFX/MGP1_Speak_UK_One_1C9C67B2.wem</Path>
+				</File>
 				<File Id="169523579" Language="SFX">
 					<ShortName>Mechanism_Deconstruct_Rise_1.wav</ShortName>
-					<Path>SFX/Mechanism_Deconstruct_Rise_1_D7330CC5.wem</Path>
+					<Path>SFX/Mechanism_Deconstruct_Rise_1_57E16281.wem</Path>
+				</File>
+				<File Id="171186292" Language="SFX">
+					<ShortName>MGP1_Speak_UK_Four.wav</ShortName>
+					<Path>SFX/MGP1_Speak_UK_Four_1C9C67B2.wem</Path>
 				</File>
 				<File Id="220227290" Language="SFX">
 					<ShortName>MGP1_Speak_DK_Blank.wav</ShortName>
@@ -75,13 +90,25 @@
 					<ShortName>MGP1_Music_udkast_a_mainpiece.wav</ShortName>
 					<Path>SFX/MGP1_Music_udkast_a_mainpiece_F17FB28C.wem</Path>
 				</File>
+				<File Id="473381468" Language="SFX">
+					<ShortName>MGP1_Speak_UK_Three.wav</ShortName>
+					<Path>SFX/MGP1_Speak_UK_Three_1C9C67B2.wem</Path>
+				</File>
 				<File Id="613143140" Language="SFX">
 					<ShortName>MGP1_Speak_DK_Four.wav</ShortName>
 					<Path>SFX/MGP1_Speak_DK_Four_1C9C67B2.wem</Path>
 				</File>
+				<File Id="662310368" Language="SFX">
+					<ShortName>MGP1_Speak_UK_Two.wav</ShortName>
+					<Path>SFX/MGP1_Speak_UK_Two_1C9C67B2.wem</Path>
+				</File>
+				<File Id="675155689" Language="SFX">
+					<ShortName>MGP1_Speak_Intro_DK_3.wav</ShortName>
+					<Path>SFX/MGP1_Speak_Intro_DK_3_1C9C67B2.wem</Path>
+				</File>
 				<File Id="684181433" Language="SFX">
 					<ShortName>Mechanism_Deconstruct_Rise_1.wav</ShortName>
-					<Path>SFX/Mechanism_Deconstruct_Rise_1_5A40CBA7.wem</Path>
+					<Path>SFX/Mechanism_Deconstruct_Rise_1_5EA305C4.wem</Path>
 				</File>
 				<File Id="708252861" Language="SFX">
 					<ShortName>Mechanism_Deconstruct_Destroy.wav</ShortName>
@@ -94,6 +121,10 @@
 				<File Id="722565288" Language="SFX">
 					<ShortName>MGP1_Music_3A_4.wav</ShortName>
 					<Path>SFX/MGP1_Music_3A_4_F17FB28C.wem</Path>
+				</File>
+				<File Id="726081729" Language="SFX">
+					<ShortName>MGP1_Speak_Intro_UK_2.wav</ShortName>
+					<Path>SFX/MGP1_Speak_Intro_UK_2_1C9C67B2.wem</Path>
 				</File>
 				<File Id="843256934" Language="SFX">
 					<ShortName>MGP1_Speak_DK_Blank.wav</ShortName>
