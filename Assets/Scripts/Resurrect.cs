@@ -11,6 +11,11 @@ public class Resurrect : MonoBehaviour {
 	[Tooltip("Amount of seconds till item reappears")]
 	public float resurrectTime;
 	
+	[Tooltip("Amount scaled per frame")]
+	[Range(0.01f, 1.0f)]
+	public float scaleStep;
+	
+	private Vector3 normalScale;
 	private float timestamp; // Timestamp for when reappearence
 	private Collider col;
 	private Renderer ren;
@@ -26,6 +31,7 @@ public class Resurrect : MonoBehaviour {
 		col = gameObject.GetComponent<Collider>();
 		ren = gameObject.GetComponent<Renderer>();
 		navMeshObs = gameObject.GetComponent<NavMeshObstacle>();
+		normalScale = gameObject.transform.localScale;
 	}
 	
 	// Update is called once per frame
@@ -50,6 +56,24 @@ public class Resurrect : MonoBehaviour {
 			navMeshObs.enabled = true;
 			des.SetHasBeenSetToDestroy(false);
 			resurrecting = false;
+			StartCoroutine("ScaleThroughTime");
+		}
+	}
+
+	IEnumerator ScaleThroughTime(){
+		Vector3 miniScale = new Vector3(normalScale.x * 0.1f, normalScale.x * 0.1f, normalScale.x * 0.1f);
+		float t = 0.0f;
+
+
+		while(t != 1.0f){
+			t += scaleStep;
+			if(t > 1.0f)
+			{
+				t = 1.0f;
+			}
+
+			gameObject.transform.localScale = Vector3.Lerp(miniScale, normalScale, t);
+			yield return null;
 		}
 	}
 }
