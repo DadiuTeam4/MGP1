@@ -23,6 +23,8 @@ public class Oscillation : MonoBehaviour
 		{
 			float f = timing.sinOfTime;
 			Vector3 position = Vector3.Lerp(lowerBound.position, upperBound.position, (f + 1) / 2);
+			//position.y += 10.0f * Mathf.Sin(Mathf.Clamp01((f + 1) / 2) * Mathf.PI);
+
 			rhythmObject.gameObject.transform.position = position;
 		}
 		else 
