@@ -52,6 +52,7 @@ public class Number : MonoBehaviour, Touchable
 		{
 			constructionHandler.SendResource(value);
 			gameObject.SetActive(false);
+			AkSoundEngine.PostEvent ("Speak_count", gameObject); 
 		}	
 	}
 

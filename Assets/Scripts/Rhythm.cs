@@ -20,8 +20,7 @@ public class Rhythm : MonoBehaviour, Touchable {
 	// Use this for initialization
 	void Start () {
 		collider = gameObject.GetComponent<Collider>();
-		mR = gameObject.GetComponent<MeshRenderer> (); 
-		
+		mR = transform.GetChild(0).GetChild(0).GetComponent<MeshRenderer> (); 
 	}
 	
 	// Update is called once per frame
@@ -31,8 +30,8 @@ public class Rhythm : MonoBehaviour, Touchable {
 		if (0.2f < (t3.currentTime) - (interval) && (t3.currentTime) - (interval) < 0.4f) {
 			interval += t3.GetTargetTime();//move my interval to the next loop 
 			activate = true;//Activate me
-			gameObject.GetComponent<Renderer>().material.color = Color.green;//make it visible that I am active, turn me green
-
+			//gameObject.GetComponent<Renderer>().material.color = Color.green;//make it visible that I am active, turn me green
+			transform.GetChild(0).GetChild(0).GetComponent<Renderer>().material.color = Color.green;
 		} 
 
 		if(t3.currentTime - interval + t3.GetTargetTime() > 0.6f )//if more than 0.3 sec has passed
@@ -62,8 +61,7 @@ public class Rhythm : MonoBehaviour, Touchable {
 		mR.enabled = true;
 		collider.enabled = true;
 		activate = false;
-		gameObject.GetComponent<Renderer>().material.color = Color.white;
-
+		transform.GetChild(0).GetChild(0).GetComponent<Renderer>().material.color = Color.white;
 	}
 
 	public void SetMyTurn(int whatIsMyTurn){

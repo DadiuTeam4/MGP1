@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: a295ff0e91519cc4f902503b433529fb
 timeCreated: 1505205442
 licenseType: Pro
+=======
+guid: 8c9f1692314a5de45910f6c8c71eb877
+timeCreated: 1505213301
+licenseType: Free
+>>>>>>> origin/GUI-open-Scene
 MonoImporter:
   serializedVersion: 2
   defaultReferences: []
