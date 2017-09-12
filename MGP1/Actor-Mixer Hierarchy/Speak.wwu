@@ -593,6 +593,150 @@
 						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
+				<SwitchContainer Name="Speak_intro" ID="{3063EC9A-73EE-4D29-9B1A-D0FCDAB468F7}" ShortID="257561578">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Speak_intro_DK" ID="{5AD5285D-D9C7-4BCA-87D7-DB382ABAC6DE}" ShortID="523956522">
+							<PropertyList>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="MGP1_Speak_Intro_DK" ID="{AB5579F3-9AAF-46AC-9AE7-604807F49007}" ShortID="376265421">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MGP1_Speak_Intro_DK" ID="{7F60CED4-38B4-402C-BF7A-9533922C07AC}" ShortID="92420326">
+											<Language>SFX</Language>
+											<AudioFile>MGP1_Speak_Intro_DK.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="MGP1_Speak_Intro_DK_1" ID="{7A5E0744-C818-463A-BF35-977FEFAB1FD7}" ShortID="68042516">
+											<Language>SFX</Language>
+											<AudioFile>MGP1_Speak_Intro_DK_1.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="MGP1_Speak_Intro_DK_2" ID="{4431F8CF-DC94-47D4-B63C-95CA59B8791A}" ShortID="332529403">
+											<Language>SFX</Language>
+											<AudioFile>MGP1_Speak_Intro_DK_2.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="MGP1_Speak_Intro_DK_3" ID="{7B262E22-050D-4A64-BBB1-6820E13925F1}" ShortID="675155689">
+											<Language>SFX</Language>
+											<AudioFile>MGP1_Speak_Intro_DK_3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MGP1_Speak_Intro_DK_3" ID="{7B262E22-050D-4A64-BBB1-6820E13925F1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="MGP1_Speak_Intro_DK" ID="{AB5579F3-9AAF-46AC-9AE7-604807F49007}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Speak_intro_UK" ID="{24CF701C-B75C-444C-BD22-2671195FE1FE}" ShortID="432496669">
+							<PropertyList>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="MGP1_Speak_Intro_UK" ID="{2EB85D4F-2DDA-45C4-BD8D-472959A58103}" ShortID="227086729">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MGP1_Speak_Intro_UK" ID="{268FF2A5-0B93-492C-9494-780276B646C1}" ShortID="183681232">
+											<Language>SFX</Language>
+											<AudioFile>MGP1_Speak_Intro_UK.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="MGP1_Speak_Intro_UK_1" ID="{10938952-F7A2-4E6F-AC7C-0DED7D4C721A}" ShortID="686707824">
+											<Language>SFX</Language>
+											<AudioFile>MGP1_Speak_Intro_UK_1.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="MGP1_Speak_Intro_UK_2" ID="{D30D8A19-C9E9-4531-BA26-3B5E7218FFB7}" ShortID="726081729">
+											<Language>SFX</Language>
+											<AudioFile>MGP1_Speak_Intro_UK_2.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="MGP1_Speak_Intro_UK_3" ID="{125E840E-340E-4EC1-B55D-FEDC064C96E4}" ShortID="541989806">
+											<Language>SFX</Language>
+											<AudioFile>MGP1_Speak_Intro_UK_3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MGP1_Speak_Intro_UK_2" ID="{D30D8A19-C9E9-4531-BA26-3B5E7218FFB7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="MGP1_Speak_Intro_UK" ID="{2EB85D4F-2DDA-45C4-BD8D-472959A58103}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Speak_language" ID="{8F328D2D-C41E-49C6-9154-B4B31F46DA53}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList/>
+					</StateInfo>
+					<GroupingInfo>
+						<GroupRef Name="Speak_language" ID="{8F328D2D-C41E-49C6-9154-B4B31F46DA53}"/>
+						<DefaultSwitchRef Name="None" ID="{EF9340DA-809A-4BB5-ACEE-A08190964808}"/>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="Speak_intro_UK" ID="{24CF701C-B75C-444C-BD22-2671195FE1FE}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Speak_intro_DK" ID="{5AD5285D-D9C7-4BCA-87D7-DB382ABAC6DE}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="UK" ID="{19B2D55D-6296-4A37-A0D6-ADC3359D7BF1}"/>
+								<ItemList>
+									<ItemRef Name="Speak_intro_UK" ID="{24CF701C-B75C-444C-BD22-2671195FE1FE}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="DK" ID="{C68DAE7A-66DF-488C-A631-6AC788F7F88C}"/>
+								<ItemList>
+									<ItemRef Name="Speak_intro_DK" ID="{5AD5285D-D9C7-4BCA-87D7-DB382ABAC6DE}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID AMBIENT = 77978275U;
         static const AkUniqueID ENV_BUILD = 3436946623U;
         static const AkUniqueID MAIN_MUSIC = 63796330U;
         static const AkUniqueID MECHANIC_DESTROY = 559039776U;
@@ -20,6 +21,7 @@ namespace AK
         static const AkUniqueID MECHANIC_RISE = 2840974953U;
         static const AkUniqueID MECHANIC_RISE_STOP = 2136516444U;
         static const AkUniqueID SPEAK_COUNT = 3793827733U;
+        static const AkUniqueID SPEAK_INTRO = 3681750326U;
         static const AkUniqueID STOPALLMUSIC = 2907867019U;
         static const AkUniqueID TOUCH_ANYWHERE = 1459553318U;
     } // namespace EVENTS
