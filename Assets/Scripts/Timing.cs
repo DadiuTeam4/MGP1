@@ -17,7 +17,7 @@ public class Timing: MonoBehaviour {
 	[Tooltip("maximum number of objects, used to reset the turn")]
 	public int maxObjects = 4;//maximum number of objects, used to reset the turn
 	private int whichSongToPlay = 0;//which song to play indexing
-	private float targetTime = 8f;//end of a beat-loop
+	public float targetTime = 8f;//end of a beat-loop
 	private string[] levels = { "State1", "State2", "State3", "State4" };//what the songs are
 	[SerializeField]
 	private int turn;//whose turn is it
@@ -102,7 +102,7 @@ public class Timing: MonoBehaviour {
 	{
 		turn++;
 		if(turn == maxObjects){//for four objects, reset
-			SceneManager.LoadScene(0);
+			SceneManager.LoadScene(3);
 		}
 	}
 	//returns whose turn it is
