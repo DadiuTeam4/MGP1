@@ -1,6 +1,7 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	1204048829	Mechanics_Rhytm			\Default Work Unit\Mechanics_Rhytm	
 	2177735725	Music_level			\Default Work Unit\Music_level	
+	3170972326	Scene_change			\Default Work Unit\Scene_change	
 
 State	ID	Name	State Group			Notes
 	748895195	None	Mechanics_Rhytm			
@@ -13,6 +14,9 @@ State	ID	Name	State Group			Notes
 	1870081014	B1	Music_level			
 	1886858600	A2	Music_level			
 	1886858603	A1	Music_level			
+	748895195	None	Scene_change			
+	891686875	OpenScene	Scene_change			
+	1907701624	ProtoScene1	Scene_change			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	504532776	Brick			\Factory Reflect Acoustic Textures\Textures\Brick	

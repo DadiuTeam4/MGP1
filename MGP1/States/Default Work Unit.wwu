@@ -15,13 +15,12 @@
 						<State Name="State4" ID="{9506DD0E-01B6-4B7F-8EDB-12AFA1AA5E24}"/>
 					</ChildrenList>
 				</StateGroup>
-				<StateGroup Name="Music_level" ID="{E9370754-A539-4A85-B6F6-36B7E3CA9552}">
+				<StateGroup Name="Scene_change" ID="{C4498FAD-5D7B-4F1B-89FE-35A608290B5D}">
 					<ChildrenList>
-						<State Name="None" ID="{2E81586F-407A-4BFF-83C8-5C4AAE49BBD3}"/>
-						<State Name="A1" ID="{FACD8C15-3EFA-40BD-9C92-04A16B396709}"/>
-						<State Name="B1" ID="{FDBD9CFC-CD8E-46DF-9AD1-9A02FDA6DB77}"/>
-						<State Name="A2" ID="{6FA55259-24D6-4DA7-B6BE-0E03F57CB3B8}"/>
-						<State Name="B2" ID="{D22E9CA8-011B-42E6-B499-46CA726F6189}"/>
+						<State Name="None" ID="{DC8EA806-5963-4E84-9F6D-48A4ED0E5812}"/>
+						<State Name="OpenScene" ID="{4FCCB697-E484-4249-9A0C-CE6BF18A89B5}"/>
+						<State Name="ProtoScene1" ID="{49026672-12DD-494E-BADE-225F3EA65E05}"/>
+						<State Name="ProtoScene3" ID="{EA3D6FD1-A476-4996-8EB9-4A96F885D198}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>
