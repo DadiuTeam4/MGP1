@@ -243,6 +243,8 @@ MonoBehaviour:
   - {fileID: 1417154901802668, guid: af7ed20caa141a042a5464c3528a3953, type: 2}
   hugo: {fileID: 0}
   constructionHandler: {fileID: 0}
+  hasParticles: 0
+  particleSystem: {fileID: 0}
   changeSceneOnDestroyed: 1
   sceneName: ProtoScene3
   delay: 3
@@ -293,7 +295,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: e76d8bbfdde314148a0ac4b4083b4a35, type: 2}
+  - {fileID: 2100000, guid: 43315bcfc8f3d4e4f99e5ee83fc13180, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
