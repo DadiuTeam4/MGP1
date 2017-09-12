@@ -69,6 +69,7 @@ public class DeConstrucShaderController : MonoBehaviour {
             }
         }
 
+        //commect
         if (!GO.GetHasBeenSetToDestroy())
         {
             active = false;
@@ -77,7 +78,7 @@ public class DeConstrucShaderController : MonoBehaviour {
             if (!children)
             {
                 ChangeTex(0);
-                DeconstructAnim(0);
+                DeconstructAnim(0); 
             }
             else if (children)
             {
