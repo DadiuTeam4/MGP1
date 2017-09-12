@@ -22,9 +22,21 @@ MonoBehaviour:
   - PhysicalPath: Events/Environment.wwu
     ParentPhysicalPath: Events/Default Work Unit.wwu
     Guid: '{D550EFA8-B4F1-43D8-8ED8-9658C01400C6}'
-    m_lastTimePsrt1: -2124138496
-    m_lastTimePart2: -1999308323
+    m_lastTimePsrt1: -1203288192
+    m_lastTimePart2: -1999308297
     List:
+    - Name: Ambient
+      Path: Default Work Unit/Environment/Ambient
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Environment
+        ObjectType: 12
+      - ElementName: Ambient
+        ObjectType: 3
+      ID: 77978275
+      Guid: 28095ce1c25fd14ca2315d30f03e71a4
+      maxAttenuation: 0
     - Name: Env_build
       Path: Default Work Unit/Environment/Env_build
       PathAndIcons:
@@ -106,8 +118,8 @@ MonoBehaviour:
   - PhysicalPath: Events/Music.wwu
     ParentPhysicalPath: Events/Default Work Unit.wwu
     Guid: '{236EC451-CED1-4E6F-8F8E-62DC6C855911}'
-    m_lastTimePsrt1: -2124138496
-    m_lastTimePart2: -1999308323
+    m_lastTimePsrt1: -1203288192
+    m_lastTimePart2: -1999308297
     List:
     - Name: Main_music
       Path: Default Work Unit/Music/Main_music
@@ -121,11 +133,23 @@ MonoBehaviour:
       ID: 63796330
       Guid: 5cc8baa0b642fa45a9fe0e18e94a32ae
       maxAttenuation: 0
+    - Name: StopAllMusic
+      Path: Default Work Unit/Music/StopAllMusic
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: StopAllMusic
+        ObjectType: 3
+      ID: -1387100277
+      Guid: 9529a8870adf4a4aa92b6c961330f8b6
+      maxAttenuation: 0
   - PhysicalPath: Events/Speak.wwu
     ParentPhysicalPath: Events/Default Work Unit.wwu
     Guid: '{EF808080-4145-491A-97D0-09A780B7673C}'
-    m_lastTimePsrt1: -553876864
-    m_lastTimePart2: -1999308315
+    m_lastTimePsrt1: -1203288192
+    m_lastTimePart2: -1999308297
     List:
     - Name: Speak_count
       Path: Default Work Unit/Speak/Speak_count
@@ -138,6 +162,18 @@ MonoBehaviour:
         ObjectType: 3
       ID: -501139563
       Guid: f81f976d09f7e24ea11f6cfc1e43ea9c
+      maxAttenuation: 0
+    - Name: Speak_intro
+      Path: Default Work Unit/Speak/Speak_intro
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Speak
+        ObjectType: 12
+      - ElementName: Speak_intro
+        ObjectType: 3
+      ID: -613216970
+      Guid: 372750157cc37f4f87f30673c32fa9e9
       maxAttenuation: 0
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu

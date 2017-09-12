@@ -35,7 +35,7 @@ public class PictureFadeOut : MonoBehaviour {
          if (fade) {
              if (alph < 1) {
                  alph += Time.deltaTime * .2f;
-                 if (alph > 1) {alph = 1f; SceneManager.LoadScene("Scenes/OpenScenes");}
+                 if (alph > 1) {alph = 1f; SceneManager.LoadScene(0);}
                  blk.SetPixel (0, 0, new Color (0, 0, 0, alph));
                  blk.Apply ();
              }
