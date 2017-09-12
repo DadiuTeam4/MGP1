@@ -28,7 +28,7 @@ public class Rhythm : MonoBehaviour, Touchable {
 	void Update () {
 
 		//if I am on beat
-		if (0.0f < (t3.currentTime) - (interval) && (t3.currentTime) - (interval) < 0.3f) {
+		if (0.2f < (t3.currentTime) - (interval) && (t3.currentTime) - (interval) < 0.4f) {
 			interval += t3.GetTargetTime();//move my interval to the next loop 
 			activate = true;//Activate me
 			gameObject.GetComponent<Renderer>().material.color = Color.green;//make it visible that I am active, turn me green

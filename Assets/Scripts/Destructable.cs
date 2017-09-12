@@ -90,9 +90,12 @@ public class Destructable : MonoBehaviour, Holdable
 			{
 				transform.gameObject.GetComponent<Renderer>().enabled = false;
 			}
-			transform.gameObject.GetComponent<NavMeshObstacle>().enabled = false;
+			if (transform.gameObject.GetComponent<NavMeshObstacle> () != null) {
+				transform.gameObject.GetComponent<NavMeshObstacle>().enabled = false;
+			}
 
 			if (changeSceneOnDestroyed) {
+				Debug.Log ("CHANGE SCENE!!!!");
 				StartCoroutine ("ChangeTheScene");
 			}
 			return true;
