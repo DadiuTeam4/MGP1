@@ -1165,6 +1165,8 @@ MonoBehaviour:
   - {fileID: 1417154901802668, guid: af7ed20caa141a042a5464c3528a3953, type: 2}
   hugo: {fileID: 1522597855}
   constructionHandler: {fileID: 1369430177}
+  hasParticles: 0
+  particleSystem: {fileID: 0}
   changeSceneOnDestroyed: 0
   sceneName: 
   delay: 0
@@ -1180,7 +1182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resurrectTime: 20
-  scaleStep: 0
+  scaleStep: 0.019
 --- !u!114 &297398588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2354,6 +2356,8 @@ MonoBehaviour:
   - {fileID: 1417154901802668, guid: af7ed20caa141a042a5464c3528a3953, type: 2}
   hugo: {fileID: 1522597855}
   constructionHandler: {fileID: 1369430177}
+  hasParticles: 0
+  particleSystem: {fileID: 0}
   changeSceneOnDestroyed: 0
   sceneName: 
   delay: 0
@@ -2803,6 +2807,8 @@ MonoBehaviour:
   - {fileID: 1417154901802668, guid: af7ed20caa141a042a5464c3528a3953, type: 2}
   hugo: {fileID: 1522597855}
   constructionHandler: {fileID: 1369430177}
+  hasParticles: 0
+  particleSystem: {fileID: 0}
   changeSceneOnDestroyed: 0
   sceneName: 
   delay: 0
@@ -3092,7 +3098,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1013125172}
   m_LocalRotation: {x: 0.6112018, y: 0.25769714, z: -0.21670923, w: 0.7162832}
-  m_LocalPosition: {x: -880.0376, y: -193.27045, z: 414.79135}
+  m_LocalPosition: {x: -888, y: -230, z: 406}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1837722878}
@@ -3122,6 +3128,8 @@ MonoBehaviour:
   - {fileID: 1417154901802668, guid: af7ed20caa141a042a5464c3528a3953, type: 2}
   hugo: {fileID: 1522597855}
   constructionHandler: {fileID: 1369430177}
+  hasParticles: 0
+  particleSystem: {fileID: 0}
   changeSceneOnDestroyed: 0
   sceneName: 
   delay: 0
@@ -3137,7 +3145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resurrectTime: 25
-  scaleStep: 0
+  scaleStep: 0.02
 --- !u!114 &1013125176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3282,6 +3290,8 @@ MonoBehaviour:
   - {fileID: 1417154901802668, guid: af7ed20caa141a042a5464c3528a3953, type: 2}
   hugo: {fileID: 1522597855}
   constructionHandler: {fileID: 1369430177}
+  hasParticles: 1
+  particleSystem: {fileID: 1126883368}
   changeSceneOnDestroyed: 0
   sceneName: 
   delay: 0
@@ -3874,6 +3884,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 13d69e18245fb4d388e356bea7cc1697, type: 3}
   m_IsPrefabParent: 0
+--- !u!198 &1126883368 stripped
+ParticleSystem:
+  m_PrefabParentObject: {fileID: 198134179362446736, guid: 809140682d2cdf44ba6c01df9aff4fad,
+    type: 2}
+  m_PrefabInternal: {fileID: 1956449988}
 --- !u!1001 &1164344748
 Prefab:
   m_ObjectHideFlags: 0
@@ -4652,6 +4667,11 @@ Prefab:
       propertyPath: constructionHandler
       value: 
       objectReference: {fileID: 1369430177}
+    - target: {fileID: 114493583941048084, guid: 49de49a8bfb674aefa680202053837b6,
+        type: 2}
+      propertyPath: scaleStep
+      value: 0.01
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 49de49a8bfb674aefa680202053837b6, type: 2}
   m_IsPrefabParent: 0
@@ -4724,6 +4744,8 @@ MonoBehaviour:
   - {fileID: 1417154901802668, guid: af7ed20caa141a042a5464c3528a3953, type: 2}
   hugo: {fileID: 1522597855}
   constructionHandler: {fileID: 1369430177}
+  hasParticles: 0
+  particleSystem: {fileID: 0}
   changeSceneOnDestroyed: 0
   sceneName: 
   delay: 0
@@ -4739,7 +4761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resurrectTime: 25
-  scaleStep: 0
+  scaleStep: 0.02
 --- !u!114 &1540899994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5174,7 +5196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resurrectTime: 25
-  scaleStep: 0
+  scaleStep: 0.02
 --- !u!114 &1680046524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5199,6 +5221,8 @@ MonoBehaviour:
   - {fileID: 1417154901802668, guid: af7ed20caa141a042a5464c3528a3953, type: 2}
   hugo: {fileID: 1522597855}
   constructionHandler: {fileID: 1369430177}
+  hasParticles: 0
+  particleSystem: {fileID: 0}
   changeSceneOnDestroyed: 0
   sceneName: 
   delay: 0
@@ -6510,6 +6534,8 @@ MonoBehaviour:
   - {fileID: 1417154901802668, guid: af7ed20caa141a042a5464c3528a3953, type: 2}
   hugo: {fileID: 1522597855}
   constructionHandler: {fileID: 1369430177}
+  hasParticles: 0
+  particleSystem: {fileID: 0}
   changeSceneOnDestroyed: 0
   sceneName: 
   delay: 0
@@ -6525,7 +6551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resurrectTime: 25
-  scaleStep: 0
+  scaleStep: 0.019
 --- !u!114 &2123126707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6660,6 +6686,11 @@ Prefab:
       propertyPath: constructionHandler
       value: 
       objectReference: {fileID: 1369430177}
+    - target: {fileID: 114079073353588144, guid: 43d35d28a1b0a408db85ffa7802be798,
+        type: 2}
+      propertyPath: scaleStep
+      value: 0.02
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 43d35d28a1b0a408db85ffa7802be798, type: 2}
   m_IsPrefabParent: 0
