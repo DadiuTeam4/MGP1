@@ -46,6 +46,7 @@ public class TouchHandler : MonoBehaviour
 					{
 						Touchable obj = hit.collider.gameObject.GetComponent<Touchable>();
 						obj.Interact(hit);
+				
 					}
 				}
 			}

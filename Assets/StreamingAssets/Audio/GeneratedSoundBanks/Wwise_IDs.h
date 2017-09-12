@@ -19,6 +19,7 @@ namespace AK
         static const AkUniqueID MECHANIC_RHYTMIC = 2396932956U;
         static const AkUniqueID MECHANIC_RISE = 2840974953U;
         static const AkUniqueID MECHANIC_RISE_STOP = 2136516444U;
+        static const AkUniqueID TOUCH_ANYWHERE = 1459553318U;
     } // namespace EVENTS
 
     namespace STATES

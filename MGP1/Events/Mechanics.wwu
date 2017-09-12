@@ -59,6 +59,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Touch_anywhere" ID="{AAEDAD81-8F71-482D-B1EA-641DD9C7A4CA}">
+					<ChildrenList>
+						<Action Name="" ID="{E98B8CB3-4F32-4DAB-A908-40C4E29C4649}" ShortID="978563519">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Touch_display" ID="{52109BC5-3319-4E94-9174-57D37D8C86A9}" WorkUnitID="{2DA40240-84E5-4A58-BD61-EEB8F9DD8005}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

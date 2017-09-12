@@ -20,7 +20,7 @@ public class DeConstrucShaderController : MonoBehaviour {
     void Update()
     {
         
-        float TimeGot = (GO.GetTimeAtFirstTrigger());
+	        float TimeGot = (GO.GetTimeAtFirstTrigger());
 
         if (TimeGot == 0)
             return;
