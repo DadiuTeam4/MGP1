@@ -102,7 +102,7 @@ public class Timing: MonoBehaviour {
 	{
 		turn++;
 		if(turn == maxObjects){//game has ended, change scene
-			SceneManager.LoadScene(0);
+			SceneManager.LoadScene("Scenes/ProtoScene4");
 		}
 	}
 	//returns whose turn it is
