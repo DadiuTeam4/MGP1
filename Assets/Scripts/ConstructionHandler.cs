@@ -5,6 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 public class ConstructionHandler : MonoBehaviour {
+	[Tooltip("Each array needs to be filled with the corresponding CONSTRUCTABLES that you want to react to the number. Fx. all constructables that you want to react on pickup of ones, put in the ones array. IF AN ARRAY IS EMPTY IT WILL MAKE IT IMPOSSIBLE TO PICK UP NUMBERS")]
 	public GameObject[] ones, twos, threes, fours, fives;
 
 	
