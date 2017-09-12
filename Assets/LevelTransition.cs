@@ -12,10 +12,12 @@ public class LevelTransition : MonoBehaviour {
 	public Transform endPos;
 	public float delayBeforeLoadingNewScene;
 	public bool dontDestroyOnLoad;
+	public string sceneToChangeTo;
 	private float timeToEnd;
 	private float timer;
 	private bool moving;
 	private string newLevel;
+	private bool sceneChanged;
 
 	void Start() 
 	{
@@ -39,6 +41,13 @@ public class LevelTransition : MonoBehaviour {
 				StartCoroutine(ChangeScene(delayBeforeLoadingNewScene));
 			}
 		}
+		else if (sceneChanged) 
+		{
+			timer += Time.deltaTime;
+			float progress = timer / timeToEnd;
+			Vector3 pos = Vector3.Lerp(endPos.position, startPos.position, progress);
+			transitionObject.transform.position = pos;
+		}
 	}
 
 	public void StartTransition(string level) 
@@ -51,5 +60,10 @@ public class LevelTransition : MonoBehaviour {
 	{
 		yield return new WaitForSeconds(seconds);
 		SceneManager.LoadScene(newLevel);
+		if (dontDestroyOnLoad) 
+		{
+			sceneChanged = true;
+			timer = 0;
+		}
 	}
 }
