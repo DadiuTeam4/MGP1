@@ -45,7 +45,7 @@
 				</File>
 				<File Id="169523579" Language="SFX">
 					<ShortName>Mechanism_Deconstruct_Rise_1.wav</ShortName>
-					<Path>SFX/Mechanism_Deconstruct_Rise_1_D7330CC5.wem</Path>
+					<Path>SFX/Mechanism_Deconstruct_Rise_1_57E16281.wem</Path>
 				</File>
 				<File Id="220227290" Language="SFX">
 					<ShortName>MGP1_Speak_DK_Blank.wav</ShortName>
@@ -63,17 +63,17 @@
 					<ShortName>Mechanism_Deconstruct_Destroy.wav</ShortName>
 					<Path>SFX/Mechanism_Deconstruct_Destroy_A78249A5.wem</Path>
 				</File>
+				<File Id="312663997" Language="SFX">
+					<ShortName>MGP1_Music_3A_3.wav</ShortName>
+					<Path>SFX/MGP1_Music_3A_3_F17FB28C.wem</Path>
+				</File>
+				<File Id="381669214" Language="SFX">
+					<ShortName>MGP1_Music_3A_2.wav</ShortName>
+					<Path>SFX/MGP1_Music_3A_2_F17FB28C.wem</Path>
+				</File>
 				<File Id="385335095" Language="SFX">
 					<ShortName>MGP1_Music_udkast_a_mainpiece.wav</ShortName>
 					<Path>SFX/MGP1_Music_udkast_a_mainpiece_F17FB28C.wem</Path>
-				</File>
-				<File Id="537739780" Language="SFX">
-					<ShortName>Tirsdag_row3.wav</ShortName>
-					<Path>SFX/Tirsdag_row3_F17FB28C.wem</Path>
-				</File>
-				<File Id="542575809" Language="SFX">
-					<ShortName>Tirsdag_row4.wav</ShortName>
-					<Path>SFX/Tirsdag_row4_F17FB28C.wem</Path>
 				</File>
 				<File Id="613143140" Language="SFX">
 					<ShortName>MGP1_Speak_DK_Four.wav</ShortName>
@@ -81,7 +81,7 @@
 				</File>
 				<File Id="684181433" Language="SFX">
 					<ShortName>Mechanism_Deconstruct_Rise_1.wav</ShortName>
-					<Path>SFX/Mechanism_Deconstruct_Rise_1_5A40CBA7.wem</Path>
+					<Path>SFX/Mechanism_Deconstruct_Rise_1_5EA305C4.wem</Path>
 				</File>
 				<File Id="708252861" Language="SFX">
 					<ShortName>Mechanism_Deconstruct_Destroy.wav</ShortName>
@@ -91,9 +91,9 @@
 					<ShortName>MGP1_Speak_DK_7540.wav</ShortName>
 					<Path>SFX/MGP1_Speak_DK_7540_1C9C67B2.wem</Path>
 				</File>
-				<File Id="808043082" Language="SFX">
-					<ShortName>Tirsdag_row2.wav</ShortName>
-					<Path>SFX/Tirsdag_row2_F17FB28C.wem</Path>
+				<File Id="722565288" Language="SFX">
+					<ShortName>MGP1_Music_3A_4.wav</ShortName>
+					<Path>SFX/MGP1_Music_3A_4_F17FB28C.wem</Path>
 				</File>
 				<File Id="843256934" Language="SFX">
 					<ShortName>MGP1_Speak_DK_Blank.wav</ShortName>
@@ -111,13 +111,13 @@
 					<ShortName>MGP1_Speak_DK_One.wav</ShortName>
 					<Path>SFX/MGP1_Speak_DK_One_1C9C67B2.wem</Path>
 				</File>
+				<File Id="1053472503" Language="SFX">
+					<ShortName>MGP1_Music_3A_1.wav</ShortName>
+					<Path>SFX/MGP1_Music_3A_1_F17FB28C.wem</Path>
+				</File>
 				<File Id="1068156190" Language="SFX">
 					<ShortName>MGP1_Music_udkast_a_intro.wav</ShortName>
 					<Path>SFX/MGP1_Music_udkast_a_intro_F17FB28C.wem</Path>
-				</File>
-				<File Id="1072590724" Language="SFX">
-					<ShortName>Tirsdag_row1.wav</ShortName>
-					<Path>SFX/Tirsdag_row1_F17FB28C.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
