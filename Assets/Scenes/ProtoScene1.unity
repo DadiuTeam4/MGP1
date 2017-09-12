@@ -2496,6 +2496,17 @@ MonoBehaviour:
   speed: 1
   moveTarget: 0
   target: {fileID: 0}
+--- !u!114 &645183221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 645183214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f34dcf7baebc449609f5639a55f29a99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &679416044 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 9b25f9bc7dbe84d31af21e445c237448, type: 3}
