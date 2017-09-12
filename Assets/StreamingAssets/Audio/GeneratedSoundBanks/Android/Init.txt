@@ -1,5 +1,6 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	1204048829	Mechanics_Rhytm			\Default Work Unit\Mechanics_Rhytm	
+	1821341230	Speak_language			\Default Work Unit\Speak_language	
 	3170972326	Scene_change			\Default Work Unit\Scene_change	
 
 State	ID	Name	State Group			Notes
@@ -8,6 +9,9 @@ State	ID	Name	State Group			Notes
 	1208172674	State2	Mechanics_Rhytm			
 	1208172675	State3	Mechanics_Rhytm			
 	1208172676	State4	Mechanics_Rhytm			
+	748895195	None	Speak_language			
+	1551306165	UK	Speak_language			
+	1836525770	DK	Speak_language			
 	748895195	None	Scene_change			
 	891686875	OpenScene	Scene_change			
 	1907701624	ProtoScene1	Scene_change			
