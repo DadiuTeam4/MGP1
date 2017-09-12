@@ -9,6 +9,7 @@ Event	ID	Name			Wwise Object Path	Notes
 
 State Group	ID	Name			Wwise Object Path	Notes
 	1204048829	Mechanics_Rhytm			\Default Work Unit\Mechanics_Rhytm	
+	2177735725	Music_level			\Default Work Unit\Music_level	
 
 State	ID	Name	State Group			Notes
 	748895195	None	Mechanics_Rhytm			
@@ -16,6 +17,11 @@ State	ID	Name	State Group			Notes
 	1208172674	State2	Mechanics_Rhytm			
 	1208172675	State3	Mechanics_Rhytm			
 	1208172676	State4	Mechanics_Rhytm			
+	748895195	None	Music_level			
+	1870081013	B2	Music_level			
+	1870081014	B1	Music_level			
+	1886858600	A2	Music_level			
+	1886858603	A1	Music_level			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	953639	Mechanism_Deconstruct_Rise_03	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Windows\SFX\Mechanism_Deconstruct_Rise_47F8848F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mechanics\Mech_Deconstruct_rise\Mechanism_Deconstruct_Rise_03		380804
@@ -27,11 +33,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	227407549	Mechanism_Deconstruct_Rise_02	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Windows\SFX\Mechanism_Deconstruct_Rise_0AA0CE58.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mechanics\Mech_Deconstruct_rise\Mechanism_Deconstruct_Rise_02		413072
 	259896849	Mechanism_Deconstruct_Destroy_02	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Windows\SFX\Mechanism_Deconstruct_Destroy_6C1A2738.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mechanics\Mech_deconstruct_destroy\Mechanism_Deconstruct_Destroy_02		735732
 	291183620	Mechanism_Deconstruct_Destroy_03	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Windows\SFX\Mechanism_Deconstruct_Destroy_A78249A5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mechanics\Mech_deconstruct_destroy\Mechanism_Deconstruct_Destroy_03		729276
-	385335095	MGP1_Music_udkast_a_mainpiece	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Windows\SFX\MGP1_Music_udkast_a_mainpiece_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Main_music\A_1\MGP1_Music_udkast_a_mainpiece		12288064
 	537739780	Tirsdag_row3	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Windows\SFX\Tirsdag_row3_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Mecahnic_rhytmic\Track3\Tirsdag_row3\Tirsdag_row3		1536064
 	542575809	Tirsdag_row4	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Windows\SFX\Tirsdag_row4_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Mecahnic_rhytmic\Track4\Tirsdag_row4\Tirsdag_row4		1536064
 	708252861	Mechanism_Deconstruct_Destroy_01	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Windows\SFX\Mechanism_Deconstruct_Destroy_1316701C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mechanics\Mech_deconstruct_destroy\Mechanism_Deconstruct_Destroy_01		709916
 	808043082	Tirsdag_row2	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Windows\SFX\Tirsdag_row2_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Mecahnic_rhytmic\Track2\Tirsdag_row2\Tirsdag_row2		1536064
-	1068156190	MGP1_Music_udkast_a_intro	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Windows\SFX\MGP1_Music_udkast_a_intro_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Main_music\A\MGP1_Music_udkast_a_intro		9216064
+	1068156190	MGP1_Music_udkast_a_intro	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Windows\SFX\MGP1_Music_udkast_a_intro_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Main_music_switch\A1\A\MGP1_Music_udkast_a_intro		9216064
 	1072590724	Tirsdag_row1	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Windows\SFX\Tirsdag_row1_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Mecahnic_rhytmic\Track1\Tirsdag_row1\Tirsdag_row1		1536064
 

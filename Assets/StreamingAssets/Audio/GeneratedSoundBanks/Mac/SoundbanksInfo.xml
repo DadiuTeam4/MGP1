@@ -32,7 +32,7 @@
 			<IncludedMemoryFiles>
 				<File Id="953639" Language="SFX">
 					<ShortName>Mechanism_Deconstruct_Rise.wav</ShortName>
-					<Path>SFX/Mechanism_Deconstruct_Rise_DBE4DA20.wem</Path>
+					<Path>SFX/Mechanism_Deconstruct_Rise_47F8848F.wem</Path>
 				</File>
 				<File Id="21240014" Language="SFX">
 					<ShortName>Mechanism_Deconstruct_Destroy.wav</ShortName>
@@ -44,11 +44,11 @@
 				</File>
 				<File Id="52878315" Language="SFX">
 					<ShortName>Mechanism_Deconstruct_Rise.wav</ShortName>
-					<Path>SFX/Mechanism_Deconstruct_Rise_2CE24F26.wem</Path>
+					<Path>SFX/Mechanism_Deconstruct_Rise_786CA0BB.wem</Path>
 				</File>
 				<File Id="64246336" Language="SFX">
 					<ShortName>Mechanism_Deconstruct_Rise.wav</ShortName>
-					<Path>SFX/Mechanism_Deconstruct_Rise_256B98E4.wem</Path>
+					<Path>SFX/Mechanism_Deconstruct_Rise_05FA2A6A.wem</Path>
 				</File>
 				<File Id="87495225" Language="SFX">
 					<ShortName>Touch_display.wav</ShortName>
@@ -56,7 +56,7 @@
 				</File>
 				<File Id="227407549" Language="SFX">
 					<ShortName>Mechanism_Deconstruct_Rise.wav</ShortName>
-					<Path>SFX/Mechanism_Deconstruct_Rise_A50021F4.wem</Path>
+					<Path>SFX/Mechanism_Deconstruct_Rise_0AA0CE58.wem</Path>
 				</File>
 				<File Id="259896849" Language="SFX">
 					<ShortName>Mechanism_Deconstruct_Destroy.wav</ShortName>
@@ -65,10 +65,6 @@
 				<File Id="291183620" Language="SFX">
 					<ShortName>Mechanism_Deconstruct_Destroy.wav</ShortName>
 					<Path>SFX/Mechanism_Deconstruct_Destroy_A78249A5.wem</Path>
-				</File>
-				<File Id="385335095" Language="SFX">
-					<ShortName>MGP1_Music_udkast_a_mainpiece.wav</ShortName>
-					<Path>SFX/MGP1_Music_udkast_a_mainpiece_F17FB28C.wem</Path>
 				</File>
 				<File Id="537739780" Language="SFX">
 					<ShortName>Tirsdag_row3.wav</ShortName>

@@ -16,14 +16,14 @@ MonoBehaviour:
   - PhysicalPath: Events/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{ECCF3AF7-9E18-4C08-92BA-578EF8D59B79}'
-    m_lastTimePsrt1: -645842816
-    m_lastTimePart2: -1999308528
+    m_lastTimePsrt1: 1109389824
+    m_lastTimePart2: -1999308367
     List: []
   - PhysicalPath: Events/Environment.wwu
     ParentPhysicalPath: Events/Default Work Unit.wwu
     Guid: '{D550EFA8-B4F1-43D8-8ED8-9658C01400C6}'
-    m_lastTimePsrt1: 654026368
-    m_lastTimePart2: -1999308531
+    m_lastTimePsrt1: 1109389824
+    m_lastTimePart2: -1999308367
     List:
     - Name: Env_build
       Path: Default Work Unit/Environment/Env_build
@@ -40,8 +40,8 @@ MonoBehaviour:
   - PhysicalPath: Events/Mechanics.wwu
     ParentPhysicalPath: Events/Default Work Unit.wwu
     Guid: '{A757C22F-EFD4-4F91-89E2-5CF1E3BB99E6}'
-    m_lastTimePsrt1: 234026368
-    m_lastTimePart2: -1999308531
+    m_lastTimePsrt1: 1109389824
+    m_lastTimePart2: -1999308367
     List:
     - Name: Mechanic_destroy
       Path: Default Work Unit/Mechanics/Mechanic_destroy
@@ -91,11 +91,23 @@ MonoBehaviour:
       ID: 2136516444
       Guid: 18fa54af008045488915b83a0bd0ae6f
       maxAttenuation: 0
+    - Name: Touch_anywhere
+      Path: Default Work Unit/Mechanics/Touch_anywhere
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Mechanics
+        ObjectType: 12
+      - ElementName: Touch_anywhere
+        ObjectType: 3
+      ID: 1459553318
+      Guid: 81adedaa718f2d48b1ea641dd9c7a4ca
+      maxAttenuation: 0
   - PhysicalPath: Events/Music.wwu
     ParentPhysicalPath: Events/Default Work Unit.wwu
     Guid: '{236EC451-CED1-4E6F-8F8E-62DC6C855911}'
-    m_lastTimePsrt1: -645842816
-    m_lastTimePart2: -1999308528
+    m_lastTimePsrt1: 1109389824
+    m_lastTimePart2: -1999308367
     List:
     - Name: Main_music
       Path: Default Work Unit/Music/Main_music
@@ -120,8 +132,8 @@ MonoBehaviour:
   - PhysicalPath: States/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{84293648-188C-4843-BE28-B2EA53028374}'
-    m_lastTimePsrt1: 1674731008
-    m_lastTimePart2: -1999309121
+    m_lastTimePsrt1: 1109389824
+    m_lastTimePart2: -1999308367
     List:
     - Name: Mechanics_Rhytm
       Path: Default Work Unit/Mechanics_Rhytm
@@ -156,6 +168,39 @@ MonoBehaviour:
       - bytes: 8111ebd05ac25e4ca7229d71d9871160
       - bytes: 5b5ada5e0141d240ad614ea96f7abeae
       - bytes: 0edd0695b6017f4b8edb12afa1aa5e24
+    - Name: Music_level
+      Path: Default Work Unit/Music_level
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music_level
+        ObjectType: 9
+      ID: -2117231571
+      Guid: 540737e939a5854ab6f636b7e3ca9552
+      values:
+      - A1
+      - A2
+      - B1
+      - B2
+      - None
+      ValueIcons:
+      - ElementName: A1
+        ObjectType: 8
+      - ElementName: A2
+        ObjectType: 8
+      - ElementName: B1
+        ObjectType: 8
+      - ElementName: B2
+        ObjectType: 8
+      - ElementName: None
+        ObjectType: 8
+      valueIDs: 6b2d7770682d7770f62b776ff52b776fdb3ba32c
+      ValueGuids:
+      - bytes: 158ccdfafa3ebd409c9204a16b396709
+      - bytes: 5952a56fd624a74db6be0e03f57cb3b8
+      - bytes: fc9cbdfd8ecddf469ad19a02fda6db77
+      - bytes: a89c2ed21b01e642b49946ca726f6189
+      - bytes: 6f58812e7a40ff4b83c85c4aae49bbd3
   SwitchWwu:
   - PhysicalPath: Switches/Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -320,8 +365,6 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /MGP1
-  - /MGP1/Banks
-  - /MGP1/Banks/Default Work Unit
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1

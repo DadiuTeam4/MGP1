@@ -37,6 +37,19 @@ namespace AK
             } // namespace STATE
         } // namespace MECHANICS_RHYTM
 
+        namespace MUSIC_LEVEL
+        {
+            static const AkUniqueID GROUP = 2177735725U;
+
+            namespace STATE
+            {
+                static const AkUniqueID A1 = 1886858603U;
+                static const AkUniqueID A2 = 1886858600U;
+                static const AkUniqueID B1 = 1870081014U;
+                static const AkUniqueID B2 = 1870081013U;
+            } // namespace STATE
+        } // namespace MUSIC_LEVEL
+
     } // namespace STATES
 
     namespace SWITCHES
