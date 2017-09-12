@@ -6,6 +6,7 @@
 				<WorkUnit Name="Mechanics" ID="{A757C22F-EFD4-4F91-89E2-5CF1E3BB99E6}" PersistMode="Reference"/>
 				<WorkUnit Name="Environment" ID="{D550EFA8-B4F1-43D8-8ED8-9658C01400C6}" PersistMode="Reference"/>
 				<WorkUnit Name="Music" ID="{236EC451-CED1-4E6F-8F8E-62DC6C855911}" PersistMode="Reference"/>
+				<WorkUnit Name="Speak" ID="{EF808080-4145-491A-97D0-09A780B7673C}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -69,7 +69,7 @@ public class DeConstrucShaderController : MonoBehaviour {
             }
         }
 
-        //commect yeah
+
         if (!GO.GetHasBeenSetToDestroy())
         {
             active = false;

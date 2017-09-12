@@ -23,6 +23,13 @@
 						<State Name="ProtoScene3" ID="{EA3D6FD1-A476-4996-8EB9-4A96F885D198}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="Speak_language" ID="{8F328D2D-C41E-49C6-9154-B4B31F46DA53}">
+					<ChildrenList>
+						<State Name="None" ID="{EF9340DA-809A-4BB5-ACEE-A08190964808}"/>
+						<State Name="DK" ID="{C68DAE7A-66DF-488C-A631-6AC788F7F88C}"/>
+						<State Name="UK" ID="{19B2D55D-6296-4A37-A0D6-ADC3359D7BF1}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

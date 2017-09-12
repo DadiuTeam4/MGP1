@@ -101,8 +101,8 @@ public class Timing: MonoBehaviour {
 	public void ChangeTurn()
 	{
 		turn++;
-		if(turn == maxObjects){//for four objects, reset
-			SceneManager.LoadScene(3);
+		if(turn == maxObjects){//game has ended, change scene
+			SceneManager.LoadScene(0);
 		}
 	}
 	//returns whose turn it is
