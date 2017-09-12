@@ -56,6 +56,11 @@ public class Resurrect : MonoBehaviour {
 			navMeshObs.enabled = true;
 			des.SetHasBeenSetToDestroy(false);
 			resurrecting = false;
+			if(des.hasParticles)
+			{
+				des.particleSystem.Play();
+			}
+
 			StartCoroutine("ScaleThroughTime");
 		}
 	}
