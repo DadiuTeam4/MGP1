@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PictureFadeOut : MonoBehaviour {
 
@@ -34,7 +35,7 @@ public class PictureFadeOut : MonoBehaviour {
          if (fade) {
              if (alph < 1) {
                  alph += Time.deltaTime * .2f;
-                 if (alph > 1) {alph = 1f;}
+                 if (alph > 1) {alph = 1f; SceneManager.LoadScene("Scenes/OpenScenes");}
                  blk.SetPixel (0, 0, new Color (0, 0, 0, alph));
                  blk.Apply ();
              }
