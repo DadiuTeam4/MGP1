@@ -20,20 +20,19 @@ State	ID	Name	State Group			Notes
 	748895195	None	Scene_change			
 	891686875	OpenScene	Scene_change			
 	1907701624	ProtoScene1	Scene_change			
+	1907701626	ProtoScene3	Scene_change			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	953639	Mechanism_Deconstruct_Rise_03	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\Mechanism_Deconstruct_Rise_47F8848F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mechanics\Mech_Deconstruct_rise\Mechanism_Deconstruct_Rise_03		380804
 	21240014	Mechanism_Deconstruct_Destroy	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\Mechanism_Deconstruct_Destroy_FA2F47BB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mechanics\Mech_deconstruct_destroy\Mechanism_Deconstruct_Destroy		709916
 	46639991	Env_Building	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\Env_Building_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Env_Building		2949184
-	52878315	Mechanism_Deconstruct_Rise	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\Mechanism_Deconstruct_Rise_786CA0BB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mechanics\Mech_Deconstruct_rise\Mechanism_Deconstruct_Rise		419524
-	64246336	Mechanism_Deconstruct_Rise_01	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\Mechanism_Deconstruct_Rise_05FA2A6A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mechanics\Mech_Deconstruct_rise\Mechanism_Deconstruct_Rise_01		432432
 	87495225	Touch_display	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\Touch_display_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mechanics\Touch_display		368704
-	227407549	Mechanism_Deconstruct_Rise_02	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\Mechanism_Deconstruct_Rise_0AA0CE58.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mechanics\Mech_Deconstruct_rise\Mechanism_Deconstruct_Rise_02		413072
+	169523579	Mechanism_Deconstruct_Rise_1	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\Mechanism_Deconstruct_Rise_1_57E16281.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mechanics\Mech_Deconstruct_rise\Mechanism_Deconstruct_Rise_1		193660
 	259896849	Mechanism_Deconstruct_Destroy_02	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\Mechanism_Deconstruct_Destroy_6C1A2738.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mechanics\Mech_deconstruct_destroy\Mechanism_Deconstruct_Destroy_02		735732
 	291183620	Mechanism_Deconstruct_Destroy_03	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\Mechanism_Deconstruct_Destroy_A78249A5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mechanics\Mech_deconstruct_destroy\Mechanism_Deconstruct_Destroy_03		729276
 	385335095	MGP1_Music_udkast_a_mainpiece	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\MGP1_Music_udkast_a_mainpiece_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Main_music_switch\B1\B1\MGP1_Music_udkast_a_mainpiece		12288064
 	537739780	Tirsdag_row3	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\Tirsdag_row3_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Mecahnic_rhytmic\Track3\Tirsdag_row3\Tirsdag_row3		1536064
 	542575809	Tirsdag_row4	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\Tirsdag_row4_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Mecahnic_rhytmic\Track4\Tirsdag_row4\Tirsdag_row4		1536064
+	684181433	Mechanism_Deconstruct_Rise_01	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\Mechanism_Deconstruct_Rise_1_5EA305C4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mechanics\Mech_Deconstruct_rise\Mechanism_Deconstruct_Rise_01		206568
 	708252861	Mechanism_Deconstruct_Destroy_01	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\Mechanism_Deconstruct_Destroy_1316701C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mechanics\Mech_deconstruct_destroy\Mechanism_Deconstruct_Destroy_01		709916
 	808043082	Tirsdag_row2	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\Tirsdag_row2_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Mecahnic_rhytmic\Track2\Tirsdag_row2\Tirsdag_row2		1536064
 	1068156190	MGP1_Music_udkast_a_intro	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\MGP1_Music_udkast_a_intro_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Main_music_switch\A1\A\MGP1_Music_udkast_a_intro		9216064

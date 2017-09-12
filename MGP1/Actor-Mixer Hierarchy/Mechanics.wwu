@@ -129,7 +129,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="Mechanism_Deconstruct_Rise" ID="{03655EB2-E1AB-4C43-B81E-9C493FC565A1}" ShortID="542533316">
+						<Sound Name="Mechanism_Deconstruct_Rise_1" ID="{F51B9A39-5EDA-4669-91BC-5BC882FDDE7B}" ShortID="86083024">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
@@ -139,101 +139,48 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Mechanism_Deconstruct_Rise" ID="{04761BCB-FA44-45F4-8C06-16069439CC71}" ShortID="953639">
-									<PropertyList>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.302494529540481"/>
-										<Property Name="TrimEnd" Type="Real64" Value="2.18468271334792"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>Mechanism_Deconstruct_Rise.wav</AudioFile>
-									<ConvertedFileIDList>
-										<File ID="52878315"/>
-									</ConvertedFileIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Mechanism_Deconstruct_Rise" ID="{04761BCB-FA44-45F4-8C06-16069439CC71}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Mechanism_Deconstruct_Rise_01" ID="{5BCB638C-719E-4AC9-A6BE-7CF0BD804954}" ShortID="381904973">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Mechanism_Deconstruct_Rise" ID="{8A4BC777-4403-4B9B-B2A6-D793F1741155}" ShortID="52878315">
-									<PropertyList>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.134442013129103"/>
-										<Property Name="TrimBegin" Type="Real64" Value="3.69715536105033"/>
-										<Property Name="TrimEnd" Type="Real64" Value="5.9490590809628"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>Mechanism_Deconstruct_Rise.wav</AudioFile>
-									<ConvertedFileIDList>
-										<File ID="64246336"/>
-									</ConvertedFileIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Mechanism_Deconstruct_Rise" ID="{8A4BC777-4403-4B9B-B2A6-D793F1741155}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Mechanism_Deconstruct_Rise_02" ID="{659B4129-B28E-4F69-AF68-DA34834A359F}" ShortID="1058296858">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Mechanism_Deconstruct_Rise" ID="{D982C028-C5CE-45CF-9A62-7E77B7A6A980}" ShortID="64246336">
-									<PropertyList>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.0672210065645515"/>
-										<Property Name="TrimBegin" Type="Real64" Value="7.56236323851203"/>
-										<Property Name="TrimEnd" Type="Real64" Value="9.71343544857768"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>Mechanism_Deconstruct_Rise.wav</AudioFile>
-									<ConvertedFileIDList>
-										<File ID="227407549"/>
-									</ConvertedFileIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Mechanism_Deconstruct_Rise" ID="{D982C028-C5CE-45CF-9A62-7E77B7A6A980}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Mechanism_Deconstruct_Rise_03" ID="{30588CB9-EA48-4B50-87B4-8E9C32AB5B52}" ShortID="188908946">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Mechanism_Deconstruct_Rise" ID="{6DEDEA3B-A491-41D0-B16E-79B40573D371}" ShortID="227407549">
+								<AudioFileSource Name="Mechanism_Deconstruct_Rise_1" ID="{02AB2AC8-93B6-4D80-B29B-85D1B8FB6706}" ShortID="684181433">
 									<PropertyList>
 										<Property Name="FadeOutDuration" Type="Real64" Value="0.168052516411379"/>
-										<Property Name="TrimBegin" Type="Real64" Value="11.5620131291028"/>
-										<Property Name="TrimEnd" Type="Real64" Value="13.5450328227571"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.201663019693654"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.20997811816193"/>
 									</PropertyList>
 									<Language>SFX</Language>
-									<AudioFile>Mechanism_Deconstruct_Rise.wav</AudioFile>
+									<AudioFile>Mechanism_Deconstruct_Rise_1.wav</AudioFile>
 									<ConvertedFileIDList>
-										<File ID="953639"/>
+										<File ID="169523579"/>
 									</ConvertedFileIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Mechanism_Deconstruct_Rise" ID="{6DEDEA3B-A491-41D0-B16E-79B40573D371}" Platform="Linked"/>
+								<ActiveSource Name="Mechanism_Deconstruct_Rise_1" ID="{02AB2AC8-93B6-4D80-B29B-85D1B8FB6706}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Mechanism_Deconstruct_Rise_01" ID="{A0798649-9912-4051-AF34-5D07CD6C0383}" ShortID="650076616">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Mechanism_Deconstruct_Rise_1" ID="{096D6E1C-9ADD-431A-B0B7-DA3B4D30B1DB}" ShortID="169523579">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.100831509846827"/>
+										<Property Name="TrimBegin" Type="Real64" Value="3.96603938730853"/>
+										<Property Name="TrimEnd" Type="Real64" Value="5.04157549234136"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Mechanism_Deconstruct_Rise_1.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="684181433"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Mechanism_Deconstruct_Rise_1" ID="{096D6E1C-9ADD-431A-B0B7-DA3B4D30B1DB}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
