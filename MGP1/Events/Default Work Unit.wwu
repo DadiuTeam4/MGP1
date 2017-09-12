@@ -7,6 +7,18 @@
 				<WorkUnit Name="Environment" ID="{D550EFA8-B4F1-43D8-8ED8-9658C01400C6}" PersistMode="Reference"/>
 				<WorkUnit Name="Music" ID="{236EC451-CED1-4E6F-8F8E-62DC6C855911}" PersistMode="Reference"/>
 				<WorkUnit Name="Speak" ID="{EF808080-4145-491A-97D0-09A780B7673C}" PersistMode="Reference"/>
+				<Event Name="Stop_All" ID="{69173621-99FF-4848-94CA-4D03107E8B06}">
+					<ChildrenList>
+						<Action Name="" ID="{6308F2A5-B645-4F8A-A017-A710245C6C94}" ShortID="227619647">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+								<Property Name="ResumeStateTransition" Type="bool" Value="False"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

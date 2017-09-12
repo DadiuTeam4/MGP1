@@ -1,6 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	63796330	Main_music			\Default Work Unit\Music\Main_music	
 	77978275	Ambient			\Default Work Unit\Environment\Ambient	
+	452547817	Stop_All			\Default Work Unit\Stop_All	
 	559039776	Mechanic_destroy			\Default Work Unit\Mechanics\Mechanic_destroy	
 	1459553318	Touch_anywhere			\Default Work Unit\Mechanics\Touch_anywhere	
 	2136516444	Mechanic_rise_stop			\Default Work Unit\Mechanics\Mechanic_rise_stop	

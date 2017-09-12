@@ -22,6 +22,7 @@ namespace AK
         static const AkUniqueID MECHANIC_RISE_STOP = 2136516444U;
         static const AkUniqueID SPEAK_COUNT = 3793827733U;
         static const AkUniqueID SPEAK_INTRO = 3681750326U;
+        static const AkUniqueID STOP_ALL = 452547817U;
         static const AkUniqueID STOPALLMUSIC = 2907867019U;
         static const AkUniqueID TOUCH_ANYWHERE = 1459553318U;
     } // namespace EVENTS

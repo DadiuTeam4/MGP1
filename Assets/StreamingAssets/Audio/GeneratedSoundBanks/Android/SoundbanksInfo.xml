@@ -30,6 +30,7 @@
 				<Event Id="2136516444" Name="Mechanic_rise_stop" ObjectPath="\Events\Default Work Unit\Mechanics\Mechanic_rise_stop" MaxAttenuation="0.000000"/>
 				<Event Id="3793827733" Name="Speak_count" ObjectPath="\Events\Default Work Unit\Speak\Speak_count"/>
 				<Event Id="3681750326" Name="Speak_intro" ObjectPath="\Events\Default Work Unit\Speak\Speak_intro"/>
+				<Event Id="452547817" Name="Stop_All" ObjectPath="\Events\Default Work Unit\Stop_All" MaxAttenuation="0.000000"/>
 				<Event Id="2907867019" Name="StopAllMusic" ObjectPath="\Events\Default Work Unit\Music\StopAllMusic" MaxAttenuation="0.000000"/>
 				<Event Id="1459553318" Name="Touch_anywhere" ObjectPath="\Events\Default Work Unit\Mechanics\Touch_anywhere"/>
 			</IncludedEvents>
@@ -56,7 +57,7 @@
 				</File>
 				<File Id="169523579" Language="SFX">
 					<ShortName>Mechanism_Deconstruct_Rise_1.wav</ShortName>
-					<Path>SFX/Mechanism_Deconstruct_Rise_1_D7330CC5.wem</Path>
+					<Path>SFX/Mechanism_Deconstruct_Rise_1_57E16281.wem</Path>
 				</File>
 				<File Id="171186292" Language="SFX">
 					<ShortName>MGP1_Speak_UK_Four.wav</ShortName>
@@ -108,7 +109,7 @@
 				</File>
 				<File Id="684181433" Language="SFX">
 					<ShortName>Mechanism_Deconstruct_Rise_1.wav</ShortName>
-					<Path>SFX/Mechanism_Deconstruct_Rise_1_5A40CBA7.wem</Path>
+					<Path>SFX/Mechanism_Deconstruct_Rise_1_5EA305C4.wem</Path>
 				</File>
 				<File Id="708252861" Language="SFX">
 					<ShortName>Mechanism_Deconstruct_Destroy.wav</ShortName>

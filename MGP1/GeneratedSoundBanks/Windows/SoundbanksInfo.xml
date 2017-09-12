@@ -30,6 +30,7 @@
 				<Event Id="2136516444" Name="Mechanic_rise_stop" ObjectPath="\Events\Default Work Unit\Mechanics\Mechanic_rise_stop" MaxAttenuation="0.000000"/>
 				<Event Id="3793827733" Name="Speak_count" ObjectPath="\Events\Default Work Unit\Speak\Speak_count"/>
 				<Event Id="3681750326" Name="Speak_intro" ObjectPath="\Events\Default Work Unit\Speak\Speak_intro"/>
+				<Event Id="452547817" Name="Stop_All" ObjectPath="\Events\Default Work Unit\Stop_All" MaxAttenuation="0.000000"/>
 				<Event Id="2907867019" Name="StopAllMusic" ObjectPath="\Events\Default Work Unit\Music\StopAllMusic" MaxAttenuation="0.000000"/>
 				<Event Id="1459553318" Name="Touch_anywhere" ObjectPath="\Events\Default Work Unit\Mechanics\Touch_anywhere"/>
 			</IncludedEvents>

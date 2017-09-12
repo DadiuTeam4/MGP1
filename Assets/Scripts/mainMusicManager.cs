@@ -17,7 +17,7 @@ public class mainMusicManager : MonoBehaviour {
 	void Start () {
 		AkSoundEngine.PostEvent ("Main_music", gameObject); 
 		AkSoundEngine.SetState ("Scene_change", "OpenScene"); 
-		AkSoundEngine.PostEvent ("Ambient", gameObject); 
+		//AkSoundEngine.PostEvent ("Ambient", gameObject); 
 
 
 
@@ -43,7 +43,8 @@ public class mainMusicManager : MonoBehaviour {
 
 		if (sceneName == "ProtoScene4")
 		{
-			AkSoundEngine.PostEvent ("StopAllMusic", gameObject); 
+			AkSoundEngine.PostEvent ("Stop_All", gameObject); 
+
 		}
 
 	

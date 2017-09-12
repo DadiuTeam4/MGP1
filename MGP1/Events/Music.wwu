@@ -19,11 +19,15 @@
 				</Event>
 				<Event Name="StopAllMusic" ID="{87A82995-DF0A-4A4A-A92B-6C961330F8B6}">
 					<ChildrenList>
-						<Action Name="" ID="{383EFCE1-F0B8-4B66-8405-4E3AFB508CF3}" ShortID="588422353">
+						<Action Name="" ID="{B42A049E-31A7-46DB-B8A3-B02B6512C3F9}" ShortID="662294287">
 							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="3"/>
+								<Property Name="ActionType" Type="int16" Value="2"/>
 							</PropertyList>
-							<ReferenceList/>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mecahnic_rhytmic" ID="{CF8C44FE-19C6-4DF2-9218-FA2A894F174B}" WorkUnitID="{BC8F5984-CBEA-4B75-9EEF-7D04E2B20384}"/>
+								</Reference>
+							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
