@@ -6,6 +6,7 @@
 				<WorkUnit Name="Rhytmic_Mechanic" ID="{463EF416-80FF-4C53-A4D2-6C667E2134E4}" PersistMode="Reference"/>
 				<WorkUnit Name="Mechanics" ID="{2DA40240-84E5-4A58-BD61-EEB8F9DD8005}" PersistMode="Reference"/>
 				<WorkUnit Name="Environment" ID="{8D470C72-F923-4DAF-999D-81F6BEF6ED26}" PersistMode="Reference"/>
+				<WorkUnit Name="Speak" ID="{02FF5C0C-06A9-40B6-822F-191609F391B1}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

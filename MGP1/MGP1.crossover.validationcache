@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="80">
-	<ValidationCacheItem File="Y:\Desktop\DADIU\MGP1\MGP1\MGP1\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="126525440" DateHigh="30616485"/>
+	<ValidationCacheItem File="Y:\Desktop\DADIU\MGP1\MGP1\MGP1\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="807375744" DateHigh="30616511"/>
 	<ValidationCacheItem File="Y:\Desktop\DADIU\MGP1\MGP1\MGP1\Actor-Mixer Hierarchy\Destructable.wwu" DateLow="3950769536" DateHigh="30616309"/>
 	<ValidationCacheItem File="Y:\Desktop\DADIU\MGP1\MGP1\MGP1\Actor-Mixer Hierarchy\Environment.wwu" DateLow="126525440" DateHigh="30616485"/>
 	<ValidationCacheItem File="Y:\Desktop\DADIU\MGP1\MGP1\MGP1\Actor-Mixer Hierarchy\Factory SoundSeed Air Objects.wwu" DateLow="1096506880" DateHigh="30615720"/>
 	<ValidationCacheItem File="Y:\Desktop\DADIU\MGP1\MGP1\MGP1\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="1096506880" DateHigh="30615720"/>
-	<ValidationCacheItem File="Y:\Desktop\DADIU\MGP1\MGP1\MGP1\Actor-Mixer Hierarchy\Mechanics.wwu" DateLow="167114112" DateHigh="30616503"/>
+	<ValidationCacheItem File="Y:\Desktop\DADIU\MGP1\MGP1\MGP1\Actor-Mixer Hierarchy\Mechanics.wwu" DateLow="572146816" DateHigh="30616504"/>
 	<ValidationCacheItem File="Y:\Desktop\DADIU\MGP1\MGP1\MGP1\Actor-Mixer Hierarchy\Rhytmic_Mechanic.wwu" DateLow="1096506880" DateHigh="30615720"/>
+	<ValidationCacheItem File="Y:\Desktop\DADIU\MGP1\MGP1\MGP1\Actor-Mixer Hierarchy\Speak.wwu" DateLow="2607441152" DateHigh="30616513"/>
 	<ValidationCacheItem File="Y:\Desktop\DADIU\MGP1\MGP1\MGP1\Attenuations\Default Work Unit.wwu" DateLow="1096506880" DateHigh="30615720"/>
 	<ValidationCacheItem File="Y:\Desktop\DADIU\MGP1\MGP1\MGP1\Audio Devices\Default Work Unit.wwu" DateLow="1096506880" DateHigh="30615720"/>
 	<ValidationCacheItem File="Y:\Desktop\DADIU\MGP1\MGP1\MGP1\Control Surface Sessions\Default Work Unit.wwu" DateLow="1096506880" DateHigh="30615720"/>
@@ -24,13 +25,14 @@
 	<ValidationCacheItem File="Y:\Desktop\DADIU\MGP1\MGP1\MGP1\Effects\Factory iZotope Multiband Distortion.wwu" DateLow="1096506880" DateHigh="30615720"/>
 	<ValidationCacheItem File="Y:\Desktop\DADIU\MGP1\MGP1\MGP1\Effects\Factory iZotope Singleband Distortion.wwu" DateLow="1096506880" DateHigh="30615720"/>
 	<ValidationCacheItem File="Y:\Desktop\DADIU\MGP1\MGP1\MGP1\Effects\Factory McDSP Effects.wwu" DateLow="1096506880" DateHigh="30615720"/>
-	<ValidationCacheItem File="Y:\Desktop\DADIU\MGP1\MGP1\MGP1\Events\Default Work Unit.wwu" DateLow="126525440" DateHigh="30616485"/>
+	<ValidationCacheItem File="Y:\Desktop\DADIU\MGP1\MGP1\MGP1\Events\Default Work Unit.wwu" DateLow="807375744" DateHigh="30616511"/>
 	<ValidationCacheItem File="Y:\Desktop\DADIU\MGP1\MGP1\MGP1\Events\Environment.wwu" DateLow="126525440" DateHigh="30616485"/>
 	<ValidationCacheItem File="Y:\Desktop\DADIU\MGP1\MGP1\MGP1\Events\Mechanics.wwu" DateLow="126525440" DateHigh="30616485"/>
-	<ValidationCacheItem File="Y:\Desktop\DADIU\MGP1\MGP1\MGP1\Events\Music.wwu" DateLow="3777048704" DateHigh="30616501"/>
+	<ValidationCacheItem File="Y:\Desktop\DADIU\MGP1\MGP1\MGP1\Events\Music.wwu" DateLow="572146816" DateHigh="30616504"/>
+	<ValidationCacheItem File="Y:\Desktop\DADIU\MGP1\MGP1\MGP1\Events\Speak.wwu" DateLow="807375744" DateHigh="30616511"/>
 	<ValidationCacheItem File="Y:\Desktop\DADIU\MGP1\MGP1\MGP1\Game Parameters\Default Work Unit.wwu" DateLow="1096506880" DateHigh="30615720"/>
 	<ValidationCacheItem File="Y:\Desktop\DADIU\MGP1\MGP1\MGP1\Game Parameters\Factory SoundSeed Air Game Syncs.wwu" DateLow="1096506880" DateHigh="30615720"/>
-	<ValidationCacheItem File="Y:\Desktop\DADIU\MGP1\MGP1\MGP1\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="3777048704" DateHigh="30616501"/>
+	<ValidationCacheItem File="Y:\Desktop\DADIU\MGP1\MGP1\MGP1\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="572146816" DateHigh="30616504"/>
 	<ValidationCacheItem File="Y:\Desktop\DADIU\MGP1\MGP1\MGP1\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1096506880" DateHigh="30615720"/>
 	<ValidationCacheItem File="Y:\Desktop\DADIU\MGP1\MGP1\MGP1\MGP1.crossover.wsettings" DateLow="1582016000" DateHigh="30616500"/>
 	<ValidationCacheItem File="Y:\Desktop\DADIU\MGP1\MGP1\MGP1\MGP1.wproj" DateLow="1096506880" DateHigh="30615720"/>
@@ -41,7 +43,7 @@
 	<ValidationCacheItem File="Y:\Desktop\DADIU\MGP1\MGP1\MGP1\Queries\Factory Queries.wwu" DateLow="1096506880" DateHigh="30615720"/>
 	<ValidationCacheItem File="Y:\Desktop\DADIU\MGP1\MGP1\MGP1\SoundBanks\Default Work Unit.wwu" DateLow="1096506880" DateHigh="30615720"/>
 	<ValidationCacheItem File="Y:\Desktop\DADIU\MGP1\MGP1\MGP1\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1096506880" DateHigh="30615720"/>
-	<ValidationCacheItem File="Y:\Desktop\DADIU\MGP1\MGP1\MGP1\States\Default Work Unit.wwu" DateLow="3777048704" DateHigh="30616501"/>
+	<ValidationCacheItem File="Y:\Desktop\DADIU\MGP1\MGP1\MGP1\States\Default Work Unit.wwu" DateLow="572146816" DateHigh="30616504"/>
 	<ValidationCacheItem File="Y:\Desktop\DADIU\MGP1\MGP1\MGP1\Switches\Default Work Unit.wwu" DateLow="1096506880" DateHigh="30615720"/>
 	<ValidationCacheItem File="Y:\Desktop\DADIU\MGP1\MGP1\MGP1\Triggers\Default Work Unit.wwu" DateLow="1096506880" DateHigh="30615720"/>
 	<ValidationCacheItem File="Y:\Desktop\DADIU\MGP1\MGP1\MGP1\Virtual Acoustics\Default Work Unit.wwu" DateLow="1096506880" DateHigh="30615720"/>

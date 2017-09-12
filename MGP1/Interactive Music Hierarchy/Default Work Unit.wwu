@@ -831,6 +831,99 @@
 								</MusicPlaylistItem>
 							</Playlist>
 						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="Blank" ID="{2A5FFB16-2385-4FB3-AD0C-0E90EBA416C8}" ShortID="505860679">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="Blank" ID="{E77E7B95-D0D9-4EDE-B1D0-AFFC3AB224FD}" ShortID="1713420">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="MGP1_Speak_DK_Blank" ID="{92703C5B-968F-4A26-A556-B45145C2D823}" ShortID="1011735930">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MGP1_Speak_DK_Blank" ID="{AE0B80B3-839E-4795-BF67-11565C9D297E}" ShortID="843256934">
+													<Language>SFX</Language>
+													<AudioFile>MGP1_Speak_DK_Blank.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{7895907A-5A41-48A1-B9B2-1589C1A4E2DA}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{D6AE39E8-4C9F-49AA-BB93-E43BC871F6ED}">
+													<ClipList>
+														<MusicClip Name="MGP1_Speak_DK_Blank" ID="{09AAF081-A1BE-4D06-BF8C-20B469D855BD}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="960"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MGP1_Speak_DK_Blank" ID="{AE0B80B3-839E-4795-BF67-11565C9D297E}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{8C148D66-CCDF-4634-A065-2E384D3E8156}"/>
+										<MusicCue Name="Exit Cue" ID="{EE30F097-89A4-45AA-B911-7208238BA7AA}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="1000"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{6A8170B6-B8B5-4CF0-ADB2-B289624FA077}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{9C8F11D3-1DBD-444E-9C81-63168CC80678}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{7EEEE0D2-67DC-411B-A397-30AC8D8A6316}" ShortID="552477239">
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{C095464D-B332-4788-873F-41CE474A4014}" ShortID="1052219624">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="Blank" ID="{E77E7B95-D0D9-4EDE-B1D0-AFFC3AB224FD}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
 					</ChildrenList>
 					<StateInfo>
 						<StateGroupList>
@@ -868,11 +961,15 @@
 								<MusicTransition Name="Transition" ID="{C5D089E1-2232-4C39-8B36-3F805A537EF9}">
 									<PropertyList>
 										<Property Name="DestinationContextType" Type="int16" Value="2"/>
-										<Property Name="SourceContextType" Type="int16" Value="1"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="3"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="DestinationContextObject">
-											<ObjectRef Name="A1" ID="{2C5D9341-2112-472C-A9DD-FE102A8B23BA}" WorkUnitID="{BC8F5984-CBEA-4B75-9EEF-7D04E2B20384}"/>
+											<ObjectRef Name="Blank" ID="{2A5FFB16-2385-4FB3-AD0C-0E90EBA416C8}" WorkUnitID="{BC8F5984-CBEA-4B75-9EEF-7D04E2B20384}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="B1" ID="{0A53AE09-C49F-455D-8497-81BD11236E27}" WorkUnitID="{BC8F5984-CBEA-4B75-9EEF-7D04E2B20384}"/>
 										</Reference>
 									</ReferenceList>
 									<TransitionInfo/>
@@ -899,6 +996,14 @@
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="B1" ID="{0A53AE09-C49F-455D-8497-81BD11236E27}" WorkUnitID="{BC8F5984-CBEA-4B75-9EEF-7D04E2B20384}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="ProtoScene3" ID="{EA3D6FD1-A476-4996-8EB9-4A96F885D198}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="Blank" ID="{2A5FFB16-2385-4FB3-AD0C-0E90EBA416C8}" WorkUnitID="{BC8F5984-CBEA-4B75-9EEF-7D04E2B20384}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
 					</EntryList>

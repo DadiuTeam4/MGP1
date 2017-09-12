@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{ECCF3AF7-9E18-4C08-92BA-578EF8D59B79}'
-    m_lastTimePsrt1: 704749568
-    m_lastTimePart2: -1999308356
+    m_lastTimePsrt1: 1385599872
+    m_lastTimePart2: -1999308330
     List: []
   - PhysicalPath: Events/Environment.wwu
     ParentPhysicalPath: Events/Default Work Unit.wwu
@@ -106,8 +106,8 @@ MonoBehaviour:
   - PhysicalPath: Events/Music.wwu
     ParentPhysicalPath: Events/Default Work Unit.wwu
     Guid: '{236EC451-CED1-4E6F-8F8E-62DC6C855911}'
-    m_lastTimePsrt1: 60305536
-    m_lastTimePart2: -1999308339
+    m_lastTimePsrt1: 1150370944
+    m_lastTimePart2: -1999308337
     List:
     - Name: Main_music
       Path: Default Work Unit/Music/Main_music
@@ -121,6 +121,24 @@ MonoBehaviour:
       ID: 63796330
       Guid: 5cc8baa0b642fa45a9fe0e18e94a32ae
       maxAttenuation: 0
+  - PhysicalPath: Events/Speak.wwu
+    ParentPhysicalPath: Events/Default Work Unit.wwu
+    Guid: '{EF808080-4145-491A-97D0-09A780B7673C}'
+    m_lastTimePsrt1: -974269312
+    m_lastTimePart2: -1999308327
+    List:
+    - Name: Speak_count
+      Path: Default Work Unit/Speak/Speak_count
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Speak
+        ObjectType: 12
+      - ElementName: Speak_count
+        ObjectType: 3
+      ID: -501139563
+      Guid: f81f976d09f7e24ea11f6cfc1e43ea9c
+      maxAttenuation: 0
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -132,8 +150,8 @@ MonoBehaviour:
   - PhysicalPath: States/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{84293648-188C-4843-BE28-B2EA53028374}'
-    m_lastTimePsrt1: 60305536
-    m_lastTimePart2: -1999308339
+    m_lastTimePsrt1: -974269312
+    m_lastTimePart2: -1999308327
     List:
     - Name: Mechanics_Rhytm
       Path: Default Work Unit/Mechanics_Rhytm
@@ -197,6 +215,31 @@ MonoBehaviour:
       - bytes: 97b6cc4f84e449429a0cce6bf18a89b5
       - bytes: 72660249dd124e49bade225f3ea65e05
       - bytes: d16f3dea76a496498eb94a96f885d198
+    - Name: Speak_language
+      Path: Default Work Unit/Speak_language
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Speak_language
+        ObjectType: 9
+      ID: 1821341230
+      Guid: 2d8d328f1ec4c6499154b4b31f46da53
+      values:
+      - DK
+      - None
+      - UK
+      ValueIcons:
+      - ElementName: DK
+        ObjectType: 8
+      - ElementName: None
+        ObjectType: 8
+      - ElementName: UK
+        ObjectType: 8
+      valueIDs: ca28776ddb3ba32cb50d775c
+      ValueGuids:
+      - bytes: 7aae8dc6df668c48a6316ac788f7f88c
+      - bytes: da4093ef9a80b54baceea08190964808
+      - bytes: 5dd5b2199662374aa0d6adc3359d7bf1
   SwitchWwu:
   - PhysicalPath: Switches/Default Work Unit.wwu
     ParentPhysicalPath: 
