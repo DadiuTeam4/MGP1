@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4768371221641022}
   - component: {fileID: 198273976164181202}
   - component: {fileID: 199202726806202186}
-  - component: {fileID: 114625465947300732}
   m_Layer: 0
   m_Name: Touch Effect
   m_TagString: Untagged
@@ -42,17 +41,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114625465947300732
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1722739077078668}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d35a55bad14a4ee9b7009186e9ebcff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!198 &198273976164181202
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -202,7 +190,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 0.6586207, b: 0.80268276, a: 1}
+      maxColor: {r: 1, g: 0.309, b: 0.6736817, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -3334,7 +3322,7 @@ ParticleSystemRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 2100000, guid: accd4bf2718c8413f99a0d73577a29cd, type: 2}
+  - {fileID: 2100000, guid: 5c47d928769a5bc4598c6b0d6c1f9084, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
