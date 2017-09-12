@@ -17,6 +17,8 @@ public class Rhythm : MonoBehaviour, Touchable {
 	private bool destroyed = false; // am I destroyed
 	private int myTurn = 0;//is it my turn to be destroyed?
 
+	public ParticleSystem ps;
+
 	// Use this for initialization
 	void Start () {
 		collider = gameObject.GetComponent<Collider>();
@@ -46,6 +48,7 @@ public class Rhythm : MonoBehaviour, Touchable {
 	public void Interact(RaycastHit hit){
 		if(activate && myTurn == t3.GetTurn()){//if I am active and got hit
 			//turn everything off and declare that I am now destroyed, also change song and whose turn it is
+			ps.Play();
 			mR.enabled = false;
 			collider.enabled = false;
 			destroyed = true;
