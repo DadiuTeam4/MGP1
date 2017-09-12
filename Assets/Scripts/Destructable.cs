@@ -29,7 +29,9 @@ public class Destructable : MonoBehaviour, Holdable
 
 	[Header("Particle System Variables")]
 	public bool hasParticles = false;
-	public ParticleSystem particleSystem;
+	public ParticleSystem partSyst;
+	public bool hasDeconstructParticles = false;
+	public ParticleSystem deconstructParticleSystem;
 
 	private float timeAtFirstTrigger = 0.0f; // Time at first touch
 	private bool hasBeenSetToDestroy;
@@ -102,7 +104,12 @@ public class Destructable : MonoBehaviour, Holdable
 
 			if(hasParticles)
 			{
-				particleSystem.Stop();
+				partSyst.Stop();
+			}
+
+			if(hasDeconstructParticles)
+			{
+				deconstructParticleSystem.Play();
 			}
 
 			if (changeSceneOnDestroyed) 
