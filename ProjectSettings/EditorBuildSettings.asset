@@ -7,10 +7,10 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/OpenScene.unity
-    guid: b02474651eaf6451c9adcd6734f1ca97
+    guid: 7366b983a14f128418ad281569d1e95c
   - enabled: 1
     path: Assets/Scenes/ProtoScene1.unity
-    guid: ca1fc486cb3b94984b7f2a6fb51a549f
+    guid: bda2a6560af2c4a2f8efca29f057b8c3
   - enabled: 1
     path: Assets/Scenes/ProtoScene3.unity
     guid: 368bf4255ae4041c79114bfb5107eade

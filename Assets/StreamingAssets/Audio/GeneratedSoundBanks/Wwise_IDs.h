@@ -37,18 +37,17 @@ namespace AK
             } // namespace STATE
         } // namespace MECHANICS_RHYTM
 
-        namespace MUSIC_LEVEL
+        namespace SCENE_CHANGE
         {
-            static const AkUniqueID GROUP = 2177735725U;
+            static const AkUniqueID GROUP = 3170972326U;
 
             namespace STATE
             {
-                static const AkUniqueID A1 = 1886858603U;
-                static const AkUniqueID A2 = 1886858600U;
-                static const AkUniqueID B1 = 1870081014U;
-                static const AkUniqueID B2 = 1870081013U;
+                static const AkUniqueID OPENSCENE = 891686875U;
+                static const AkUniqueID PROTOSCENE1 = 1907701624U;
+                static const AkUniqueID PROTOSCENE3 = 1907701626U;
             } // namespace STATE
-        } // namespace MUSIC_LEVEL
+        } // namespace SCENE_CHANGE
 
     } // namespace STATES
 

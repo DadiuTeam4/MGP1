@@ -705,14 +705,6 @@
 									</CueList>
 								</MusicSegment>
 							</ChildrenList>
-							<StateInfo>
-								<StateGroupList>
-									<StateGroupInfo>
-										<StateGroupRef Name="Music_level" ID="{E9370754-A539-4A85-B6F6-36B7E3CA9552}"/>
-									</StateGroupInfo>
-								</StateGroupList>
-								<CustomStateList/>
-							</StateInfo>
 							<TransitionList>
 								<MusicTransition Name="Root" ID="{7A512D9B-78DE-486A-8409-54EB02E0A065}">
 									<PropertyList>
@@ -843,7 +835,7 @@
 					<StateInfo>
 						<StateGroupList>
 							<StateGroupInfo>
-								<StateGroupRef Name="Music_level" ID="{E9370754-A539-4A85-B6F6-36B7E3CA9552}"/>
+								<StateGroupRef Name="Scene_change" ID="{C4498FAD-5D7B-4F1B-89FE-35A608290B5D}"/>
 							</StateGroupInfo>
 						</StateGroupList>
 						<CustomStateList/>
@@ -857,7 +849,7 @@
 								<MusicTransition Name="Transition" ID="{B22C7643-0E77-4016-B377-AC08489A0266}">
 									<TransitionInfo/>
 								</MusicTransition>
-								<MusicTransition Name="Transition" ID="{B446CE43-22D5-407B-BACC-048252D11749}">
+								<MusicTransition Name="Transition" ID="{C96906A4-9D7A-4724-AD17-9E9AF5476F4F}">
 									<PropertyList>
 										<Property Name="DestinationContextType" Type="int16" Value="2"/>
 										<Property Name="ExitSourceAt" Type="int16" Value="2"/>
@@ -873,17 +865,29 @@
 									</ReferenceList>
 									<TransitionInfo/>
 								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{C5D089E1-2232-4C39-8B36-3F805A537EF9}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="SourceContextType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="A1" ID="{2C5D9341-2112-472C-A9DD-FE102A8B23BA}" WorkUnitID="{BC8F5984-CBEA-4B75-9EEF-7D04E2B20384}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo/>
+								</MusicTransition>
 							</ChildrenList>
 							<TransitionInfo/>
 						</MusicTransition>
 					</TransitionList>
 					<ArgumentList>
-						<ArgumentRef Name="Music_level" ID="{E9370754-A539-4A85-B6F6-36B7E3CA9552}"/>
+						<ArgumentRef Name="Scene_change" ID="{C4498FAD-5D7B-4F1B-89FE-35A608290B5D}"/>
 					</ArgumentList>
 					<EntryList>
 						<Entry>
 							<Path>
-								<PathElementRef Name="A1" ID="{FACD8C15-3EFA-40BD-9C92-04A16B396709}"/>
+								<PathElementRef Name="OpenScene" ID="{4FCCB697-E484-4249-9A0C-CE6BF18A89B5}"/>
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="A1" ID="{2C5D9341-2112-472C-A9DD-FE102A8B23BA}" WorkUnitID="{BC8F5984-CBEA-4B75-9EEF-7D04E2B20384}" Platform="Linked"/>
@@ -891,15 +895,7 @@
 						</Entry>
 						<Entry>
 							<Path>
-								<PathElementRef Name="A2" ID="{6FA55259-24D6-4DA7-B6BE-0E03F57CB3B8}"/>
-							</Path>
-							<AudioNodeInfo>
-								<AudioNodeRef Name="A1" ID="{2C5D9341-2112-472C-A9DD-FE102A8B23BA}" WorkUnitID="{BC8F5984-CBEA-4B75-9EEF-7D04E2B20384}" Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
-						<Entry>
-							<Path>
-								<PathElementRef Name="B1" ID="{FDBD9CFC-CD8E-46DF-9AD1-9A02FDA6DB77}"/>
+								<PathElementRef Name="ProtoScene1" ID="{49026672-12DD-494E-BADE-225F3EA65E05}"/>
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="B1" ID="{0A53AE09-C49F-455D-8497-81BD11236E27}" WorkUnitID="{BC8F5984-CBEA-4B75-9EEF-7D04E2B20384}" Platform="Linked"/>

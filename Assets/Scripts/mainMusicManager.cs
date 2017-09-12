@@ -16,6 +16,8 @@ public class mainMusicManager : MonoBehaviour {
 
 	void Start () {
 		AkSoundEngine.PostEvent ("Main_music", gameObject); 
+		AkSoundEngine.SetState ("Scene_change", "OpenScene"); 
+
 
 
 			
@@ -29,11 +31,17 @@ public class mainMusicManager : MonoBehaviour {
 
 		if (sceneName == "ProtoScene1") 
 		{
-			AkSoundEngine.SetState ("Music_level", "B1"); 
-			print ("skift"); 
+			AkSoundEngine.SetState ("Scene_change", "ProtoScene1"); 
+			//print ("skift"); 
+		}
+
+		if (sceneName == "ProtoScene3") 
+		{
+			AkSoundEngine.SetState ("Scene_change", "ProtoScene3"); 
 		}
 
 	
+
 
 
 
