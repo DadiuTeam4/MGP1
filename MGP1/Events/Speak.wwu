@@ -5,13 +5,13 @@
 			<ChildrenList>
 				<Event Name="Speak_count" ID="{6D971FF8-F709-4EE2-A11F-6CFC1E43EA9C}">
 					<ChildrenList>
-						<Action Name="" ID="{20B4B2BE-93FF-455F-8BA2-D36449C03F06}" ShortID="67678477">
+						<Action Name="" ID="{54C7C8D0-108D-44CE-86CA-598C207DC0EF}" ShortID="315201422">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Speak_count_DK" ID="{B34652C3-B8D6-48F6-897F-799C307C256A}" WorkUnitID="{02FF5C0C-06A9-40B6-822F-191609F391B1}"/>
+									<ObjectRef Name="Speak" ID="{53B8E294-7B3B-478B-B32D-EA87452C3DF5}" WorkUnitID="{02FF5C0C-06A9-40B6-822F-191609F391B1}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

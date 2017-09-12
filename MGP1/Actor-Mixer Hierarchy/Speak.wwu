@@ -292,14 +292,6 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
-							<StateInfo>
-								<StateGroupList>
-									<StateGroupInfo>
-										<StateGroupRef Name="Speak_language" ID="{8F328D2D-C41E-49C6-9154-B4B31F46DA53}"/>
-									</StateGroupInfo>
-								</StateGroupList>
-								<CustomStateList/>
-							</StateInfo>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Speak_count_UK" ID="{ACC79F5E-45B7-4F0A-9FDA-A138D21B4ACD}" ShortID="736724989">
 							<PropertyList>
@@ -544,25 +536,6 @@
 										<ActiveSource Name="MGP1_Speak_UK_Two" ID="{F08F1930-F157-4492-A31C-FF635B1DCDA1}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="MGP1_Speak_UK_4023" ID="{2E848926-3AAF-4677-B2E4-FA652CF9D729}" ShortID="323833058">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="MGP1_Speak_UK_4023" ID="{18B1B123-DC21-4CF4-B5F1-1E6417C769FF}" ShortID="270765079">
-											<Language>SFX</Language>
-											<AudioFile>MGP1_Speak_UK_4023.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="MGP1_Speak_UK_4023" ID="{18B1B123-DC21-4CF4-B5F1-1E6417C769FF}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 								<Sound Name="MGP1_Speak_UK_8024" ID="{35027BED-C731-45C1-AA8B-1C9DFB024FE9}" ShortID="776409165">
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -583,14 +556,6 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
-							<StateInfo>
-								<StateGroupList>
-									<StateGroupInfo>
-										<StateGroupRef Name="Speak_language" ID="{8F328D2D-C41E-49C6-9154-B4B31F46DA53}"/>
-									</StateGroupInfo>
-								</StateGroupList>
-								<CustomStateList/>
-							</StateInfo>
 						</RandomSequenceContainer>
 					</ChildrenList>
 					<StateInfo>

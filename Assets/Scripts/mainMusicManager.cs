@@ -40,6 +40,11 @@ public class mainMusicManager : MonoBehaviour {
 			AkSoundEngine.SetState ("Scene_change", "ProtoScene3"); 
 		}
 
+		if (sceneName == "ProtoScene4")
+		{
+			AkSoundEngine.PostEvent ("StopAllMusic", gameObject); 
+		}
+
 	
 
 
