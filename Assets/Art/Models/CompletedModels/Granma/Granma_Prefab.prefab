@@ -187,7 +187,7 @@ GameObject:
   - component: {fileID: 4263624593998566}
   - component: {fileID: 95772043239540648}
   m_Layer: 0
-  m_Name: Grandma_UPDATED_UVS
+  m_Name: Granma_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

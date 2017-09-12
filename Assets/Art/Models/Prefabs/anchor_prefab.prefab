@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4893438995670842}
   - component: {fileID: 95126896733438870}
   m_Layer: 0
-  m_Name: anchor
+  m_Name: anchor_prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

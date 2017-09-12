@@ -70,7 +70,7 @@ GameObject:
   - component: {fileID: 4598193153854494}
   - component: {fileID: 95961791224763836}
   m_Layer: 0
-  m_Name: pirateShip
+  m_Name: pirateShip_prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
