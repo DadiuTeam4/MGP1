@@ -132,7 +132,7 @@ public class Destructable : MonoBehaviour, Holdable
 
 		g.SetConstructionHandler(constructionHandler);
 
-		rndVec = new Vector3(Random.Range(-1,1),Random.Range(0,1),Random.Range(-1,1));
+		rndVec = new Vector3(Random.Range(-1.0f,1.0f),Random.Range(0.0f,1.0f),Random.Range(-1.0f,1.0f));
 		g.SetBurstDirection(rndVec.normalized);
 		g.SetBurstSpeed(Random.Range(minimumSpeed, maximumSpeed));
 		g.Burst();

@@ -7,6 +7,7 @@ public class Constructor : MonoBehaviour, Constructable
     public Transform[] elements;
     public float animationTime = 0.1f;
     public float boomScale = 1.2f;
+	public float maxScale = 1;
 
     private int elementIndex = 0;
     private int amountOfNumbers;
@@ -16,14 +17,6 @@ public class Constructor : MonoBehaviour, Constructable
         foreach (Transform element in elements)
         {
             element.localScale = new Vector3(0, 0, 0);
-        }
-    }
-
-    void Update()
-    {
-        if (Input.anyKeyDown)
-        {
-            Construct();
         }
     }
 
@@ -41,8 +34,8 @@ public class Constructor : MonoBehaviour, Constructable
     {
         float currentTime = 0;
         Vector3 scaleZero = new Vector3();
-        Vector3 blownScale = new Vector3(1, 1, 1) * boomScale;
-        Vector3 fullScale = new Vector3(1, 1, 1);
+		Vector3 blownScale = new Vector3(maxScale, maxScale, maxScale) * boomScale;
+		Vector3 fullScale = new Vector3(maxScale, maxScale, maxScale);
         while (currentTime < animationTime)
         {
             currentTime += Time.deltaTime;
