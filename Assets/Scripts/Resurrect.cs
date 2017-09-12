@@ -58,7 +58,7 @@ public class Resurrect : MonoBehaviour {
 			resurrecting = false;
 			if(des.hasParticles)
 			{
-				des.partSyst.Play();
+				des.GetComponent<ParticleSystem>().Play();
 			}
 
 			StartCoroutine("ScaleThroughTime");
