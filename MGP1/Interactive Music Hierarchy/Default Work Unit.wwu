@@ -705,14 +705,6 @@
 									</CueList>
 								</MusicSegment>
 							</ChildrenList>
-							<StateInfo>
-								<StateGroupList>
-									<StateGroupInfo>
-										<StateGroupRef Name="Music_level" ID="{E9370754-A539-4A85-B6F6-36B7E3CA9552}"/>
-									</StateGroupInfo>
-								</StateGroupList>
-								<CustomStateList/>
-							</StateInfo>
 							<TransitionList>
 								<MusicTransition Name="Root" ID="{7A512D9B-78DE-486A-8409-54EB02E0A065}">
 									<PropertyList>
