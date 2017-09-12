@@ -15,6 +15,15 @@
 						<State Name="State4" ID="{9506DD0E-01B6-4B7F-8EDB-12AFA1AA5E24}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="Music_level" ID="{E9370754-A539-4A85-B6F6-36B7E3CA9552}">
+					<ChildrenList>
+						<State Name="None" ID="{2E81586F-407A-4BFF-83C8-5C4AAE49BBD3}"/>
+						<State Name="A1" ID="{FACD8C15-3EFA-40BD-9C92-04A16B396709}"/>
+						<State Name="B1" ID="{FDBD9CFC-CD8E-46DF-9AD1-9A02FDA6DB77}"/>
+						<State Name="A2" ID="{6FA55259-24D6-4DA7-B6BE-0E03F57CB3B8}"/>
+						<State Name="B2" ID="{D22E9CA8-011B-42E6-B499-46CA726F6189}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

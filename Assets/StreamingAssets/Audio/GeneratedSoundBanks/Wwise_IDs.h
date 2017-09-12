@@ -13,7 +13,13 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID ENV_BUILD = 3436946623U;
+        static const AkUniqueID MAIN_MUSIC = 63796330U;
+        static const AkUniqueID MECHANIC_DESTROY = 559039776U;
         static const AkUniqueID MECHANIC_RHYTMIC = 2396932956U;
+        static const AkUniqueID MECHANIC_RISE = 2840974953U;
+        static const AkUniqueID MECHANIC_RISE_STOP = 2136516444U;
+        static const AkUniqueID TOUCH_ANYWHERE = 1459553318U;
     } // namespace EVENTS
 
     namespace STATES
@@ -30,6 +36,19 @@ namespace AK
                 static const AkUniqueID STATE4 = 1208172676U;
             } // namespace STATE
         } // namespace MECHANICS_RHYTM
+
+        namespace MUSIC_LEVEL
+        {
+            static const AkUniqueID GROUP = 2177735725U;
+
+            namespace STATE
+            {
+                static const AkUniqueID A1 = 1886858603U;
+                static const AkUniqueID A2 = 1886858600U;
+                static const AkUniqueID B1 = 1870081014U;
+                static const AkUniqueID B2 = 1870081013U;
+            } // namespace STATE
+        } // namespace MUSIC_LEVEL
 
     } // namespace STATES
 

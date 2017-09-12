@@ -16,32 +16,124 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{ECCF3AF7-9E18-4C08-92BA-578EF8D59B79}'
-    m_lastTimePsrt1: 100010709
-    m_lastTimePart2: -1999309130
+    m_lastTimePsrt1: 1109389824
+    m_lastTimePart2: -1999308367
+    List: []
+  - PhysicalPath: Events/Environment.wwu
+    ParentPhysicalPath: Events/Default Work Unit.wwu
+    Guid: '{D550EFA8-B4F1-43D8-8ED8-9658C01400C6}'
+    m_lastTimePsrt1: 1109389824
+    m_lastTimePart2: -1999308367
     List:
-    - Name: Mechanic_rhytmic
-      Path: Default Work Unit\Mechanic_rhytmic
+    - Name: Env_build
+      Path: Default Work Unit/Environment/Env_build
       PathAndIcons:
       - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Environment
+        ObjectType: 12
+      - ElementName: Env_build
+        ObjectType: 3
+      ID: -858020673
+      Guid: 200b955fac3f67488d3276a6d44574f2
+      maxAttenuation: 0
+  - PhysicalPath: Events/Mechanics.wwu
+    ParentPhysicalPath: Events/Default Work Unit.wwu
+    Guid: '{A757C22F-EFD4-4F91-89E2-5CF1E3BB99E6}'
+    m_lastTimePsrt1: 1109389824
+    m_lastTimePart2: -1999308367
+    List:
+    - Name: Mechanic_destroy
+      Path: Default Work Unit/Mechanics/Mechanic_destroy
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Mechanics
+        ObjectType: 12
+      - ElementName: Mechanic_destroy
+        ObjectType: 3
+      ID: 559039776
+      Guid: d6b5a788c429b345ae81fdb8a0c06fb3
+      maxAttenuation: 0
+    - Name: Mechanic_rhytmic
+      Path: Default Work Unit/Mechanics/Mechanic_rhytmic
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Mechanics
         ObjectType: 12
       - ElementName: Mechanic_rhytmic
         ObjectType: 3
       ID: -1898034340
       Guid: 9bd5a8cde12bf34bb1b70de30e440372
       maxAttenuation: 0
+    - Name: Mechanic_rise
+      Path: Default Work Unit/Mechanics/Mechanic_rise
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Mechanics
+        ObjectType: 12
+      - ElementName: Mechanic_rise
+        ObjectType: 3
+      ID: -1453992343
+      Guid: e08120f063ce594d96d40ef4fefd3e2e
+      maxAttenuation: 0
+    - Name: Mechanic_rise_stop
+      Path: Default Work Unit/Mechanics/Mechanic_rise_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Mechanics
+        ObjectType: 12
+      - ElementName: Mechanic_rise_stop
+        ObjectType: 3
+      ID: 2136516444
+      Guid: 18fa54af008045488915b83a0bd0ae6f
+      maxAttenuation: 0
+    - Name: Touch_anywhere
+      Path: Default Work Unit/Mechanics/Touch_anywhere
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Mechanics
+        ObjectType: 12
+      - ElementName: Touch_anywhere
+        ObjectType: 3
+      ID: 1459553318
+      Guid: 81adedaa718f2d48b1ea641dd9c7a4ca
+      maxAttenuation: 0
+  - PhysicalPath: Events/Music.wwu
+    ParentPhysicalPath: Events/Default Work Unit.wwu
+    Guid: '{236EC451-CED1-4E6F-8F8E-62DC6C855911}'
+    m_lastTimePsrt1: 1109389824
+    m_lastTimePart2: -1999308367
+    List:
+    - Name: Main_music
+      Path: Default Work Unit/Music/Main_music
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Main_music
+        ObjectType: 3
+      ID: 63796330
+      Guid: 5cc8baa0b642fa45a9fe0e18e94a32ae
+      maxAttenuation: 0
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}'
-    m_lastTimePsrt1: 103410964
-    m_lastTimePart2: -1999309130
+    m_lastTimePsrt1: 1674731008
+    m_lastTimePart2: -1999309121
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{84293648-188C-4843-BE28-B2EA53028374}'
-    m_lastTimePsrt1: 109242068
-    m_lastTimePart2: -1999309130
+    m_lastTimePsrt1: 1109389824
+    m_lastTimePart2: -1999308367
     List:
     - Name: Mechanics_Rhytm
       Path: Default Work Unit\Mechanics_Rhytm
@@ -76,12 +168,45 @@ MonoBehaviour:
       - bytes: 8111ebd05ac25e4ca7229d71d9871160
       - bytes: 5b5ada5e0141d240ad614ea96f7abeae
       - bytes: 0edd0695b6017f4b8edb12afa1aa5e24
+    - Name: Music_level
+      Path: Default Work Unit/Music_level
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music_level
+        ObjectType: 9
+      ID: -2117231571
+      Guid: 540737e939a5854ab6f636b7e3ca9552
+      values:
+      - A1
+      - A2
+      - B1
+      - B2
+      - None
+      ValueIcons:
+      - ElementName: A1
+        ObjectType: 8
+      - ElementName: A2
+        ObjectType: 8
+      - ElementName: B1
+        ObjectType: 8
+      - ElementName: B2
+        ObjectType: 8
+      - ElementName: None
+        ObjectType: 8
+      valueIDs: 6b2d7770682d7770f62b776ff52b776fdb3ba32c
+      ValueGuids:
+      - bytes: 158ccdfafa3ebd409c9204a16b396709
+      - bytes: 5952a56fd624a74db6be0e03f57cb3b8
+      - bytes: fc9cbdfd8ecddf469ad19a02fda6db77
+      - bytes: a89c2ed21b01e642b49946ca726f6189
+      - bytes: 6f58812e7a40ff4b83c85c4aae49bbd3
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{B6F95636-171C-45AE-939B-0D051C33F56A}'
-    m_lastTimePsrt1: 109282218
-    m_lastTimePart2: -1999309130
+    m_lastTimePsrt1: 1674731008
+    m_lastTimePart2: -1999309121
     List:
     - Name: Mechanic_rhythmic
       Path: Default Work Unit\Mechanic_rhythmic
@@ -116,8 +241,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{9F0EC4C7-388C-4D89-BABB-4A28EAA8851B}'
-    m_lastTimePsrt1: 109171854
-    m_lastTimePart2: -1999309130
+    m_lastTimePsrt1: 1674731008
+    m_lastTimePart2: -1999309121
     List:
     - Name: SoundbankA
       Path: Default Work Unit\SoundbankA
@@ -132,14 +257,14 @@ MonoBehaviour:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{C936BBA5-A306-4CDF-BA74-B9FA5226D67E}'
-    m_lastTimePsrt1: 100050804
-    m_lastTimePart2: -1999309130
+    m_lastTimePsrt1: 1674731008
+    m_lastTimePart2: -1999309121
     List: []
   - PhysicalPath: Game Parameters\Factory SoundSeed Air Game Syncs.wwu
     ParentPhysicalPath: 
     Guid: '{3B167755-FB42-458B-98BF-96F557AFB3B9}'
-    m_lastTimePsrt1: 100080592
-    m_lastTimePart2: -1999309130
+    m_lastTimePsrt1: 1674731008
+    m_lastTimePart2: -1999309121
     List:
     - Name: SS_Air_Fear
       Path: Factory SoundSeed Air Game Syncs\SS_Air_Fear
@@ -235,8 +360,8 @@ MonoBehaviour:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{727FA6D7-4248-4B11-820B-3439382F793E}'
-    m_lastTimePsrt1: 109317276
-    m_lastTimePart2: -1999309130
+    m_lastTimePsrt1: 1674731008
+    m_lastTimePart2: -1999309121
     List: []
   ExpandedItems:
   - /MGP1

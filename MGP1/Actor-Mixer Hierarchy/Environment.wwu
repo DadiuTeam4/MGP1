@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8D470C72-F923-4DAF-999D-81F6BEF6ED26}" SchemaVersion="80" RootDocumentID="{407731F5-C7CC-4D94-93DE-0DEA9D9B3F0B}">
+	<AudioObjects>
+		<WorkUnit Name="Environment" ID="{8D470C72-F923-4DAF-999D-81F6BEF6ED26}" OwnerID="{407731F5-C7CC-4D94-93DE-0DEA9D9B3F0B}" PersistMode="Nested">
+			<ChildrenList>
+				<Sound Name="Env_Building" ID="{9F746DA2-9CEF-4433-B8E8-495AD64E153D}" ShortID="560168303">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{92B8A22F-07E0-4A93-BBCA-23A42C6A8C33}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Env_Building" ID="{DC8BB09E-C9BF-4321-A0E8-CCF003C9B099}" ShortID="46639991">
+							<Language>SFX</Language>
+							<AudioFile>Env_Building.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Env_Building" ID="{DC8BB09E-C9BF-4321-A0E8-CCF003C9B099}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

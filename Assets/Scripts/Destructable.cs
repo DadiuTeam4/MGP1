@@ -49,6 +49,10 @@ public class Destructable : MonoBehaviour, Holdable
 		{
 			timeAtFirstTrigger = time;
 			hasBeenSetToDestroy = true;
+			//Tension sound for deconstruct mechanism
+			AkSoundEngine.PostEvent ("Mechanic_rise", gameObject); 
+
+
 		}
 
 
@@ -57,17 +61,16 @@ public class Destructable : MonoBehaviour, Holdable
 		{
 			int amount = Random.Range(numberMinAmount, numberMaxAmount);
 			int rnd;
+			//Destroy sound for deconstruct mechanism 
+			AkSoundEngine.PostEvent ("Mechanic_destroy", gameObject); 
 
 			for(int i = 0; i < amount; i++)
 			{
-				if (i >= numbers.Length)
-				{
-					rnd = Random.Range(0, numbers.Length);
-					InstantiateNumber(rnd, hit.point);
-				} 
-				else 
-				{
-					InstantiateNumber(i, hit.point);
+				if (i >= numbers.Length) {
+					rnd = Random.Range (0, numbers.Length);
+					InstantiateNumber (rnd, hit.point);
+				} else {
+					InstantiateNumber (i, hit.point);
 				}
 			}
 
@@ -119,22 +122,33 @@ public class Destructable : MonoBehaviour, Holdable
 
     public void TouchEnded(){
 		hasBeenSetToDestroy = false;
+		//Stopping tension sound, if input null 
+		AkSoundEngine.PostEvent ("Mechanic_rise_stop", gameObject); 
+
 	}
 
 	// Set functions
 	public void SetHasBeenSetToDestroy(bool b)
 	{
 		hasBeenSetToDestroy = b;
+
+
 	}
 
 	// Get Functions
     public bool GetHasBeenSetToDestroy()
     {
         return hasBeenSetToDestroy;
-    }
 
+
+    }
+		
     public float GetTimeAtFirstTrigger()
     {
         return timeAtFirstTrigger;
+
+
     }
+
+
 }
