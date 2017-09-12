@@ -37,6 +37,7 @@ GameObject:
   - component: {fileID: 65234600216624768}
   - component: {fileID: 114131613330246442}
   - component: {fileID: 114148349317353640}
+  - component: {fileID: 114305043324061742}
   m_Layer: 10
   m_Name: grp_geometry
   m_TagString: Holdable
@@ -97,8 +98,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1629725973547566}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.73, y: 2.31, z: 17.98}
-  m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
+  m_LocalPosition: {x: 7.27, y: -1.3, z: 31.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4970835202757712}
   - {fileID: 4214983173483278}
@@ -168,16 +169,36 @@ MonoBehaviour:
   m_GameObject: {fileID: 1481100043966068}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 7f9e4b42190144245979c5391da2a30a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  holdTime: 1
+  minimumSpeed: 200
+  maximumSpeed: 300
+  numberMaxAmount: 140
+  numberMinAmount: 120
+  numbers:
+  - {fileID: 1219394862030484, guid: 81113dfc317179944823a0b2082344a4, type: 2}
+  - {fileID: 1886765362547854, guid: c5bb78e31abb02b4e9d550b8800d5967, type: 2}
+  - {fileID: 1187161263111062, guid: 6ab1653cdcedbcb48986097bcf50d9a7, type: 2}
+  - {fileID: 1868675250962926, guid: a3e28fa7e3b8deb43a2dfad257912956, type: 2}
+  - {fileID: 1417154901802668, guid: af7ed20caa141a042a5464c3528a3953, type: 2}
+  hugo: {fileID: 0}
+  constructionHandler: {fileID: 0}
+  hasParticles: 0
+  partSyst: {fileID: 0}
+  hasDeconstructParticles: 0
+  deconstructParticleSystem: {fileID: 0}
+  changeSceneOnDestroyed: 0
+  sceneName: 
+  delay: 0
 --- !u!114 &114148349317353640
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1481100043966068}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f34dcf7baebc449609f5639a55f29a99, type: 3}
   m_Name: 
@@ -187,6 +208,24 @@ MonoBehaviour:
   num: 0
   active: 0
   children: 0
+--- !u!114 &114305043324061742
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1481100043966068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f39261d419cb0745a6bf2ccc08cd55c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 20
+  transitionObject: {fileID: 0}
+  startPos: {fileID: 0}
+  endPos: {fileID: 0}
+  delayBeforeLoadingNewScene: 2
+  dontDestroyOnLoad: 1
+  sceneToChangeTo: ProtoScene3
 --- !u!137 &137340702549850808
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
