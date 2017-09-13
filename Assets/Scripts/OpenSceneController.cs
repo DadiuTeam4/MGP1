@@ -56,7 +56,7 @@ public class OpenSceneController : MonoBehaviour
             Hugo.position = Vector3.Lerp(Hugo.position, Hugo.position + Vector3.up * 4f + Vector3.right *2f + Vector3.forward * 5.0f, 0.05f);
         }*/
 
-        if(timer > 19.5f)
+        if(timer > 18.0f)
         {
             StartGame();
         }
