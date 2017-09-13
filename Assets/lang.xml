@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE languages [
+  <!ELEMENT languages ANY> 
+  <!ELEMENT Danish ANY> 
+  <!ELEMENT English ANY>
+  <!ATTLIST Danish id ID #REQUIRED>
+  <!ATTLIST English id ID #REQUIRED>]>
+<languages>
+    <English id="eng">
+        <string name="reload">Reload</string>
+    </English>
+    <Danish id="dan">
+        <string name="reload">Opdater</string>
+        <string name="pause">Pause</string>
+    </Danish>
+</languages>
