@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{ECCF3AF7-9E18-4C08-92BA-578EF8D59B79}'
-    m_lastTimePsrt1: -12961152
-    m_lastTimePart2: -1999308287
+    m_lastTimePsrt1: -517797632
+    m_lastTimePart2: -1999308282
     List:
     - Name: Stop_All
       Path: Default Work Unit/Stop_All
@@ -128,8 +128,8 @@ MonoBehaviour:
   - PhysicalPath: Events/Music.wwu
     ParentPhysicalPath: Events/Default Work Unit.wwu
     Guid: '{236EC451-CED1-4E6F-8F8E-62DC6C855911}'
-    m_lastTimePsrt1: 1996973440
-    m_lastTimePart2: -1999308288
+    m_lastTimePsrt1: -517797632
+    m_lastTimePart2: -1999308282
     List:
     - Name: Main_music
       Path: Default Work Unit/Music/Main_music
