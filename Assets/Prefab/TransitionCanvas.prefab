@@ -125,7 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 114258342240710762}
   fadeTime: 2
-  nextScene: 
+  nextScene: ProtoScene3
 --- !u!222 &222261244096886060
 CanvasRenderer:
   m_ObjectHideFlags: 1
