@@ -21,6 +21,7 @@ public class OpenSceneController : MonoBehaviour
     public Vector3 posGrandma = new Vector3(15.6f, -14.9f, 6f);
     float timer;
     public Transform background;
+    public LevelFade transition;
     Image img;
 
     void Start()
@@ -55,7 +56,7 @@ public class OpenSceneController : MonoBehaviour
             Hugo.position = Vector3.Lerp(Hugo.position, Hugo.position + Vector3.up * 4f + Vector3.right *2f + Vector3.forward * 5.0f, 0.05f);
         }*/
 
-        if(timer > 21)
+        if(timer > 19.5f)
         {
             StartGame();
         }
@@ -63,7 +64,7 @@ public class OpenSceneController : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene(nextScene, LoadSceneMode.Single);
+        transition.FadeIn(nextScene);
     }
 
     public void Danish()
