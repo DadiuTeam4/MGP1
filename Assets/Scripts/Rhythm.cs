@@ -18,11 +18,13 @@ public class Rhythm : MonoBehaviour, Touchable {
 	private int myTurn = 0;//is it my turn to be destroyed?
 
 	public ParticleSystem ps;
+	public ParticleSystem stringParticle;
 
 	// Use this for initialization
 	void Start () {
 		collider = gameObject.GetComponent<Collider>();
 		mR = transform.GetChild(0).GetChild(0).GetComponent<MeshRenderer> (); 
+		stringParticle.Play();
 	}
 	
 	// Update is called once per frame
@@ -54,6 +56,7 @@ public class Rhythm : MonoBehaviour, Touchable {
 			destroyed = true;
 			t3.ChangeSong();
 			t3.ChangeTurn();
+			stringParticle.Stop();
 		}
 	}
 
