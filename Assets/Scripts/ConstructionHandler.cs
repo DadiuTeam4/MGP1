@@ -14,29 +14,29 @@ public class ConstructionHandler : MonoBehaviour {
 	public void SendResource(int value){
 		int rnd;
 		switch(value){
-		case 1:
-			rnd = Random.Range (0, ones.Length);
-			ones [rnd].GetComponent<Constructable> ().Construct ();
-			AkSoundEngine.PostEvent ("Env_build", gameObject); 
+			case 1:
+				rnd = Random.Range (0, ones.Length-1);
+				ones [rnd].GetComponent<Constructable> ().Construct ();
+				AkSoundEngine.PostEvent ("Env_build", gameObject); 
 			break;
 
 			case 2:
-				rnd = Random.Range(0, twos.Length);
+				rnd = Random.Range(0, twos.Length-1);
 				twos[rnd].GetComponent<Constructable>().Construct();
 			break;
 			
 			case 3:
-				rnd = Random.Range(0, threes.Length);
+				rnd = Random.Range(0, threes.Length-1);
 				threes[rnd].GetComponent<Constructable>().Construct();
 			break;
 			
 			case 4:
-				rnd = Random.Range(0, fours.Length);
+				rnd = Random.Range(0, fours.Length-1);
 				fours[rnd].GetComponent<Constructable>().Construct();
 			break;
 			
 			case 5:
-				rnd = Random.Range(0, fives.Length);
+				rnd = Random.Range(0, fives.Length-1);
 				fives[rnd].GetComponent<Constructable>().Construct();
 			break;
 			

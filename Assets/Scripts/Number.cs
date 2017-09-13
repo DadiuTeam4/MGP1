@@ -14,11 +14,14 @@ public class Number : MonoBehaviour, Touchable
 	[Tooltip("If the player is further away than this, he will move to the number first")]
 	public float WalkToDistance = 1.0f;
 
+	public PlayerAI hugo;
+
 	private Rigidbody rig; 								// The objects own rigidbody
 	private Vector3 burstDirection; 					// The direction which the object will move upon burst - See function Burst()
 	private float burstSpeed; 							// The speed which the object will move upon burst - See function Burst()
 	private ConstructionHandler constructionHandler;
-	public PlayerAI hugo;
+	private float speakingCooldown = 2.0f; 				// Amount of time between hugo speaking	
+	private float timestamp = 0.0f;
 
 	void Awake() 
 	{
@@ -52,7 +55,11 @@ public class Number : MonoBehaviour, Touchable
 		{
 			constructionHandler.SendResource(value);
 			gameObject.SetActive(false);
-			AkSoundEngine.PostEvent ("Speak_count", gameObject); 
+			
+			if(Time.time > timestamp){
+				AkSoundEngine.PostEvent ("Speak_count", gameObject); 
+				timestamp = Time.time + speakingCooldown;		
+			}
 		}	
 	}
 
