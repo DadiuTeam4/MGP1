@@ -8,7 +8,8 @@ public class LanguageController : MonoBehaviour
 {
 
     // Use this for initialization
-    public Hashtable allStrings;
+    private Hashtable allStrings;
+    public Text reloadText;
     void Start()
     {
         Dropdown dropdown = gameObject.GetComponent<Dropdown>();
@@ -38,25 +39,33 @@ public class LanguageController : MonoBehaviour
         XmlDocument xml = new XmlDocument();
         xml.Load("Assets/lang.xml");
         allStrings = new Hashtable();
-        var element = xml.GetElementById("dan");
-        if (element != null) 
-        { 
-           IEnumerator ele =  element.GetEnumerator();
-           while(ele.MoveNext())
-           {
-               string name = (ele.Current as XmlElement).GetAttribute("name");
-               string value = (ele.Current as XmlElement).InnerText;
-               allStrings.Add(name, value);
-               Debug.Log(name + ", " + value);
-           }
-        } else {
-            Debug.LogError("The specified language does not exist: " + element);
-        }
+        XmlElement element = xml.GetElementById("dan");
+        IEnumerator ele = element.GetEnumerator();
+        XmlNode item;
+        while (ele.MoveNext())
+        {
+            item = (XmlNode)ele.Current;
+            string value = item.InnerText;
+            string name = item.Attributes["name"].Value;
+            allStrings.Add(name, value);
+        }
+
+        reloadText.GetComponent<Text>().text = getString("reload");
     }
 
     private void setEnglish()
     {
 
+    }
+
+    public string getString(string name){
+        if(!allStrings.ContainsKey(name))
+        {
+            Debug.LogError(name+ " is not exist");
+            return "";
+        }else{
+            return (string)allStrings[name];
+        }
     }
 
 }
