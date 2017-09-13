@@ -566,7 +566,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 2048
   material: {fileID: 1393464936}
-  fantasayWorld: {fileID: 2800000, guid: 1d40c6b3a74f4b34ebf2b8a81ee316ea, type: 3}
+  fantasayWorld: {fileID: 2800000, guid: 7d9310d479a362a41942f42eb838ef99, type: 3}
   outLine: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!1 &188420307
 GameObject:
@@ -6591,7 +6591,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _FantasyWorld:
-        m_Texture: {fileID: 2800000, guid: 1d40c6b3a74f4b34ebf2b8a81ee316ea, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7d9310d479a362a41942f42eb838ef99, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -7133,11 +7133,6 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224338251102435274, guid: bd687ecf9c458bd419611a78b65a4662,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 40000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bd687ecf9c458bd419611a78b65a4662, type: 2}
