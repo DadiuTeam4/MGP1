@@ -33,10 +33,10 @@ public class Rhythm : MonoBehaviour, Touchable {
 			interval += t3.GetTargetTime();//move my interval to the next loop 
 			activate = true;//Activate me
 			//gameObject.GetComponent<Renderer>().material.color = Color.green;//make it visible that I am active, turn me green
-			transform.GetChild(0).GetChild(0).GetComponent<Renderer>().material.color = Color.green;
+			transform.GetChild(0).GetChild(0).GetComponent<Renderer>().material.color = new Color(1.0f, 0.1f, 0.2f);
 		} 
 
-		if(t3.currentTime - interval + t3.GetTargetTime() > 0.6f )//if more than 0.3 sec has passed
+		if(t3.currentTime - interval + t3.GetTargetTime() > 0.9f )//if more than 0.3 sec has passed
 		{
 			if (!destroyed && activate) {//and I am not destroyed but I was active
 				t3.SetFail (true);//I failed
