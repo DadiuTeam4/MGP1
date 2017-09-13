@@ -32,6 +32,7 @@ public class Destructable : MonoBehaviour, Holdable
 	public ParticleSystem partSyst;
 	public bool hasDeconstructParticles = false;
 	public ParticleSystem deconstructParticleSystem;
+	public LevelFade transition;
 
 	private float timeAtFirstTrigger = 0.0f; // Time at first touch
 	private bool hasBeenSetToDestroy;
@@ -45,7 +46,7 @@ public class Destructable : MonoBehaviour, Holdable
 
 	IEnumerator ChangeTheScene() {
 		yield return new WaitForSeconds (delay);
-		SceneManager.LoadScene (sceneName);
+		transition.FadeIn(sceneName);
 	}
 
 	// Keeps track on whether the object is set for destruction, and how long it has been since first touch.
@@ -114,7 +115,7 @@ public class Destructable : MonoBehaviour, Holdable
 
 			if (changeSceneOnDestroyed) 
 			{
-				GetComponent<LevelTransition>().StartTransition(sceneName);
+				transition.FadeIn(sceneName);
 			}
 			return true;
 		}

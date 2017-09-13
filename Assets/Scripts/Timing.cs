@@ -23,6 +23,8 @@ public class Timing: MonoBehaviour {
 	private int turn;//whose turn is it
 	private bool incremented = true;//bool that describes if I need to change who jumps
 	private int oscillationIndex = 0;//who jumps
+	public LevelFade transition;
+	public string sceneName;
 
 	// Use this for initialization
 	void Start () 
@@ -102,7 +104,7 @@ public class Timing: MonoBehaviour {
 	{
 		turn++;
 		if(turn == maxObjects){//game has ended, change scene
-			SceneManager.LoadScene("Scenes/ProtoScene4");
+			transition.FadeIn(sceneName);
 		}
 	}
 	//returns whose turn it is
