@@ -3469,7 +3469,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4729847830642588, guid: 002f6febc6eb9424d9215bc8e1c645b8, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.13
+      value: -0.02
       objectReference: {fileID: 0}
     - target: {fileID: 4729847830642588, guid: 002f6febc6eb9424d9215bc8e1c645b8, type: 2}
       propertyPath: m_LocalPosition.z
@@ -3912,7 +3912,7 @@ GameObject:
   m_Component:
   - component: {fileID: 918371125}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: CameraEndPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3925,7 +3925,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 918371124}
   m_LocalRotation: {x: 0.21970382, y: -0.763805, z: 0.2225209, w: 0.56463856}
-  m_LocalPosition: {x: 16.02, y: 14.05, z: 15.88}
+  m_LocalPosition: {x: 17.63, y: 14.05, z: 15.88}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8361,6 +8361,10 @@ Prefab:
     - target: {fileID: 224153249208132116, guid: f43ba2ef65bbd42deb9be6c8f838bd03,
         type: 2}
       propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1209507878281740, guid: f43ba2ef65bbd42deb9be6c8f838bd03, type: 2}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

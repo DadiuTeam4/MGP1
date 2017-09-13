@@ -15,6 +15,8 @@ public class MoveToConstructable : MonoBehaviour, Constructable {
 	public bool moveTarget;
 	[Tooltip("Object which will be moved if moveTarget bool is true")]
 	public Transform target;
+	private Transform targetStart;
+
 
 	[Tooltip("Hugo will more to this destination when the camera movement starts")]
 	public Transform hugoMovementDestination;
@@ -29,6 +31,7 @@ public class MoveToConstructable : MonoBehaviour, Constructable {
 	void Start()
 	{
 		hugoAI = GameObject.FindGameObjectWithTag("Player").GetComponent<NavMeshAgent>();
+		targetStart = target.transform;
 	}
 
 	void Update () {
@@ -49,6 +52,7 @@ public class MoveToConstructable : MonoBehaviour, Constructable {
 			else 
 			{
 				target.transform.position = Vector3.MoveTowards(target.transform.position, to.position, step);
+				target.rotation = Quaternion.Lerp(targetStart.rotation, to.rotation, step);
 			}
 		}
 	}
