@@ -29,7 +29,7 @@
 							<ChildrenList>
 								<MusicSegment Name="MGP1_Music_3A_1" ID="{9B06F326-2711-4110-AE15-B5F9021E04C5}" ShortID="1023892213">
 									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="32000"/>
+										<Property Name="EndPosition" Type="Real64" Value="64000"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -40,20 +40,23 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="MGP1_Music_3A_1" ID="{DA993920-678A-49E2-99E7-BD0C3C5F2CE6}" ShortID="100451536">
+										<MusicTrack Name="MGP1_Music_3A_1_1" ID="{B806401C-36F8-4FA3-81DE-C93793D4E82C}" ShortID="503300765">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="MGP1_Music_3A_1" ID="{CEA287F7-5645-4597-BEBE-A80A81260B12}" ShortID="1053472503">
+												<AudioFileSource Name="MGP1_Music_3A_1_1" ID="{66E9F22E-8768-4E99-9E10-0E0589C536C3}" ShortID="427980149">
 													<Language>SFX</Language>
-													<AudioFile>MGP1_Music_3A_1.wav</AudioFile>
+													<AudioFile>MGP1_Music_3A_1_1.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="980755372"/>
+													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
-												<MusicTransition Name="Root" ID="{CE6ED645-6E39-4927-A0E2-D5D669F1D95F}">
+												<MusicTransition Name="Root" ID="{E1E4769E-5D61-4899-903B-8B4B85601270}">
 													<PropertyList>
 														<Property Name="IsFolder" Type="bool" Value="True"/>
 													</PropertyList>
@@ -61,15 +64,15 @@
 												</MusicTransition>
 											</TransitionList>
 											<SequenceList>
-												<MusicTrackSequence Name="" ID="{FB37666A-27E7-4BDC-AAB4-EA12CD8AB8BB}">
+												<MusicTrackSequence Name="" ID="{703A2F53-C964-472C-AF6E-AB111A4A17D2}">
 													<ClipList>
-														<MusicClip Name="MGP1_Music_3A_1" ID="{06E7B745-F13C-4423-B8FE-13A589FE73DC}">
+														<MusicClip Name="MGP1_Music_3A_1_1" ID="{8A25ABD7-3D8C-4AEC-ABC2-4CFC5BEC6549}">
 															<PropertyList>
 																<Property Name="EndTrimOffset" Type="Real64" Value="32000"/>
 																<Property Name="FadeInMode" Type="int16" Value="0"/>
 																<Property Name="FadeOutMode" Type="int16" Value="0"/>
 															</PropertyList>
-															<AudioSourceRef Name="MGP1_Music_3A_1" ID="{CEA287F7-5645-4597-BEBE-A80A81260B12}"/>
+															<AudioSourceRef Name="MGP1_Music_3A_1_1" ID="{66E9F22E-8768-4E99-9E10-0E0589C536C3}"/>
 														</MusicClip>
 													</ClipList>
 												</MusicTrackSequence>

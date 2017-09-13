@@ -139,13 +139,13 @@
 					<ShortName>MGP1_Speak_DK_Two.wav</ShortName>
 					<Path>SFX/MGP1_Speak_DK_Two_1C9C67B2.wem</Path>
 				</File>
+				<File Id="980755372" Language="SFX">
+					<ShortName>MGP1_Music_3A_1_1.wav</ShortName>
+					<Path>SFX/MGP1_Music_3A_1_1_F17FB28C.wem</Path>
+				</File>
 				<File Id="1052955638" Language="SFX">
 					<ShortName>MGP1_Speak_DK_One.wav</ShortName>
 					<Path>SFX/MGP1_Speak_DK_One_1C9C67B2.wem</Path>
-				</File>
-				<File Id="1053472503" Language="SFX">
-					<ShortName>MGP1_Music_3A_1.wav</ShortName>
-					<Path>SFX/MGP1_Music_3A_1_F17FB28C.wem</Path>
 				</File>
 				<File Id="1068156190" Language="SFX">
 					<ShortName>MGP1_Music_udkast_a_intro.wav</ShortName>
