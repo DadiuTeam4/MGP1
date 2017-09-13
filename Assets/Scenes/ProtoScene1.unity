@@ -698,7 +698,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: bd0952cb30575d9468a51edb54255ef8, type: 2}
+      objectReference: {fileID: 2100000, guid: cdce7e002e5c43642a25aaee9462c931, type: 2}
     - target: {fileID: 4783843006512862, guid: cc3b57d5b5b7b6344a060ad84aa33a8d, type: 2}
       propertyPath: m_LocalScale.x
       value: 6.4013786
@@ -3313,6 +3313,10 @@ Prefab:
         type: 2}
       propertyPath: nextScene
       value: ProtoScene3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1515043016602102, guid: bd687ecf9c458bd419611a78b65a4662, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bd687ecf9c458bd419611a78b65a4662, type: 2}
@@ -7559,7 +7563,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: bd0952cb30575d9468a51edb54255ef8, type: 2}
+      objectReference: {fileID: 2100000, guid: cdce7e002e5c43642a25aaee9462c931, type: 2}
     - target: {fileID: 4783843006512862, guid: cc3b57d5b5b7b6344a060ad84aa33a8d, type: 2}
       propertyPath: m_LocalScale.x
       value: 6.4013696
