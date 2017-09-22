@@ -27,7 +27,7 @@ public class BuildScript : MonoBehaviour
         buildPlayerOptions.scenes = new[] { "Assets/Scenes/OpenScene.unity", "Assets/Scenes/ProtoScene1.unity", 
                                             "Assets/Scenes/ProtoScene3.unity", "Assets/Scenes/ProtoScene4.unity" };
 
-        buildPlayerOptions.locationPathName = "Builds/  .apk";
+        buildPlayerOptions.locationPathName = "Builds/gameTest.apk";
 
         buildPlayerOptions.target = BuildTarget.Android;
 
