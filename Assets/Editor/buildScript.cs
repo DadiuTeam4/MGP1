@@ -31,7 +31,7 @@ public class BuildScript : MonoBehaviour
 
         buildPlayerOptions.target = BuildTarget.Android;
 
-        buildPlayerOptions.options = BuildOptions.None;
+        buildPlayerOptions.options = BuildOptions.AutoRunPlayer;
 
         BuildPipeline.BuildPlayer(buildPlayerOptions);
 
