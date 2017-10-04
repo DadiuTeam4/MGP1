@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D550EFA8-B4F1-43D8-8ED8-9658C01400C6}" SchemaVersion="80" RootDocumentID="{ECCF3AF7-9E18-4C08-92BA-578EF8D59B79}">
+	<Events>
+		<WorkUnit Name="Environment" ID="{D550EFA8-B4F1-43D8-8ED8-9658C01400C6}" OwnerID="{ECCF3AF7-9E18-4C08-92BA-578EF8D59B79}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Env_build" ID="{5F950B20-3FAC-4867-8D32-76A6D44574F2}">
+					<ChildrenList>
+						<Action Name="" ID="{EA62072D-774E-4659-9F0F-4E16382E0CEE}" ShortID="208840961">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Env_Building" ID="{9F746DA2-9CEF-4433-B8E8-495AD64E153D}" WorkUnitID="{8D470C72-F923-4DAF-999D-81F6BEF6ED26}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Ambient" ID="{E15C0928-5FC2-4CD1-A231-5D30F03E71A4}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

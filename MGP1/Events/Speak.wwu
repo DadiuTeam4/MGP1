@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{EF808080-4145-491A-97D0-09A780B7673C}" SchemaVersion="80" RootDocumentID="{ECCF3AF7-9E18-4C08-92BA-578EF8D59B79}">
+	<Events>
+		<WorkUnit Name="Speak" ID="{EF808080-4145-491A-97D0-09A780B7673C}" OwnerID="{ECCF3AF7-9E18-4C08-92BA-578EF8D59B79}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Speak_count" ID="{6D971FF8-F709-4EE2-A11F-6CFC1E43EA9C}">
+					<ChildrenList>
+						<Action Name="" ID="{54C7C8D0-108D-44CE-86CA-598C207DC0EF}" ShortID="315201422">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Speak" ID="{53B8E294-7B3B-478B-B32D-EA87452C3DF5}" WorkUnitID="{02FF5C0C-06A9-40B6-822F-191609F391B1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Speak_intro" ID="{15502737-C37C-4F7F-87F3-0673C32FA9E9}">
+					<ChildrenList>
+						<Action Name="" ID="{2B0D5B3A-72EA-4DE0-B721-095028C48ECE}" ShortID="493969907">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Speak_intro" ID="{3063EC9A-73EE-4D29-9B1A-D0FCDAB468F7}" WorkUnitID="{02FF5C0C-06A9-40B6-822F-191609F391B1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

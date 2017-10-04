@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{84293648-188C-4843-BE28-B2EA53028374}" SchemaVersion="80">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{84293648-188C-4843-BE28-B2EA53028374}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Mechanics_Rhytm" ID="{E9E67A2E-1D27-46B4-8275-EABDCDFFD29E}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{8BE5625C-25AD-4A49-8418-B9E74307B73F}"/>
+						<State Name="State1" ID="{AF234126-EBAF-4936-81C2-F0A51E63918A}"/>
+						<State Name="State2" ID="{D0EB1181-C25A-4C5E-A722-9D71D9871160}"/>
+						<State Name="State3" ID="{5EDA5A5B-4101-40D2-AD61-4EA96F7ABEAE}"/>
+						<State Name="State4" ID="{9506DD0E-01B6-4B7F-8EDB-12AFA1AA5E24}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Scene_change" ID="{C4498FAD-5D7B-4F1B-89FE-35A608290B5D}">
+					<ChildrenList>
+						<State Name="None" ID="{DC8EA806-5963-4E84-9F6D-48A4ED0E5812}"/>
+						<State Name="OpenScene" ID="{4FCCB697-E484-4249-9A0C-CE6BF18A89B5}"/>
+						<State Name="ProtoScene1" ID="{49026672-12DD-494E-BADE-225F3EA65E05}"/>
+						<State Name="ProtoScene3" ID="{EA3D6FD1-A476-4996-8EB9-4A96F885D198}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Speak_language" ID="{8F328D2D-C41E-49C6-9154-B4B31F46DA53}">
+					<ChildrenList>
+						<State Name="None" ID="{EF9340DA-809A-4BB5-ACEE-A08190964808}"/>
+						<State Name="DK" ID="{C68DAE7A-66DF-488C-A631-6AC788F7F88C}"/>
+						<State Name="UK" ID="{19B2D55D-6296-4A37-A0D6-ADC3359D7BF1}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

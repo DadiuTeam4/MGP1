@@ -1,0 +1,463 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c6e8dbb8584345d9a33e306d4e7bcf0, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  CurrentPluginConfig: 
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{ECCF3AF7-9E18-4C08-92BA-578EF8D59B79}'
+    m_lastTimePsrt1: -1420912600
+    m_lastTimePart2: -1999308264
+    List:
+    - Name: Stop_All
+      Path: Default Work Unit\Stop_All
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_All
+        ObjectType: 3
+      ID: 452547817
+      Guid: 21361769ff99484894ca4d03107e8b06
+      maxAttenuation: 0
+  - PhysicalPath: Events\Environment.wwu
+    ParentPhysicalPath: Events\Default Work Unit.wwu
+    Guid: '{D550EFA8-B4F1-43D8-8ED8-9658C01400C6}'
+    m_lastTimePsrt1: -1420892547
+    m_lastTimePart2: -1999308264
+    List:
+    - Name: Ambient
+      Path: Default Work Unit\Environment\Ambient
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Environment
+        ObjectType: 12
+      - ElementName: Ambient
+        ObjectType: 3
+      ID: 77978275
+      Guid: 28095ce1c25fd14ca2315d30f03e71a4
+      maxAttenuation: 0
+    - Name: Env_build
+      Path: Default Work Unit\Environment\Env_build
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Environment
+        ObjectType: 12
+      - ElementName: Env_build
+        ObjectType: 3
+      ID: -858020673
+      Guid: 200b955fac3f67488d3276a6d44574f2
+      maxAttenuation: 0
+  - PhysicalPath: Events\Mechanics.wwu
+    ParentPhysicalPath: Events\Default Work Unit.wwu
+    Guid: '{A757C22F-EFD4-4F91-89E2-5CF1E3BB99E6}'
+    m_lastTimePsrt1: 1935581143
+    m_lastTimePart2: -1999308336
+    List:
+    - Name: Mechanic_destroy
+      Path: Default Work Unit\Mechanics\Mechanic_destroy
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Mechanics
+        ObjectType: 12
+      - ElementName: Mechanic_destroy
+        ObjectType: 3
+      ID: 559039776
+      Guid: d6b5a788c429b345ae81fdb8a0c06fb3
+      maxAttenuation: 0
+    - Name: Mechanic_rhytmic
+      Path: Default Work Unit\Mechanics\Mechanic_rhytmic
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Mechanics
+        ObjectType: 12
+      - ElementName: Mechanic_rhytmic
+        ObjectType: 3
+      ID: -1898034340
+      Guid: 9bd5a8cde12bf34bb1b70de30e440372
+      maxAttenuation: 0
+    - Name: Mechanic_rise
+      Path: Default Work Unit\Mechanics\Mechanic_rise
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Mechanics
+        ObjectType: 12
+      - ElementName: Mechanic_rise
+        ObjectType: 3
+      ID: -1453992343
+      Guid: e08120f063ce594d96d40ef4fefd3e2e
+      maxAttenuation: 0
+    - Name: Mechanic_rise_stop
+      Path: Default Work Unit\Mechanics\Mechanic_rise_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Mechanics
+        ObjectType: 12
+      - ElementName: Mechanic_rise_stop
+        ObjectType: 3
+      ID: 2136516444
+      Guid: 18fa54af008045488915b83a0bd0ae6f
+      maxAttenuation: 0
+    - Name: Touch_anywhere
+      Path: Default Work Unit\Mechanics\Touch_anywhere
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Mechanics
+        ObjectType: 12
+      - ElementName: Touch_anywhere
+        ObjectType: 3
+      ID: 1459553318
+      Guid: 81adedaa718f2d48b1ea641dd9c7a4ca
+      maxAttenuation: 0
+  - PhysicalPath: Events\Music.wwu
+    ParentPhysicalPath: Events\Default Work Unit.wwu
+    Guid: '{236EC451-CED1-4E6F-8F8E-62DC6C855911}'
+    m_lastTimePsrt1: -1420877503
+    m_lastTimePart2: -1999308264
+    List:
+    - Name: Main_music
+      Path: Default Work Unit\Music\Main_music
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Main_music
+        ObjectType: 3
+      ID: 63796330
+      Guid: 5cc8baa0b642fa45a9fe0e18e94a32ae
+      maxAttenuation: 0
+    - Name: StopAllMusic
+      Path: Default Work Unit\Music\StopAllMusic
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: StopAllMusic
+        ObjectType: 3
+      ID: -1387100277
+      Guid: 9529a8870adf4a4aa92b6c961330f8b6
+      maxAttenuation: 0
+  - PhysicalPath: Events\Speak.wwu
+    ParentPhysicalPath: Events\Default Work Unit.wwu
+    Guid: '{EF808080-4145-491A-97D0-09A780B7673C}'
+    m_lastTimePsrt1: -1420867464
+    m_lastTimePart2: -1999308264
+    List:
+    - Name: Speak_count
+      Path: Default Work Unit\Speak\Speak_count
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Speak
+        ObjectType: 12
+      - ElementName: Speak_count
+        ObjectType: 3
+      ID: -501139563
+      Guid: f81f976d09f7e24ea11f6cfc1e43ea9c
+      maxAttenuation: 0
+    - Name: Speak_intro
+      Path: Default Work Unit\Speak\Speak_intro
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Speak
+        ObjectType: 12
+      - ElementName: Speak_intro
+        ObjectType: 3
+      ID: -613216970
+      Guid: 372750157cc37f4f87f30673c32fa9e9
+      maxAttenuation: 0
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{1A49CF18-AF9D-49E6-86B9-364BA1BF9A68}'
+    m_lastTimePsrt1: -107148345
+    m_lastTimePart2: -1999308716
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{84293648-188C-4843-BE28-B2EA53028374}'
+    m_lastTimePsrt1: -1350656088
+    m_lastTimePart2: -1999308264
+    List:
+    - Name: Mechanics_Rhytm
+      Path: Default Work Unit\Mechanics_Rhytm
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Mechanics_Rhytm
+        ObjectType: 9
+      ID: 1204048829
+      Guid: 2e7ae6e9271db4468275eabdcdffd29e
+      values:
+      - None
+      - State1
+      - State2
+      - State3
+      - State4
+      ValueIcons:
+      - ElementName: None
+        ObjectType: 8
+      - ElementName: State1
+        ObjectType: 8
+      - ElementName: State2
+        ObjectType: 8
+      - ElementName: State3
+        ObjectType: 8
+      - ElementName: State4
+        ObjectType: 8
+      valueIDs: db3ba32c81400348824003488340034884400348
+      ValueGuids:
+      - bytes: 5c62e58bad25494a8418b9e74307b73f
+      - bytes: 264123afafeb364981c2f0a51e63918a
+      - bytes: 8111ebd05ac25e4ca7229d71d9871160
+      - bytes: 5b5ada5e0141d240ad614ea96f7abeae
+      - bytes: 0edd0695b6017f4b8edb12afa1aa5e24
+    - Name: Scene_change
+      Path: Default Work Unit\Scene_change
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Scene_change
+        ObjectType: 9
+      ID: -1123994970
+      Guid: ad8f49c47b5d1b4f89fe35a608290b5d
+      values:
+      - None
+      - OpenScene
+      - ProtoScene1
+      - ProtoScene3
+      ValueIcons:
+      - ElementName: None
+        ObjectType: 8
+      - ElementName: OpenScene
+        ObjectType: 8
+      - ElementName: ProtoScene1
+        ObjectType: 8
+      - ElementName: ProtoScene3
+        ObjectType: 8
+      valueIDs: db3ba32cdb0f26357837b5717a37b571
+      ValueGuids:
+      - bytes: 06a88edc6359844e9f6d48a4ed0e5812
+      - bytes: 97b6cc4f84e449429a0cce6bf18a89b5
+      - bytes: 72660249dd124e49bade225f3ea65e05
+      - bytes: d16f3dea76a496498eb94a96f885d198
+    - Name: Speak_language
+      Path: Default Work Unit\Speak_language
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Speak_language
+        ObjectType: 9
+      ID: 1821341230
+      Guid: 2d8d328f1ec4c6499154b4b31f46da53
+      values:
+      - DK
+      - None
+      - UK
+      ValueIcons:
+      - ElementName: DK
+        ObjectType: 8
+      - ElementName: None
+        ObjectType: 8
+      - ElementName: UK
+        ObjectType: 8
+      valueIDs: ca28776ddb3ba32cb50d775c
+      ValueGuids:
+      - bytes: 7aae8dc6df668c48a6316ac788f7f88c
+      - bytes: da4093ef9a80b54baceea08190964808
+      - bytes: 5dd5b2199662374aa0d6adc3359d7bf1
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{B6F95636-171C-45AE-939B-0D051C33F56A}'
+    m_lastTimePsrt1: -90466905
+    m_lastTimePart2: -1999308716
+    List:
+    - Name: Mechanic_rhythmic
+      Path: Default Work Unit\Mechanic_rhythmic
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Mechanic_rhythmic
+        ObjectType: 11
+      ID: -257561430
+      Guid: a7b4f986f661194dba1095cd333f5f5d
+      values:
+      - Stage1
+      - Stage2
+      - Stage3
+      - Stage4
+      ValueIcons:
+      - ElementName: Stage1
+        ObjectType: 10
+      - ElementName: Stage2
+        ObjectType: 10
+      - ElementName: Stage3
+        ObjectType: 10
+      - ElementName: Stage4
+        ObjectType: 10
+      valueIDs: 7a5cd537795cd537785cd5377f5cd537
+      ValueGuids:
+      - bytes: 787718c24ce3ad4a82c1cb682f16787e
+      - bytes: 5fe8ead6b7e6e34888c76eb81669abdd
+      - bytes: 28515476b9e20f4598b128b3fdbf650a
+      - bytes: 46c9e8b1ea335d4693dbdf6f74e417fc
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{9F0EC4C7-388C-4D89-BABB-4A28EAA8851B}'
+    m_lastTimePsrt1: -90522043
+    m_lastTimePart2: -1999308716
+    List:
+    - Name: SoundbankA
+      Path: Default Work Unit\SoundbankA
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SoundbankA
+        ObjectType: 7
+      ID: 1647770673
+      Guid: 213d8c2685607e4587e8f3b77c0cc846
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{C936BBA5-A306-4CDF-BA74-B9FA5226D67E}'
+    m_lastTimePsrt1: -119287579
+    m_lastTimePart2: -1999308716
+    List: []
+  - PhysicalPath: Game Parameters\Factory SoundSeed Air Game Syncs.wwu
+    ParentPhysicalPath: 
+    Guid: '{3B167755-FB42-458B-98BF-96F557AFB3B9}'
+    m_lastTimePsrt1: -119272539
+    m_lastTimePart2: -1999308716
+    List:
+    - Name: SS_Air_Fear
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_Fear
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_Fear
+        ObjectType: 13
+      ID: 1351367891
+      Guid: 59062ef746431c4ea1b1dab46a05101e
+    - Name: SS_Air_Freefall
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_Freefall
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_Freefall
+        ObjectType: 13
+      ID: -1292209176
+      Guid: 37fe2d2f9e4f944d83d853cca39781ad
+    - Name: SS_Air_Fury
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_Fury
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_Fury
+        ObjectType: 13
+      ID: 1029930033
+      Guid: dc79aea23acaba4696529986c322a87b
+    - Name: SS_Air_Month
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_Month
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_Month
+        ObjectType: 13
+      ID: -1646418679
+      Guid: 45b4e209a3c47f44b3ca818a1d925ef7
+    - Name: SS_Air_Presence
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_Presence
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_Presence
+        ObjectType: 13
+      ID: -447042342
+      Guid: 1a81b7e32f7b0f49b44f5fe51b468041
+    - Name: SS_Air_RPM
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_RPM
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_RPM
+        ObjectType: 13
+      ID: 822163944
+      Guid: ab9048a3d5b92645a64d5290c43ef2dc
+    - Name: SS_Air_Size
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_Size
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_Size
+        ObjectType: 13
+      ID: -1220270574
+      Guid: efeb291393a12e47a38c64668b494879
+    - Name: SS_Air_Storm
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_Storm
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_Storm
+        ObjectType: 13
+      ID: -579304704
+      Guid: db8c3fe9d1063747acaf7cd44bbed783
+    - Name: SS_Air_TimeOfDay
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_TimeOfDay
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_TimeOfDay
+        ObjectType: 13
+      ID: -1091570167
+      Guid: 2ca76f537e8c8b4cae03ef34fdadc314
+    - Name: SS_Air_Turbulence
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_Turbulence
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_Turbulence
+        ObjectType: 13
+      ID: -134719478
+      Guid: 197ba8edaa73a0409f192073606db710
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{727FA6D7-4248-4B11-820B-3439382F793E}'
+    m_lastTimePsrt1: -90446843
+    m_lastTimePart2: -1999308716
+    List: []
+  ExpandedItems:
+  - /MGP1
+  m_lastPopulateTimePsrt1: 0
+  m_lastPopulateTimePart2: 0
+  autoPopulateEnabled: 1
+  basePath: Audio/GeneratedSoundBanks
+  language: English(US)
+  defaultPoolSize: 4096
+  lowerPoolSize: 2048
+  streamingPoolSize: 1024
+  preparePoolSize: 0
+  memoryCutoffThreshold: 0.95
+  callbackManagerBufferSize: 4

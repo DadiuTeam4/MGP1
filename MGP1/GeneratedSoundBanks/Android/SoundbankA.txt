@@ -1,0 +1,64 @@
+Event	ID	Name			Wwise Object Path	Notes
+	63796330	Main_music			\Default Work Unit\Music\Main_music	
+	77978275	Ambient			\Default Work Unit\Environment\Ambient	
+	452547817	Stop_All			\Default Work Unit\Stop_All	
+	559039776	Mechanic_destroy			\Default Work Unit\Mechanics\Mechanic_destroy	
+	1459553318	Touch_anywhere			\Default Work Unit\Mechanics\Touch_anywhere	
+	2136516444	Mechanic_rise_stop			\Default Work Unit\Mechanics\Mechanic_rise_stop	
+	2396932956	Mechanic_rhytmic			\Default Work Unit\Mechanics\Mechanic_rhytmic	
+	2840974953	Mechanic_rise			\Default Work Unit\Mechanics\Mechanic_rise	
+	2907867019	StopAllMusic			\Default Work Unit\Music\StopAllMusic	
+	3436946623	Env_build			\Default Work Unit\Environment\Env_build	
+	3681750326	Speak_intro			\Default Work Unit\Speak\Speak_intro	
+	3793827733	Speak_count			\Default Work Unit\Speak\Speak_count	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1204048829	Mechanics_Rhytm			\Default Work Unit\Mechanics_Rhytm	
+	1821341230	Speak_language			\Default Work Unit\Speak_language	
+	3170972326	Scene_change			\Default Work Unit\Scene_change	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Mechanics_Rhytm			
+	1208172673	State1	Mechanics_Rhytm			
+	1208172674	State2	Mechanics_Rhytm			
+	1208172675	State3	Mechanics_Rhytm			
+	1208172676	State4	Mechanics_Rhytm			
+	748895195	None	Speak_language			
+	1551306165	UK	Speak_language			
+	1836525770	DK	Speak_language			
+	748895195	None	Scene_change			
+	891686875	OpenScene	Scene_change			
+	1907701624	ProtoScene1	Scene_change			
+	1907701626	ProtoScene3	Scene_change			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	21240014	Mechanism_Deconstruct_Destroy	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\Mechanism_Deconstruct_Destroy_FA2F47BB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mechanics\Mech_deconstruct_destroy\Mechanism_Deconstruct_Destroy		709916
+	46639991	Env_Building	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\Env_Building_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Env_Building		2949184
+	87495225	Touch_display	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\Touch_display_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mechanics\Touch_display		368704
+	94712589	MGP1_Speak_UK_8024	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\MGP1_Speak_UK_8024_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Speak\Speak\Speak_count_UK\MGP1_Speak_UK_8024		523668
+	164388342	MGP1_Speak_UK_One	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\MGP1_Speak_UK_One_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Speak\Speak\Speak_count_UK\MGP1_Speak_UK_One		115264
+	169523579	Mechanism_Deconstruct_Rise_1	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\Mechanism_Deconstruct_Rise_1_57E16281.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mechanics\Mech_Deconstruct_rise\Mechanism_Deconstruct_Rise_1		193660
+	171186292	MGP1_Speak_UK_Four	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\MGP1_Speak_UK_Four_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Speak\Speak\Speak_count_UK\MGP1_Speak_UK_Four		115264
+	220227290	MGP1_Speak_DK_Blank	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\MGP1_Speak_DK_Blank_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Speak\Speak\Speak_count_DK\MGP1_Speak_DK_Blank		184384
+	226213263	MGP1_Speak_DK_3632	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\MGP1_Speak_DK_3632_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Speak\Speak\Speak_count_DK\MGP1_Speak_DK_3632		645184
+	259896849	Mechanism_Deconstruct_Destroy_02	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\Mechanism_Deconstruct_Destroy_6C1A2738.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mechanics\Mech_deconstruct_destroy\Mechanism_Deconstruct_Destroy_02		735732
+	291183620	Mechanism_Deconstruct_Destroy_03	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\Mechanism_Deconstruct_Destroy_A78249A5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mechanics\Mech_deconstruct_destroy\Mechanism_Deconstruct_Destroy_03		729276
+	312663997	MGP1_Music_3A_3	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\MGP1_Music_3A_3_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Mecahnic_rhytmic\Track3\MGP1_Music_3A_3\MGP1_Music_3A_3		6144064
+	381669214	MGP1_Music_3A_2	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\MGP1_Music_3A_2_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Mecahnic_rhytmic\Track2\MGP1_Music_3A_2\MGP1_Music_3A_2		6144064
+	385335095	MGP1_Music_udkast_a_mainpiece	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\MGP1_Music_udkast_a_mainpiece_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Main_music_switch\B1\B1\MGP1_Music_udkast_a_mainpiece		12288064
+	473381468	MGP1_Speak_UK_Three	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\MGP1_Speak_UK_Three_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Speak\Speak\Speak_count_UK\MGP1_Speak_UK_Three		80704
+	613143140	MGP1_Speak_DK_Four	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\MGP1_Speak_DK_Four_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Speak\Speak\Speak_count_DK\MGP1_Speak_DK_Four		149824
+	662310368	MGP1_Speak_UK_Two	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\MGP1_Speak_UK_Two_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Speak\Speak\Speak_count_UK\MGP1_Speak_UK_Two		126784
+	675155689	MGP1_Speak_Intro_DK	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\MGP1_Speak_Intro_DK_3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Speak\Speak_intro\Speak_intro_DK\MGP1_Speak_Intro_DK		3504064
+	684181433	Mechanism_Deconstruct_Rise_01	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\Mechanism_Deconstruct_Rise_1_5EA305C4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mechanics\Mech_Deconstruct_rise\Mechanism_Deconstruct_Rise_01		206568
+	708252861	Mechanism_Deconstruct_Destroy_01	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\Mechanism_Deconstruct_Destroy_1316701C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mechanics\Mech_deconstruct_destroy\Mechanism_Deconstruct_Destroy_01		709916
+	708720621	MGP1_Speak_DK_7540	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\MGP1_Speak_DK_7540_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Speak\Speak\Speak_count_DK\MGP1_Speak_DK_7540		414784
+	722565288	MGP1_Music_3A_4	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\MGP1_Music_3A_4_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Mecahnic_rhytmic\Track4\MGP1_Music_3A_4\MGP1_Music_3A_4		6144064
+	726081729	MGP1_Speak_Intro_UK	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\MGP1_Speak_Intro_UK_2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Speak\Speak_intro\Speak_intro_UK\MGP1_Speak_Intro_UK		3456064
+	843256934	MGP1_Speak_DK_Blank	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\MGP1_Speak_DK_Blank_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Main_music_switch\Blank\Blank\MGP1_Speak_DK_Blank		184384
+	914572333	MGP1_Speak_DK_Three	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\MGP1_Speak_DK_Three_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Speak\Speak\Speak_count_DK\MGP1_Speak_DK_Three		92224
+	952900142	MGP1_Speak_DK_Two	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\MGP1_Speak_DK_Two_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Speak\Speak\Speak_count_DK\MGP1_Speak_DK_Two		92224
+	980755372	MGP1_Music_3A_1_1	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\MGP1_Music_3A_1_1_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Mecahnic_rhytmic\Track1\MGP1_Music_3A_1\MGP1_Music_3A_1_1		6144064
+	1052955638	MGP1_Speak_DK_One	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\MGP1_Speak_DK_One_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Speak\Speak\Speak_count_DK\MGP1_Speak_DK_One		161344
+	1068156190	MGP1_Music_udkast_a_intro	Y:\Desktop\DADIU\MGP1\MGP1\MGP1\.cache\Android\SFX\MGP1_Music_udkast_a_intro_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Main_music_switch\A1\A\MGP1_Music_udkast_a_intro		9216064
+

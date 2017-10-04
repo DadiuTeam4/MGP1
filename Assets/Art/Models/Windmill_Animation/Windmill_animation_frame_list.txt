@@ -1,0 +1,5 @@
+frame 1-120 - Windmill pole rises 
+frame 131 - 160 Wind mill button scales
+frame 161 - 190 Half of fan scales
+frame 191 - 220 Other half of fan scales
+frame 230 - 290 Fan rotation animation 

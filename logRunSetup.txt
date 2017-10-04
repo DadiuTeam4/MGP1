@@ -1,0 +1,1576 @@
+2017-09-11 11:44:04.546 Unity[74576:1983071] 11:44:04.546 WARNING:   >compload> AudioComponentPluginLoader.cpp:445: ParseInfoPlistArray: CA-2A.component -- file:///Library/Audio/Plug-Ins/Components/: trouble parsing Info.plist's AudioComponents; entry: <CFBasicHash 0x10e6e5290 [0x7fff79af1ed0]>{type = mutable dict, count = 7,
+entries =>
+	2 : <CFString 0x10e6e49d0 [0x7fff79af1ed0]>{contents = "manufacturer"} = CWSY
+	7 : <CFString 0x10e6e5bf0 [0x7fff79af1ed0]>{contents = "factoryFunction"} = <CFString 0x10e6e5c50 [0x7fff79af1ed0]>{contents = "AUWrapperFactory"}
+	8 : subtype = comp
+	9 : description = <CFString 0x10e6e5ab0 [0x7fff79af1ed0]>{contents = "CA-2Audio: FMOD Profiler initialized on port 54900
+AssetDatabase consistency checks...0.084162 seconds
+Refreshing native plugins compatible for Editor in 50.48 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2017.1.0f3 (472613c02cf7)
+Forcing GfxDevice: Null
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Initialize mono
+Mono path[0] = '/Applications/Unity/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0'
+Mono config path = '/Applications/Unity/Unity.app/Contents/Mono/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,defer=y,address=0.0.0.0:56576
+Begin MonoManager ReloadAssembly
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/UnityEngine.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/Unity.Locator.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/Unity.DataContract.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/System.Core.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/Unity.IvyParser.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/System.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/System.Xml.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/System.Configuration.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/PackageManager/Unity/PackageManager/2017.1.0/Unity.PackageManager.dll (this message is harmless)
+Initializing Unity.PackageManager (PackageManager) v2017.1.0 for Unity v2017.1.0f3
+Setting Standalone:StandaloneOSXIntel v2017.1.0 for Unity v2017.1.0f3 to /Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport
+Setting Advertisements v2017.1.0 for Unity v2017.1.0f3 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements
+  UnityEngine.Advertisements.dll (Extension) GUID: 739bbd9f364b4268874f9fd86ab3beef
+  Editor/UnityEditor.Advertisements.dll (Extension) GUID: 97decbdab0634cdd991f8d23ddf0dead
+Setting GUISystem v2017.1.0 for Unity v2017.1.0f3 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem
+  UnityEngine.UI.dll (Extension) GUID: f5f67c52d1564df4a8936ccd202a3bd8
+  Standalone/UnityEngine.UI.dll (Extension) GUID: f70555f144d8491a825f0804e09c671c
+  Editor/UnityEditor.UI.dll (Extension) GUID: 80a3616ca19596e4da0f10f14d241e9f
+Setting UNetHLAPI v2017.1.0 for Unity v2017.1.0f3 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking
+  UnityEngine.Networking.dll (Extension) GUID: 870353891bb340e2b2a9c8707e7419ba
+  Standalone/UnityEngine.Networking.dll (Extension) GUID: dc443db3e92b4983b9738c1131f555cb
+  Editor/UnityEditor.Networking.dll (Extension) GUID: 5f32cd94baa94578a686d4b9d6b660f7
+Set[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+[usbmuxd] Send listen message
+debugger-agent: Unable to listen on 70
+[usbmuxd] Stop listen thread
+[usbmuxd] Error: 
+[usbmuxd] Listen thread exiting
+  UnityEngine.TestRunner.dll (Extension) GUID: 53ebcfaa2e1e4e2dbc85882cd5a73fa1
+  net35/unity-custom/nunit.framework.dll (Extension) GUID: 4b3fa4bde7f1451a8218c03ee6a8ded8
+  portable/nunit.framework.dll (Extension) GUID: 405b9b51bb344a128608d968297df79c
+Setting Timeline v2017.1.0 for Unity v2017.1.0f3 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline
+  RuntimeEditor/UnityEngine.Timeline.dll (Extension) GUID: 844F815391DB42D49455CBF1A7BFC434
+  Runtime/UnityEngine.Timeline.dll (Extension) GUID: 6a10b2909283487f913b00d94cd3faf5
+  Editor/UnityEditor.Timeline.dll (Extension) GUID: 7668179ede524d6396c8b7d84461ea29
+Setting TreeEditor v2017.1.0 for Unity v2017.1.0f3 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor
+  Editor/UnityEditor.TreeEditor.dll (Extension) GUID: adebbd281f1a4ef3a30be7f21937e02f
+Setting UnityAnalytics v2017.1.0 for Unity v2017.1.0f3 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics
+  UnityEngine.Analytics.dll (Extension) GUID: 852E56802EB941638ACBB491814497B0
+  Editor/UnityEditor.Analytics.dll (Extension) GUID: 86f4de9468454445ac2f39e207fafa3a
+Setting UnityHoloLens v2017.1.0 for Unity v2017.1.0f3 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens
+  Editor/UnityEditor.HoloLens.dll (Extension) GUID: 12fd8a0055b84bb59e84c9835a37e333
+  Runtime/UnityEngine.HoloLens.dll (Extension) GUID: f7b54ff4a43d4fcf81b4538b678e0bcc
+  RuntimeEditor/UnityEngine.HoloLens.dll (Extension) GUID: 1c6d1fbb51834b64847b1b73a75bfc77
+Setting UnityPurchasing v2017.1.0 for Unity v2017.1.0f3 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityPurchasing
+  UnityEngine.Purchasing.dll (Extension) GUID: 8E0CD8ED44D4412CBE0642067ABC9E44
+  Editor/UnityEditor.Purchasing.dll (Extension) GUID: 8382B2BB260241859771B69B7F377A8D
+Setting UnityVR v2017.1.0 for Unity v2017.1.0f3 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR
+  Editor/UnityEditor.VR.dll (Extension) GUID: 4ba2329b63d54f0187bcaa12486b1b0f
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: /Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: /Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.001963 seconds.
+Platform assembly: /Applications/Unity/Unity.app/Contents/PackageManager/Unity/PackageManager/2017.1.0/Unity.PackageManager.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/PackageManager/Unity/PackageManager/2017.1.0/Unity.PackageManager.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityPurchasing/Editor/UnityEditor.Purchasing.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityPurchasing/Editor/UnityEditor.Purchasing.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll into Unity Child Domain
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/UnityEditor.Graphs.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/Managed/UnityEditor.Graphs.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll (this message is harmless)
+Loading /Applications/Unity/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll (this message is harmless)
+Loading /Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll into Unity Child Domain
+Platform assembly: /Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll into Unity Child Domain
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/ExCSS.Unity.dll (this message is harmless)
+Refreshing native plugins compatible for Editor in 5.43 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 5.87 ms.
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/Mono.Cecil.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/Unity.SerializationLogic.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/UnityScript.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/Unity.Legacy.NRefactory.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/System.Xml.Linq.dll (this message is harmless)
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.iOS.Extensions.Xcode.dll (this message is harmless)
+Non platform assembly: /Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll (this message is harmless)
+Mono: successfully reloaded assembly
+- Completed reload, in  3.707 seconds
+Registering platform support modules:
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/Boo.Lang.Compiler.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/Boo.Lang.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/Boo.Lang.Parser.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/UnityScript.Lang.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/Mono.Security.dll (this message is harmless)
+Registered platform support modules in: 0.854153s.
+Native extension for OSXStandalone target not found
+Loading native library: UnityEditor.iOS.Native at /Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Native.dylib
+Native extension for iOS target not found
+Native extension for Android target not found
+Begin MonoManager ReloadAssembly
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/UnityEngine.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/Unity.Locator.dll (this message is harmless)
+Registering precompiled user dll's ...
+Registered in 0.224432 seconds.
+Non platform assembly: /Users/kristianriis/Desktop/DADIU/MGP1/MGP1_WwiseIntegrationTemp/Library/ScriptAssemblies/Assembly-CSharp.dll (this message is harmless)
+Loading /Users/kristianriis/Desktop/DADIU/MGP1/MGP1_WwiseIntegrationTemp/Library/ScriptAssemblies/Assembly-CSharp.dll into Unity Child Domain
+Non platform assembly: /Users/kristianriis/Desktop/DADIU/MGP1/MGP1_WwiseIntegrationTemp/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll (this message is harmless)
+Loading /Users/kristianriis/Desktop/DADIU/MGP1/MGP1_WwiseIntegrationTemp/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll into Unity Child Domain
+Platform assembly: /Applications/Unity/Unity.app/Contents/PackageManager/Unity/PackageManager/2017.1.0/Unity.PackageManager.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/PackageManager/Unity/PackageManager/2017.1.0/Unity.PackageManager.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityPurchasing/Editor/UnityEditor.Purchasing.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityPurchasing/Editor/UnityEditor.Purchasing.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll into Unity Child Domain
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/UnityEditor.Graphs.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/Managed/UnityEditor.Graphs.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll (this message is harmless)
+Loading /Applications/Unity/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll (this message is harmless)
+Loading /Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll into Unity Child Domain
+Platform assembly: /Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll (this message is harmless)
+Loading /Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll (this message is harmless)
+Loading /Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll into Unity Child Domain
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/System.Core.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/ExCSS.Unity.dll (this message is harmless)
+Refreshing native plugins compatible for Editor in 7.24 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 6.51 ms.
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/Mono.Cecil.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/Unity.SerializationLogic.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/Unity.DataContract.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/UnityScript.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/Unity.Legacy.NRefactory.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/System.Xml.Linq.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/Unity.IvyParser.dll (this message is harmless)
+Mono: successfully reloaded assembly
+- Completed reload, in  5.716 seconds
+Initializing Unity.PackageManager (PackageManager) v2017.1.0 for Unity v2017.1.0f3
+Setting Standalone:StandaloneOSXIntel v2017.1.0 for Unity v2017.1.0f3 to /Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport
+Setting Advertisements v2017.1.0 for Unity v2017.1.0f3 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements
+  UnityEngine.Advertisements.dll (Extension) GUID: 739bbd9f364b4268874f9fd86ab3beef
+  Editor/UnityEditor.Advertisements.dll (Extension) GUID: 97decbdab0634cdd991f8d23ddf0dead
+Setting GUISystem v2017.1.0 for Unity v2017.1.0f3 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem
+  UnityEngine.UI.dll (Extension) GUID: f5f67c52d1564df4a8936ccd202a3bd8
+  Standalone/UnityEngine.UI.dll (Extension) GUID: f70555f144d8491a825f0804e09c671c
+  Editor/UnityEditor.UI.dll (Extension) GUID: 80a3616ca19596e4da0f10f14d241e9f
+Setting UNetHLAPI v2017.1.0 for Unity v2017.1.0f3 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking
+  UnityEngine.Networking.dll (Extension) GUID: 870353891bb340e2b2a9c8707e7419ba
+  Standalone/UnityEngine.Networking.dll (Extension) GUID: dc443db3e92b4983b9738c1131f555cb
+  Editor/UnityEditor.Networking.dll (Extension) GUID: 5f32cd94baa94578a686d4b9d6b660f7
+Setting TestRunner v2017.1.0 for Unity v2017.1.0f3 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner
+  Editor/UnityEditor.TestRunner.dll (Extension) GUID: 4113173d5e95493ab8765d7b08371de4
+  UnityEngine.TestRunner.dll (Extension) GUID: 53ebcfaa2e1e4e2dbc85882cd5a73fa1
+  net35/unity-custom/nunit.framework.dll (Extension) GUID: 4b3fa4bde7f1451a8218c03ee6a8ded8
+  portable/nunit.framework.dll (Extension) GUID: 405b9b51bb344a128608d968297df79c
+Setting Timeline v2017.1.0 for Unity v2017.1.0f3 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline
+  RuntimeEditor/UnityEngine.Timeline.dll (Extension) GUID: 844F815391DB42D49455CBF1A7BFC434
+  Runtime/UnityEngine.Timeline.dll (Extension) GUID: 6a10b2909283487f913b00d94cd3faf5
+  Editor/UnityEditor.Timeline.dll (Extension) GUID: 7668179ede524d6396c8b7d84461ea29
+Setting TreeEditor v2017.1.0 for Unity v2017.1.0f3 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor
+  Editor/UnityEditor.TreeEditor.dll (Extension) GUID: adebbd281f1a4ef3a30be7f21937e02f
+Setting UnityAnalytics v2017.1.0 for Unity v2017.1.0f3 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics
+  UnityEngine.Analytics.dll (Extension) GUID: 852E56802EB941638ACBB491814497B0
+  Editor/UnityEditor.Analytics.dll (Extension) GUID: 86f4de9468454445ac2f39e207fafa3a
+Setting UnityHoloLens v2017.1.0 for Unity v2017.1.0f3 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens
+  Editor/UnityEditor.HoloLens.dll (Extension) GUID: 12fd8a0055b84bb59e84c9835a37e333
+  Runtime/UnityEngine.HoloLens.dll (Extension) GUID: f7b54ff4a43d4fcf81b4538b678e0bcc
+  RuntimeEditor/UnityEngine.HoloLens.dll (Extension) GUID: 1c6d1fbb51834b64847b1b73a75bfc77
+Setting UnityPurchasing v2017.1.0 for Unity v2017.1.0f3 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityPurchasing
+  UnityEngine.Purchasing.dll (Extension) GUID: 8E0CD8ED44D4412CBE0642067ABC9E44
+  Editor/UnityEditor.Purchasing.dll (Extension) GUID: 8382B2BB260241859771B69B7F377A8D
+Setting UnityVR v2017.1.0 for Unity v2017.1.0f3 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR
+  Editor/UnityEditor.VR.dll (Extension) GUID: 4ba2329b63d54f0187bcaa12486b1b0f
+Registering platform support modules:
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/Boo.Lang.Compiler.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/Boo.Lang.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/Boo.Lang.Parser.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/UnityScript.Lang.dll (this message is harmless)
+Registered platform support modules in: 0.310096s.
+Native extension for OSXStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Validating Project structure ... 0.075440 seconds.
+Refresh: detecting if any assets need to be imported or removed ... 
+Hashing assets ... 0.000 seconds
+  file open: 0.000 seconds (4 files)
+  file read: 0.000 seconds (0.003 MB)
+  hash: 0.000 seconds
+----- Compute hash(es) for 2 asset(s).
+----- Asset named Assets/Wwise/Extensions/AkSoundEngine.extensions.cs is skipped as no actual change.
+
+Refresh: elapses 0.330136 seconds
+Updating Assets/WwiseSettings.xml - GUID: c51c3eeca3e634ca1b8c8e99b273a626...
+ done. [Time: 205.839194 ms] 
+Unloading 416 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 305.6 MB.
+System memory in use after: 305.8 MB.
+
+Unloading 196 unused Assets to reduce memory usage. Loaded Objects now: 2789.
+Total: 21.906312 ms (FindLiveObjects: 0.508820 ms CreateObjectMapping: 0.174293 ms MarkObjects: 21.071188 ms  DeleteObjects: 0.148999 ms)
+
+Refreshing native plugins compatible for Editor in 121.57 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.83 ms.
+
+----- Total AssetImport time: 1.313337s, AssetImport time: 0.932418s, Asset hashing: 0.000684s [3.2 KB, 4.571614 mb/s]
+
+Warming cache for 586 main assets: 0.002993 seconds elapsed
+Initializing Unity extensions:
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll'  GUID: 12fd8a0055b84bb59e84c9835a37e333
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll'  GUID: 852e56802eb941638acbb491814497b0
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/Runtime/UnityEngine.Timeline.dll'  GUID: 6a10b2909283487f913b00d94cd3faf5
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/portable/nunit.framework.dll'  GUID: 405b9b51bb344a128608d968297df79c
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Standalone/UnityEngine.UI.dll'  GUID: f70555f144d8491a825f0804e09c671c
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll'  GUID: f5f67c52d1564df4a8936ccd202a3bd8
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll'  GUID: 844f815391db42d49455cbf1a7bfc434
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/Standalone/UnityEngine.Networking.dll'  GUID: dc443db3e92b4983b9738c1131f555cb
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll'  GUID: 5f32cd94baa94578a686d4b9d6b660f7
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll'  GUID: 86f4de9468454445ac2f39e207fafa3a
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/Runtime/UnityEngine.HoloLens.dll'  GUID: f7b54ff4a43d4fcf81b4538b678e0bcc
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll'  GUID: adebbd281f1a4ef3a30be7f21937e02f
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll'  GUID: 870353891bb340e2b2a9c8707e7419ba
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll'  GUID: 53ebcfaa2e1e4e2dbc85882cd5a73fa1
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll'  GUID: 97decbdab0634cdd991f8d23ddf0dead
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll'  GUID: 4ba2329b63d54f0187bcaa12486b1b0f
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityPurchasing/Editor/UnityEditor.Purchasing.dll'  GUID: 8382b2bb260241859771b69b7f377a8d
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll'  GUID: 1c6d1fbb51834b64847b1b73a75bfc77
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll'  GUID: 80a3616ca19596e4da0f10f14d241e9f
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll'  GUID: 4113173d5e95493ab8765d7b08371de4
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll'  GUID: 4b3fa4bde7f1451a8218c03ee6a8ded8
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityPurchasing/UnityEngine.Purchasing.dll'  GUID: 8e0cd8ed44d4412cbe0642067abc9e44
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll'  GUID: 7668179ede524d6396c8b7d84461ea29
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll'  GUID: 739bbd9f364b4268874f9fd86ab3beef
+    Ignoring '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll' because we're compiling for Editor:Editor
+    Ignoring '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Standalone/UnityEngine.UI.dll' because we're compiling for Editor:Editor
+    Ignoring '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/Standalone/UnityEngine.Networking.dll' because we're compiling for Editor:Editor
+    Ignoring '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/Runtime/UnityEngine.Timeline.dll' because we're compiling for Editor:Editor
+    Ignoring '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/Runtime/UnityEngine.HoloLens.dll' because we're compiling for Editor:Editor
+    Ignoring '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityPurchasing/UnityEngine.Purchasing.dll' because we're compiling for Editor:Editor
+Unloading 190 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 301.9 MB.
+System memory in use after: 302.1 MB.
+
+Unloading 153 unused Assets to reduce memory usage. Loaded Objects now: 2822.
+Total: 19.610936 ms (FindLiveObjects: 0.676458 ms CreateObjectMapping: 0.154622 ms MarkObjects: 18.637067 ms  DeleteObjects: 0.139507 ms)
+
+WwiseUnity: Running modify setup...
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+WwiseSetupWizard:RunModifyImpl() (at /Users/kristianriis/Desktop/DADIU/MGP1/MGP1/Assets/Wwise/Editor/WwiseSetupWizard/AkWwiseSetupWizard.cs:38)
+UnityEditor.EditorApplication:Internal_CallDelayFunctions() (at /Users/builduser/buildslave/unity/build/Editor/Mono/EditorApplication.cs:118)
+ 
+(Filename: /Users/kristianriis/Desktop/DADIU/MGP1/MGP1/Assets/Wwise/Editor/WwiseSetupWizard/AkWwiseSetupWizard.cs Line: 38)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 299.2 MB.
+System memory in use after: 299.4 MB.
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2828.
+Total: 18.560701 ms (FindLiveObjects: 0.582911 ms CreateObjectMapping: 0.095807 ms MarkObjects: 17.811851 ms  DeleteObjects: 0.067411 ms)
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.144 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Mac/DSP/libAkHarmonizer.bundle - GUID: 875550008e9e4490a94ecab6f5ca062d...
+ done. [Time: 6.957047 ms] 
+Refreshing native plugins compatible for Editor in 8.23 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.89 ms.
+
+----- Total AssetImport time: 0.307077s, AssetImport time: 0.150466s, Asset hashing: 0.001467s [148.0 KB, 98.498711 mb/s]
+
+
+Hashing assets ... 0.004 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.614 MB)
+  hash: 0.004 seconds
+Updating Assets/Wwise/Deployment/Plugins/Android/x86/DSP/libAkRecorder.so - GUID: 986ff8a057eda4265b07e8cdde625128...
+ done. [Time: 5.803372 ms] 
+Refreshing native plugins compatible for Editor in 5.24 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 2.85 ms.
+
+----- Total AssetImport time: 0.284388s, AssetImport time: 0.150561s, Asset hashing: 0.004663s [0.6 MB, 131.662079 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.135 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Mac/DSP/libAkConvolutionReverb.bundle - GUID: b0b6b4c03fdaa46a3af9682b2f076834...
+ done. [Time: 7.528862 ms] 
+Refreshing native plugins compatible for Editor in 5.65 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.84 ms.
+
+----- Total AssetImport time: 0.322539s, AssetImport time: 0.187211s, Asset hashing: 0.001452s [137.8 KB, 92.735008 mb/s]
+
+
+Hashing assets ... 0.003 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.477 MB)
+  hash: 0.003 seconds
+Updating Assets/Wwise/Deployment/Plugins/Mac/DSP/libMcDSP.bundle - GUID: 8ef595e050141466ebda404e91bd75ba...
+ done. [Time: 9.981357 ms] 
+Refreshing native plugins compatible for Editor in 8.26 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 2.02 ms.
+
+----- Total AssetImport time: 0.267095s, AssetImport time: 0.138411s, Asset hashing: 0.003398s [488.3 KB, 140.359528 mb/s]
+
+
+Hashing assets ... 0.004 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.208 MB)
+  hash: 0.004 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkMotion.dll - GUID: a427ede08a2db4e75b1030f66a71343e...
+ done. [Time: 7.135369 ms] 
+Refreshing native plugins compatible for Editor in 4.82 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.81 ms.
+
+----- Total AssetImport time: 0.256526s, AssetImport time: 0.134613s, Asset hashing: 0.004285s [213.0 KB, 48.542103 mb/s]
+
+
+Hashing assets ... 0.005 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.871 MB)
+  hash: 0.005 seconds
+Updating Assets/Wwise/Deployment/Plugins/Android/armeabi-v7a/DSP/libAkSoundSeedAir.so - GUID: 08e2ba31796b44ff6bdd0f672be15234...
+ done. [Time: 7.634432 ms] 
+Refreshing native plugins compatible for Editor in 7.95 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.88 ms.
+
+----- Total AssetImport time: 0.282214s, AssetImport time: 0.155272s, Asset hashing: 0.005561s [0.9 MB, 156.552567 mb/s]
+
+
+Hashing assets ... 0.002 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.289 MB)
+  hash: 0.002 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/CrankcaseAudioREVModelPlayer.dll - GUID: aa5899410bf9c4e2fa313bc46e0a7aa8...
+ done. [Time: 9.414322 ms] 
+Refreshing native plugins compatible for Editor in 5.58 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.92 ms.
+
+----- Total AssetImport time: 0.271053s, AssetImport time: 0.140089s, Asset hashing: 0.002297s [296.0 KB, 125.861023 mb/s]
+
+
+Hashing assets ... 0.004 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.002 seconds (0.212 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkSoundSeedImpact.dll - GUID: fd2bcf41638f94a5e8dc23d9e8d31a42...
+ done. [Time: 5.171198 ms] 
+Refreshing native plugins compatible for Editor in 5.67 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.91 ms.
+
+----- Total AssetImport time: 0.256304s, AssetImport time: 0.134167s, Asset hashing: 0.004236s [217.5 KB, 50.141747 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.082 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Mac/DSP/libAkGuitarDistortion.bundle - GUID: 581e2c7129d3b4db2adfa151b16a45ac...
+ done. [Time: 8.660221 ms] 
+Refreshing native plugins compatible for Editor in 8.12 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.96 ms.
+
+----- Total AssetImport time: 0.280741s, AssetImport time: 0.158369s, Asset hashing: 0.000888s [84.0 KB, 92.290718 mb/s]
+
+
+Hashing assets ... 0.006 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.003 seconds (0.538 MB)
+  hash: 0.006 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/iZotope.dll - GUID: 820cbcb1b32634a61846c729efca92ad...
+ done. [Time: 5.582974 ms] 
+Refreshing native plugins compatible for Editor in 6.47 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 2.58 ms.
+
+----- Total AssetImport time: 0.260413s, AssetImport time: 0.132395s, Asset hashing: 0.006368s [0.5 MB, 84.504311 mb/s]
+
+
+Hashing assets ... 0.022 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.004 seconds (3.392 MB)
+  hash: 0.022 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/Auro.dll - GUID: bf71efb14b95d4ae2bfa744468ee7dbf...
+ done. [Time: 6.172686 ms] 
+Refreshing native plugins compatible for Editor in 5.20 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 2.30 ms.
+
+----- Total AssetImport time: 0.283813s, AssetImport time: 0.136151s, Asset hashing: 0.022517s [3.4 MB, 150.623260 mb/s]
+
+
+Hashing assets ... 0.004 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.620 MB)
+  hash: 0.004 seconds
+Updating Assets/Wwise/Deployment/Plugins/Android/x86/DSP/libAkPitchShifter.so - GUID: d57991d18df5844979182ab76a23a727...
+ done. [Time: 7.883487 ms] 
+Refreshing native plugins compatible for Editor in 5.03 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 2.00 ms.
+
+----- Total AssetImport time: 0.279166s, AssetImport time: 0.155296s, Asset hashing: 0.004593s [0.6 MB, 135.034256 mb/s]
+
+
+Hashing assets ... 0.005 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.716 MB)
+  hash: 0.004 seconds
+Updating Assets/Wwise/Deployment/Plugins/Android/armeabi-v7a/DSP/libCrankcaseAudioREVModelPlayer.so - GUID: cb4614d1f63504659be9e15a70d4440f...
+ done. [Time: 5.802616 ms] 
+Refreshing native plugins compatible for Editor in 4.81 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 2.63 ms.
+
+----- Total AssetImport time: 0.260751s, AssetImport time: 0.134350s, Asset hashing: 0.004993s [0.7 MB, 143.433640 mb/s]
+
+
+Hashing assets ... 0.004 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.607 MB)
+  hash: 0.004 seconds
+Updating Assets/Wwise/Deployment/Plugins/Android/x86/DSP/libAkFlanger.so - GUID: 56acd2e17517b4a11bec9d256d8b2ac4...
+ done. [Time: 5.526188 ms] 
+Refreshing native plugins compatible for Editor in 7.34 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 2.53 ms.
+
+----- Total AssetImport time: 0.265769s, AssetImport time: 0.138428s, Asset hashing: 0.004557s [0.6 MB, 133.145432 mb/s]
+
+
+Hashing assets ... 0.002 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.208 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkTremolo.dll - GUID: 0a973ee1e23f94d2a8b80bf1d01dab32...
+ done. [Time: 5.614662 ms] 
+Refreshing native plugins compatible for Editor in 5.75 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.87 ms.
+
+----- Total AssetImport time: 0.282745s, AssetImport time: 0.157519s, Asset hashing: 0.002047s [213.0 KB, 101.602135 mb/s]
+
+Updating Assets/Wwise/Deployment/Plugins/Mac/Profile/AkSoundEngine.bundle - GUID: ae95ffe1f0bc24c32a4a65766a2689d7...
+ done. [Time: 6.997280 ms] 
+Refreshing native plugins compatible for Editor in 6.76 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.87 ms.
+
+----- Total AssetImport time: 0.348449s, AssetImport time: 0.219400s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+
+Hashing assets ... 0.080 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.015 seconds (12.420 MB)
+  hash: 0.079 seconds
+Updating Assets/Wwise/Deployment/Plugins/Mac/DSP/libAuro.bundle - GUID: 967e9f02aee494b03bcf76ff06bfc225...
+ done. [Time: 11.096472 ms] 
+Refreshing native plugins compatible for Editor in 5.43 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 2.08 ms.
+
+----- Total AssetImport time: 0.332313s, AssetImport time: 0.132360s, Asset hashing: 0.080683s [12.4 MB, 153.932617 mb/s]
+
+
+Hashing assets ... 0.019 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.003 seconds (2.863 MB)
+  hash: 0.019 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/Debug/AkSoundEngine.dll - GUID: 9a196712b006e43918e1c83518a5eadd...
+ done. [Time: 5.454597 ms] 
+Refreshing native plugins compatible for Editor in 6.02 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.89 ms.
+
+----- Total AssetImport time: 0.306336s, AssetImport time: 0.144775s, Asset hashing: 0.019465s [2.9 MB, 147.100296 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.221 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkTimeStretch.dll - GUID: 5a5ccb12ac2374bc6b0d4c4b00b28c30...
+ done. [Time: 7.918277 ms] 
+Refreshing native plugins compatible for Editor in 5.68 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 2.14 ms.
+
+----- Total AssetImport time: 0.263232s, AssetImport time: 0.138125s, Asset hashing: 0.001710s [226.0 KB, 129.103683 mb/s]
+
+
+Hashing assets ... 0.005 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.755 MB)
+  hash: 0.005 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/iZotope.dll - GUID: 3f24c23239a514164a967e46a7dc6c34...
+ done. [Time: 5.251669 ms] 
+Refreshing native plugins compatible for Editor in 8.27 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 2.32 ms.
+
+----- Total AssetImport time: 0.270444s, AssetImport time: 0.139105s, Asset hashing: 0.005463s [0.8 MB, 138.188065 mb/s]
+
+
+Hashing assets ... 0.004 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.577 MB)
+  hash: 0.003 seconds
+Updating Assets/Wwise/Deployment/Plugins/Android/armeabi-v7a/DSP/libAkRecorder.so - GUID: 9ccecfa27333e43f1baf8834b13102c3...
+ done. [Time: 5.060136 ms] 
+Refreshing native plugins compatible for Editor in 6.98 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 2.74 ms.
+
+----- Total AssetImport time: 0.288055s, AssetImport time: 0.138976s, Asset hashing: 0.004136s [0.6 MB, 139.537445 mb/s]
+
+
+Hashing assets ... 0.002 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.282 MB)
+  hash: 0.002 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkSoundSeedAir.dll - GUID: 46df6bb2f72774a149af21f72f1beba1...
+ done. [Time: 6.507609 ms] 
+Refreshing native plugins compatible for Editor in 5.42 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.89 ms.
+
+----- Total AssetImport time: 0.266113s, AssetImport time: 0.141151s, Asset hashing: 0.002100s [289.0 KB, 134.374344 mb/s]
+
+
+Hashing assets ... 0.004 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.662 MB)
+  hash: 0.004 seconds
+Updating Assets/Wwise/Deployment/Plugins/Android/x86/DSP/libAkTimeStretch.so - GUID: 25fbccc2de6444eb4b29bd4cb6d35919...
+ done. [Time: 6.667277 ms] 
+Refreshing native plugins compatible for Editor in 6.50 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 2.51 ms.
+
+----- Total AssetImport time: 0.265416s, AssetImport time: 0.139194s, Asset hashing: 0.004329s [0.7 MB, 152.811264 mb/s]
+
+
+Hashing assets ... 0.004 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.559 MB)
+  hash: 0.003 seconds
+Updating Assets/Wwise/Deployment/Plugins/Android/armeabi-v7a/DSP/libAkGuitarDistortion.so - GUID: 11ee1ed25cf0b4177a3361d16e4d0c5d...
+ done. [Time: 5.374202 ms] 
+Refreshing native plugins compatible for Editor in 5.47 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 2.52 ms.
+
+----- Total AssetImport time: 0.258633s, AssetImport time: 0.123738s, Asset hashing: 0.004079s [0.6 MB, 137.086334 mb/s]
+
+
+Hashing assets ... 0.012 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.002 seconds (1.888 MB)
+  hash: 0.011 seconds
+Updating Assets/Wwise/Deployment/Plugins/Android/armeabi-v7a/Release/libAkSoundEngine.so - GUID: 38a19ff2f464a4f86848f290e4218ba0...
+ done. [Time: 7.035920 ms] 
+Refreshing native plugins compatible for Editor in 6.31 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 2.51 ms.
+
+----- Total AssetImport time: 0.248833s, AssetImport time: 0.126522s, Asset hashing: 0.011944s [1.9 MB, 158.095062 mb/s]
+
+
+Hashing assets ... 0.003 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.518 MB)
+  hash: 0.003 seconds
+Updating Assets/Wwise/Deployment/Plugins/Android/armeabi-v7a/DSP/libAkTremolo.so - GUID: 761c2643b11fa4ad0966137dade496a1...
+ done. [Time: 5.661104 ms] 
+Refreshing native plugins compatible for Editor in 6.34 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.86 ms.
+
+----- Total AssetImport time: 0.241322s, AssetImport time: 0.122904s, Asset hashing: 0.003572s [0.5 MB, 144.916855 mb/s]
+
+
+Hashing assets ... 0.002 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.225 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Mac/DSP/libAkRoomVerb.bundle - GUID: 388c6e53e53b8471e8fadc8cc86a7df3...
+ done. [Time: 5.946083 ms] 
+Refreshing native plugins compatible for Editor in 5.70 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.98 ms.
+
+----- Total AssetImport time: 0.263862s, AssetImport time: 0.128936s, Asset hashing: 0.001998s [230.5 KB, 112.691170 mb/s]
+
+
+Hashing assets ... 0.004 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.650 MB)
+  hash: 0.004 seconds
+Updating Assets/Wwise/Deployment/Plugins/Android/armeabi-v7a/DSP/libSynthOne.so - GUID: 8e97917303b2b4aa0adf9565010f7687...
+ done. [Time: 6.305277 ms] 
+Refreshing native plugins compatible for Editor in 4.95 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 2.18 ms.
+
+----- Total AssetImport time: 0.244678s, AssetImport time: 0.127526s, Asset hashing: 0.004260s [0.6 MB, 152.505524 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.108 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Mac/DSP/libAkTimeStretch.bundle - GUID: f5ea9e83889074552bb35106ef7feffa...
+ done. [Time: 6.228384 ms] 
+Refreshing native plugins compatible for Editor in 4.90 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.82 ms.
+
+----- Total AssetImport time: 0.259636s, AssetImport time: 0.148700s, Asset hashing: 0.001159s [110.5 KB, 93.097198 mb/s]
+
+
+Hashing assets ... 0.004 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.562 MB)
+  hash: 0.004 seconds
+Updating Assets/Wwise/Deployment/Plugins/Android/x86/DSP/libAkTremolo.so - GUID: 2e443b93b52af41ca91b7dbf8821ee3a...
+ done. [Time: 5.596686 ms] 
+Refreshing native plugins compatible for Editor in 5.02 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 2.14 ms.
+
+----- Total AssetImport time: 0.243963s, AssetImport time: 0.130632s, Asset hashing: 0.004324s [0.6 MB, 129.947128 mb/s]
+
+
+Hashing assets ... 0.002 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.215 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkFlanger.dll - GUID: 6c4fcb93580774d87a97ec7e5bef4e36...
+ done. [Time: 6.000317 ms] 
+Refreshing native plugins compatible for Editor in 6.24 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.81 ms.
+
+----- Total AssetImport time: 0.237505s, AssetImport time: 0.124282s, Asset hashing: 0.001762s [220.5 KB, 122.216225 mb/s]
+
+
+Hashing assets ... 0.004 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.640 MB)
+  hash: 0.004 seconds
+Updating Assets/Wwise/Deployment/Plugins/Android/x86/DSP/libAkStereoDelay.so - GUID: cda1fcc32212a475187d92f4d5a34a3e...
+ done. [Time: 5.278536 ms] 
+Refreshing native plugins compatible for Editor in 6.41 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 2.19 ms.
+
+----- Total AssetImport time: 0.263286s, AssetImport time: 0.145464s, Asset hashing: 0.004215s [0.6 MB, 151.954376 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.079 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Mac/DSP/libAkStereoDelay.bundle - GUID: 997eb5d32b8be4fcb8d5b90016b35f24...
+ done. [Time: 6.440153 ms] 
+Refreshing native plugins compatible for Editor in 6.76 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 2.16 ms.
+
+----- Total AssetImport time: 0.237939s, AssetImport time: 0.126650s, Asset hashing: 0.000992s [81.2 KB, 79.926910 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.055 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Mac/DSP/libAkSoundSeedImpact.bundle - GUID: e23e04e30daa841fbb9a983a8b3fd583...
+ done. [Time: 6.116851 ms] 
+Refreshing native plugins compatible for Editor in 7.36 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 2.56 ms.
+
+----- Total AssetImport time: 0.241957s, AssetImport time: 0.128633s, Asset hashing: 0.000958s [56.8 KB, 57.870758 mb/s]
+
+
+Hashing assets ... 0.209 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.036 seconds (37.225 MB)
+  hash: 0.206 seconds
+Updating Assets/Wwise/Deployment/Plugins/Android/armeabi-v7a/Debug/libAkSoundEngine.so - GUID: ed00a614186be4b928c5da05ceae8bcc...
+ done. [Time: 5.019754 ms] 
+Refreshing native plugins compatible for Editor in 5.49 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.67 ms.
+
+----- Total AssetImport time: 0.457745s, AssetImport time: 0.131105s, Asset hashing: 0.209556s [37.2 MB, 177.638855 mb/s]
+
+
+Hashing assets ... 0.004 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.621 MB)
+  hash: 0.003 seconds
+Updating Assets/Wwise/Deployment/Plugins/Android/armeabi-v7a/DSP/libAkTimeStretch.so - GUID: 65413e24b75284848824c1cef9361304...
+ done. [Time: 4.436735 ms] 
+Refreshing native plugins compatible for Editor in 5.07 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.63 ms.
+
+----- Total AssetImport time: 0.210116s, AssetImport time: 0.111844s, Asset hashing: 0.003925s [0.6 MB, 158.143646 mb/s]
+
+Updating Assets/Wwise/Deployment/Plugins/Mac/Release/AkSoundEngine.bundle - GUID: d71e8a4439f4847dc884a9c4ef28f32f...
+ done. [Time: 7.457132 ms] 
+Refreshing native plugins compatible for Editor in 4.32 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.69 ms.
+
+----- Total AssetImport time: 0.279584s, AssetImport time: 0.180732s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.214 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkStereoDelay.dll - GUID: 0ec24fa44244e40c486d052a6f62022a...
+ done. [Time: 6.697723 ms] 
+Refreshing native plugins compatible for Editor in 5.01 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.95 ms.
+
+----- Total AssetImport time: 0.234746s, AssetImport time: 0.134695s, Asset hashing: 0.001536s [219.0 KB, 139.247330 mb/s]
+
+
+Hashing assets ... 0.009 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (1.588 MB)
+  hash: 0.008 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/Release/AkSoundEngine.dll - GUID: ba6176d43af3647bc9d171a86279abde...
+ done. [Time: 4.734077 ms] 
+Refreshing native plugins compatible for Editor in 5.17 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.69 ms.
+
+----- Total AssetImport time: 0.215187s, AssetImport time: 0.110154s, Asset hashing: 0.009032s [1.6 MB, 175.806213 mb/s]
+
+
+Hashing assets ... 0.004 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.695 MB)
+  hash: 0.004 seconds
+Updating Assets/Wwise/Deployment/Plugins/Android/x86/DSP/libSynthOne.so - GUID: 67f796e4e827745b6bf1d0fb35b2c37c...
+ done. [Time: 4.881383 ms] 
+Refreshing native plugins compatible for Editor in 4.33 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.63 ms.
+
+----- Total AssetImport time: 0.211758s, AssetImport time: 0.111957s, Asset hashing: 0.004094s [0.7 MB, 169.657196 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.109 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Mac/DSP/libAkReflect.bundle - GUID: d1f0a325e3cba4d9f9aee17c5d4488a8...
+ done. [Time: 5.539418 ms] 
+Refreshing native plugins compatible for Editor in 4.38 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.67 ms.
+
+----- Total AssetImport time: 0.225143s, AssetImport time: 0.130344s, Asset hashing: 0.001114s [111.9 KB, 98.034180 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.175 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkRecorder.dll - GUID: a11fe495b19934c229c1654279cc7cc8...
+ done. [Time: 4.996175 ms] 
+Refreshing native plugins compatible for Editor in 4.40 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.62 ms.
+
+----- Total AssetImport time: 0.209087s, AssetImport time: 0.111591s, Asset hashing: 0.001446s [179.5 KB, 121.232658 mb/s]
+
+
+Hashing assets ... 0.005 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.921 MB)
+  hash: 0.005 seconds
+Updating Assets/Wwise/Deployment/Plugins/Android/x86/DSP/libAkSoundSeedAir.so - GUID: 2dea65a5919f8496694f7cfcf0257fe6...
+ done. [Time: 4.585106 ms] 
+Refreshing native plugins compatible for Editor in 4.72 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.64 ms.
+
+----- Total AssetImport time: 0.215323s, AssetImport time: 0.108856s, Asset hashing: 0.005642s [0.9 MB, 163.204620 mb/s]
+
+
+Hashing assets ... 0.002 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.235 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkStereoDelay.dll - GUID: 0a2482b52a73c4657b06e0083446e96a...
+ done. [Time: 5.580558 ms] 
+Refreshing native plugins compatible for Editor in 4.61 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.69 ms.
+
+----- Total AssetImport time: 0.222865s, AssetImport time: 0.106797s, Asset hashing: 0.001882s [240.5 KB, 124.768066 mb/s]
+
+
+Hashing assets ... 0.010 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.002 seconds (1.842 MB)
+  hash: 0.010 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/Profile/AkSoundEngine.dll - GUID: e79678e5460f44550a4da5262c0e3a4a...
+ done. [Time: 5.867610 ms] 
+Refreshing native plugins compatible for Editor in 6.98 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 2.35 ms.
+
+----- Total AssetImport time: 0.220030s, AssetImport time: 0.107864s, Asset hashing: 0.010280s [1.8 MB, 179.185608 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.083 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Mac/DSP/libAkFlanger.bundle - GUID: cf740506d56f04abfad57e24a4136656...
+ done. [Time: 6.038803 ms] 
+Refreshing native plugins compatible for Editor in 4.31 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.64 ms.
+
+----- Total AssetImport time: 0.208432s, AssetImport time: 0.113371s, Asset hashing: 0.000885s [85.3 KB, 94.117645 mb/s]
+
+
+Hashing assets ... 0.004 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.575 MB)
+  hash: 0.003 seconds
+Updating Assets/Wwise/Deployment/Plugins/Android/armeabi-v7a/DSP/libAkPitchShifter.so - GUID: 88b18176e7baf4fb4ac938b729bc1877...
+ done. [Time: 4.388411 ms] 
+Refreshing native plugins compatible for Editor in 4.57 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.67 ms.
+
+----- Total AssetImport time: 0.229468s, AssetImport time: 0.107763s, Asset hashing: 0.003792s [0.6 MB, 151.672363 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.238 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkTimeStretch.dll - GUID: 1c303a96621d44668923e10db332837e...
+ done. [Time: 4.567669 ms] 
+Refreshing native plugins compatible for Editor in 4.70 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.66 ms.
+
+----- Total AssetImport time: 0.213540s, AssetImport time: 0.117344s, Asset hashing: 0.001622s [243.5 KB, 146.624039 mb/s]
+
+
+Hashing assets ... 0.000 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.041 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Mac/DSP/libAkMotion.bundle - GUID: 482fb9a62810c4f3081c32d327d5904f...
+ done. [Time: 7.143714 ms] 
+Refreshing native plugins compatible for Editor in 4.58 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 2.39 ms.
+
+----- Total AssetImport time: 0.213346s, AssetImport time: 0.113996s, Asset hashing: 0.000635s [41.9 KB, 64.357071 mb/s]
+
+
+Hashing assets ... 0.002 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.346 MB)
+  hash: 0.002 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/McDSP.dll - GUID: 836ca3b64cc1c412f81eab9f943d63a9...
+ done. [Time: 5.477858 ms] 
+Refreshing native plugins compatible for Editor in 4.85 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.66 ms.
+
+----- Total AssetImport time: 0.220456s, AssetImport time: 0.105990s, Asset hashing: 0.002311s [354.5 KB, 149.802277 mb/s]
+
+
+Hashing assets ... 0.004 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.706 MB)
+  hash: 0.004 seconds
+Updating Assets/Wwise/Deployment/Plugins/Android/armeabi-v7a/DSP/libAkConvolutionReverb.so - GUID: 70cf50c607a9b4980b95933b4dad3c44...
+ done. [Time: 4.986407 ms] 
+Refreshing native plugins compatible for Editor in 5.80 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.79 ms.
+
+----- Total AssetImport time: 0.206567s, AssetImport time: 0.107229s, Asset hashing: 0.004296s [0.7 MB, 164.244308 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.214 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkSoundSeedImpact.dll - GUID: bb10d7c60fe1f4a25b3c1d893dbaa26c...
+ done. [Time: 5.450905 ms] 
+Refreshing native plugins compatible for Editor in 6.71 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 2.08 ms.
+
+----- Total AssetImport time: 0.204335s, AssetImport time: 0.108472s, Asset hashing: 0.001522s [219.5 KB, 140.835342 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.077 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Mac/DSP/libAkPitchShifter.bundle - GUID: ee0797d67034e425eb731bff99e37717...
+ done. [Time: 6.908074 ms] 
+Refreshing native plugins compatible for Editor in 4.45 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.65 ms.
+
+----- Total AssetImport time: 0.224847s, AssetImport time: 0.109497s, Asset hashing: 0.000934s [78.8 KB, 82.387520 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.244 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkSoundSeedAir.dll - GUID: 8c3f26f638a004307a07965c7b1f7cdd...
+ done. [Time: 5.087594 ms] 
+Refreshing native plugins compatible for Editor in 7.11 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 2.44 ms.
+
+----- Total AssetImport time: 0.214904s, AssetImport time: 0.115220s, Asset hashing: 0.001663s [249.5 KB, 146.511353 mb/s]
+
+
+Hashing assets ... 0.058 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.010 seconds (10.893 MB)
+  hash: 0.057 seconds
+Updating Assets/Wwise/Deployment/Plugins/Android/armeabi-v7a/DSP/libAuro.so - GUID: af4057f6f99a44cbe8e8bee119755e4a...
+ done. [Time: 4.671420 ms] 
+Refreshing native plugins compatible for Editor in 4.05 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.51 ms.
+
+----- Total AssetImport time: 0.270170s, AssetImport time: 0.119816s, Asset hashing: 0.057857s [10.9 MB, 188.270020 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.226 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/SynthOne.dll - GUID: d461dcf6f2aa1467eaa8c5fc14caee34...
+ done. [Time: 4.310988 ms] 
+Refreshing native plugins compatible for Editor in 4.14 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.48 ms.
+
+----- Total AssetImport time: 0.187447s, AssetImport time: 0.098487s, Asset hashing: 0.001432s [231.0 KB, 157.569275 mb/s]
+
+
+Hashing assets ... 0.006 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (1.266 MB)
+  hash: 0.006 seconds
+Updating Assets/Wwise/Deployment/Plugins/Android/armeabi-v7a/DSP/libMcDSP.so - GUID: 230fcc3792930430580ebd50566abc70...
+ done. [Time: 5.332900 ms] 
+Refreshing native plugins compatible for Editor in 4.12 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.59 ms.
+
+----- Total AssetImport time: 0.191130s, AssetImport time: 0.099696s, Asset hashing: 0.006478s [1.3 MB, 195.422897 mb/s]
+
+
+Hashing assets ... 0.003 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.594 MB)
+  hash: 0.003 seconds
+Updating Assets/Wwise/Deployment/Plugins/Android/armeabi-v7a/DSP/libAkStereoDelay.so - GUID: 6b365e675af634300823070a3565fe9d...
+ done. [Time: 4.646192 ms] 
+Refreshing native plugins compatible for Editor in 4.05 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.58 ms.
+
+----- Total AssetImport time: 0.203557s, AssetImport time: 0.112550s, Asset hashing: 0.003422s [0.6 MB, 173.517700 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.181 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Mac/DSP/libCrankcaseAudioREVModelPlayer.bundle - GUID: 3ac2b4b7bdeb349e59708a87ab5840f6...
+ done. [Time: 4.906099 ms] 
+Refreshing native plugins compatible for Editor in 4.30 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 2.11 ms.
+
+----- Total AssetImport time: 0.190726s, AssetImport time: 0.100889s, Asset hashing: 0.001341s [184.9 KB, 134.605362 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.280 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkConvolutionReverb.dll - GUID: 03640eb7ae8a74738a7da69ca9d90e84...
+ done. [Time: 5.074397 ms] 
+Refreshing native plugins compatible for Editor in 4.11 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.48 ms.
+
+----- Total AssetImport time: 0.184603s, AssetImport time: 0.098463s, Asset hashing: 0.001754s [287.0 KB, 159.790924 mb/s]
+
+
+Hashing assets ... 0.003 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.603 MB)
+  hash: 0.003 seconds
+Updating Assets/Wwise/Deployment/Plugins/Android/x86/DSP/libAkGuitarDistortion.so - GUID: 78b498e783f8e4721af84a50d9dad22c...
+ done. [Time: 5.038827 ms] 
+Refreshing native plugins compatible for Editor in 4.05 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.74 ms.
+
+----- Total AssetImport time: 0.201550s, AssetImport time: 0.111572s, Asset hashing: 0.003328s [0.6 MB, 181.135635 mb/s]
+
+
+Hashing assets ... 0.004 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.744 MB)
+  hash: 0.003 seconds
+Updating Assets/Wwise/Deployment/Plugins/Android/x86/DSP/libAkConvolutionReverb.so - GUID: 847950f72e5014909bd3519698fa7af6...
+ done. [Time: 4.374924 ms] 
+Refreshing native plugins compatible for Editor in 4.09 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.56 ms.
+
+----- Total AssetImport time: 0.190609s, AssetImport time: 0.101814s, Asset hashing: 0.003853s [0.7 MB, 193.239822 mb/s]
+
+
+Hashing assets ... 0.011 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.002 seconds (2.209 MB)
+  hash: 0.011 seconds
+Updating Assets/Wwise/Deployment/Plugins/Android/armeabi-v7a/Profile/libAkSoundEngine.so - GUID: c09d60280aee94e52a7bd55c64703727...
+ done. [Time: 6.175370 ms] 
+Refreshing native plugins compatible for Editor in 4.07 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.48 ms.
+
+----- Total AssetImport time: 0.202075s, AssetImport time: 0.103864s, Asset hashing: 0.011238s [2.2 MB, 196.568848 mb/s]
+
+
+Hashing assets ... 0.171 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.028 seconds (36.122 MB)
+  hash: 0.169 seconds
+Updating Assets/Wwise/Deployment/Plugins/Android/x86/Debug/libAkSoundEngine.so - GUID: d28619284b6c74e4da9f3a022ff3de39...
+ done. [Time: 4.387841 ms] 
+Refreshing native plugins compatible for Editor in 5.43 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.53 ms.
+
+----- Total AssetImport time: 0.381346s, AssetImport time: 0.119582s, Asset hashing: 0.171454s [36.1 MB, 210.682983 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.214 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkGuitarDistortion.dll - GUID: 1ff73d38f82094a92a42f244f3f84c21...
+ done. [Time: 4.101267 ms] 
+Refreshing native plugins compatible for Editor in 4.43 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.60 ms.
+
+----- Total AssetImport time: 0.184853s, AssetImport time: 0.098655s, Asset hashing: 0.001593s [219.5 KB, 134.567215 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.232 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkGuitarDistortion.dll - GUID: afcfa7a8a148145debf6ab9355dfeee1...
+ done. [Time: 4.675165 ms] 
+Refreshing native plugins compatible for Editor in 4.41 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.47 ms.
+
+----- Total AssetImport time: 0.193964s, AssetImport time: 0.100734s, Asset hashing: 0.001579s [238.0 KB, 147.206985 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.205 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkMotion.dll - GUID: 6c54e5094b739422aab420024e6c5caf...
+ done. [Time: 4.162149 ms] 
+Refreshing native plugins compatible for Editor in 4.12 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.94 ms.
+
+----- Total AssetImport time: 0.208307s, AssetImport time: 0.117377s, Asset hashing: 0.001701s [209.5 KB, 120.269005 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.232 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkTremolo.dll - GUID: b8790819d49714f158a0e7d5c77900aa...
+ done. [Time: 4.117441 ms] 
+Refreshing native plugins compatible for Editor in 4.23 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.66 ms.
+
+----- Total AssetImport time: 0.190107s, AssetImport time: 0.099253s, Asset hashing: 0.001506s [238.0 KB, 154.331207 mb/s]
+
+
+Hashing assets ... 0.057 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.009 seconds (11.893 MB)
+  hash: 0.056 seconds
+Updating Assets/Wwise/Deployment/Plugins/Android/x86/DSP/libAuro.so - GUID: c1b2ec290305f4d1ba6c3f382e633995...
+ done. [Time: 6.215890 ms] 
+Refreshing native plugins compatible for Editor in 4.31 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.64 ms.
+
+----- Total AssetImport time: 0.243598s, AssetImport time: 0.099015s, Asset hashing: 0.056931s [11.9 MB, 208.894073 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.235 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkFlanger.dll - GUID: 31210499690114dee9459165232e334c...
+ done. [Time: 4.291411 ms] 
+Refreshing native plugins compatible for Editor in 4.09 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.72 ms.
+
+----- Total AssetImport time: 0.205356s, AssetImport time: 0.099365s, Asset hashing: 0.001577s [241.0 KB, 149.258514 mb/s]
+
+
+Hashing assets ... 0.003 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.729 MB)
+  hash: 0.003 seconds
+Updating Assets/Wwise/Deployment/Plugins/Android/armeabi-v7a/DSP/libAkReflect.so - GUID: 42656c0a8f40540ffbc894b715d4a9a3...
+ done. [Time: 5.288341 ms] 
+Refreshing native plugins compatible for Editor in 4.54 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.60 ms.
+
+----- Total AssetImport time: 0.191190s, AssetImport time: 0.100277s, Asset hashing: 0.003780s [0.7 MB, 192.777832 mb/s]
+
+
+Hashing assets ... 0.003 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.524 MB)
+  hash: 0.002 seconds
+Updating Assets/Wwise/Deployment/Plugins/Android/x86/DSP/libAkSoundSeedImpact.so - GUID: 8b54301a8469e4a5b9db65821ebe60ea...
+ done. [Time: 4.482241 ms] 
+Refreshing native plugins compatible for Editor in 4.09 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.69 ms.
+
+----- Total AssetImport time: 0.189847s, AssetImport time: 0.098582s, Asset hashing: 0.003064s [0.5 MB, 171.137054 mb/s]
+
+
+Hashing assets ... 0.002 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.264 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkHarmonizer.dll - GUID: 0ff7d51a0aee14d97af7c5be51dadd2b...
+ done. [Time: 4.816829 ms] 
+Refreshing native plugins compatible for Editor in 4.14 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.51 ms.
+
+----- Total AssetImport time: 0.208122s, AssetImport time: 0.099236s, Asset hashing: 0.001845s [270.0 KB, 142.917389 mb/s]
+
+
+Hashing assets ... 0.007 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (1.408 MB)
+  hash: 0.007 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/Profile/AkSoundEngine.dll - GUID: 85530b1a6a8da408fb1ba92b09876694...
+ done. [Time: 6.540639 ms] 
+Refreshing native plugins compatible for Editor in 4.22 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.49 ms.
+
+----- Total AssetImport time: 0.202698s, AssetImport time: 0.108771s, Asset hashing: 0.007225s [1.4 MB, 194.950180 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.064 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Mac/DSP/libAkTremolo.bundle - GUID: 67b8ef2a8ef2e4cffaff64705a669ac1...
+ done. [Time: 4.922906 ms] 
+Refreshing native plugins compatible for Editor in 3.95 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.48 ms.
+
+----- Total AssetImport time: 0.198143s, AssetImport time: 0.099194s, Asset hashing: 0.000907s [65.4 KB, 70.358086 mb/s]
+
+Updating Assets/Wwise/Deployment/Plugins/Mac/Debug/AkSoundEngine.bundle - GUID: ad86ce5ae8e31409aa46bb37a2c70dfb...
+ done. [Time: 6.066292 ms] 
+Refreshing native plugins compatible for Editor in 3.93 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.97 ms.
+
+----- Total AssetImport time: 0.241992s, AssetImport time: 0.139914s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.212 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkPitchShifter.dll - GUID: 833d8ffa3db284faf996525cdb2c3ad2...
+ done. [Time: 4.972143 ms] 
+Refreshing native plugins compatible for Editor in 4.89 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.54 ms.
+
+----- Total AssetImport time: 0.190040s, AssetImport time: 0.103210s, Asset hashing: 0.001387s [217.0 KB, 152.774017 mb/s]
+
+
+Hashing assets ... 0.003 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.487 MB)
+  hash: 0.002 seconds
+Updating Assets/Wwise/Deployment/Plugins/Android/armeabi-v7a/DSP/libAkSoundSeedImpact.so - GUID: 7ae15a7b2e7d54990bd9559cc54a6f81...
+ done. [Time: 4.983846 ms] 
+Refreshing native plugins compatible for Editor in 4.13 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.53 ms.
+
+----- Total AssetImport time: 0.203018s, AssetImport time: 0.098918s, Asset hashing: 0.002900s [498.7 KB, 167.932190 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.114 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Mac/DSP/libSynthOne.bundle - GUID: 9255278b08db24878af9ac288491cae6...
+ done. [Time: 4.533630 ms] 
+Refreshing native plugins compatible for Editor in 4.87 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.94 ms.
+
+----- Total AssetImport time: 0.207987s, AssetImport time: 0.101898s, Asset hashing: 0.000922s [116.5 KB, 123.369827 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.194 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkRecorder.dll - GUID: 3ac73a2c61637400bb1db3b2ef30b8ed...
+ done. [Time: 4.124999 ms] 
+Refreshing native plugins compatible for Editor in 4.48 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.73 ms.
+
+----- Total AssetImport time: 0.184918s, AssetImport time: 0.096062s, Asset hashing: 0.001524s [198.5 KB, 127.175598 mb/s]
+
+
+Hashing assets ... 0.004 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.754 MB)
+  hash: 0.003 seconds
+Updating Assets/Wwise/Deployment/Plugins/Android/armeabi-v7a/DSP/libAkHarmonizer.so - GUID: 3975dd2cee1f4446ba811daead20a200...
+ done. [Time: 6.250962 ms] 
+Refreshing native plugins compatible for Editor in 4.35 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.84 ms.
+
+----- Total AssetImport time: 0.220445s, AssetImport time: 0.119338s, Asset hashing: 0.003923s [0.8 MB, 192.246307 mb/s]
+
+
+Hashing assets ... 0.019 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.003 seconds (3.846 MB)
+  hash: 0.018 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/Debug/AkSoundEngine.dll - GUID: 8a24c64cefa114410a0b7aa9e80896ca...
+ done. [Time: 5.423874 ms] 
+Refreshing native plugins compatible for Editor in 6.68 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.65 ms.
+
+----- Total AssetImport time: 0.223418s, AssetImport time: 0.106457s, Asset hashing: 0.019125s [3.8 MB, 201.086349 mb/s]
+
+
+Hashing assets ... 0.000 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.074 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Mac/DSP/libAkRecorder.bundle - GUID: 95c7580dffd1141a89d681c20b704072...
+ done. [Time: 4.703190 ms] 
+Refreshing native plugins compatible for Editor in 4.42 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.60 ms.
+
+----- Total AssetImport time: 0.198009s, AssetImport time: 0.108461s, Asset hashing: 0.000735s [75.7 KB, 100.584763 mb/s]
+
+
+Hashing assets ... 0.004 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.800 MB)
+  hash: 0.004 seconds
+Updating Assets/Wwise/Deployment/Plugins/Android/x86/DSP/libAkHarmonizer.so - GUID: 2dda121d35ce94c9db6b36ff312ec0d5...
+ done. [Time: 4.491706 ms] 
+Refreshing native plugins compatible for Editor in 4.17 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.61 ms.
+
+----- Total AssetImport time: 0.213174s, AssetImport time: 0.119249s, Asset hashing: 0.004227s [0.8 MB, 189.180649 mb/s]
+
+
+Hashing assets ... 0.004 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.776 MB)
+  hash: 0.004 seconds
+Updating Assets/Wwise/Deployment/Plugins/Android/x86/DSP/libAkReflect.so - GUID: 36f1302d3538247ab8e6ba1926ecc79f...
+ done. [Time: 3.933982 ms] 
+Refreshing native plugins compatible for Editor in 3.95 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.46 ms.
+
+----- Total AssetImport time: 0.196056s, AssetImport time: 0.101819s, Asset hashing: 0.004080s [0.8 MB, 190.163132 mb/s]
+
+
+Hashing assets ... 0.015 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.003 seconds (3.018 MB)
+  hash: 0.014 seconds
+Updating Assets/Wwise/Deployment/Plugins/Android/x86/Profile/libAkSoundEngine.so - GUID: 0f17c17d0816a4bcfa145c3491a4a9f6...
+ done. [Time: 4.792173 ms] 
+Refreshing native plugins compatible for Editor in 4.11 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.74 ms.
+
+----- Total AssetImport time: 0.204916s, AssetImport time: 0.100705s, Asset hashing: 0.015209s [3.0 MB, 198.432785 mb/s]
+
+
+Hashing assets ... 0.004 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.763 MB)
+  hash: 0.004 seconds
+Updating Assets/Wwise/Deployment/Plugins/Android/x86/DSP/libCrankcaseAudioREVModelPlayer.so - GUID: d776ba7df067049539ce3ccde55d2023...
+ done. [Time: 4.631334 ms] 
+Refreshing native plugins compatible for Editor in 3.92 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.52 ms.
+
+----- Total AssetImport time: 0.208044s, AssetImport time: 0.120061s, Asset hashing: 0.004127s [0.8 MB, 184.948959 mb/s]
+
+
+Hashing assets ... 0.003 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.565 MB)
+  hash: 0.003 seconds
+Updating Assets/Wwise/Deployment/Plugins/Android/armeabi-v7a/DSP/libAkFlanger.so - GUID: 4aa4b88d50af74ff69018047fb556189...
+ done. [Time: 6.513507 ms] 
+Refreshing native plugins compatible for Editor in 4.10 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.48 ms.
+
+----- Total AssetImport time: 0.188987s, AssetImport time: 0.098374s, Asset hashing: 0.003155s [0.6 MB, 179.191101 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.250 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/CrankcaseAudioREVModelPlayer.dll - GUID: 1b3ae2ad1a8554232a292057d143e72b...
+ done. [Time: 4.672639 ms] 
+Refreshing native plugins compatible for Editor in 4.54 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.47 ms.
+
+----- Total AssetImport time: 0.188251s, AssetImport time: 0.097570s, Asset hashing: 0.001654s [255.5 KB, 150.881973 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.250 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkReflect.dll - GUID: 257f89bda98ce4a97964b04b5c3f3490...
+ done. [Time: 4.603718 ms] 
+Refreshing native plugins compatible for Editor in 3.97 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.46 ms.
+
+----- Total AssetImport time: 0.202823s, AssetImport time: 0.118855s, Asset hashing: 0.001593s [255.5 KB, 156.665283 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.224 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkReflect.dll - GUID: 7781c1ddbf35b456bb50a0737eacb174...
+ done. [Time: 4.271790 ms] 
+Refreshing native plugins compatible for Editor in 4.02 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.50 ms.
+
+----- Total AssetImport time: 0.182678s, AssetImport time: 0.096317s, Asset hashing: 0.001511s [229.0 KB, 148.010040 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.233 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkHarmonizer.dll - GUID: 7e87e1dddcf4b40ff8a9a09de5adf1b3...
+ done. [Time: 4.236749 ms] 
+Refreshing native plugins compatible for Editor in 5.36 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.59 ms.
+
+----- Total AssetImport time: 0.184992s, AssetImport time: 0.097340s, Asset hashing: 0.001479s [239.0 KB, 157.853958 mb/s]
+
+
+Hashing assets ... 0.007 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (1.346 MB)
+  hash: 0.006 seconds
+Updating Assets/Wwise/Deployment/Plugins/Android/x86/DSP/libMcDSP.so - GUID: 4fe6f4ed0c76e4a389765a0f9d96d122...
+ done. [Time: 4.440059 ms] 
+Refreshing native plugins compatible for Editor in 4.38 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 2.02 ms.
+
+----- Total AssetImport time: 0.208612s, AssetImport time: 0.098299s, Asset hashing: 0.006930s [1.3 MB, 194.166885 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.182 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Mac/DSP/libAkSoundSeedAir.bundle - GUID: 717d5f0ef084b4d04814a306b83e13a6...
+ done. [Time: 5.259862 ms] 
+Refreshing native plugins compatible for Editor in 4.36 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.66 ms.
+
+----- Total AssetImport time: 0.184049s, AssetImport time: 0.097539s, Asset hashing: 0.001600s [186.2 KB, 113.658157 mb/s]
+
+
+Hashing assets ... 0.006 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (1.219 MB)
+  hash: 0.006 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/Release/AkSoundEngine.dll - GUID: fdc61d1e1925447748f6776ef1b294be...
+ done. [Time: 4.278800 ms] 
+Refreshing native plugins compatible for Editor in 4.38 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.87 ms.
+
+----- Total AssetImport time: 0.189230s, AssetImport time: 0.097452s, Asset hashing: 0.006558s [1.2 MB, 185.840073 mb/s]
+
+
+Hashing assets ... 0.002 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.428 MB)
+  hash: 0.002 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/McDSP.dll - GUID: d00fdb9e91d57499caa4a2ab50e7f6de...
+ done. [Time: 4.750138 ms] 
+Refreshing native plugins compatible for Editor in 4.50 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.67 ms.
+
+----- Total AssetImport time: 0.205938s, AssetImport time: 0.099043s, Asset hashing: 0.002497s [438.5 KB, 171.473984 mb/s]
+
+
+Hashing assets ... 0.012 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.002 seconds (2.572 MB)
+  hash: 0.012 seconds
+Updating Assets/Wwise/Deployment/Plugins/Android/x86/Release/libAkSoundEngine.so - GUID: 75ec6cce91e5f40ffa5cbc63367fb6c1...
+ done. [Time: 3.933701 ms] 
+Refreshing native plugins compatible for Editor in 3.85 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.48 ms.
+
+----- Total AssetImport time: 0.198150s, AssetImport time: 0.096987s, Asset hashing: 0.012318s [2.6 MB, 208.812836 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.242 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/SynthOne.dll - GUID: b24f2b0fd580e4a4688afb34ba29b00e...
+ done. [Time: 4.105004 ms] 
+Refreshing native plugins compatible for Editor in 4.01 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.47 ms.
+
+----- Total AssetImport time: 0.185075s, AssetImport time: 0.096912s, Asset hashing: 0.001511s [248.0 KB, 160.255249 mb/s]
+
+
+Hashing assets ... 0.017 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.003 seconds (3.605 MB)
+  hash: 0.017 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/Auro.dll - GUID: 4a9c614f05b4f4716b877b8ff805207d...
+ done. [Time: 4.109855 ms] 
+Refreshing native plugins compatible for Editor in 4.23 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.47 ms.
+
+----- Total AssetImport time: 0.216701s, AssetImport time: 0.097821s, Asset hashing: 0.017658s [3.6 MB, 204.183472 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.227 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkPitchShifter.dll - GUID: 68b201dfa727c4eabb7f6bcce08a9ce8...
+ done. [Time: 4.998315 ms] 
+Refreshing native plugins compatible for Editor in 4.16 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.48 ms.
+
+----- Total AssetImport time: 0.187954s, AssetImport time: 0.102306s, Asset hashing: 0.001490s [232.5 KB, 152.359344 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.256 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkConvolutionReverb.dll - GUID: d0ad6bff9a9404aef8ad6a939fe081de...
+ done. [Time: 4.409995 ms] 
+Refreshing native plugins compatible for Editor in 4.02 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.50 ms.
+
+----- Total AssetImport time: 0.188650s, AssetImport time: 0.099676s, Asset hashing: 0.001684s [262.0 KB, 151.956161 mb/s]
+
+WwiseUnity: Refreshing asset database.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+WwiseSetupWizard:RunModifyImpl() (at /Users/kristianriis/Desktop/DADIU/MGP1/MGP1/Assets/Wwise/Editor/WwiseSetupWizard/AkWwiseSetupWizard.cs:44)
+UnityEditor.EditorApplication:Internal_CallDelayFunctions() (at /Users/builduser/buildslave/unity/build/Editor/Mono/EditorApplication.cs:118)
+ 
+(Filename: /Users/kristianriis/Desktop/DADIU/MGP1/MGP1/Assets/Wwise/Editor/WwiseSetupWizard/AkWwiseSetupWizard.cs Line: 44)
+
+Refresh: detecting if any assets need to be imported or removed ... Refresh: elapses 0.053818 seconds (Nothing changed)
+WwiseUnity: End of modify setup, exiting Unity.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+WwiseSetupWizard:RunModifyImpl() (at /Users/kristianriis/Desktop/DADIU/MGP1/MGP1/Assets/Wwise/Editor/WwiseSetupWizard/AkWwiseSetupWizard.cs:47)
+UnityEditor.EditorApplication:Internal_CallDelayFunctions() (at /Users/builduser/buildslave/unity/build/Editor/Mono/EditorApplication.cs:118)
+ 
+(Filename: /Users/kristianriis/Desktop/DADIU/MGP1/MGP1/Assets/Wwise/Editor/WwiseSetupWizard/AkWwiseSetupWizard.cs Line: 47)
+
+Refresh: detecting if any assets need to be imported or removed ... Refresh: elapses 0.050374 seconds (Nothing changed)
+
+Hashing assets ... 0.000 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.008 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset - GUID: 6348a543df3724a4ab7061185bf9f892...
+ done. [Time: 4.091910 ms] 
+Refreshing native plugins compatible for Editor in 3.66 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.52 ms.
+
+----- Total AssetImport time: 0.283135s, AssetImport time: 0.099227s, Asset hashing: 0.000646s [8.3 KB, 12.484967 mb/s]
+
+Refresh: detecting if any assets need to be imported or removed ... Refresh: elapses 0.053892 seconds (Nothing changed)
+Cleanup mono
+Checking for leaked weakptr:
+  Found no leaked weakptrs.
+##utp:{"type":"MemoryLeaks","allocatedMemory":99564,"memoryLabels":[{"Default":100},{"Permanent":16768},{"Thread":584},{"Manager":2704},{"GfxDevice":5476},{"Physics":8},{"Serialization":15712},{"JobScheduler":144},{"Renderer":224},{"Terrain":224},{"STL":1024},{"String":20386},{"DynamicArray":11292},{"Curl":952},{"PoolAlloc":-224},{"ScriptManager":4040},{"Sprites":1176},{"VR":7796},{"EditorGui":12},{"EditorUtility":544},{"AssetImporter":24},{"RestService":64},{"License":574},{"UnityConnect":9232},{"Collab":728}]}
